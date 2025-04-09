@@ -1,0 +1,69 @@
+:host {
+  display: block; /* Ensure the component takes up block space */
+}
+
+nav {
+  background-color: var(--dark-blue); /* Match body background or slightly different */
+  padding: 1rem 0; /* Vertical padding */
+  border-bottom: 1px solid var(--slate); /* Subtle separator */
+  margin-bottom: 1.5rem; /* Space below nav */
+}
+
+nav ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange items horizontally */
+  justify-content: center; /* Center items */
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 1rem; /* Spacing between nav buttons */
+}
+
+nav li {
+  margin: 0; /* No margin needed on li */
+}
+
+nav a {
+  display: inline-block; /* Treat link as a block for padding/border */
+  color: var(--teal); /* Use teal for button text */
+  background-color: transparent; /* Start with transparent background */
+  border: 1px solid var(--teal); /* Teal border */
+  text-decoration: none;
+  padding: 0.6rem 1.2rem; /* Padding for button size */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+nav a:hover,
+nav a.active { /* Style for active route and hover */
+  color: var(--dark-blue); /* Dark text on hover/active */
+  background-color: var(--teal); /* Teal background on hover/active */
+}
+
+/* Adjust heading margin if needed */
+h1 {
+  text-align: center; /* Center the main heading */
+  color: var(--teal);
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments for nav */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center; /* Keep centered or adjust as needed */
+    padding: 0 15px; /* Add horizontal padding for container */
+    gap: 0.8rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem; /* Slightly smaller padding */
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}

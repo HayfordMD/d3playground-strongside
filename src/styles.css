@@ -1,0 +1,62 @@
+/* Global Styles */
+:root {
+  --dark-blue: #0a192f; /* Dark navy/blue */
+  --teal: #64ffda;      /* Bright teal for accents */
+  --light-slate: #ccd6f6; /* Lighter text color */
+  --white: #ffffff;
+  --slate: #8892b0;      /* Medium text color */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-blue);
+  color: var(--light-slate);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cleaner sans-serif font */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Allow main content to grow */
+  padding: 20px;
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center content */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--white);
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    padding: 15px;
+  }
+}
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global component styles here */
