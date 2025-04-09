@@ -22,10 +22,15 @@ interface SunburstNode {
     }
     svg {
       display: block;
+      cursor: pointer;
     }
     path {
       stroke: #fff;
       stroke-width: 0.5px;
+      transition: opacity 0.3s;
+    }
+    path:hover {
+      opacity: 0.8;
     }
   `]
 })
@@ -45,6 +50,7 @@ export class SunburstComponent implements AfterViewInit {
   private width = 800;
   private height = 800;
   private radius = Math.min(this.width, this.height) / 2;
+  private currentFocus: any = null;
 
   constructor(private el: ElementRef) {}
 
@@ -77,14 +83,15 @@ export class SunburstComponent implements AfterViewInit {
     const g = svg.append('g')
       .attr('transform', `translate(${this.width/2},${this.height/2})`);
 
-    g.selectAll('path')
+    const path = g.selectAll('path')
       .data(partition.descendants().filter(d => d.depth))
       .enter().append('path')
         .attr('fill', d => { 
           while (d.depth > 1) d = d.parent!; 
           return color(d.data.name); 
         })
-        .attr('d', arc);
+        .attr('d', arc)
+        .on('click', (event, d) => this.handleClick(d));
 
     g.selectAll('text')
       .data(partition.descendants().filter(d => d.depth && (d.y0 + d.y1)/2 * (d.x1 - d.x0) > 10))
@@ -96,5 +103,45 @@ export class SunburstComponent implements AfterViewInit {
         })
         .attr('dy', '0.35em')
         .text(d => d.data.name);
+
+    // Add zoom behavior
+    const svgElement = this.el.nativeElement.querySelector('svg');
+    const zoom = d3.zoom<SVGSVGElement, unknown>()
+      .scaleExtent([1, 8])
+      .on('zoom', (event) => {
+        g.attr('transform', `translate(${this.width/2},${this.height/2}) scale(${event.transform.k})`);
+      });
+    
+    d3.select<SVGSVGElement, unknown>(svgElement).call(zoom);
+  }
+
+  private handleClick(d: any): void {
+    // Handle click to focus/defocus segments
+    if (this.currentFocus === d) {
+      // Reset zoom if clicking the same segment
+      d3.select(this.el.nativeElement).select('g')
+        .transition()
+        .duration(750)
+        .attr('transform', `translate(${this.width/2},${this.height/2}) scale(1)`);
+      this.currentFocus = null;
+    } else {
+      // Zoom to clicked segment
+      const x = (d.x0 + d.x1)/2 * 180/Math.PI;
+      const y = (d.y0 + d.y1)/2;
+      const scale = 2; // Zoom scale factor
+      
+      d3.select(this.el.nativeElement).select('g')
+        .transition()
+        .duration(750)
+        .attr('transform', `
+          translate(${this.width/2},${this.height/2})
+          scale(${scale})
+          rotate(${-x})
+          translate(${-y},0)
+          rotate(${x})
+        `);
+      
+      this.currentFocus = d;
+    }
   }
 }
