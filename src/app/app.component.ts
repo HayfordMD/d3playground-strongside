@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
+import { SunburstComponent } from './sunburst/sunburst.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [SunburstComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    
+    <h1>D3 Sunburst Chart</h1>
+    <app-sunburst></app-sunburst>
   `,
-  styles: [],
+  styles: [`
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+  `]
 })
-export class AppComponent {
-  title = 'angular-app';
-}
+export class AppComponent {}
