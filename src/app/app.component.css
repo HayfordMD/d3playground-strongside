@@ -1,69 +1,128 @@
 :host {
-  display: block; /* Ensure the component takes up block space */
+  display: block;
 }
 
-nav {
-  background-color: var(--dark-blue); /* Match body background or slightly different */
-  padding: 1rem 0; /* Vertical padding */
-  border-bottom: 1px solid var(--slate); /* Subtle separator */
-  margin-bottom: 1.5rem; /* Space below nav */
+.app-container {
+  display: flex;
+  min-height: 100vh;
 }
 
-nav ul {
-  list-style: none; /* Remove default bullets */
+/* Sidebar navigation */
+.sidebar {
+  width: 280px;
+  background-color: var(--surface);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+.app-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+/* Vertical navigation */
+.nav-list {
+  list-style: none;
   padding: 0;
-  margin: 0; /* Remove default margin */
-  display: flex; /* Arrange items horizontally */
-  justify-content: center; /* Center items */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  gap: 1rem; /* Spacing between nav buttons */
-}
-
-nav li {
-  margin: 0; /* No margin needed on li */
-}
-
-nav a {
-  display: inline-block; /* Treat link as a block for padding/border */
-  color: var(--teal); /* Use teal for button text */
-  background-color: transparent; /* Start with transparent background */
-  border: 1px solid var(--teal); /* Teal border */
-  text-decoration: none;
-  padding: 0.6rem 1.2rem; /* Padding for button size */
-  border-radius: 4px; /* Slightly rounded corners */
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  text-align: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-nav a:hover,
-nav a.active { /* Style for active route and hover */
-  color: var(--dark-blue); /* Dark text on hover/active */
-  background-color: var(--teal); /* Teal background on hover/active */
+.nav-link:hover {
+  background-color: rgba(58, 134, 255, 0.1);
+  color: var(--primary);
+  transform: translateX(4px);
 }
 
-/* Adjust heading margin if needed */
-h1 {
-  text-align: center; /* Center the main heading */
-  color: var(--teal);
-  margin-bottom: 2rem;
+.nav-link.active {
+  background-color: var(--primary);
+  color: white;
 }
 
-/* Responsive adjustments for nav */
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: var(--spacing-xl);
+  background-color: var(--background);
+}
+
+.page-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-title {
+  color: var(--dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.page-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 700px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  nav ul {
-    justify-content: center; /* Keep centered or adjust as needed */
-    padding: 0 15px; /* Add horizontal padding for container */
-    gap: 0.8rem;
+  .app-container {
+    flex-direction: column;
   }
-
-  nav a {
-    padding: 0.5rem 1rem; /* Slightly smaller padding */
-    font-size: 0.9rem;
+  
+  .sidebar {
+    width: 100%;
+    padding: var(--spacing-md);
   }
-
-  h1 {
-    font-size: 1.8rem;
+  
+  .main-content {
+    padding: var(--spacing-md);
+  }
+  
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    width: auto;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-2px);
   }
 }

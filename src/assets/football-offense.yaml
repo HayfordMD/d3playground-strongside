@@ -1,0 +1,308 @@
+name: Football Offense
+children:
+  - name: I-Formation
+    children:
+      - name: I-Right
+        children:
+          - name: I-Right Twins
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 10
+                  - name: Trap
+                    value: 8
+                  - name: Sweep
+                    value: 12
+                  - name: Zone
+                    value: 15
+                  - name: Toss
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Smash
+                    value: 9
+                  - name: Verts
+                    value: 11
+                  - name: Y-Stick
+                    value: 8
+                  - name: Slant
+                    value: 10
+          - name: I-Right Wide
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 9
+                  - name: Zone
+                    value: 14
+                  - name: Counter
+                    value: 8
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 12
+                  - name: Hitch
+                    value: 7
+                  - name: Smash
+                    value: 9
+      - name: I-Left
+        children:
+          - name: I-Left Twins
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 11
+                  - name: Trap
+                    value: 7
+                  - name: Zone
+                    value: 13
+              - name: Pass
+                children:
+                  - name: Verts
+                    value: 10
+                  - name: Doubles
+                    value: 8
+                  - name: Slant
+                    value: 9
+          - name: I-Left Stack
+            children:
+              - name: Run
+                children:
+                  - name: Sweep
+                    value: 10
+                  - name: Toss
+                    value: 8
+              - name: Pass
+                children:
+                  - name: Y-Stick
+                    value: 9
+                  - name: Bubble Screen
+                    value: 11
+                  - name: Hitch
+                    value: 7
+  - name: Pro Set
+    children:
+      - name: Pro Right
+        children:
+          - name: Pro Right Twins
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 9
+                  - name: Zone
+                    value: 12
+                  - name: Draw
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Smash
+                    value: 10
+                  - name: Verts
+                    value: 11
+                  - name: Slant
+                    value: 8
+          - name: Pro Right Far
+            children:
+              - name: Run
+                children:
+                  - name: Sweep
+                    value: 9
+                  - name: Toss
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 10
+                  - name: Doubles
+                    value: 8
+      - name: Pro Left
+        children:
+          - name: Pro Left Twins
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 10
+                  - name: Zone
+                    value: 13
+                  - name: Counter
+                    value: 8
+              - name: Pass
+                children:
+                  - name: Y-Stick
+                    value: 9
+                  - name: Verts
+                    value: 11
+                  - name: Slant
+                    value: 8
+          - name: Pro Left Tight
+            children:
+              - name: Run
+                children:
+                  - name: Power
+                    value: 11
+                  - name: Trap
+                    value: 8
+                  - name: Zone
+                    value: 12
+              - name: Pass
+                children:
+                  - name: Smash
+                    value: 9
+                  - name: Hitch
+                    value: 7
+  - name: Trips
+    children:
+      - name: Trips Right
+        children:
+          - name: Trips Right Bunch
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 12
+                  - name: Draw
+                    value: 8
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 13
+                  - name: Verts
+                    value: 11
+                  - name: Smash
+                    value: 9
+                  - name: Y-Stick
+                    value: 10
+          - name: Trips Right Wide
+            children:
+              - name: Run
+                children:
+                  - name: Sweep
+                    value: 9
+                  - name: Zone
+                    value: 11
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 14
+                  - name: Hitch
+                    value: 8
+                  - name: Doubles
+                    value: 10
+      - name: Trips Left
+        children:
+          - name: Trips Left Bunch
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 11
+                  - name: Draw
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 12
+                  - name: Verts
+                    value: 10
+                  - name: Smash
+                    value: 8
+          - name: Trips Left Stack
+            children:
+              - name: Run
+                children:
+                  - name: Sweep
+                    value: 8
+                  - name: Zone
+                    value: 10
+              - name: Pass
+                children:
+                  - name: Bubble Screen
+                    value: 11
+                  - name: Slant
+                    value: 9
+                  - name: Y-Stick
+                    value: 8
+  - name: 11 Personnel
+    children:
+      - name: 11 Right
+        children:
+          - name: 11 Right Far
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 13
+                  - name: Power
+                    value: 9
+                  - name: Draw
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Verts
+                    value: 12
+                  - name: Smash
+                    value: 10
+                  - name: Doubles
+                    value: 9
+                  - name: Slant
+                    value: 8
+          - name: 11 Right Close
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 12
+                  - name: Trap
+                    value: 8
+                  - name: Toss
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Y-Stick
+                    value: 10
+                  - name: Bubble Screen
+                    value: 11
+                  - name: Hitch
+                    value: 9
+      - name: 11 Left
+        children:
+          - name: 11 Left Far
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 11
+                  - name: Power
+                    value: 8
+                  - name: Counter
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Verts
+                    value: 12
+                  - name: Doubles
+                    value: 9
+                  - name: Slant
+                    value: 10
+          - name: 11 Left Tight
+            children:
+              - name: Run
+                children:
+                  - name: Zone
+                    value: 12
+                  - name: Power
+                    value: 10
+                  - name: Trap
+                    value: 7
+              - name: Pass
+                children:
+                  - name: Smash
+                    value: 9
+                  - name: Y-Stick
+                    value: 8
+                  - name: Hitch
+                    value: 7

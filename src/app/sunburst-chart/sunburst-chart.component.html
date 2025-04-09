@@ -1,0 +1,25 @@
+<div class="sunburst-container">
+  <div class="chart-header">
+    <h2>Football Offense Playbook</h2>
+    <p class="breadcrumb" *ngIf="currentPath.length > 0">
+      <span *ngFor="let segment of currentPath; let i = index">
+        <a (click)="zoomTo(i)" class="breadcrumb-link">{{ segment }}</a>
+        <span *ngIf="i < currentPath.length - 1"> > </span>
+      </span>
+    </p>
+    <p class="instructions">Click on segments to zoom in. Click on breadcrumb path to zoom out.</p>
+  </div>
+  
+  <div class="chart-wrapper">
+    <!-- Adding explicit width and height to the SVG element -->
+    <svg #sunburstChart width="800" height="600"></svg>
+  </div>
+
+  <div class="data-info" *ngIf="selectedNode">
+    <div class="card">
+      <h3>{{ selectedNode.data.name }}</h3>
+      <p *ngIf="selectedNode.data.value">Value: {{ selectedNode.data.value }}</p>
+      <p *ngIf="selectedNode.children">Children: {{ selectedNode.children.length }}</p>
+    </div>
+  </div>
+</div>
