@@ -128,25 +128,7 @@ export class AppComponent implements OnInit {
       // Create the pie chart with mock data
       this.createRunPassPieChartWithMockData();
       
-      /* Commented out YAML loading code for now
-      // For development, we'll use a hardcoded path to the YAML file
-      const response = await fetch('assets/data/offenseBreakdown.yaml');
-      if (!response.ok) {
-        throw new Error(`Failed to load YAML: ${response.status} ${response.statusText}`);
-      }
-      
-      const yamlText = await response.text();
-      console.log('YAML text loaded:', yamlText.substring(0, 200) + '...');
-      
-      this.offenseData = yaml.load(yamlText) as OffenseData;
-      console.log('Parsed YAML data:', this.offenseData);
-      
-      // Process the data to count concepts
-      this.processConceptCounts();
-      
-      // Create the pie chart
-      this.createRunPassPieChart();
-      */
+
     } catch (error) {
       console.error('Error loading YAML data:', error);
       // Fallback to hardcoded data
@@ -211,6 +193,47 @@ export class AppComponent implements OnInit {
     console.log('Mock concept data created:', 
                Array.from(this.conceptCounts.entries()).map(([k, v]) => 
                  [k, Array.from(v.entries())]));
+  }
+  
+  // Mock data for average yards gained
+  private getAverageYardsGained(category: string): number {
+    // In a real implementation, this would calculate from actual play data
+    if (category === 'Run') {
+      return 4.2; // Average yards per run play
+    } else if (category === 'Pass') {
+      return 7.8; // Average yards per pass play
+    }
+    return 0;
+  }
+  
+  // Mock data for average yards gained per concept
+  private getConceptAverageYards(category: string, concept: string): number {
+    // In a real implementation, this would calculate from actual play data
+    const conceptYards: {[key: string]: number} = {
+      // Run concepts
+      'Power': 5.3,
+      'Inside Zone': 4.8,
+      'Outside Zone': 6.2,
+      'Counter': 3.7,
+      'Trap': 3.1,
+      'Sweep': 5.9,
+      'Iso': 3.5,
+      
+      // Pass concepts
+      'Smash': 8.4,
+      'Mesh': 6.2,
+      'Four Verticals': 12.5,
+      'Flood': 7.8,
+      'Screens': 5.3,
+      'Y-Corner': 9.7,
+      '4 Verts': 15.3,
+      'Hitch': 5.8,
+      'Snag': 7.2,
+      'Hank': 6.5,
+      'Y-Cross': 11.2
+    };
+    
+    return conceptYards[concept] || 0;
   }
 
   private createRunPassPieChartWithMockData(): void {
@@ -278,6 +301,10 @@ export class AppComponent implements OnInit {
     countHeader.textContent = 'Count';
     headerRow.appendChild(countHeader);
     
+    const yardsHeader = document.createElement('th');
+    yardsHeader.textContent = 'Avg Yards';
+    headerRow.appendChild(yardsHeader);
+    
     thead.appendChild(headerRow);
     table.appendChild(thead);
     
@@ -300,6 +327,21 @@ export class AppComponent implements OnInit {
       countCell.textContent = count.toString();
       row.appendChild(countCell);
       
+      // Get and add average yards for this concept
+      const avgYards = this.getConceptAverageYards(category, conceptName);
+      const yardsCell = document.createElement('td');
+      yardsCell.textContent = avgYards.toFixed(1);
+      
+      // Highlight cells with high yardage
+      if (avgYards > 7) {
+        yardsCell.style.color = '#2ca02c'; // Green for good yardage
+        yardsCell.style.fontWeight = 'bold';
+      } else if (avgYards < 4) {
+        yardsCell.style.color = '#d62728'; // Red for poor yardage
+      }
+      
+      row.appendChild(yardsCell);
+      
       tbody.appendChild(row);
     });
     
@@ -316,13 +358,16 @@ export class AppComponent implements OnInit {
   
   private renderPieChart(data: {category: string, count: number}[]): void {
     const element = this.pieChartContainer.nativeElement;
-    const width = 450;
-    const height = 450;
-    const margin = 40;
+    const width = 225;  // Reduced from 450
+    const height = 225; // Reduced from 450
+    const margin = 20;  // Reduced from 40
     const radius = Math.min(width, height) / 2 - margin;
     
     // Store reference to this for use in event handlers
     const that = this;
+    
+    // Track the currently active category
+    let activeCategory: string | null = null;
 
     // Clear any existing SVG
     d3.select(element).select('svg').remove();
@@ -346,12 +391,13 @@ export class AppComponent implements OnInit {
 
     const pieData = pie(data);
 
-    // Build the pie chart
+    // Build the pie chart with 3D effect
     const arc = d3.arc<any>()
       .innerRadius(0)
-      .outerRadius(radius);
+      .outerRadius(radius)
+      .padAngle(0.02);  // Add space between segments for 3D effect
 
-    // Add the arcs
+    // Add the arcs with 3D effect
     svg.selectAll('path')
       .data(pieData)
       .join('path')
@@ -360,26 +406,64 @@ export class AppComponent implements OnInit {
       .attr('stroke', 'white')
       .style('stroke-width', '2px')
       .style('opacity', 0.8)
+      .style('filter', 'drop-shadow(0px 3px 3px rgba(0,0,0,0.3))') // 3D shadow effect
       .style('transition', 'transform 0.2s ease-out')
       .on('mouseover', function(event, d) {
         // Calculate percentage
         const total = d3.sum(data, d => d.count);
         const percent = Math.round((d.data.count / total) * 100);
         
+        // Reset any previously active segments
+        if (activeCategory && activeCategory !== d.data.category) {
+          // Restore the previous category label
+          svg.selectAll('.pie-label').filter(function(labelData: any) {
+            return labelData.data.category === activeCategory;
+          }).style('opacity', 1);
+          
+          // Scale down any previously active segments
+          svg.selectAll('path').filter(function(pathData: any) {
+            return pathData.data.category === activeCategory;
+          })
+          .transition()
+          .duration(200)
+          .style('transform', 'scale(1)')
+          .style('opacity', 0.8);
+        }
+        
+        // Remove any existing percentage tooltips
+        svg.selectAll('.percent-tooltip').remove();
+        
         // Hide the category label when showing percentage
         svg.selectAll('.pie-label').filter(function(labelData: any) {
           return labelData.data.category === d.data.category;
         }).style('opacity', 0);
           
+        // Get average yards for this category
+        const avgYards = that.getAverageYardsGained(d.data.category);
+        
         // Add percentage tooltip
-        const tooltip = svg.append('text')
+        const tooltip = svg.append('g')
           .attr('class', 'percent-tooltip')
           .attr('text-anchor', 'middle')
-          .attr('transform', `translate(${arc.centroid(d)})`)
+          .attr('transform', `translate(${arc.centroid(d)})`);
+        
+        // Add percentage text
+        tooltip.append('text')
           .style('font-size', '16px')
           .style('font-weight', 'bold')
           .style('fill', '#fff')
+          .style('text-anchor', 'middle')
+          .attr('y', -8)
           .text(`${percent}%`);
+          
+        // Add average yards text
+        tooltip.append('text')
+          .style('font-size', '12px')
+          .style('font-weight', 'bold')
+          .style('fill', '#fff')
+          .style('text-anchor', 'middle')
+          .attr('y', 10)
+          .text(`${avgYards.toFixed(1)} yds/play`);
         
         // Scale up the pie section
         d3.select(this)
@@ -390,6 +474,9 @@ export class AppComponent implements OnInit {
           
         // Show concept table for this category
         that.showConceptTable(d.data.category);
+        
+        // Update the active category
+        activeCategory = d.data.category;
       })
       .on('mouseout', function(event, d) {
         // Remove percentage tooltip
@@ -407,8 +494,8 @@ export class AppComponent implements OnInit {
           .style('transform', 'scale(1)')
           .style('opacity', 0.8);
           
-        // Hide concept table
-        that.hideConceptTable();
+        // Note: We no longer hide the concept table on mouseout
+        // The table will remain visible until another segment is hovered
       });
 
     // Add permanent category labels inside the pie sections
@@ -422,25 +509,5 @@ export class AppComponent implements OnInit {
       .style('font-size', '14px')
       .style('font-weight', 'bold')
       .style('fill', '#fff');
-
-    // Add a legend
-    const legend = svg.selectAll('.legend')
-      .data(pieData)
-      .enter()
-      .append('g')
-      .attr('class', 'legend')
-      .attr('transform', (d, i) => `translate(-${width/3}, ${i * 30 - height/4})`);
-
-    legend.append('rect')
-      .attr('width', 20)
-      .attr('height', 20)
-      .style('fill', d => colorScale(d.data.category));
-
-    legend.append('text')
-      .attr('x', 30)
-      .attr('y', 10)
-      .attr('dy', '.35em')
-      .style('font-size', '14px')
-      .text(d => `${d.data.category} (${d.data.count} plays)`);
   }
 }
