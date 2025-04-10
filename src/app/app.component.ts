@@ -5,43 +5,60 @@ import * as d3 from 'd3';
   selector: 'app-root',
   standalone: true,
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <h1>Offensive Breakdown Analysis</h1>
     <div class="pie-chart-container">
-      <h2>D3.js Pie Chart Example</h2>
+      <h2>Run vs Pass Distribution</h2>
       <div #pieChart></div>
     </div>
   `,
   styles: [`
+    :host {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 30px;
+    }
     .pie-chart-container {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
       text-align: center;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     h2 {
-      color: #333;
+      color: #2c3e50;
       margin-bottom: 20px;
     }
   `],
 })
 export class AppComponent implements OnInit {
-  title = 'D3 Playground';
   @ViewChild('pieChart', { static: true }) private pieChartContainer!: ElementRef;
 
   ngOnInit() {
-    this.createPieChart();
+    this.createRunPassPieChart();
   }
 
-  private createPieChart(): void {
-    const data = [
-      { label: 'Category A', value: 30 },
-      { label: 'Category B', value: 25 },
-      { label: 'Category C', value: 15 },
-      { label: 'Category D', value: 20 },
-      { label: 'Category E', value: 10 }
+  private createRunPassPieChart(): void {
+    // Use data directly from YAML structure
+    // Based on the YAML file, Run has 11 plays and Pass has 9 plays
+    const runPassData = [
+      { category: 'Run', count: 11 },  // Count from YAML
+      { category: 'Pass', count: 9 }   // Count from YAML
     ];
+    
+    this.renderPieChart(runPassData);
+  }
 
+  private renderPieChart(data: {category: string, count: number}[]): void {
     const element = this.pieChartContainer.nativeElement;
     const width = 450;
     const height = 450;
@@ -59,14 +76,14 @@ export class AppComponent implements OnInit {
       .append('g')
       .attr('transform', `translate(${width / 2}, ${height / 2})`);
 
-    // Color scale
-    const color = d3.scaleOrdinal()
-      .domain(data.map(d => d.label))
-      .range(d3.schemeCategory10);
+    // Color scale - use football colors
+    const colorScale = d3.scaleOrdinal<string>()
+      .domain(['Run', 'Pass'])
+      .range(['#1f77b4', '#ff7f0e']); // Blue for Run, Orange for Pass
 
     // Compute the position of each group on the pie
     const pie = d3.pie<any>()
-      .value(d => d.value);
+      .value(d => d.count);
 
     const pieData = pie(data);
 
@@ -80,12 +97,33 @@ export class AppComponent implements OnInit {
       .data(pieData)
       .join('path')
       .attr('d', arc)
-      .attr('fill', d => color(d.data.label) as string)
+      .attr('fill', d => colorScale(d.data.category))
       .attr('stroke', 'white')
       .style('stroke-width', '2px')
-      .style('opacity', 0.7)
+      .style('opacity', 0.8)
       .style('transition', 'transform 0.2s ease-out')
       .on('mouseover', function(event, d) {
+        // Calculate percentage
+        const total = d3.sum(data, d => d.count);
+        const percent = Math.round((d.data.count / total) * 100);
+        
+        // Hide the category label when showing percentage
+        svg.selectAll('.pie-label').filter(function(labelData: any) {
+          return labelData.data.category === d.data.category;
+        }).style('opacity', 0);
+          
+        // Add percentage tooltip
+        const tooltip = svg.append('text')
+          .attr('class', 'percent-tooltip')
+          .attr('text-anchor', 'middle')
+          .attr('transform', `translate(${arc.centroid(d)})`)
+          .style('font-size', '16px')
+          .style('font-weight', 'bold')
+          .style('fill', '#fff')
+          .text(`${percent}%`);
+
+        
+        // Scale up the pie section
         d3.select(this)
           .transition()
           .duration(200)
@@ -93,22 +131,33 @@ export class AppComponent implements OnInit {
           .style('opacity', 1);
       })
       .on('mouseout', function(event, d) {
+        // Remove percentage tooltip
+        svg.selectAll('.percent-tooltip').remove();
+        
+        // Restore the category label
+        svg.selectAll('.pie-label').filter(function(labelData: any) {
+          return labelData.data.category === d.data.category;
+        }).style('opacity', 1);
+        
+        // Scale down the pie section
         d3.select(this)
           .transition()
           .duration(200)
           .style('transform', 'scale(1)')
-          .style('opacity', 0.7);
+          .style('opacity', 0.8);
       });
 
-    // Add labels
-    svg.selectAll('text')
+    // Add permanent category labels inside the pie sections
+    svg.selectAll('.pie-label')
       .data(pieData)
       .join('text')
-      .text(d => d.data.label)
+      .attr('class', 'pie-label')
+      .text(d => d.data.category)
       .attr('transform', d => `translate(${arc.centroid(d)})`)
       .style('text-anchor', 'middle')
-      .style('font-size', '12px')
-      .style('font-weight', 'bold');
+      .style('font-size', '14px')
+      .style('font-weight', 'bold')
+      .style('fill', '#fff');
 
     // Add a legend
     const legend = svg.selectAll('.legend')
@@ -116,17 +165,18 @@ export class AppComponent implements OnInit {
       .enter()
       .append('g')
       .attr('class', 'legend')
-      .attr('transform', (d, i) => `translate(-${width/3}, ${i * 20 - height/3})`);
+      .attr('transform', (d, i) => `translate(-${width/3}, ${i * 30 - height/4})`);
 
     legend.append('rect')
-      .attr('width', 18)
-      .attr('height', 18)
-      .style('fill', d => color(d.data.label) as string);
+      .attr('width', 20)
+      .attr('height', 20)
+      .style('fill', d => colorScale(d.data.category));
 
     legend.append('text')
-      .attr('x', 24)
-      .attr('y', 9)
+      .attr('x', 30)
+      .attr('y', 10)
       .attr('dy', '.35em')
-      .text(d => `${d.data.label} (${d.data.value})`);
+      .style('font-size', '14px')
+      .text(d => `${d.data.category} (${d.data.count} plays)`);
   }
 }
