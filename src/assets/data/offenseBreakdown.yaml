@@ -48,6 +48,15 @@ offenseBreakdown:
             Efficient: False
             VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
             GameID: "5e692f5c-38b5-44f0-bc30-d7c4552422524"
+          - playID: 5
+            playname: "Pro Left Twins Wide Mid-line Zone Read"
+            yardsGained: 10
+            Down: 2
+            Distance: 10
+            Result: "3rd Down"
+            Efficient: False
+            VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
+            GameID: "5e692f5c-38b5-44f0-bc30-d7c4552422524"
       - name: "I-Right"
         concepts:
           - name: "Power"
