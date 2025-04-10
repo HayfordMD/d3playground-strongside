@@ -1,0 +1,7440 @@
+- id: cf3445b0-9110-434a-affd-e97a6150d03e
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/144x253.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '8:42'
+  qtr: 1
+- id: 09f922aa-792d-4d61-b7bc-2eb615b688ab
+  play_type: pass
+  yards_gained: -1
+  down: 3
+  distance: 4
+  play_concept: post--corner
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post--corner
+  video_url: 'http://dummyimage.com/259x489.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '2:07'
+  qtr: 2
+- id: 423c54a8-19cf-4f25-8da7-1494c0fdd86f
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/267x325.png/cc0000/ffffff'
+  game_name: ''
+  time: '6:50'
+  qtr: 3
+- id: c84febed-e025-4af8-99b3-ef461aafb527
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 2
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/336x162.png/cc0000/ffffff'
+  game_name: game 3
+  time: '9:19'
+  qtr: 4
+- id: 77e42fe6-b6de-4dfe-9a89-6776e877b7b1
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: I-Right Twins
+  play_name: I-Right Twins scissors
+  video_url: 'http://dummyimage.com/131x310.png/cc0000/ffffff'
+  game_name: game 4
+  time: '7:51'
+  qtr: 1
+- id: 942bdd32-2ff3-4327-92de-93dd8afbd9d9
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 2
+  play_concept: stick
+  play_formation: I-Right Twins
+  play_name: I-Right Twins stick
+  video_url: 'http://dummyimage.com/189x269.png/cc0000/ffffff'
+  game_name: game 5
+  time: '4:43'
+  qtr: 4
+- id: ad0ea3b1-27fb-42dd-baa4-387ee3706593
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/349x298.png/ff4444/ffffff'
+  game_name: ''
+  time: '3:08'
+  qtr: 4
+- id: 9887f86a-7093-4040-ab42-490438d325f4
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/124x468.png/dddddd/000000'
+  game_name: game 5
+  time: '10:38'
+  qtr: 4
+- id: 40a12b6a-9aa0-4151-9071-e8ce55fd36f7
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 9
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/156x299.png/dddddd/000000'
+  game_name: game 2
+  time: '10:24'
+  qtr: 1
+- id: b6a56c73-a257-4454-b11b-f6f384329370
+  play_type: pass
+  yards_gained: 17
+  down: 2
+  distance: 9
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/173x126.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:52'
+  qtr: 4
+- id: 0baf492c-d58a-4614-b862-0e0881bbd99e
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/273x471.png/dddddd/000000'
+  game_name: game 3
+  time: '10:21'
+  qtr: 4
+- id: eccfeba4-9911-421a-b708-050f78d6fc5f
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 4
+  play_concept: double slants
+  play_formation: Pro Right
+  play_name: Pro Right double slants
+  video_url: 'http://dummyimage.com/252x447.png/cc0000/ffffff'
+  game_name: game 2
+  time: '2:39'
+  qtr: 1
+- id: 7db74103-3a49-4b29-b29d-38a7dcf25498
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Left
+  play_name: I-Left hitch
+  video_url: 'http://dummyimage.com/111x459.png/ff4444/ffffff'
+  game_name: game 1
+  time: '1:02'
+  qtr: 1
+- id: d67a6122-de68-4a0a-b475-84f5ba1b7d16
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/187x305.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:09'
+  qtr: 3
+- id: b23f0e3c-4866-4d56-876a-f41b382a2eaf
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/144x317.png/dddddd/000000'
+  game_name: game 1
+  time: '10:56'
+  qtr: 3
+- id: 5f5337b2-799c-4237-8e26-f9d450c7d8c9
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/112x357.png/cc0000/ffffff'
+  game_name: game 5
+  time: '3:55'
+  qtr: 4
+- id: 61d421dd-8a68-41e2-8859-a18f66868b68
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 8
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/274x493.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '4:43'
+  qtr: 3
+- id: 660d314c-c23b-431b-979e-dde50e7e64fa
+  play_type: pass
+  yards_gained: 20
+  down: 2
+  distance: 5
+  play_concept: double slants
+  play_formation: Pro Right
+  play_name: Pro Right double slants
+  video_url: 'http://dummyimage.com/338x375.png/cc0000/ffffff'
+  game_name: game 3
+  time: '6:58'
+  qtr: 2
+- id: 967c8625-1899-4d91-b981-4b89d469af0b
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/303x131.png/ff4444/ffffff'
+  game_name: game 1
+  time: '9:13'
+  qtr: 3
+- id: 4b558945-ecb8-42ce-be91-763c1ffeb8b6
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/108x448.png/cc0000/ffffff'
+  game_name: ''
+  time: '1:07'
+  qtr: 3
+- id: 6f04746e-de1f-4ac1-9dab-6963ef1f97a8
+  play_type: pass
+  yards_gained: 0
+  down: 2
+  distance: 8
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/299x134.png/dddddd/000000'
+  game_name: game 5
+  time: '8:07'
+  qtr: 3
+- id: 5fafc3ea-50f2-41b6-8135-df8972db1ab4
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 5
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/157x318.png/cc0000/ffffff'
+  game_name: game 3
+  time: '2:54'
+  qtr: 3
+- id: ddbbc03b-a461-4694-99e7-aee8b266bb11
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/248x497.png/dddddd/000000'
+  game_name: game 1
+  time: '6:57'
+  qtr: 1
+- id: b4175734-4b4d-49f3-a2e7-07ccd038f227
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 4
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/359x360.png/dddddd/000000'
+  game_name: game 4
+  time: '7:37'
+  qtr: 1
+- id: 85f40899-75ac-4495-adb5-2b6a802c92c0
+  play_type: pass
+  yards_gained: -8
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/126x404.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '2:58'
+  qtr: 4
+- id: 68e33be2-6110-4324-b829-9bd648ee658d
+  play_type: pass
+  yards_gained: 24
+  down: 4
+  distance: 6
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/203x472.png/dddddd/000000'
+  game_name: game 4
+  time: '2:31'
+  qtr: 3
+- id: f20f1114-1715-4f97-8ae6-12bf7b05b323
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/109x151.png/cc0000/ffffff'
+  game_name: game 3
+  time: '7:36'
+  qtr: 3
+- id: a4e7a163-d964-433b-92e5-d72a8ed7e49c
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/331x267.png/ff4444/ffffff'
+  game_name: game 3
+  time: '1:39'
+  qtr: 3
+- id: a32892b9-7cbb-425b-bd00-15406882c1bd
+  play_type: pass
+  yards_gained: -8
+  down: 4
+  distance: 2
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/159x353.png/dddddd/000000'
+  game_name: game 1
+  time: '6:54'
+  qtr: 4
+- id: 980d81fc-7cf1-4f55-99ca-2e3613e2d71e
+  play_type: pass
+  yards_gained: 13
+  down: 3
+  distance: 7
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/138x309.png/ff4444/ffffff'
+  game_name: game 5
+  time: '1:15'
+  qtr: 1
+- id: e38d9276-85d9-41a5-81b9-8044d58085a7
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 10
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/116x224.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '1:48'
+  qtr: 4
+- id: cdc0f876-3854-4f03-a722-38b8056750a0
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/213x485.png/dddddd/000000'
+  game_name: game 2
+  time: '8:58'
+  qtr: 4
+- id: 47fbf7a1-a5c2-4de6-bc25-58d450df9e22
+  play_type: pass
+  yards_gained: -1
+  down: 3
+  distance: 10
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/128x308.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '9:09'
+  qtr: 3
+- id: f62d417d-a43e-423a-9662-1f385923e73e
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 1
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/227x440.png/ff4444/ffffff'
+  game_name: ''
+  time: '7:27'
+  qtr: 1
+- id: dedaad29-90ba-4ee8-83d9-329c40d328bb
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/279x175.png/dddddd/000000'
+  game_name: game 1
+  time: '5:45'
+  qtr: 1
+- id: ed3e51f5-530e-406c-a792-9dc972f43aa6
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/279x297.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:28'
+  qtr: 2
+- id: 1f15c0fe-08b1-4d18-87d0-ab435291df29
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 6
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/323x490.png/dddddd/000000'
+  game_name: game 4
+  time: '10:23'
+  qtr: 3
+- id: f4ba1c59-8d79-4000-9aac-32fcc5674085
+  play_type: pass
+  yards_gained: 11
+  down: 3
+  distance: 7
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/203x128.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '2:18'
+  qtr: 1
+- id: 58e09d48-baf7-45d7-8e6d-3c184a71aa95
+  play_type: pass
+  yards_gained: -6
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/164x146.png/ff4444/ffffff'
+  game_name: ''
+  time: '10:51'
+  qtr: 4
+- id: 5f513297-398d-4025-921c-df3218f0abe9
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 5
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/200x480.png/dddddd/000000'
+  game_name: game 5
+  time: '1:35'
+  qtr: 3
+- id: 2f0ea2c6-3c11-4570-a16c-88f83979cb90
+  play_type: pass
+  yards_gained: 5
+  down: 3
+  distance: 1
+  play_concept: mesh
+  play_formation: Pro Left
+  play_name: Pro Left mesh
+  video_url: 'http://dummyimage.com/160x422.png/ff4444/ffffff'
+  game_name: game 3
+  time: '7:28'
+  qtr: 3
+- id: 393c70f2-4ed3-47e7-80f3-9bee80c0f1a1
+  play_type: pass
+  yards_gained: 19
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/312x355.png/cc0000/ffffff'
+  game_name: ''
+  time: '10:42'
+  qtr: 1
+- id: d5952b21-c7fb-4ba5-9321-4ccf5022067d
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/155x297.png/ff4444/ffffff'
+  game_name: game 4
+  time: '1:21'
+  qtr: 2
+- id: f8322f80-e9cd-4f37-8e4f-47aa89b4eda5
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/313x276.png/cc0000/ffffff'
+  game_name: game 5
+  time: '3:29'
+  qtr: 4
+- id: 210312c8-ff73-4d73-b726-4510832a93f0
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/240x413.png/ff4444/ffffff'
+  game_name: game 5
+  time: '6:31'
+  qtr: 4
+- id: c15c2ae4-0e41-41ce-b245-522145ab5b69
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 7
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/264x302.png/ff4444/ffffff'
+  game_name: game 3
+  time: '3:10'
+  qtr: 1
+- id: b1adf7b4-2073-4aeb-9d2c-18a0378055d2
+  play_type: pass
+  yards_gained: 18
+  down: 3
+  distance: 10
+  play_concept: omaha
+  play_formation: Pro Left
+  play_name: Pro Left omaha
+  video_url: 'http://dummyimage.com/240x480.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '8:28'
+  qtr: 2
+- id: a44ea6b1-4f15-467e-88a0-f5747505cc12
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 7
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/219x136.png/dddddd/000000'
+  game_name: game 3
+  time: '10:28'
+  qtr: 1
+- id: 766973d5-2ca7-4613-8f6e-bdd96fc33f87
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 9
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/250x223.png/cc0000/ffffff'
+  game_name: ''
+  time: '9:00'
+  qtr: 3
+- id: f156b4f1-eb6f-4c2f-bf1f-70720bd9e0ba
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 1
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/185x459.png/dddddd/000000'
+  game_name: game 4
+  time: '5:02'
+  qtr: 2
+- id: f2f03e03-63c2-49ad-abdc-44da846c1521
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/123x387.png/dddddd/000000'
+  game_name: game 1
+  time: '6:35'
+  qtr: 1
+- id: ebaf1360-b02f-4ef5-8b7e-0d0bcaf60c98
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/303x439.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '4:34'
+  qtr: 3
+- id: 62a03ed0-2bab-4d3d-8fd5-2aa3a4184505
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 5
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/245x397.png/ff4444/ffffff'
+  game_name: game 1
+  time: '6:37'
+  qtr: 1
+- id: 01b08f9b-e37f-4cbd-9a87-4be913987696
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 4
+  play_concept: bubble screen
+  play_formation: I-Left
+  play_name: I-Left bubble screen
+  video_url: 'http://dummyimage.com/121x134.png/ff4444/ffffff'
+  game_name: game 1
+  time: '10:58'
+  qtr: 3
+- id: a788ce89-dee1-4fad-8f8c-7c7b9e9dc698
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 7
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/226x456.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:47'
+  qtr: 4
+- id: c89bf0ac-025e-4365-ab81-7a7defa17b94
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/333x170.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '3:29'
+  qtr: 4
+- id: ee27e866-c77b-4e0d-9b65-b4890ed5f388
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/189x199.png/ff4444/ffffff'
+  game_name: game 5
+  time: '8:12'
+  qtr: 4
+- id: b1b18c23-b28b-447a-8256-dc13ff3ff5a1
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/310x399.png/dddddd/000000'
+  game_name: game 3
+  time: '3:32'
+  qtr: 4
+- id: d8375a19-4010-46a5-a28f-5b124d020a59
+  play_type: pass
+  yards_gained: 6
+  down: 3
+  distance: 1
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/156x336.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '5:54'
+  qtr: 1
+- id: 59730903-9ce5-4ad3-8404-d6cff4bcf640
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/311x399.png/dddddd/000000'
+  game_name: game 3
+  time: '9:49'
+  qtr: 2
+- id: a52eb221-0b00-4e6b-a4d7-4c1003db3154
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 4
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/226x132.png/dddddd/000000'
+  game_name: ''
+  time: '9:31'
+  qtr: 2
+- id: ee21d2dc-80f5-4dba-9719-1236777208db
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 9
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/295x379.png/ff4444/ffffff'
+  game_name: game 4
+  time: '1:29'
+  qtr: 1
+- id: 0384b5ec-81f2-4621-9f6b-8e66512bedf3
+  play_type: pass
+  yards_gained: 7
+  down: 4
+  distance: 4
+  play_concept: post--corner
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post--corner
+  video_url: 'http://dummyimage.com/265x293.png/cc0000/ffffff'
+  game_name: game 2
+  time: '2:03'
+  qtr: 2
+- id: b403d356-c042-46cc-a40d-72f6095dff2f
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 8
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/303x469.png/ff4444/ffffff'
+  game_name: game 4
+  time: '8:03'
+  qtr: 3
+- id: b602c36e-c451-48ca-88b1-8c08517b1803
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 6
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/334x246.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:25'
+  qtr: 2
+- id: f989858d-7f33-4ddc-8028-ad975f03d381
+  play_type: pass
+  yards_gained: 20
+  down: 3
+  distance: 10
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/264x236.png/ff4444/ffffff'
+  game_name: ''
+  time: '4:23'
+  qtr: 2
+- id: ea40dd64-94ee-492d-aed8-6040e22920c4
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Right Twins
+  play_name: I-Right Twins stick
+  video_url: 'http://dummyimage.com/300x154.png/dddddd/000000'
+  game_name: game 3
+  time: '2:59'
+  qtr: 1
+- id: 8db2eaed-9099-4edb-90f7-00cfa8ccbacd
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 5
+  play_concept: bubble screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong bubble screen
+  video_url: 'http://dummyimage.com/106x216.png/ff4444/ffffff'
+  game_name: game 5
+  time: '10:27'
+  qtr: 2
+- id: d691833e-2f3e-461a-9937-14795a0cbb49
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 9
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/213x331.png/dddddd/000000'
+  game_name: game 5
+  time: '2:00'
+  qtr: 2
+- id: e2669cfe-cc2d-46ec-bdcf-1bb0e1a624a7
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/140x291.png/dddddd/000000'
+  game_name: game 2
+  time: '8:20'
+  qtr: 4
+- id: fd9bb26d-b5e9-442c-b96e-0a894cbcb005
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/159x106.png/cc0000/ffffff'
+  game_name: game 5
+  time: '10:11'
+  qtr: 1
+- id: 9b6fa25a-ca7c-4666-9185-a833722bfeec
+  play_type: pass
+  yards_gained: 16
+  down: 4
+  distance: 9
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/332x423.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '1:06'
+  qtr: 4
+- id: 254ba010-d2f1-436e-8838-2eeee22330dc
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 4
+  play_concept: post-wheel
+  play_formation: Pro Left
+  play_name: Pro Left post-wheel
+  video_url: 'http://dummyimage.com/343x272.png/cc0000/ffffff'
+  game_name: game 2
+  time: '7:39'
+  qtr: 3
+- id: bfc9aa38-0d79-4b06-9c8e-f7e173a60f92
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/228x251.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '1:57'
+  qtr: 1
+- id: 90b18de1-c503-481c-99c5-5e118911f6af
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 1
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/257x461.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '1:31'
+  qtr: 3
+- id: 42ecf4eb-c386-4a0a-94a8-0d13be50860d
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/223x222.png/ff4444/ffffff'
+  game_name: game 5
+  time: '1:14'
+  qtr: 2
+- id: 624f5213-e839-4307-a465-acf8794bc4af
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 3
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/314x199.png/ff4444/ffffff'
+  game_name: game 2
+  time: '3:10'
+  qtr: 3
+- id: eb6a086e-18f3-417e-9ba1-d85cbfa4ca34
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 1
+  play_concept: post--corner
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post--corner
+  video_url: 'http://dummyimage.com/251x336.png/ff4444/ffffff'
+  game_name: game 4
+  time: '1:30'
+  qtr: 1
+- id: a9dc75d8-44df-4c77-a3a1-f3c4094d804a
+  play_type: pass
+  yards_gained: -7
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/170x415.png/cc0000/ffffff'
+  game_name: game 1
+  time: '7:05'
+  qtr: 1
+- id: 5d1c5aed-db0c-4085-8457-e71d07dd00a0
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 9
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/297x328.png/ff4444/ffffff'
+  game_name: ''
+  time: '6:27'
+  qtr: 3
+- id: cc95f4cc-45db-42cd-8e54-a8828471f5e1
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/273x146.png/ff4444/ffffff'
+  game_name: game 5
+  time: '7:06'
+  qtr: 4
+- id: 3724a4d7-c62d-41e2-b524-ac3f32a63279
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 6
+  play_concept: china
+  play_formation: I-Left
+  play_name: I-Left china
+  video_url: 'http://dummyimage.com/275x194.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '4:44'
+  qtr: 1
+- id: e601bea3-4666-44a7-8bc6-e708310c9833
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/257x329.png/dddddd/000000'
+  game_name: game 3
+  time: '6:10'
+  qtr: 4
+- id: 79a382ab-a4c2-49b0-b0b3-4c2c0a7983d6
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/154x170.png/cc0000/ffffff'
+  game_name: ''
+  time: '5:13'
+  qtr: 3
+- id: 91e888f7-ebb0-4fe2-b82e-f1d3662230fc
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/136x280.png/ff4444/ffffff'
+  game_name: game 5
+  time: '6:34'
+  qtr: 4
+- id: b7964144-6a37-4eb5-84a0-61c2af36c4de
+  play_type: pass
+  yards_gained: -4
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/330x200.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '9:54'
+  qtr: 2
+- id: 0ef82667-e504-4b13-a6c4-5c58dfef86fc
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Right Twins
+  play_name: I-Right Twins omaha
+  video_url: 'http://dummyimage.com/185x483.png/dddddd/000000'
+  game_name: game 4
+  time: '9:06'
+  qtr: 2
+- id: 7210b3ae-b318-4bcc-a017-fec7da506f64
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/170x317.png/ff4444/ffffff'
+  game_name: game 1
+  time: '2:50'
+  qtr: 3
+- id: 59a0227c-84f5-4c1c-bbb4-7ff47578f273
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 7
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/316x142.png/dddddd/000000'
+  game_name: game 5
+  time: '2:30'
+  qtr: 2
+- id: 00c08e6a-1dac-412b-b5b3-3814f091a98a
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 3
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/184x472.png/cc0000/ffffff'
+  game_name: game 5
+  time: '9:17'
+  qtr: 1
+- id: ca68357f-7642-4e73-9810-0747f427efdb
+  play_type: pass
+  yards_gained: 17
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/312x437.png/cc0000/ffffff'
+  game_name: game 5
+  time: '6:36'
+  qtr: 2
+- id: 70fa5f2e-f294-46e3-9f9a-87f2080d0b55
+  play_type: pass
+  yards_gained: 5
+  down: 4
+  distance: 8
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/236x485.png/cc0000/ffffff'
+  game_name: ''
+  time: '6:03'
+  qtr: 1
+- id: 26b767e0-3654-40e3-bad0-bb3e724d2b28
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/355x233.png/ff4444/ffffff'
+  game_name: game 1
+  time: '2:48'
+  qtr: 3
+- id: 10e45f24-81a9-496e-974e-279165f15905
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/163x351.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '8:45'
+  qtr: 2
+- id: 07140f4f-bb74-48a7-8b07-adde062c4e12
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 9
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/240x441.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '8:34'
+  qtr: 4
+- id: ca119a57-edf6-4f76-960a-2f7a81873b86
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/324x491.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '6:34'
+  qtr: 1
+- id: bd004883-5c13-41d9-833a-00cd76d9f5d9
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/344x495.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:13'
+  qtr: 2
+- id: af8c028a-d2d9-4130-b553-4b8f351fe0b0
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/252x195.png/cc0000/ffffff'
+  game_name: game 3
+  time: '10:22'
+  qtr: 1
+- id: 9daf1f73-b399-4041-9ef6-f7dae6b3c17d
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 9
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/167x460.png/cc0000/ffffff'
+  game_name: game 4
+  time: '8:24'
+  qtr: 2
+- id: e1de72b5-3bd3-4e23-8e4e-cb27dc2c38f1
+  play_type: pass
+  yards_gained: 17
+  down: 4
+  distance: 8
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/338x118.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '7:20'
+  qtr: 4
+- id: 9d6b242a-584e-40ac-a7a9-07ebb48bf5b4
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 1
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/234x162.png/dddddd/000000'
+  game_name: game 5
+  time: '1:17'
+  qtr: 2
+- id: f3d73534-6fe5-4afb-ab79-dd8bd25df918
+  play_type: pass
+  yards_gained: 13
+  down: 3
+  distance: 7
+  play_concept: post--corner
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post--corner
+  video_url: 'http://dummyimage.com/348x333.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '3:20'
+  qtr: 4
+- id: 40220f84-eef6-4641-9d99-55d5f54cbbc8
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/330x208.png/ff4444/ffffff'
+  game_name: ''
+  time: '3:46'
+  qtr: 2
+- id: f4b5808d-9d73-4d6f-a3cd-14eadcaea200
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/272x221.png/ff4444/ffffff'
+  game_name: game 1
+  time: '3:33'
+  qtr: 3
+- id: 1c884b37-75b5-47cd-8a92-e3508441e118
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong bubble screen
+  video_url: 'http://dummyimage.com/307x334.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '9:53'
+  qtr: 4
+- id: 7fd90c45-ec99-4706-b234-1a3abfa1cff8
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/256x282.png/ff4444/ffffff'
+  game_name: ''
+  time: '2:53'
+  qtr: 4
+- id: 450a74c1-8605-4a70-9827-29168f2e0241
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 10
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/215x465.png/cc0000/ffffff'
+  game_name: game 2
+  time: '6:55'
+  qtr: 3
+- id: a055c0c6-97b3-413c-bb02-92272b61566a
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 2
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/120x254.png/dddddd/000000'
+  game_name: game 4
+  time: '4:21'
+  qtr: 3
+- id: 35e5cafe-5e85-49b7-9d03-e7664cd758ba
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/162x238.png/dddddd/000000'
+  game_name: game 2
+  time: '10:27'
+  qtr: 2
+- id: 7b45ef2c-0306-4f66-b763-b26bdc9fbbdd
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 10
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/261x301.png/ff4444/ffffff'
+  game_name: game 5
+  time: '8:51'
+  qtr: 4
+- id: d20bfa35-5524-4286-8287-f8616e92cda2
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 8
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/200x273.png/dddddd/000000'
+  game_name: game 4
+  time: '10:09'
+  qtr: 2
+- id: bcb0bcc0-1b46-4dae-aa52-a87ed76d12e4
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 8
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/349x331.png/cc0000/ffffff'
+  game_name: game 4
+  time: '7:25'
+  qtr: 2
+- id: 10cc3e79-f576-470d-8599-78ee2b538b91
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/210x390.png/dddddd/000000'
+  game_name: game 5
+  time: '8:11'
+  qtr: 3
+- id: 945cab28-0489-422a-ac6d-f00aaeb16fbe
+  play_type: pass
+  yards_gained: -9
+  down: 4
+  distance: 6
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/231x149.png/ff4444/ffffff'
+  game_name: game 4
+  time: '6:23'
+  qtr: 1
+- id: 6d84e9d8-f1b5-41bc-aef3-525f8ac7a15e
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/329x474.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '5:03'
+  qtr: 1
+- id: b72a8877-1efe-4302-9a12-98314a3a8817
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/305x226.png/dddddd/000000'
+  game_name: game 4
+  time: '2:05'
+  qtr: 4
+- id: 17595b39-2a7e-4c24-9a9d-a6f04c5dd2ad
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 10
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/358x265.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '5:36'
+  qtr: 1
+- id: 3b8e78fe-3deb-4c3d-9cc1-ce198f86f5bc
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 6
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/335x398.png/dddddd/000000'
+  game_name: game 2
+  time: '7:43'
+  qtr: 2
+- id: 129e555c-cf01-48ac-94fb-423d4e101026
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 6
+  play_concept: dagger
+  play_formation: Pro Right
+  play_name: Pro Right dagger
+  video_url: 'http://dummyimage.com/121x134.png/dddddd/000000'
+  game_name: game 4
+  time: '7:53'
+  qtr: 3
+- id: d53c3153-e0cf-46fd-9ce3-2e266a0d4862
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 1
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/229x323.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '10:56'
+  qtr: 2
+- id: a73fdedb-d901-4f52-acc5-4f4000620e03
+  play_type: pass
+  yards_gained: -4
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/204x105.png/dddddd/000000'
+  game_name: game 5
+  time: '3:49'
+  qtr: 2
+- id: 6b1793e0-429a-4601-b678-fc6d21b3db75
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/334x213.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '2:13'
+  qtr: 2
+- id: 9e6cc2d3-45a7-433a-9b86-749a44591d29
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/358x361.png/dddddd/000000'
+  game_name: game 5
+  time: '1:33'
+  qtr: 2
+- id: 9ae114ec-b814-42cd-8035-45dedb91bec9
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Pro Right
+  play_name: Pro Right 4verts
+  video_url: 'http://dummyimage.com/169x251.png/cc0000/ffffff'
+  game_name: ''
+  time: '4:21'
+  qtr: 2
+- id: 914f6a60-1851-42de-a069-89bbfd7cc023
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/289x365.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '3:30'
+  qtr: 4
+- id: c13a1e18-1c4e-4ae8-8cbd-70ef0ef025cc
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 10
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/319x166.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '2:29'
+  qtr: 3
+- id: 594c29c3-c323-4935-b06b-bb01df0206ed
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/313x125.png/dddddd/000000'
+  game_name: game 5
+  time: '2:06'
+  qtr: 4
+- id: 55d4d474-3f87-4796-8815-6917f073835c
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 1
+  play_concept: post--corner
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post--corner
+  video_url: 'http://dummyimage.com/213x164.png/cc0000/ffffff'
+  game_name: game 3
+  time: '3:03'
+  qtr: 2
+- id: 704e952c-01c9-425b-87c9-a06b80e98bc6
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/334x118.png/dddddd/000000'
+  game_name: ''
+  time: '4:28'
+  qtr: 1
+- id: 50350462-ec6f-45dd-85e7-d5688546a340
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/289x188.png/dddddd/000000'
+  game_name: game 2
+  time: '5:37'
+  qtr: 3
+- id: c2b99094-3cf1-432a-bf77-db0756fb889f
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 9
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/159x217.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:44'
+  qtr: 2
+- id: dfb954ef-1b53-440f-8af4-1b3931de8bdb
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/292x202.png/ff4444/ffffff'
+  game_name: game 1
+  time: '3:55'
+  qtr: 4
+- id: 9a22df78-4ae1-4287-99a3-fa27a08f5fd1
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/212x242.png/cc0000/ffffff'
+  game_name: game 5
+  time: '10:34'
+  qtr: 2
+- id: 0d89cd3b-6e71-46bf-8b4a-f0ddefcea686
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/317x295.png/dddddd/000000'
+  game_name: ''
+  time: '9:18'
+  qtr: 4
+- id: 1fb3591f-36f3-4c36-a484-776a1ad09402
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/121x281.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '4:34'
+  qtr: 1
+- id: 3be93d25-47f4-48d2-90cd-3ebb565f7c4a
+  play_type: pass
+  yards_gained: 12
+  down: 4
+  distance: 9
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/136x418.png/dddddd/000000'
+  game_name: game 3
+  time: '10:13'
+  qtr: 1
+- id: 42a050b9-e01c-49fe-9165-13de25b5278a
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 10
+  play_concept: dagger
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong dagger
+  video_url: 'http://dummyimage.com/238x110.png/dddddd/000000'
+  game_name: game 1
+  time: '3:54'
+  qtr: 1
+- id: 792cc361-e39c-45e4-b9da-bb62084e8e81
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/355x308.png/ff4444/ffffff'
+  game_name: game 3
+  time: '8:44'
+  qtr: 2
+- id: 380bf15b-2535-4200-858a-39e4f3bc1d17
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/268x167.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '10:19'
+  qtr: 2
+- id: 71f73b5c-8e87-4835-9453-08da2cf8a486
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/321x298.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '6:30'
+  qtr: 1
+- id: 04ee6cd9-92d8-4968-82ce-fb98b0366b35
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 9
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/138x135.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:50'
+  qtr: 1
+- id: 725d5c9d-86ed-48d8-bec7-e50416a064ca
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 4
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/158x427.png/dddddd/000000'
+  game_name: game 1
+  time: '6:23'
+  qtr: 4
+- id: 4f570405-f84b-4a9a-8395-13bf556a8eef
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/276x368.png/dddddd/000000'
+  game_name: game 4
+  time: '6:13'
+  qtr: 2
+- id: d4ec4b18-63a9-4207-a3f4-aedb569161b8
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 1
+  play_concept: post--corner
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post--corner
+  video_url: 'http://dummyimage.com/282x465.png/ff4444/ffffff'
+  game_name: ''
+  time: '1:09'
+  qtr: 3
+- id: 9e7195ba-291f-485b-86bb-a056cc8cde0b
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 3
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/298x431.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '1:23'
+  qtr: 3
+- id: 06792d2d-41e8-4d92-8304-52d7e30111d2
+  play_type: pass
+  yards_gained: 6
+  down: 4
+  distance: 9
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/326x117.png/dddddd/000000'
+  game_name: ''
+  time: '7:29'
+  qtr: 3
+- id: c449c518-3668-4f4d-9aad-d066c0b10222
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/140x181.png/ff4444/ffffff'
+  game_name: game 1
+  time: '3:55'
+  qtr: 4
+- id: 1b280ac3-fc7a-481e-8249-239419ec4646
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Left
+  play_name: I-Left hitch
+  video_url: 'http://dummyimage.com/338x351.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '9:28'
+  qtr: 3
+- id: e714dd82-854c-4ba7-8b0e-6909dd763c5c
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 1
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/157x411.png/dddddd/000000'
+  game_name: game 4
+  time: '8:43'
+  qtr: 4
+- id: d9a48322-6667-4ac2-adb5-5caa79e8e091
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/165x247.png/cc0000/ffffff'
+  game_name: game 1
+  time: '2:56'
+  qtr: 1
+- id: 649f4f6b-56f3-4c5a-bed4-c21bb10e924f
+  play_type: pass
+  yards_gained: 14
+  down: 2
+  distance: 7
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/322x496.png/dddddd/000000'
+  game_name: game 1
+  time: '3:17'
+  qtr: 3
+- id: de6efdbd-4578-4fa6-b709-9966b455149e
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/242x351.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:30'
+  qtr: 2
+- id: 13527ac6-fb74-4647-854b-478744d18d1a
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/164x388.png/dddddd/000000'
+  game_name: game 1
+  time: '4:45'
+  qtr: 4
+- id: b61d9ab6-e27a-4242-9ec5-150944014e4d
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/164x239.png/dddddd/000000'
+  game_name: game 2
+  time: '4:17'
+  qtr: 4
+- id: a9973669-bb6c-4b6f-b7ab-a047239cc247
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 10
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/123x303.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:11'
+  qtr: 1
+- id: 132a37a8-ba66-4d91-b39b-d95c142620b4
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/235x327.png/dddddd/000000'
+  game_name: game 5
+  time: '8:57'
+  qtr: 2
+- id: 11b60f7c-93a7-463a-b938-8d2b6ef31239
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/150x101.png/dddddd/000000'
+  game_name: game 3
+  time: '8:38'
+  qtr: 4
+- id: d9a1580d-41a3-49be-9c65-14610fddbd00
+  play_type: pass
+  yards_gained: -3
+  down: 2
+  distance: 2
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/271x407.png/ff4444/ffffff'
+  game_name: ''
+  time: '3:57'
+  qtr: 1
+- id: 7f39423a-1f94-4ec0-b56f-85107b94d312
+  play_type: pass
+  yards_gained: 17
+  down: 3
+  distance: 10
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/115x133.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '2:23'
+  qtr: 3
+- id: b0e28179-dd47-4ff2-9c79-4e8605585808
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 7
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/168x286.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '4:54'
+  qtr: 4
+- id: ab4d008b-bc7d-490d-ae52-e1a7ccb82133
+  play_type: pass
+  yards_gained: 4
+  down: 3
+  distance: 4
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/114x104.png/dddddd/000000'
+  game_name: game 2
+  time: '2:38'
+  qtr: 2
+- id: 5a5ea783-18da-416f-bea7-e3187554e494
+  play_type: pass
+  yards_gained: 18
+  down: 2
+  distance: 3
+  play_concept: omaha
+  play_formation: Pro Right
+  play_name: Pro Right omaha
+  video_url: 'http://dummyimage.com/312x262.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:50'
+  qtr: 2
+- id: df416d9e-fec1-4b19-b328-5c335bcb6be1
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 6
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/189x120.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '8:53'
+  qtr: 4
+- id: c1b07f23-49cc-4042-8764-1e936265cb91
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 6
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/216x487.png/dddddd/000000'
+  game_name: game 3
+  time: '8:46'
+  qtr: 3
+- id: a29771b0-1cbc-42f8-b125-67684d54b0e6
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/151x206.png/ff4444/ffffff'
+  game_name: game 5
+  time: '1:46'
+  qtr: 1
+- id: bb6bae59-2cf4-4259-85be-2a9af4e756b6
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/328x264.png/cc0000/ffffff'
+  game_name: game 2
+  time: '6:00'
+  qtr: 3
+- id: 989bf315-c851-486c-91fa-f4c5bef2dd18
+  play_type: pass
+  yards_gained: -4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/334x299.png/dddddd/000000'
+  game_name: game 5
+  time: '9:47'
+  qtr: 3
+- id: 5058bb1d-c894-4b40-908e-0abbb384b964
+  play_type: pass
+  yards_gained: 20
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/175x361.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '10:29'
+  qtr: 1
+- id: 57547c05-7e9b-4954-bc4a-f60e6a712aa6
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 6
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/267x366.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '9:40'
+  qtr: 2
+- id: b6011fcc-ff47-42f6-8f55-c6af8273ad9a
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 2
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/239x227.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '10:53'
+  qtr: 1
+- id: 1f8db319-d23d-436c-8fcd-049d2ba5013a
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 4
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/282x336.png/ff4444/ffffff'
+  game_name: game 2
+  time: '4:57'
+  qtr: 2
+- id: 47c74327-6e2c-4f11-a2d5-12710e00fb9d
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 1
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/238x498.png/cc0000/ffffff'
+  game_name: game 2
+  time: '1:44'
+  qtr: 4
+- id: aaa285e1-3b3d-42ec-a261-023f2a99fb6a
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Right Twins
+  play_name: I-Right Twins 4verts
+  video_url: 'http://dummyimage.com/324x354.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '6:13'
+  qtr: 3
+- id: 26db5f64-c1ab-46bb-8e35-9a0332319c56
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 7
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/158x318.png/cc0000/ffffff'
+  game_name: ''
+  time: '7:31'
+  qtr: 1
+- id: d39a3e6f-bd9b-4eae-b31e-89ee66b04c94
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/293x372.png/ff4444/ffffff'
+  game_name: game 5
+  time: '2:18'
+  qtr: 4
+- id: 5eb5f9b7-fc20-40ce-b6cd-ae78064b2e4d
+  play_type: pass
+  yards_gained: 19
+  down: 2
+  distance: 8
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/286x452.png/ff4444/ffffff'
+  game_name: game 3
+  time: '5:47'
+  qtr: 3
+- id: e2d6312a-6e06-4ff3-ad59-d6e4e1be7dba
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Pro Right
+  play_name: Pro Right post-wheel
+  video_url: 'http://dummyimage.com/211x143.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '2:29'
+  qtr: 3
+- id: afc52eb8-4a17-410f-9843-317e9c330376
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/137x115.png/ff4444/ffffff'
+  game_name: ''
+  time: '6:15'
+  qtr: 4
+- id: b06b4ec2-7bb0-450e-b719-1e89f7f3b34a
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 1
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/219x402.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '8:06'
+  qtr: 3
+- id: 8b686514-44fb-4345-ac83-4616890f95d0
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/193x202.png/cc0000/ffffff'
+  game_name: game 1
+  time: '2:41'
+  qtr: 3
+- id: 7402295a-993f-40ac-831e-6bb890f50166
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/320x163.png/ff4444/ffffff'
+  game_name: game 2
+  time: '2:04'
+  qtr: 2
+- id: 3789c41f-e3c7-4f14-9fab-e0b38deb8db2
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 4
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/311x450.png/cc0000/ffffff'
+  game_name: game 5
+  time: '8:21'
+  qtr: 2
+- id: 64424e7e-d03c-4c72-b517-5bac8b79e887
+  play_type: pass
+  yards_gained: -3
+  down: 3
+  distance: 7
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/359x324.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '9:25'
+  qtr: 1
+- id: 7325a263-d955-490f-8033-a8d577a37f99
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/359x490.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '1:45'
+  qtr: 4
+- id: 0a5de189-343c-48fb-8e7a-ffa1847b70e9
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/188x166.png/dddddd/000000'
+  game_name: game 5
+  time: '10:57'
+  qtr: 3
+- id: 3d281948-3f85-495d-875f-c74dcbf9f15e
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/300x228.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '6:56'
+  qtr: 2
+- id: 302b0e1f-ee06-48f0-89ad-ab7abd09f336
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 6
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/166x240.png/cc0000/ffffff'
+  game_name: game 1
+  time: '9:53'
+  qtr: 3
+- id: 09e4766e-b9e9-4507-8878-ab51c1a8fff8
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/122x287.png/dddddd/000000'
+  game_name: game 5
+  time: '8:32'
+  qtr: 3
+- id: 87106e74-93d8-4f5d-a1d8-967e2a8742ae
+  play_type: pass
+  yards_gained: 5
+  down: 3
+  distance: 10
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/300x146.png/ff4444/ffffff'
+  game_name: ''
+  time: '7:50'
+  qtr: 4
+- id: 038d9464-8362-4679-b916-3ef6d15c291b
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 2
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/110x255.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '7:27'
+  qtr: 4
+- id: f1d48fc9-09a7-4a28-81ed-906c66cbc119
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 6
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/176x124.png/ff4444/ffffff'
+  game_name: game 3
+  time: '8:42'
+  qtr: 4
+- id: a6d13288-7685-4a4a-949c-b754d2e86651
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: I-Left
+  play_name: I-Left china
+  video_url: 'http://dummyimage.com/324x309.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:37'
+  qtr: 1
+- id: bd514748-2c46-4e79-ae4b-f58d16acca9c
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/239x378.png/ff4444/ffffff'
+  game_name: ''
+  time: '5:51'
+  qtr: 4
+- id: 103496d6-ac26-4863-a6ae-7efeaa17a773
+  play_type: pass
+  yards_gained: 5
+  down: 3
+  distance: 1
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/264x302.png/ff4444/ffffff'
+  game_name: game 1
+  time: '8:56'
+  qtr: 3
+- id: 31704d7f-e300-41f0-93d9-8bee072f0830
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/226x396.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '3:42'
+  qtr: 4
+- id: c474abe2-bde3-4f42-9863-caa1911a1ac9
+  play_type: pass
+  yards_gained: 12
+  down: 3
+  distance: 3
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/263x281.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '2:55'
+  qtr: 3
+- id: 89c96fb4-26e5-46a7-9319-fd2dddb0c5b7
+  play_type: pass
+  yards_gained: 2
+  down: 4
+  distance: 3
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/108x277.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '10:41'
+  qtr: 3
+- id: 4df96320-47a3-4a31-b289-76c011392662
+  play_type: pass
+  yards_gained: 15
+  down: 2
+  distance: 7
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/222x420.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '6:14'
+  qtr: 2
+- id: 61a76c47-8eb3-42b6-a2e2-38959c8523da
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/118x267.png/cc0000/ffffff'
+  game_name: ''
+  time: '5:14'
+  qtr: 2
+- id: 82ab38e6-3c95-4b41-91ee-17bc7d5a4522
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/114x427.png/cc0000/ffffff'
+  game_name: game 3
+  time: '10:40'
+  qtr: 3
+- id: b1ea9d47-3fa3-4aa0-9e5b-0831b01d96f0
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: I-Left
+  play_name: I-Left china
+  video_url: 'http://dummyimage.com/279x386.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '3:14'
+  qtr: 1
+- id: 2c86bdf2-e599-42b8-8a51-7f12c7500340
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 6
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/313x239.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '6:44'
+  qtr: 1
+- id: e11567cb-cd3f-47ae-a58b-41889ad2f1e0
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 2
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/277x126.png/ff4444/ffffff'
+  game_name: game 2
+  time: '8:45'
+  qtr: 2
+- id: 2ec350fa-9b6b-4cba-bf78-54a986f77dac
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 3
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/326x328.png/cc0000/ffffff'
+  game_name: ''
+  time: '5:20'
+  qtr: 2
+- id: e8069165-023f-442f-9e49-ad3c6f26065c
+  play_type: pass
+  yards_gained: 18
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Pro Right
+  play_name: Pro Right 4verts
+  video_url: 'http://dummyimage.com/204x316.png/cc0000/ffffff'
+  game_name: ''
+  time: '7:47'
+  qtr: 4
+- id: 7214cbc8-56f7-4270-bf53-4073de7080ff
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/347x474.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:54'
+  qtr: 3
+- id: 55fe8552-c753-4802-8f3c-0d348a089f95
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/265x299.png/ff4444/ffffff'
+  game_name: game 5
+  time: '5:25'
+  qtr: 4
+- id: 33fe0e7b-9a7d-4659-9348-38a37accf410
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/142x228.png/dddddd/000000'
+  game_name: game 4
+  time: '6:07'
+  qtr: 4
+- id: 34579d09-04a9-4dca-9f22-0244be6f5c81
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 5
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/346x441.png/dddddd/000000'
+  game_name: game 5
+  time: '2:19'
+  qtr: 2
+- id: 67bb53cc-ea2e-4796-a92d-b4c754720fce
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 8
+  play_concept: 4verts
+  play_formation: Trips Left Close
+  play_name: Trips Left Close 4verts
+  video_url: 'http://dummyimage.com/224x401.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '8:07'
+  qtr: 4
+- id: 19722c4b-a146-4141-98e3-2c82c02d3d23
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 6
+  play_concept: post-wheel
+  play_formation: Pro Right
+  play_name: Pro Right post-wheel
+  video_url: 'http://dummyimage.com/202x108.png/cc0000/ffffff'
+  game_name: ''
+  time: '7:57'
+  qtr: 4
+- id: d53ddd27-227f-470f-8359-f83d924df791
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/311x319.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:33'
+  qtr: 1
+- id: d595aed6-cd0d-4ab7-aa89-76fdd1e13efa
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/141x206.png/ff4444/ffffff'
+  game_name: game 2
+  time: '7:16'
+  qtr: 2
+- id: 430cd448-2661-4268-a79a-2d0d2701a54d
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/290x147.png/cc0000/ffffff'
+  game_name: game 4
+  time: '9:31'
+  qtr: 3
+- id: 8dc2c36a-c53b-4cee-b469-29b940eea537
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/312x360.png/dddddd/000000'
+  game_name: game 1
+  time: '5:16'
+  qtr: 1
+- id: f4591eb9-e9e3-48e3-a5dc-20f3eba37ceb
+  play_type: pass
+  yards_gained: 2
+  down: 4
+  distance: 8
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/279x120.png/cc0000/ffffff'
+  game_name: game 4
+  time: '1:10'
+  qtr: 4
+- id: f38e071f-0fe6-48e3-a4ed-cd4a8f9c5f20
+  play_type: pass
+  yards_gained: -8
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Pro Left
+  play_name: Pro Left omaha
+  video_url: 'http://dummyimage.com/203x189.png/ff4444/ffffff'
+  game_name: ''
+  time: '2:41'
+  qtr: 2
+- id: dd01183d-af75-473d-a724-37efc650063e
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 5
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/345x388.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '9:04'
+  qtr: 3
+- id: 5f9b488b-2616-4f20-abec-cd55c92a980c
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/191x175.png/cc0000/ffffff'
+  game_name: game 5
+  time: '5:01'
+  qtr: 3
+- id: 90f472d7-0005-4fde-a42a-27f824d1941e
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 4
+  play_concept: omaha
+  play_formation: Pro Left
+  play_name: Pro Left omaha
+  video_url: 'http://dummyimage.com/224x278.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:29'
+  qtr: 2
+- id: 0e30e108-352d-40cf-91fd-2adc6410007c
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/250x445.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '2:50'
+  qtr: 4
+- id: c809c6c1-8148-479f-a5ca-1462fd2996d6
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/244x390.png/dddddd/000000'
+  game_name: game 1
+  time: '8:58'
+  qtr: 4
+- id: e0e1068a-1cc6-47a9-a11d-8a644808c8ec
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 2
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/232x104.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:40'
+  qtr: 1
+- id: dc25bbb7-0e52-4084-9b1e-0973f97940cc
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/234x146.png/dddddd/000000'
+  game_name: game 5
+  time: '7:57'
+  qtr: 2
+- id: 2c5e61ce-f48a-4413-b867-899b9f986ab5
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Pro Right
+  play_name: Pro Right omaha
+  video_url: 'http://dummyimage.com/214x248.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '10:14'
+  qtr: 1
+- id: b1b1582a-7518-402c-8f92-f07c79ffd8b3
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 4
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/212x338.png/cc0000/ffffff'
+  game_name: game 4
+  time: '10:35'
+  qtr: 1
+- id: b7bef047-0077-4520-a52e-2250b410913d
+  play_type: pass
+  yards_gained: 18
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/323x276.png/cc0000/ffffff'
+  game_name: game 4
+  time: '10:24'
+  qtr: 3
+- id: 9f80e516-0493-47d0-aba1-c9ca715366a8
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/359x398.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '1:48'
+  qtr: 1
+- id: 4feefcb6-9baf-4d40-8664-dd2096432903
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 3
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/278x209.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '8:07'
+  qtr: 2
+- id: 8143d528-d85f-4db1-85ca-8fe63330cf73
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/125x150.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '5:23'
+  qtr: 3
+- id: 97815f8c-f4a0-4c7f-8a84-8d790e3c00ea
+  play_type: pass
+  yards_gained: 17
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/177x170.png/ff4444/ffffff'
+  game_name: game 1
+  time: '7:28'
+  qtr: 2
+- id: b7058257-45eb-4fea-a720-5a7aad555b17
+  play_type: pass
+  yards_gained: 21
+  down: 2
+  distance: 4
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/136x253.png/cc0000/ffffff'
+  game_name: game 1
+  time: '4:19'
+  qtr: 3
+- id: 87b16609-ebd5-4e37-9a3e-6290acc5eedf
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 3
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/337x374.png/dddddd/000000'
+  game_name: game 2
+  time: '8:39'
+  qtr: 2
+- id: 08f4a28c-d8aa-4a57-b99c-51bd6ac2804a
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 2
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/249x273.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:36'
+  qtr: 4
+- id: 12fd24c7-2284-43c4-8c10-673c658485e3
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/338x114.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '8:08'
+  qtr: 4
+- id: be192688-3b68-4b54-9b77-989ddb42390c
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Pro Right
+  play_name: Pro Right omaha
+  video_url: 'http://dummyimage.com/251x271.png/dddddd/000000'
+  game_name: game 1
+  time: '2:18'
+  qtr: 1
+- id: c0ff2b80-aeda-47c6-bb3e-73ec388e24d7
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/139x196.png/cc0000/ffffff'
+  game_name: game 1
+  time: '1:36'
+  qtr: 4
+- id: cdbf041a-a148-4203-9ca9-191bcf0dd5d6
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 2
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/270x159.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:33'
+  qtr: 3
+- id: d1df98b4-b174-4555-a5f6-9ce87c3147d5
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/340x138.png/cc0000/ffffff'
+  game_name: ''
+  time: '7:33'
+  qtr: 1
+- id: 30d4ed96-d597-4381-9e71-6621a50bb846
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/155x446.png/dddddd/000000'
+  game_name: game 1
+  time: '5:49'
+  qtr: 3
+- id: 7e6f492c-cecc-41c8-9c9d-3432745901d5
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/205x334.png/ff4444/ffffff'
+  game_name: game 5
+  time: '10:35'
+  qtr: 1
+- id: 6f873a66-1ad4-4cbe-ba2c-36988f9f9cd4
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/126x275.png/dddddd/000000'
+  game_name: game 5
+  time: '10:50'
+  qtr: 3
+- id: c8accce6-c416-4356-a42e-2622a357a223
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/237x101.png/cc0000/ffffff'
+  game_name: game 3
+  time: '4:54'
+  qtr: 1
+- id: dbbae72f-985f-4fdd-86ee-ab2eb78ad7b0
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 7
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/270x260.png/cc0000/ffffff'
+  game_name: game 5
+  time: '3:55'
+  qtr: 4
+- id: cbca975d-5cfc-4c14-9e05-e4c754bf68ab
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/328x162.png/cc0000/ffffff'
+  game_name: game 4
+  time: '4:48'
+  qtr: 1
+- id: 9768dfe4-ceb0-4f38-8745-9ddaff24d3a4
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 4
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/207x242.png/ff4444/ffffff'
+  game_name: game 4
+  time: '2:25'
+  qtr: 2
+- id: d95a3b9a-08fe-423f-a7a2-29e12868b7dd
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 6
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/348x199.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:13'
+  qtr: 3
+- id: 12ecd47b-fe64-452f-9f35-c33256b0d274
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 4
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/177x352.png/dddddd/000000'
+  game_name: game 1
+  time: '8:52'
+  qtr: 2
+- id: 7aaa5d6e-f256-487b-af22-54d26a897d4b
+  play_type: pass
+  yards_gained: 14
+  down: 2
+  distance: 4
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/237x475.png/cc0000/ffffff'
+  game_name: game 5
+  time: '1:38'
+  qtr: 1
+- id: 8acee64e-4c28-4849-96b1-308c550f64e1
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/116x257.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '7:09'
+  qtr: 3
+- id: dc3b131c-5deb-4755-91c1-e1b3a5b93944
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/209x476.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '5:20'
+  qtr: 2
+- id: 5fc13c3a-9f4f-4d52-89cc-7f5fcb671543
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 6
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/154x374.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:08'
+  qtr: 2
+- id: 5e5aa0af-bf62-4250-b2c6-ade293841408
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 1
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/103x488.png/dddddd/000000'
+  game_name: game 5
+  time: '5:46'
+  qtr: 3
+- id: edff47c4-05df-4f3d-8fea-b006015b4356
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/333x141.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '5:11'
+  qtr: 3
+- id: 1649e7b7-f2d4-4911-93e4-b6263aac464e
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 3
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/250x155.png/ff4444/ffffff'
+  game_name: game 3
+  time: '10:42'
+  qtr: 4
+- id: f85d1184-ca5d-444b-9eb9-d21d99708165
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 7
+  play_concept: post-wheel
+  play_formation: Pro Left
+  play_name: Pro Left post-wheel
+  video_url: 'http://dummyimage.com/199x239.png/dddddd/000000'
+  game_name: game 2
+  time: '5:37'
+  qtr: 3
+- id: e84667f2-bdd8-4e32-815a-1d3e6d915644
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 1
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/349x197.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:01'
+  qtr: 2
+- id: 9f51dbcc-d4a4-4d5f-a6e0-b2ecf9a12c6f
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/321x248.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '10:11'
+  qtr: 1
+- id: addc13b2-e5a5-47c0-af83-311871c75444
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/171x126.png/dddddd/000000'
+  game_name: game 4
+  time: '6:46'
+  qtr: 4
+- id: b9d56a54-0d86-4af9-a370-1894d204a580
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 1
+  play_concept: mesh
+  play_formation: Pro Left
+  play_name: Pro Left mesh
+  video_url: 'http://dummyimage.com/245x442.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '6:03'
+  qtr: 4
+- id: c3b1a6cc-93af-4e5f-8de7-45610f2065dc
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/133x178.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '5:05'
+  qtr: 1
+- id: bdd6d790-bfa9-4875-a410-000c8deff357
+  play_type: pass
+  yards_gained: -4
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/145x240.png/ff4444/ffffff'
+  game_name: game 2
+  time: '5:22'
+  qtr: 2
+- id: 03d27064-0021-4c8a-a350-e2f930dc6248
+  play_type: pass
+  yards_gained: 17
+  down: 3
+  distance: 4
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/240x333.png/dddddd/000000'
+  game_name: ''
+  time: '5:46'
+  qtr: 1
+- id: 6b3923a3-96ed-495d-a0a3-b7906ce87ced
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/155x162.png/cc0000/ffffff'
+  game_name: game 4
+  time: '5:12'
+  qtr: 1
+- id: ff7fd713-df20-408a-87d8-42d42806a561
+  play_type: pass
+  yards_gained: 0
+  down: 3
+  distance: 9
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/157x221.png/dddddd/000000'
+  game_name: game 2
+  time: '4:41'
+  qtr: 2
+- id: 41205db7-fe42-44af-a1e5-f61181bd5f6c
+  play_type: pass
+  yards_gained: -8
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/100x343.png/cc0000/ffffff'
+  game_name: game 5
+  time: '9:30'
+  qtr: 1
+- id: 4cc3a8d3-c233-4832-a723-44bd41739761
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 3
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/227x149.png/cc0000/ffffff'
+  game_name: game 3
+  time: '7:07'
+  qtr: 1
+- id: ad3e311e-e8e1-4d53-a4dd-d096a5ad356c
+  play_type: pass
+  yards_gained: 1
+  down: 4
+  distance: 1
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/219x331.png/cc0000/ffffff'
+  game_name: game 2
+  time: '2:02'
+  qtr: 4
+- id: cde62d34-12ed-44ea-859f-79f1ec1aeaf9
+  play_type: pass
+  yards_gained: -4
+  down: 3
+  distance: 9
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/129x353.png/cc0000/ffffff'
+  game_name: game 5
+  time: '2:21'
+  qtr: 4
+- id: de92e4e0-1c83-4fa1-890f-de9363d38e5d
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 3
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/278x146.png/dddddd/000000'
+  game_name: game 4
+  time: '9:15'
+  qtr: 2
+- id: f9319058-10d8-4250-917c-779e79fc760e
+  play_type: pass
+  yards_gained: 17
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/284x497.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:26'
+  qtr: 1
+- id: 7223f60e-1080-4b3f-9e71-3c19fbd4f1ae
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/168x229.png/cc0000/ffffff'
+  game_name: game 1
+  time: '4:44'
+  qtr: 1
+- id: 345905c5-25d8-4cbd-9681-523b4c730724
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 5
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/119x115.png/cc0000/ffffff'
+  game_name: game 4
+  time: '8:35'
+  qtr: 4
+- id: 5d3b6c6d-8606-4be5-959a-1117301a682c
+  play_type: pass
+  yards_gained: 0
+  down: 2
+  distance: 2
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/115x468.png/cc0000/ffffff'
+  game_name: game 3
+  time: '8:49'
+  qtr: 3
+- id: e93ddac9-98c0-4151-a073-af2f150b65c1
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/220x399.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '6:33'
+  qtr: 2
+- id: 445578d5-abcc-43eb-a728-bd929c37cbc6
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 10
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/244x445.png/cc0000/ffffff'
+  game_name: game 2
+  time: '3:08'
+  qtr: 1
+- id: 120c4e1b-74e6-4c34-9f80-a9db36791162
+  play_type: pass
+  yards_gained: 3
+  down: 4
+  distance: 3
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/303x236.png/cc0000/ffffff'
+  game_name: game 5
+  time: '8:39'
+  qtr: 4
+- id: 534002a7-0bda-43fe-8025-b6dcb9f5c019
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/271x183.png/cc0000/ffffff'
+  game_name: game 3
+  time: '6:55'
+  qtr: 1
+- id: c275c283-c298-427c-9d2a-6a7ae53714b3
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/115x494.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '4:05'
+  qtr: 1
+- id: 0137b59f-9b7c-466c-bb50-b03b1546abf5
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 2
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/108x434.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '3:30'
+  qtr: 3
+- id: 3ce7140e-c783-43f5-bbea-c90199bc3ae4
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/250x256.png/dddddd/000000'
+  game_name: game 4
+  time: '3:46'
+  qtr: 4
+- id: 444f39e8-0670-4d19-80ba-043a4ace1328
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/109x240.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '8:58'
+  qtr: 2
+- id: 83d0ced5-23d4-4cdd-9ea8-e28329fc5414
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong bubble screen
+  video_url: 'http://dummyimage.com/183x217.png/ff4444/ffffff'
+  game_name: game 3
+  time: '3:58'
+  qtr: 3
+- id: f855955a-d7ab-4d8b-bc30-4cfe26b10bb4
+  play_type: pass
+  yards_gained: 0
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/346x156.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '7:25'
+  qtr: 4
+- id: a3985e1d-f3c2-494e-b36c-e71e8d87477d
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 5
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/212x394.png/dddddd/000000'
+  game_name: game 5
+  time: '1:41'
+  qtr: 2
+- id: ebeb061e-aacc-49d2-84df-fbcd7d689ce9
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/309x264.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '1:00'
+  qtr: 4
+- id: 20e2528a-c104-4183-a85c-b3f2d133e48c
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 1
+  play_concept: post-wheel
+  play_formation: Pro Right
+  play_name: Pro Right post-wheel
+  video_url: 'http://dummyimage.com/255x127.png/ff4444/ffffff'
+  game_name: game 1
+  time: '3:59'
+  qtr: 2
+- id: 09747ede-2458-4fed-9962-838d74ab67e3
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 6
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/136x365.png/dddddd/000000'
+  game_name: game 2
+  time: '5:01'
+  qtr: 4
+- id: e322e895-4e7d-4451-a5e5-97d16cb6cbb2
+  play_type: pass
+  yards_gained: 10
+  down: 2
+  distance: 9
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/100x246.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '6:24'
+  qtr: 3
+- id: 1d0e9a46-531d-4c89-9655-4cf07b59321c
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/125x125.png/dddddd/000000'
+  game_name: ''
+  time: '8:13'
+  qtr: 3
+- id: bff401d2-b7d3-4bc7-9d99-38a5efdaddf1
+  play_type: pass
+  yards_gained: -2
+  down: 2
+  distance: 7
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/123x241.png/ff4444/ffffff'
+  game_name: game 4
+  time: '8:33'
+  qtr: 3
+- id: 72253992-f9ae-4ccc-8ddd-741263a8de2e
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 6
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/247x430.png/ff4444/ffffff'
+  game_name: game 2
+  time: '5:32'
+  qtr: 3
+- id: 77c6eec8-8232-46e0-bd62-0bd094bf062b
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Pro Right
+  play_name: Pro Right dagger
+  video_url: 'http://dummyimage.com/107x344.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '6:48'
+  qtr: 3
+- id: 0710f9ac-4a4e-49fb-9724-fa7430754cad
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 4
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/274x267.png/cc0000/ffffff'
+  game_name: game 2
+  time: '10:37'
+  qtr: 4
+- id: cb064b37-530a-4437-adde-b44bd9aa5b53
+  play_type: pass
+  yards_gained: 15
+  down: 3
+  distance: 10
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/314x194.png/ff4444/ffffff'
+  game_name: game 5
+  time: '6:12'
+  qtr: 2
+- id: 8216bbad-586d-4ee7-80df-725ddb6fe899
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 5
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/326x163.png/ff4444/ffffff'
+  game_name: game 1
+  time: '3:42'
+  qtr: 2
+- id: 1280b949-2e54-42a8-9843-4d3bd35a916f
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 9
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/319x241.png/ff4444/ffffff'
+  game_name: game 2
+  time: '7:51'
+  qtr: 1
+- id: 88258feb-0ec1-4839-976a-c555bea7c108
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/263x379.png/dddddd/000000'
+  game_name: game 2
+  time: '4:33'
+  qtr: 3
+- id: 87c1d4bf-ea73-4a3e-83c8-de861c27713f
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/140x269.png/dddddd/000000'
+  game_name: game 1
+  time: '8:57'
+  qtr: 2
+- id: 31cf23a9-a576-4bb9-af25-a0fea29a60b6
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/243x182.png/cc0000/ffffff'
+  game_name: game 1
+  time: '6:42'
+  qtr: 2
+- id: 497de224-26ee-4178-8ba6-2b08f702a9fc
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 10
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/130x403.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '5:30'
+  qtr: 3
+- id: d8b1ac6b-133b-47ae-9914-787b4f5c2fcc
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/299x219.png/dddddd/000000'
+  game_name: game 2
+  time: '4:17'
+  qtr: 4
+- id: 0f15696b-c4ac-47f7-b9cf-fe95a0b2cb66
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 8
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/141x186.png/cc0000/ffffff'
+  game_name: game 3
+  time: '3:09'
+  qtr: 4
+- id: 75f020c5-5be1-478f-ae05-5c0a2990b158
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 4
+  play_concept: china
+  play_formation: I-Left
+  play_name: I-Left china
+  video_url: 'http://dummyimage.com/311x115.png/cc0000/ffffff'
+  game_name: game 4
+  time: '3:24'
+  qtr: 4
+- id: 1112160c-458a-45a5-87bb-ecd2ea606df3
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/344x120.png/ff4444/ffffff'
+  game_name: ''
+  time: '4:19'
+  qtr: 4
+- id: 73afeaf3-a6b1-42eb-b687-1da4523bac8f
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 7
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/181x188.png/ff4444/ffffff'
+  game_name: game 4
+  time: '9:52'
+  qtr: 2
+- id: 553b469f-a8e9-4ba6-9c02-1c9aba9249b4
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/198x421.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '9:33'
+  qtr: 4
+- id: 576fde3f-e892-4159-9d8c-2442313bb721
+  play_type: pass
+  yards_gained: 6
+  down: 3
+  distance: 4
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/120x108.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '6:46'
+  qtr: 4
+- id: 7da3105f-42b2-414a-94a2-224dcc69d19d
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 7
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/320x177.png/cc0000/ffffff'
+  game_name: game 2
+  time: '8:24'
+  qtr: 3
+- id: fd103e3e-d67d-4dd7-b0cc-0f6b5956bb2c
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/165x480.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '3:42'
+  qtr: 3
+- id: 1b35a838-77e4-4f9d-8b59-dfb8456761e1
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/284x213.png/cc0000/ffffff'
+  game_name: game 4
+  time: '6:32'
+  qtr: 3
+- id: 537856e4-efb6-4163-bd5e-d48ac76ae0c9
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 2
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/146x348.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '5:01'
+  qtr: 3
+- id: 99e44f1e-d6fc-40e3-98a5-e5f07acf23d3
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 7
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/353x367.png/cc0000/ffffff'
+  game_name: game 1
+  time: '8:19'
+  qtr: 3
+- id: c30b9915-2df8-46d4-90f2-5faa831f72b0
+  play_type: pass
+  yards_gained: 2
+  down: 2
+  distance: 1
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/106x348.png/dddddd/000000'
+  game_name: game 3
+  time: '4:06'
+  qtr: 3
+- id: ad5d476c-9db9-4542-9285-328743ed7401
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/256x402.png/dddddd/000000'
+  game_name: game 3
+  time: '5:29'
+  qtr: 3
+- id: 4713ca5b-d9c1-4544-b3a5-7f1b92ec04ac
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Right Twins
+  play_name: I-Right Twins 4verts
+  video_url: 'http://dummyimage.com/323x494.png/cc0000/ffffff'
+  game_name: game 1
+  time: '8:35'
+  qtr: 4
+- id: c8b439aa-9906-406f-9656-b58e2ee25ae6
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/360x358.png/ff4444/ffffff'
+  game_name: game 3
+  time: '10:12'
+  qtr: 2
+- id: 9c4f5e40-b0e5-4b70-819d-b4d85f39a1a6
+  play_type: pass
+  yards_gained: -10
+  down: 3
+  distance: 6
+  play_concept: post--corner
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post--corner
+  video_url: 'http://dummyimage.com/285x204.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:13'
+  qtr: 1
+- id: 75fc82f8-9784-47fd-b80f-db1282e2ccf4
+  play_type: pass
+  yards_gained: -13
+  down: 3
+  distance: 7
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/136x156.png/cc0000/ffffff'
+  game_name: game 5
+  time: '5:49'
+  qtr: 3
+- id: 10290c00-c952-4595-b991-21e55550e7fe
+  play_type: pass
+  yards_gained: 15
+  down: 2
+  distance: 6
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/109x174.png/cc0000/ffffff'
+  game_name: game 1
+  time: '3:15'
+  qtr: 4
+- id: 81844cca-832b-4f2e-9a5b-30e05e47b8d6
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/122x363.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '10:11'
+  qtr: 4
+- id: 0f7b1341-c823-49e7-921b-e729733774e5
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Left
+  play_name: I-Left bubble screen
+  video_url: 'http://dummyimage.com/282x362.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:41'
+  qtr: 4
+- id: 07643c38-1809-43be-aa3e-24a56d6e8c64
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/120x393.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:13'
+  qtr: 3
+- id: 1dc7a038-0ef8-453b-ad9e-5ac60662d0bf
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 1
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/332x298.png/ff4444/ffffff'
+  game_name: game 2
+  time: '7:03'
+  qtr: 2
+- id: 4b2922d4-5f00-4947-856b-bee5685e1b1b
+  play_type: pass
+  yards_gained: -1
+  down: 3
+  distance: 10
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/314x318.png/dddddd/000000'
+  game_name: game 4
+  time: '1:36'
+  qtr: 3
+- id: a00f59c3-3948-4911-928a-d2dd492e9fa4
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/356x409.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '7:41'
+  qtr: 1
+- id: 10de1a0e-8941-49d2-981d-5d541969cba0
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 8
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/314x196.png/cc0000/ffffff'
+  game_name: game 2
+  time: '4:42'
+  qtr: 3
+- id: 21756e57-7de9-4fe0-9baf-8ea673e6dc66
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/338x329.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '7:10'
+  qtr: 1
+- id: 99a29d77-9914-4bc7-998b-2896a1c6e310
+  play_type: pass
+  yards_gained: 11
+  down: 3
+  distance: 5
+  play_concept: post--corner
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post--corner
+  video_url: 'http://dummyimage.com/211x444.png/dddddd/000000'
+  game_name: ''
+  time: '1:27'
+  qtr: 2
+- id: 3bac66e2-5c84-4d21-bf0b-48dfc8ac4121
+  play_type: pass
+  yards_gained: 16
+  down: 2
+  distance: 9
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/280x137.png/cc0000/ffffff'
+  game_name: game 1
+  time: '1:58'
+  qtr: 4
+- id: d66a4d33-f7f6-475b-bff1-4bf802f3bd15
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Trips Left Close
+  play_name: Trips Left Close 4verts
+  video_url: 'http://dummyimage.com/246x334.png/cc0000/ffffff'
+  game_name: game 3
+  time: '5:34'
+  qtr: 3
+- id: 2cf425eb-5396-43e2-b830-3ca1f97f2931
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/281x153.png/dddddd/000000'
+  game_name: game 2
+  time: '9:51'
+  qtr: 3
+- id: 7a79281d-1759-4bf5-9836-89eea73c46f0
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/284x469.png/dddddd/000000'
+  game_name: game 4
+  time: '4:20'
+  qtr: 4
+- id: 64483c46-6663-4c86-bd4d-57b4b0053c4d
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/106x468.png/cc0000/ffffff'
+  game_name: game 3
+  time: '6:37'
+  qtr: 3
+- id: 5ee77409-776a-476e-80b2-b08b0875a4a7
+  play_type: pass
+  yards_gained: 5
+  down: 3
+  distance: 2
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/298x351.png/cc0000/ffffff'
+  game_name: game 2
+  time: '2:55'
+  qtr: 1
+- id: f8a316a8-9da0-4ac9-bb7e-b90301aa8f98
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/329x224.png/dddddd/000000'
+  game_name: game 1
+  time: '6:21'
+  qtr: 1
+- id: dfc274e1-1de8-4225-8fa9-46933831a685
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 9
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/281x172.png/ff4444/ffffff'
+  game_name: ''
+  time: '1:55'
+  qtr: 4
+- id: be808805-95b7-4c0b-a091-6f89751db20e
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 5
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/267x391.png/dddddd/000000'
+  game_name: game 2
+  time: '5:08'
+  qtr: 1
+- id: d503f728-ef78-4962-a33e-be13ec86c600
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/217x331.png/ff4444/ffffff'
+  game_name: game 5
+  time: '8:21'
+  qtr: 2
+- id: eb9b5181-ecf4-4db7-8ac1-8cee4e6d6c51
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/238x348.png/dddddd/000000'
+  game_name: game 2
+  time: '4:45'
+  qtr: 2
+- id: 4ade1a38-8a28-4a9c-8f02-aed2034b18c5
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Pro Right
+  play_name: Pro Right post-wheel
+  video_url: 'http://dummyimage.com/149x297.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '1:29'
+  qtr: 4
+- id: 559a0081-869f-47dc-b823-71a113ad95db
+  play_type: pass
+  yards_gained: 0
+  down: 2
+  distance: 8
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/113x238.png/cc0000/ffffff'
+  game_name: game 5
+  time: '10:12'
+  qtr: 1
+- id: 425b64b8-b2f2-4398-aa9c-fa1ee52cc119
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 3
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/202x369.png/dddddd/000000'
+  game_name: ''
+  time: '1:19'
+  qtr: 1
+- id: 802b97e9-a871-44fd-a8e7-a6deb9bc5d82
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 6
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/230x120.png/ff4444/ffffff'
+  game_name: game 2
+  time: '9:32'
+  qtr: 2
+- id: ef596404-2e43-4d43-bcf8-e78a8b90c270
+  play_type: pass
+  yards_gained: 14
+  down: 4
+  distance: 5
+  play_concept: omaha
+  play_formation: Pro Left
+  play_name: Pro Left omaha
+  video_url: 'http://dummyimage.com/306x257.png/cc0000/ffffff'
+  game_name: game 5
+  time: '8:20'
+  qtr: 2
+- id: 7986a920-29bd-4c9f-89d7-b29f1d48ca80
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 2
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/145x375.png/dddddd/000000'
+  game_name: game 1
+  time: '1:11'
+  qtr: 1
+- id: a5724681-2759-45fe-86b9-eb1f758ca28c
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 7
+  play_concept: stick
+  play_formation: I-Right Twins
+  play_name: I-Right Twins stick
+  video_url: 'http://dummyimage.com/114x101.png/ff4444/ffffff'
+  game_name: game 4
+  time: '6:30'
+  qtr: 3
+- id: 13727369-c930-4287-a6de-663036641267
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/224x159.png/ff4444/ffffff'
+  game_name: game 4
+  time: '6:55'
+  qtr: 4
+- id: 776a905c-fe2c-4f40-b065-04729f9d8322
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 8
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/283x303.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '4:28'
+  qtr: 1
+- id: 185eff52-8a54-4c59-84c2-cd9571e6b4ad
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Left
+  play_name: I-Left hitch
+  video_url: 'http://dummyimage.com/196x208.png/dddddd/000000'
+  game_name: game 4
+  time: '8:42'
+  qtr: 4
+- id: 1ea69914-5013-4637-bd2f-a22719cd6fa0
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/175x332.png/dddddd/000000'
+  game_name: ''
+  time: '5:07'
+  qtr: 1
+- id: 8004c0e6-05a8-4b70-8a2c-d0a697992574
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Right
+  play_name: Pro Right double slants
+  video_url: 'http://dummyimage.com/249x173.png/cc0000/ffffff'
+  game_name: game 5
+  time: '6:14'
+  qtr: 3
+- id: 134314dc-f98e-468e-8c09-051b6be89b00
+  play_type: pass
+  yards_gained: 17
+  down: 3
+  distance: 5
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/277x171.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:24'
+  qtr: 1
+- id: 1d8940f6-12bd-4289-8819-8dd5f50e1281
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 5
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/125x167.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:51'
+  qtr: 2
+- id: 3fcb0b96-cf79-436e-81e1-f63b429e4079
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/341x430.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '1:58'
+  qtr: 1
+- id: 60ef93cc-e51f-4bc8-a989-bae97e470ecf
+  play_type: pass
+  yards_gained: 7
+  down: 4
+  distance: 3
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/207x128.png/cc0000/ffffff'
+  game_name: game 1
+  time: '2:53'
+  qtr: 4
+- id: b2517348-5149-4965-9d77-526bfdca578b
+  play_type: pass
+  yards_gained: 12
+  down: 2
+  distance: 8
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/290x424.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:49'
+  qtr: 4
+- id: f86018f9-052d-4bc1-a4fd-90d88682c981
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Pro Right
+  play_name: Pro Right dagger
+  video_url: 'http://dummyimage.com/158x493.png/cc0000/ffffff'
+  game_name: game 5
+  time: '2:46'
+  qtr: 3
+- id: fc427562-eca9-4c25-973f-9a52047e8ef0
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/115x298.png/cc0000/ffffff'
+  game_name: game 1
+  time: '3:05'
+  qtr: 2
+- id: b27e2a49-4525-4368-9020-224ca1e92fb2
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/317x412.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '10:48'
+  qtr: 4
+- id: b6c236f7-91e1-49b5-b531-f508b52a84ee
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/199x221.png/cc0000/ffffff'
+  game_name: game 1
+  time: '4:54'
+  qtr: 3
+- id: 7fd9fe77-7a49-4f89-9081-8cf223a09f6d
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/310x481.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '5:40'
+  qtr: 1
+- id: 8cccbec3-d63a-44f4-83d0-2a5f99982c16
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 8
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/249x486.png/cc0000/ffffff'
+  game_name: game 1
+  time: '10:47'
+  qtr: 1
+- id: 50e45142-176a-4e8c-8990-ad9e18a1cdb1
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 1
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/122x220.png/cc0000/ffffff'
+  game_name: game 3
+  time: '9:35'
+  qtr: 2
+- id: c92fe9aa-bfb9-4f82-92af-490021880317
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/189x461.png/dddddd/000000'
+  game_name: game 1
+  time: '2:00'
+  qtr: 2
+- id: 1d06fd97-b36f-46c6-bc8a-98d6813c045e
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/293x306.png/ff4444/ffffff'
+  game_name: game 2
+  time: '8:42'
+  qtr: 3
+- id: f8152860-edc3-4637-9a87-c8ff70d48011
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 6
+  play_concept: bubble screen
+  play_formation: I-Left
+  play_name: I-Left bubble screen
+  video_url: 'http://dummyimage.com/354x117.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '8:45'
+  qtr: 4
+- id: dec97393-3d2a-4fd1-a117-b9c206a00249
+  play_type: pass
+  yards_gained: 14
+  down: 2
+  distance: 6
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/313x361.png/dddddd/000000'
+  game_name: game 4
+  time: '10:11'
+  qtr: 1
+- id: b826b0de-62cb-4d19-aba2-3669b7ed329e
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 2
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/136x356.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '5:40'
+  qtr: 1
+- id: 179ed1d3-1dab-45bf-bb7a-3fc254d57eac
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/169x149.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:55'
+  qtr: 2
+- id: 9b229ab9-b17e-46ea-8379-efd50bb63189
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/310x356.png/ff4444/ffffff'
+  game_name: game 5
+  time: '1:18'
+  qtr: 2
+- id: 475c326a-9d40-41ef-a3ef-852f66ac392b
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Trips Left Close
+  play_name: Trips Left Close 4verts
+  video_url: 'http://dummyimage.com/219x315.png/cc0000/ffffff'
+  game_name: game 4
+  time: '5:11'
+  qtr: 1
+- id: 4bcd6aae-af37-424d-b52e-d84dc94496ae
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 1
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/106x312.png/cc0000/ffffff'
+  game_name: ''
+  time: '4:50'
+  qtr: 4
+- id: fa683983-92a2-4637-8137-074b885017d4
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/245x245.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:46'
+  qtr: 3
+- id: a7bbb361-7931-4cd9-9c33-c20f1f126340
+  play_type: pass
+  yards_gained: 6
+  down: 4
+  distance: 3
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/356x420.png/cc0000/ffffff'
+  game_name: game 5
+  time: '5:17'
+  qtr: 4
+- id: 8464f219-0879-4733-b6e8-1aea90fe8bc2
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/141x266.png/cc0000/ffffff'
+  game_name: game 3
+  time: '3:05'
+  qtr: 3
+- id: 56c18976-93c4-4de6-b2d0-b7c5221d5a94
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/144x255.png/dddddd/000000'
+  game_name: game 5
+  time: '5:56'
+  qtr: 1
+- id: 32e30c14-57a0-44e0-a269-98934f29cdaf
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 4
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/185x284.png/cc0000/ffffff'
+  game_name: game 5
+  time: '10:41'
+  qtr: 2
+- id: 86c33156-a7c6-429e-8555-706a372e9e02
+  play_type: pass
+  yards_gained: -5
+  down: 2
+  distance: 7
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/100x338.png/dddddd/000000'
+  game_name: game 2
+  time: '3:33'
+  qtr: 3
+- id: 58516c02-f9b5-4df2-addd-dbeec39ae372
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/220x154.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '10:55'
+  qtr: 2
+- id: 214cf206-6991-460a-a219-858a45035e14
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/272x341.png/ff4444/ffffff'
+  game_name: game 1
+  time: '6:16'
+  qtr: 2
+- id: cb27fa02-3d6d-4c5a-8cc9-fc4bb8b2d1b8
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/262x246.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:15'
+  qtr: 2
+- id: 01d7687e-bf67-4378-bd72-f20d0ddcfa2d
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 9
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/122x299.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '7:37'
+  qtr: 1
+- id: a99d9562-a03e-4a46-a84e-23cf8ecac584
+  play_type: pass
+  yards_gained: -2
+  down: 3
+  distance: 8
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/120x282.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '10:55'
+  qtr: 2
+- id: 295a6297-331e-466f-bada-202c77a40ab6
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/138x182.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '7:31'
+  qtr: 3
+- id: 85334bab-37af-4c51-ba1a-c1a5eb9e0983
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 3
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/150x475.png/ff4444/ffffff'
+  game_name: ''
+  time: '9:16'
+  qtr: 2
+- id: c3506366-b8b1-4407-87d5-c4a61aa68b85
+  play_type: pass
+  yards_gained: 9
+  down: 3
+  distance: 5
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/276x280.png/ff4444/ffffff'
+  game_name: game 4
+  time: '6:00'
+  qtr: 1
+- id: d39f6802-af14-40ad-aabf-05a837ec0f72
+  play_type: pass
+  yards_gained: 4
+  down: 3
+  distance: 7
+  play_concept: dagger
+  play_formation: Pro Left
+  play_name: Pro Left dagger
+  video_url: 'http://dummyimage.com/166x227.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:35'
+  qtr: 4
+- id: 4015ba3c-94a6-405e-8c57-1707d8a36cfc
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 8
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/117x302.png/ff4444/ffffff'
+  game_name: game 3
+  time: '3:22'
+  qtr: 2
+- id: dfc58d60-eecf-4d2e-8526-c0dcfcc895f6
+  play_type: pass
+  yards_gained: 12
+  down: 2
+  distance: 10
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/125x316.png/ff4444/ffffff'
+  game_name: game 4
+  time: '2:38'
+  qtr: 2
+- id: 4a648b06-a103-412b-bbc1-c91ffbb7dfdf
+  play_type: pass
+  yards_gained: -1
+  down: 3
+  distance: 4
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/169x348.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:59'
+  qtr: 2
+- id: 47b84f03-07d2-498c-9563-7c5c9bcf2a07
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 1
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/252x180.png/ff4444/ffffff'
+  game_name: game 3
+  time: '1:33'
+  qtr: 2
+- id: 854f4079-1941-4b98-8855-38904760e2d6
+  play_type: pass
+  yards_gained: 19
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Right Twins
+  play_name: I-Right Twins 4verts
+  video_url: 'http://dummyimage.com/231x157.png/dddddd/000000'
+  game_name: game 5
+  time: '4:52'
+  qtr: 1
+- id: d9057e2d-dc89-4eba-bcfa-910b28bd2c40
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/156x289.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:09'
+  qtr: 1
+- id: 7457d7c9-ffe2-4d4b-9987-bd8486384da0
+  play_type: pass
+  yards_gained: 14
+  down: 3
+  distance: 5
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/196x131.png/dddddd/000000'
+  game_name: game 1
+  time: '5:39'
+  qtr: 4
+- id: 8229b3ab-96dc-450b-884b-f1d917189c43
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/306x281.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '8:53'
+  qtr: 3
+- id: 6ec0aeb0-7918-4609-a072-596795115d1b
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/200x273.png/ff4444/ffffff'
+  game_name: ''
+  time: '6:09'
+  qtr: 3
+- id: b4f84702-df9a-40bd-99e2-157565088b9c
+  play_type: pass
+  yards_gained: 10
+  down: 2
+  distance: 2
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/287x256.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:13'
+  qtr: 1
+- id: 4bb822f5-3cbc-4fd0-ab77-66a48ccb1e3c
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 3
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/303x226.png/dddddd/000000'
+  game_name: game 3
+  time: '2:32'
+  qtr: 3
+- id: eab18f2e-27f5-4ebe-8d60-b23c57c1f930
+  play_type: pass
+  yards_gained: -3
+  down: 2
+  distance: 9
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/233x205.png/ff4444/ffffff'
+  game_name: game 5
+  time: '2:35'
+  qtr: 2
+- id: e0b68a50-2d86-447e-9b1f-ff1c563f8ea9
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/114x297.png/ff4444/ffffff'
+  game_name: game 4
+  time: '5:24'
+  qtr: 3
+- id: 8dc3a070-2f68-4fb9-b81b-1e212e9754c6
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 7
+  play_concept: stick
+  play_formation: I-Right Twins
+  play_name: I-Right Twins stick
+  video_url: 'http://dummyimage.com/107x400.png/dddddd/000000'
+  game_name: ''
+  time: '8:02'
+  qtr: 4
+- id: 2d23f42e-fd8f-44b8-b07c-1bddc2b5fcd1
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 7
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/133x429.png/dddddd/000000'
+  game_name: game 5
+  time: '5:24'
+  qtr: 1
+- id: baef11f9-4a7a-47c3-801d-39ce21bb384b
+  play_type: pass
+  yards_gained: 13
+  down: 3
+  distance: 9
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/193x368.png/dddddd/000000'
+  game_name: game 1
+  time: '2:26'
+  qtr: 2
+- id: 78b63d8d-27ab-46c4-a1af-c149d782b8de
+  play_type: pass
+  yards_gained: 17
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/237x422.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:17'
+  qtr: 4
+- id: 7efbbbcb-f367-4c56-a0dc-536660da09c5
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/114x395.png/cc0000/ffffff'
+  game_name: game 5
+  time: '3:28'
+  qtr: 4
+- id: 4495f2e3-0c8f-4999-816e-72401a360fc6
+  play_type: pass
+  yards_gained: 21
+  down: 2
+  distance: 3
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/359x467.png/dddddd/000000'
+  game_name: game 4
+  time: '6:44'
+  qtr: 2
+- id: 7de0f63b-1597-44a6-ae4d-ccb3d9c5181c
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Pro Right
+  play_name: Pro Right dagger
+  video_url: 'http://dummyimage.com/116x201.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '5:10'
+  qtr: 2
+- id: 87ee5724-2cef-4203-9c7f-13732752882e
+  play_type: pass
+  yards_gained: -6
+  down: 2
+  distance: 1
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/141x167.png/ff4444/ffffff'
+  game_name: game 5
+  time: '9:26'
+  qtr: 4
+- id: c0e12422-f6d6-4d68-a475-31e5d9d02859
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/100x270.png/ff4444/ffffff'
+  game_name: game 3
+  time: '5:56'
+  qtr: 4
+- id: 57419ccd-8329-4e3a-923c-432693fee08f
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/278x334.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '6:02'
+  qtr: 3
+- id: c9f64fcf-4e7c-440f-9038-aa7e9ce1c599
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/298x319.png/dddddd/000000'
+  game_name: game 3
+  time: '4:04'
+  qtr: 1
+- id: c5a15468-25a4-43ad-a054-d545e9ca892b
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/350x412.png/dddddd/000000'
+  game_name: game 1
+  time: '1:15'
+  qtr: 4
+- id: 613c8fcc-e9a4-4118-8b57-6e9c73e155b0
+  play_type: pass
+  yards_gained: 20
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/192x173.png/ff4444/ffffff'
+  game_name: game 1
+  time: '9:33'
+  qtr: 2
+- id: 8df40060-c98e-4b0d-96ae-843c2b7c05ca
+  play_type: pass
+  yards_gained: 5
+  down: 4
+  distance: 3
+  play_concept: 4verts
+  play_formation: I-Right Twins
+  play_name: I-Right Twins 4verts
+  video_url: 'http://dummyimage.com/222x296.png/cc0000/ffffff'
+  game_name: game 4
+  time: '8:29'
+  qtr: 3
+- id: d88b42ac-886f-47c3-a558-38e09aee8865
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/104x233.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:12'
+  qtr: 4
+- id: ff17e168-99ce-4e4b-b68f-a5027b120c44
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 10
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/285x293.png/cc0000/ffffff'
+  game_name: ''
+  time: '7:18'
+  qtr: 2
+- id: da3935ff-f29d-431e-85a3-ecd263024382
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/268x209.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '1:29'
+  qtr: 3
+- id: 47564e28-d45d-4d77-bbd0-31c58732c95b
+  play_type: pass
+  yards_gained: 1
+  down: 2
+  distance: 9
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/289x165.png/ff4444/ffffff'
+  game_name: game 4
+  time: '6:36'
+  qtr: 2
+- id: da25c2ea-4b85-4e17-9f75-94c2baec3421
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/223x148.png/ff4444/ffffff'
+  game_name: game 3
+  time: '8:01'
+  qtr: 4
+- id: 4d84db8f-0d48-4086-ad96-7bacffa784f0
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/144x291.png/dddddd/000000'
+  game_name: game 4
+  time: '10:54'
+  qtr: 3
+- id: d4d4f596-4490-4814-a929-8789922b0495
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/122x146.png/cc0000/ffffff'
+  game_name: game 5
+  time: '3:37'
+  qtr: 4
+- id: 4e08a440-4075-4673-bb43-61c954ae5cd3
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/150x164.png/dddddd/000000'
+  game_name: game 4
+  time: '1:52'
+  qtr: 3
+- id: d22ae002-2759-4ada-b82e-0af183e7a9c6
+  play_type: pass
+  yards_gained: -1
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/343x490.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '6:11'
+  qtr: 3
+- id: aef5818d-e571-4e80-be51-f0d06a0ec4c1
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/276x433.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:58'
+  qtr: 4
+- id: 014bf4ce-9056-4b1f-86b4-382144208070
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/329x228.png/ff4444/ffffff'
+  game_name: ''
+  time: '7:34'
+  qtr: 4
+- id: 9bf372eb-a421-4a7c-b7ab-0e00a87e1660
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 7
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/219x433.png/cc0000/ffffff'
+  game_name: game 5
+  time: '8:00'
+  qtr: 3
+- id: 4a90fac6-75e6-4a0a-ba51-57c74b306e09
+  play_type: pass
+  yards_gained: -3
+  down: 3
+  distance: 1
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/130x242.png/ff4444/ffffff'
+  game_name: game 3
+  time: '5:00'
+  qtr: 4
+- id: 5b71f804-5d5f-4c57-a281-6a43f3a31403
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/168x388.png/cc0000/ffffff'
+  game_name: game 2
+  time: '4:01'
+  qtr: 1
+- id: ef701ffc-c7c6-43b3-9b08-2ad35eb986fd
+  play_type: pass
+  yards_gained: 12
+  down: 2
+  distance: 8
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/133x152.png/cc0000/ffffff'
+  game_name: ''
+  time: '4:18'
+  qtr: 3
+- id: 09070d7b-4e34-4208-8a7b-b7875535a320
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/258x149.png/dddddd/000000'
+  game_name: game 2
+  time: '5:28'
+  qtr: 1
+- id: 6321dde4-c710-4b14-bc7c-157be1c8b7de
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/135x426.png/ff4444/ffffff'
+  game_name: game 3
+  time: '5:03'
+  qtr: 2
+- id: c68f0525-b340-4608-9d4b-09f7634440b6
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Left
+  play_name: I-Left stick
+  video_url: 'http://dummyimage.com/350x117.png/dddddd/000000'
+  game_name: game 1
+  time: '10:31'
+  qtr: 2
+- id: 681fb555-49db-4013-b33b-eefd11e0fca3
+  play_type: pass
+  yards_gained: -4
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/105x104.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '4:26'
+  qtr: 2
+- id: ac6a22b8-1445-42a6-ad3b-a018f0e1b8d9
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/351x283.png/dddddd/000000'
+  game_name: game 2
+  time: '9:03'
+  qtr: 1
+- id: ecf6a0fc-a0c7-4ec3-a499-f7b9580b6d83
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/167x253.png/cc0000/ffffff'
+  game_name: ''
+  time: '4:37'
+  qtr: 2
+- id: 5f543fd7-ec9f-4d1e-b085-9ea80db7ffb0
+  play_type: pass
+  yards_gained: 14
+  down: 3
+  distance: 4
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/316x214.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '4:53'
+  qtr: 4
+- id: 0315efd5-075d-40e6-8ada-fb2cc28e5c37
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 7
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/340x218.png/dddddd/000000'
+  game_name: game 1
+  time: '6:57'
+  qtr: 4
+- id: df218dcb-082a-472a-85fa-bc9ef0edce9e
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/241x233.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '2:14'
+  qtr: 1
+- id: 2f5ff723-e2d9-4d3a-96f3-f521d64da1fd
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/199x225.png/dddddd/000000'
+  game_name: game 2
+  time: '9:23'
+  qtr: 3
+- id: 8ac2a74e-67c3-4252-b93d-a4d3b3d16ad0
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 4
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/114x124.png/cc0000/ffffff'
+  game_name: game 1
+  time: '1:45'
+  qtr: 1
+- id: e664b32e-4438-4630-95e4-b1ac6a4c6998
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/226x239.png/cc0000/ffffff'
+  game_name: game 5
+  time: '1:49'
+  qtr: 3
+- id: 4198f689-f0f9-48fe-8b75-b97bc729703c
+  play_type: pass
+  yards_gained: -8
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/346x405.png/dddddd/000000'
+  game_name: game 2
+  time: '1:58'
+  qtr: 2
+- id: 9a9d2710-6d36-4fb7-a554-80657790deb8
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/112x373.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '9:21'
+  qtr: 1
+- id: f69e44e4-d6bf-4cb3-9e68-daf1f136cd9b
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: I-Left
+  play_name: I-Left dagger
+  video_url: 'http://dummyimage.com/200x161.png/dddddd/000000'
+  game_name: ''
+  time: '1:36'
+  qtr: 3
+- id: ab1d2791-8429-45ec-a070-9a4c8d0a05ce
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/284x162.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '5:52'
+  qtr: 4
+- id: 3f4fdcf7-162c-4c60-915f-f36a8136b7c4
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong bubble screen
+  video_url: 'http://dummyimage.com/185x408.png/dddddd/000000'
+  game_name: game 5
+  time: '9:03'
+  qtr: 1
+- id: 52876e9f-72a6-45d6-9506-b42080135c32
+  play_type: pass
+  yards_gained: 12
+  down: 4
+  distance: 9
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/115x142.png/ff4444/ffffff'
+  game_name: game 5
+  time: '1:43'
+  qtr: 2
+- id: da3a8e6e-fda1-4623-8d69-be8d6d519951
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 2
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/261x287.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:15'
+  qtr: 2
+- id: 7ebd894d-b709-43d9-8cc2-ee16e8899d51
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/327x464.png/dddddd/000000'
+  game_name: ''
+  time: '1:53'
+  qtr: 2
+- id: 6372f7c8-fa75-45a1-95b1-4b4ec1f2b4be
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 8
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/340x283.png/dddddd/000000'
+  game_name: game 4
+  time: '10:56'
+  qtr: 2
+- id: ea51cdb6-c6af-4143-a551-85a2ee9e9cae
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Trips Left Close
+  play_name: Trips Left Close mesh
+  video_url: 'http://dummyimage.com/198x454.png/ff4444/ffffff'
+  game_name: game 2
+  time: '2:19'
+  qtr: 2
+- id: f7354320-b2cb-46f8-aa97-0a1bfe8fba66
+  play_type: pass
+  yards_gained: -2
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/154x438.png/cc0000/ffffff'
+  game_name: game 4
+  time: '7:21'
+  qtr: 2
+- id: a1106aba-28c0-43d9-b2f3-0d491d7b22b7
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/257x165.png/cc0000/ffffff'
+  game_name: game 2
+  time: '9:13'
+  qtr: 3
+- id: 140ee39e-0b19-4e4f-b188-45070677bee4
+  play_type: pass
+  yards_gained: 14
+  down: 2
+  distance: 1
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/252x377.png/ff4444/ffffff'
+  game_name: game 3
+  time: '2:41'
+  qtr: 2
+- id: 66588012-1e45-4fe3-866d-c91fd8b1105e
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/195x468.png/dddddd/000000'
+  game_name: game 1
+  time: '3:27'
+  qtr: 1
+- id: a3680d07-199d-445a-8a45-e84eff430b83
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: Pro Right
+  play_name: Pro Right double slants
+  video_url: 'http://dummyimage.com/322x374.png/dddddd/000000'
+  game_name: game 3
+  time: '7:12'
+  qtr: 4
+- id: a65a16b6-96c9-43a6-8528-98791a0c5d4d
+  play_type: pass
+  yards_gained: 4
+  down: 3
+  distance: 5
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/274x192.png/ff4444/ffffff'
+  game_name: game 1
+  time: '7:38'
+  qtr: 4
+- id: 00b6afbd-a226-4009-8e4b-6be78651d35f
+  play_type: pass
+  yards_gained: 15
+  down: 2
+  distance: 9
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/250x159.png/dddddd/000000'
+  game_name: game 3
+  time: '1:49'
+  qtr: 4
+- id: a7d2a317-cc6b-4f9c-a5bd-4157c3624d8b
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Pro Left
+  play_name: Pro Left omaha
+  video_url: 'http://dummyimage.com/258x372.png/dddddd/000000'
+  game_name: game 2
+  time: '3:12'
+  qtr: 3
+- id: 592cea32-f869-46f9-9f02-01ef2fb9e3c1
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 1
+  play_concept: post-wheel
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post-wheel
+  video_url: 'http://dummyimage.com/102x271.png/dddddd/000000'
+  game_name: game 2
+  time: '6:19'
+  qtr: 4
+- id: ed55ffb4-3eea-45b8-ba5f-d420b0c4be61
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/108x231.png/dddddd/000000'
+  game_name: game 3
+  time: '2:53'
+  qtr: 1
+- id: f659c9a4-eb02-4bd7-ac75-239bab39af0e
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 2
+  play_concept: mesh
+  play_formation: Pro Left
+  play_name: Pro Left mesh
+  video_url: 'http://dummyimage.com/275x491.png/ff4444/ffffff'
+  game_name: ''
+  time: '3:33'
+  qtr: 1
+- id: df3f02f7-c9f2-4973-9772-c385ea00db9c
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 7
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/270x141.png/cc0000/ffffff'
+  game_name: game 1
+  time: '6:30'
+  qtr: 1
+- id: f1658d10-4e94-4870-8948-744f1d1e59b8
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 1
+  play_concept: double slants
+  play_formation: Pro Left
+  play_name: Pro Left double slants
+  video_url: 'http://dummyimage.com/209x145.png/ff4444/ffffff'
+  game_name: ''
+  time: '6:57'
+  qtr: 2
+- id: 88990c46-a5e8-49c1-ad45-dc2ab492fd48
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/155x497.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:36'
+  qtr: 4
+- id: c5aa299f-4aa1-4696-8eb4-ebfed31a5180
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong post--corner
+  video_url: 'http://dummyimage.com/355x332.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '9:18'
+  qtr: 4
+- id: 11d83b68-f165-4480-9556-2b6b0f3e0da2
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Right Twins
+  play_name: I-Right Twins slant/arow
+  video_url: 'http://dummyimage.com/136x109.png/ff4444/ffffff'
+  game_name: game 5
+  time: '10:53'
+  qtr: 3
+- id: 03b4f5cd-0c75-411c-af39-26e66d1df4a4
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 2
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/281x497.png/dddddd/000000'
+  game_name: game 3
+  time: '3:47'
+  qtr: 3
+- id: 8de42fab-5e13-4daf-8266-0dac7abbe798
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 8
+  play_concept: mesh
+  play_formation: Pro Left
+  play_name: Pro Left mesh
+  video_url: 'http://dummyimage.com/169x245.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '8:12'
+  qtr: 4
+- id: 1f7914fb-a1ee-4c92-93ac-164e56af5f51
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 9
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/153x160.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '4:17'
+  qtr: 3
+- id: 927cf225-0d76-4d08-91df-e6d04d2aaa90
+  play_type: pass
+  yards_gained: -1
+  down: 2
+  distance: 5
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/342x133.png/ff4444/ffffff'
+  game_name: ''
+  time: '10:05'
+  qtr: 2
+- id: 1634e056-e5e7-40a6-aace-3dfab1d132af
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Left
+  play_name: Pro Left bubble screen
+  video_url: 'http://dummyimage.com/181x444.png/dddddd/000000'
+  game_name: game 2
+  time: '6:05'
+  qtr: 2
+- id: f905d906-fa43-4377-80f2-58d37f9d7e54
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/240x130.png/cc0000/ffffff'
+  game_name: game 3
+  time: '4:41'
+  qtr: 1
+- id: bbc32e6c-81b1-4b0d-a85b-75ccdb4defeb
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 9
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/236x206.png/cc0000/ffffff'
+  game_name: game 2
+  time: '1:56'
+  qtr: 4
+- id: 950eb518-e461-4f75-9e7c-4e2d14f2e474
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Left
+  play_name: Pro Left hitch
+  video_url: 'http://dummyimage.com/141x222.png/dddddd/000000'
+  game_name: game 3
+  time: '10:37'
+  qtr: 4
+- id: 167156cc-b36f-4453-848b-46b553dfcd5e
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 6
+  play_concept: double slants
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong double slants
+  video_url: 'http://dummyimage.com/186x233.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:54'
+  qtr: 2
+- id: 9887340e-ecf1-4edd-9b25-38da143b4651
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 1
+  play_concept: 4verts
+  play_formation: Pro Right
+  play_name: Pro Right 4verts
+  video_url: 'http://dummyimage.com/250x463.png/ff4444/ffffff'
+  game_name: game 2
+  time: '10:56'
+  qtr: 4
+- id: a8cc7dc9-3918-44ae-85e7-956ac70926ae
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/167x348.png/ff4444/ffffff'
+  game_name: game 3
+  time: '4:43'
+  qtr: 4
+- id: 2359d937-879a-47f0-b854-ba57c30ca873
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 2
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/247x395.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '1:08'
+  qtr: 3
+- id: 333090a8-c344-4274-bf6d-ef8c81798573
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 1
+  play_concept: post-wheel
+  play_formation: I-Left
+  play_name: I-Left post-wheel
+  video_url: 'http://dummyimage.com/178x343.png/cc0000/ffffff'
+  game_name: game 4
+  time: '5:02'
+  qtr: 4
+- id: e79ff345-864b-472d-859a-6b9ff38fa9bd
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 7
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/146x363.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '2:38'
+  qtr: 1
+- id: 3ec17be7-c126-4d6b-be39-ba6659ad31b2
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 2
+  play_concept: post-wheel
+  play_formation: Pro Right
+  play_name: Pro Right post-wheel
+  video_url: 'http://dummyimage.com/185x498.png/dddddd/000000'
+  game_name: game 5
+  time: '1:10'
+  qtr: 2
+- id: bee1a010-e764-41c9-ba18-efa3d1f1be79
+  play_type: pass
+  yards_gained: -4
+  down: 2
+  distance: 9
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/314x310.png/dddddd/000000'
+  game_name: ''
+  time: '3:47'
+  qtr: 3
+- id: 3f35223c-6232-48c4-ad29-ba24b99b0b60
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 3
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/197x183.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '4:57'
+  qtr: 3
+- id: cebe11a7-2d5b-46c5-a2c3-f8311016281c
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 2
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/150x201.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '3:54'
+  qtr: 4
+- id: 57f22c23-d1da-403d-ba07-d210891a2a74
+  play_type: pass
+  yards_gained: -6
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/153x413.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '8:49'
+  qtr: 1
+- id: 4be5cffa-b16a-4b79-a87e-d2a5763d87dd
+  play_type: pass
+  yards_gained: 10
+  down: 4
+  distance: 2
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/331x388.png/cc0000/ffffff'
+  game_name: game 2
+  time: '10:52'
+  qtr: 1
+- id: be2649bf-dee3-4ad5-9282-b4e3a9083885
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 6
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/248x181.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '8:25'
+  qtr: 4
+- id: 65c11a03-8dd3-4ada-b04a-0769e6241546
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 9
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/260x113.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '7:38'
+  qtr: 3
+- id: 9c5ede43-7561-499c-8a1e-c38f88bdf6b0
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Left
+  play_name: I-Left hitch
+  video_url: 'http://dummyimage.com/298x242.png/cc0000/ffffff'
+  game_name: game 1
+  time: '8:59'
+  qtr: 3
+- id: 1cb5204b-ed3d-4e84-af81-51be50afaa8c
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: I-Right Twins
+  play_name: I-Right Twins scissors
+  video_url: 'http://dummyimage.com/343x189.png/dddddd/000000'
+  game_name: game 1
+  time: '4:51'
+  qtr: 1
+- id: 6d9f42be-27eb-4360-b80f-060ad9e25c7d
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/251x440.png/dddddd/000000'
+  game_name: ''
+  time: '5:09'
+  qtr: 2
+- id: a3759bf7-fa16-4216-ad6d-d1bdfe644f4a
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/135x289.png/ff4444/ffffff'
+  game_name: game 3
+  time: '3:52'
+  qtr: 1
+- id: 7663e583-6686-4ba2-852d-c0ce738f6e7d
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: Pro Left
+  play_name: Pro Left mesh
+  video_url: 'http://dummyimage.com/359x426.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '5:42'
+  qtr: 1
+- id: 464b7bf2-c54c-4f34-aa77-fd758c6a8285
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/132x166.png/ff4444/ffffff'
+  game_name: ''
+  time: '2:41'
+  qtr: 3
+- id: cef23ce5-348e-4161-b924-88293254a0b9
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/179x403.png/dddddd/000000'
+  game_name: game 5
+  time: '6:11'
+  qtr: 4
+- id: 6a157058-5abb-4f10-ba0c-32c405c3ee02
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/192x129.png/dddddd/000000'
+  game_name: ''
+  time: '9:22'
+  qtr: 1
+- id: a561617d-4e7b-4e88-a81a-34660a220061
+  play_type: pass
+  yards_gained: 4
+  down: 3
+  distance: 2
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/290x443.png/ff4444/ffffff'
+  game_name: game 4
+  time: '3:37'
+  qtr: 4
+- id: 7bf6b679-0a74-414e-bb7e-ca5fd19b28a0
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/355x321.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:25'
+  qtr: 3
+- id: 82761298-4515-43cd-8b1b-4fda87671538
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 7
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/197x196.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '7:43'
+  qtr: 4
+- id: df5b62ba-024d-4421-9e0a-5a837d915bd5
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/316x348.png/dddddd/000000'
+  game_name: ''
+  time: '6:54'
+  qtr: 4
+- id: e9ea7adf-be70-4404-bbb1-2bff8853a4dd
+  play_type: pass
+  yards_gained: 1
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/152x475.png/ff4444/ffffff'
+  game_name: game 4
+  time: '9:45'
+  qtr: 3
+- id: a51f2879-d96e-41cf-85a8-ade83bfe91e1
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/336x178.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '4:29'
+  qtr: 4
+- id: d1dde732-c484-47e6-892a-f3a314ef8aee
+  play_type: pass
+  yards_gained: -7
+  down: 2
+  distance: 8
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/342x132.png/dddddd/000000'
+  game_name: game 4
+  time: '10:06'
+  qtr: 3
+- id: 5ae5a9af-05b0-40b0-ae11-8cca63b69bfb
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 3
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/163x285.png/dddddd/000000'
+  game_name: game 3
+  time: '4:50'
+  qtr: 4
+- id: 9872c7b2-c859-45b4-91b7-605b287da4a6
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Pro Left
+  play_name: Pro Left china
+  video_url: 'http://dummyimage.com/210x129.png/cc0000/ffffff'
+  game_name: game 2
+  time: '8:54'
+  qtr: 2
+- id: 1d6d455c-4494-410f-809f-78f576a3fba9
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong stick
+  video_url: 'http://dummyimage.com/102x463.png/ff4444/ffffff'
+  game_name: game 3
+  time: '8:46'
+  qtr: 1
+- id: afa230c7-3e05-418f-a0b3-c099ce386792
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/334x329.png/cc0000/ffffff'
+  game_name: game 1
+  time: '8:05'
+  qtr: 2
+- id: 0a213d2b-0105-4d83-ad0d-79113f988839
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/215x237.png/ff4444/ffffff'
+  game_name: ''
+  time: '2:26'
+  qtr: 3
+- id: e3e5802e-2bc5-4cea-9a9e-bdb59b1d26e4
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong 4verts
+  video_url: 'http://dummyimage.com/182x421.png/cc0000/ffffff'
+  game_name: ''
+  time: '8:15'
+  qtr: 1
+- id: b25c1e43-5e5f-4edb-9f1c-45bf4ec6ab03
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/100x430.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '3:49'
+  qtr: 1
+- id: 1d97acfd-c6d0-490b-acf4-192189ec1c8b
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/313x434.png/cc0000/ffffff'
+  game_name: game 3
+  time: '10:27'
+  qtr: 3
+- id: 2739cac3-7b3f-489b-a178-9123a25e6949
+  play_type: pass
+  yards_gained: -9
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/295x380.png/ff4444/ffffff'
+  game_name: game 5
+  time: '2:28'
+  qtr: 1
+- id: cfcd5053-c92f-4759-9665-0fd440ae4a14
+  play_type: pass
+  yards_gained: 8
+  down: 2
+  distance: 4
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/121x281.png/ff4444/ffffff'
+  game_name: game 3
+  time: '4:59'
+  qtr: 3
+- id: 8f3cbf7d-3b7a-4771-ae02-516445b8f8e3
+  play_type: pass
+  yards_gained: 5
+  down: 3
+  distance: 6
+  play_concept: bubble screen
+  play_formation: I-Left
+  play_name: I-Left bubble screen
+  video_url: 'http://dummyimage.com/251x101.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '9:00'
+  qtr: 1
+- id: 038b380a-65c5-4880-b21d-9162292fb4ab
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/262x315.png/ff4444/ffffff'
+  game_name: game 4
+  time: '8:26'
+  qtr: 3
+- id: 15999798-4d93-4ae6-a727-1fc66223e95b
+  play_type: pass
+  yards_gained: 16
+  down: 2
+  distance: 4
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/108x342.png/dddddd/000000'
+  game_name: game 2
+  time: '2:03'
+  qtr: 4
+- id: fb646e6d-83d4-4c6c-8fb3-461581927e73
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 1
+  play_concept: stick
+  play_formation: Pro Left
+  play_name: Pro Left stick
+  video_url: 'http://dummyimage.com/179x437.png/dddddd/000000'
+  game_name: game 1
+  time: '5:39'
+  qtr: 3
+- id: f70e41db-d9fb-4fd6-84d3-4631b704d458
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 2
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/280x325.png/ff4444/ffffff'
+  game_name: game 4
+  time: '10:31'
+  qtr: 1
+- id: 4c65599c-36dd-48ca-9e8d-440237b86d87
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/345x118.png/dddddd/000000'
+  game_name: game 5
+  time: '9:11'
+  qtr: 3
+- id: c671e8c9-0be9-4c7c-8335-8e7db22db9a5
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 2
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/360x158.png/cc0000/ffffff'
+  game_name: game 2
+  time: '6:42'
+  qtr: 3
+- id: 817d2686-b77c-49a5-9c59-3e65778fe8bd
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: Pro Left
+  play_name: Pro Left 4verts
+  video_url: 'http://dummyimage.com/290x223.png/dddddd/000000'
+  game_name: game 1
+  time: '3:26'
+  qtr: 4
+- id: ffc35bb1-16fc-4118-a5cb-005fa7dc4c40
+  play_type: pass
+  yards_gained: 12
+  down: 2
+  distance: 6
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/278x449.png/dddddd/000000'
+  game_name: game 1
+  time: '3:14'
+  qtr: 2
+- id: ad954af5-349b-490b-8615-4dacb96e85f2
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Pro Right
+  play_name: Pro Right hitch
+  video_url: 'http://dummyimage.com/356x392.png/ff4444/ffffff'
+  game_name: game 5
+  time: '10:53'
+  qtr: 3
+- id: 0effcc72-981d-48f3-b867-f62a257bd9d4
+  play_type: pass
+  yards_gained: 10
+  down: 2
+  distance: 7
+  play_concept: dagger
+  play_formation: I-Right Twins
+  play_name: I-Right Twins dagger
+  video_url: 'http://dummyimage.com/213x160.png/ff4444/ffffff'
+  game_name: game 2
+  time: '7:15'
+  qtr: 3
+- id: a34dbe67-73b2-40e7-a7f6-eeb10008f7d4
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 1
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/267x362.png/ff4444/ffffff'
+  game_name: game 4
+  time: '9:06'
+  qtr: 4
+- id: cd33f277-38e4-4021-8b9a-465240abe6b1
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/227x314.png/dddddd/000000'
+  game_name: game 2
+  time: '10:28'
+  qtr: 1
+- id: 593b6ece-a381-48ab-a71f-1fce0db37161
+  play_type: pass
+  yards_gained: 15
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/208x236.png/cc0000/ffffff'
+  game_name: game 4
+  time: '2:09'
+  qtr: 2
+- id: 8b380e24-9544-4e04-85ab-49d623ca22d6
+  play_type: pass
+  yards_gained: 5
+  down: 2
+  distance: 1
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/341x296.png/cc0000/ffffff'
+  game_name: game 1
+  time: '1:26'
+  qtr: 1
+- id: 0e15e493-bb4b-469e-8757-53c8529b19a6
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/124x434.png/cc0000/ffffff'
+  game_name: game 1
+  time: '10:24'
+  qtr: 4
+- id: 9aecba9d-7930-4cfa-81ee-20bc891ced9f
+  play_type: pass
+  yards_gained: 21
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Right Twins
+  play_name: I-Right Twins 4verts
+  video_url: 'http://dummyimage.com/286x251.png/cc0000/ffffff'
+  game_name: game 1
+  time: '5:30'
+  qtr: 4
+- id: 7c2fef43-9106-457b-8648-ea8629e1d987
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: I-Right Twins
+  play_name: I-Right Twins stick
+  video_url: 'http://dummyimage.com/200x475.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '6:27'
+  qtr: 3
+- id: 33c3c3e2-c184-49d2-92d4-e2c0df024035
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Trips Left Close
+  play_name: Trips Left Close stick
+  video_url: 'http://dummyimage.com/178x407.png/dddddd/000000'
+  game_name: game 5
+  time: '1:43'
+  qtr: 1
+- id: 11384c84-13d9-46c2-bd82-9d8dfc40c6f4
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/275x392.png/dddddd/000000'
+  game_name: game 5
+  time: '4:22'
+  qtr: 1
+- id: de6d4fd3-f289-4f97-9e1f-67bdd87915e8
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/301x390.png/ff4444/ffffff'
+  game_name: game 1
+  time: '5:42'
+  qtr: 4
+- id: b9d5c045-1bd1-42c1-ada9-62bb3689309a
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/205x124.png/dddddd/000000'
+  game_name: ''
+  time: '3:20'
+  qtr: 2
+- id: 01a0cbd2-5c87-4ea8-b90a-2883ca3e0d73
+  play_type: pass
+  yards_gained: 13
+  down: 1
+  distance: '10'
+  play_concept: post--corner
+  play_formation: Pro Left
+  play_name: Pro Left post--corner
+  video_url: 'http://dummyimage.com/109x374.png/dddddd/000000'
+  game_name: game 3
+  time: '3:59'
+  qtr: 2
+- id: fb3e47f9-6e78-402f-bf49-d3ea1d407d0d
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 4
+  play_concept: bubble screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong bubble screen
+  video_url: 'http://dummyimage.com/300x297.png/ff4444/ffffff'
+  game_name: ''
+  time: '2:35'
+  qtr: 1
+- id: 51aa9f17-1484-4558-b93d-d90ec6bb4127
+  play_type: pass
+  yards_gained: -1
+  down: 3
+  distance: 6
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/344x337.png/cc0000/ffffff'
+  game_name: ''
+  time: '10:27'
+  qtr: 4
+- id: 91c1e906-6490-45c4-819b-0f8c08dc0d06
+  play_type: pass
+  yards_gained: -5
+  down: 1
+  distance: '10'
+  play_concept: dagger
+  play_formation: Trips Left Close
+  play_name: Trips Left Close dagger
+  video_url: 'http://dummyimage.com/352x396.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '7:08'
+  qtr: 4
+- id: 046b359b-fea4-409f-81d3-d3972dcfa56a
+  play_type: pass
+  yards_gained: 8
+  down: 3
+  distance: 10
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/103x351.png/ff4444/ffffff'
+  game_name: game 1
+  time: '7:58'
+  qtr: 2
+- id: f9dddcf0-c1d4-4f74-9be7-8ac5b9c6bd2a
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 10
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/287x188.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '7:24'
+  qtr: 1
+- id: 103adc5a-6dd2-4896-8ae8-423493f7aab6
+  play_type: pass
+  yards_gained: -9
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Left
+  play_name: I-Left double slants
+  video_url: 'http://dummyimage.com/325x236.png/ff4444/ffffff'
+  game_name: ''
+  time: '6:26'
+  qtr: 2
+- id: 5dda7442-fdf0-44ca-b3ef-509fcb1074ff
+  play_type: pass
+  yards_gained: -8
+  down: 2
+  distance: 4
+  play_concept: bubble screen
+  play_formation: I-Left
+  play_name: I-Left bubble screen
+  video_url: 'http://dummyimage.com/103x194.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '10:08'
+  qtr: 3
+- id: 6b303de3-942b-4523-8c6a-b2c8d775473f
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 9
+  play_concept: 4verts
+  play_formation: Trips Left Close
+  play_name: Trips Left Close 4verts
+  video_url: 'http://dummyimage.com/172x201.png/cc0000/ffffff'
+  game_name: game 5
+  time: '5:56'
+  qtr: 4
+- id: b5b380e9-76d8-4ca3-9cdc-de4643530af1
+  play_type: pass
+  yards_gained: 8
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/274x110.png/ff4444/ffffff'
+  game_name: game 5
+  time: '9:45'
+  qtr: 4
+- id: da1cca92-2829-48a4-83f1-72826b5563bd
+  play_type: pass
+  yards_gained: 4
+  down: 2
+  distance: 9
+  play_concept: mesh
+  play_formation: Pro Right
+  play_name: Pro Right mesh
+  video_url: 'http://dummyimage.com/344x203.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '8:16'
+  qtr: 2
+- id: 8954da9b-e276-4463-a6df-a98dc4672946
+  play_type: pass
+  yards_gained: -7
+  down: 2
+  distance: 7
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/174x298.png/dddddd/000000'
+  game_name: game 1
+  time: '6:44'
+  qtr: 1
+- id: ade10f75-9a1a-48d2-934c-7fb8d5b8c326
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/227x368.png/dddddd/000000'
+  game_name: game 2
+  time: '8:05'
+  qtr: 3
+- id: a0aa5eaf-8189-44d2-a874-7d4b96b87706
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/108x380.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:19'
+  qtr: 4
+- id: 8dd7c005-5f77-4f93-8a59-0ea5fc837bb2
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/350x195.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '3:14'
+  qtr: 3
+- id: 20ddf695-c4db-4480-ace7-602ae4917185
+  play_type: pass
+  yards_gained: 17
+  down: 2
+  distance: 9
+  play_concept: 4verts
+  play_formation: Pro Right
+  play_name: Pro Right 4verts
+  video_url: 'http://dummyimage.com/128x289.png/ff4444/ffffff'
+  game_name: game 2
+  time: '1:39'
+  qtr: 2
+- id: ec8e63a3-2e06-409c-b403-dde72a2fc71d
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/237x424.png/cc0000/ffffff'
+  game_name: game 3
+  time: '9:18'
+  qtr: 1
+- id: f9a5956a-4f47-45d5-a76c-688e413bfe30
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong omaha
+  video_url: 'http://dummyimage.com/147x498.png/cc0000/ffffff'
+  game_name: game 5
+  time: '10:55'
+  qtr: 1
+- id: 280fca09-9029-44c2-953e-2fdf7a6e8167
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 6
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/118x453.png/ff4444/ffffff'
+  game_name: game 2
+  time: '6:54'
+  qtr: 2
+- id: a4479cd8-b235-4582-a1a5-7ff77698f89b
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/237x497.png/5fa2dd/ffffff'
+  game_name: game 2
+  time: '2:12'
+  qtr: 4
+- id: d8483b30-9e1b-4b07-a4de-73a14a2af81b
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Right
+  play_name: Pro Right rb screen
+  video_url: 'http://dummyimage.com/358x306.png/dddddd/000000'
+  game_name: game 2
+  time: '4:54'
+  qtr: 3
+- id: 09ef7cac-1478-4ef7-83e8-f30c5d943082
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 3
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/186x266.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '3:17'
+  qtr: 2
+- id: 124f4c3c-3fa6-4262-bb77-38ce8a173107
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close bubble screen
+  video_url: 'http://dummyimage.com/211x312.png/ff4444/ffffff'
+  game_name: game 5
+  time: '2:40'
+  qtr: 1
+- id: bcd361e6-1fbe-4919-933a-ee412a3b3338
+  play_type: pass
+  yards_gained: 0
+  down: 3
+  distance: 3
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/224x346.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '9:14'
+  qtr: 3
+- id: f419dba2-163f-4e50-adf1-ae376e999171
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/248x420.png/cc0000/ffffff'
+  game_name: game 4
+  time: '7:54'
+  qtr: 3
+- id: a2703158-0f4e-45f0-b4e0-22a2ce26f265
+  play_type: pass
+  yards_gained: 11
+  down: 2
+  distance: 1
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/268x190.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '1:32'
+  qtr: 2
+- id: 4bf64ce4-6a02-484a-97b8-64b1f56598ed
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 4
+  play_concept: mesh
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong mesh
+  video_url: 'http://dummyimage.com/267x104.png/cc0000/ffffff'
+  game_name: game 2
+  time: '2:46'
+  qtr: 1
+- id: ba588237-1b04-4b02-9ea5-2ca00fc13188
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: I-Right Twins
+  play_name: I-Right Twins post-wheel
+  video_url: 'http://dummyimage.com/102x348.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '10:55'
+  qtr: 1
+- id: 758d04f9-f1a6-42e5-b936-5cb63d7b1c7b
+  play_type: pass
+  yards_gained: 7
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/290x266.png/dddddd/000000'
+  game_name: ''
+  time: '5:52'
+  qtr: 3
+- id: 0d7703d7-581e-4e0b-a0c1-78bd87b6270d
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/324x106.png/cc0000/ffffff'
+  game_name: game 5
+  time: '6:06'
+  qtr: 2
+- id: fd919863-3ad2-44ba-ad96-2a41d5f5fb8e
+  play_type: pass
+  yards_gained: 2
+  down: 3
+  distance: 8
+  play_concept: 4verts
+  play_formation: Pro Right
+  play_name: Pro Right 4verts
+  video_url: 'http://dummyimage.com/236x293.png/cc0000/ffffff'
+  game_name: game 4
+  time: '3:47'
+  qtr: 3
+- id: 603d80fc-4876-4f7e-b380-8df207661d11
+  play_type: pass
+  yards_gained: -5
+  down: 2
+  distance: 4
+  play_concept: double slants
+  play_formation: Trips Left Close
+  play_name: Trips Left Close double slants
+  video_url: 'http://dummyimage.com/293x434.png/ff4444/ffffff'
+  game_name: game 1
+  time: '6:50'
+  qtr: 2
+- id: 6ec33956-6bf9-40a7-97ca-926d87790a4b
+  play_type: pass
+  yards_gained: 4
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Pro Left
+  play_name: Pro Left slant/arow
+  video_url: 'http://dummyimage.com/305x263.png/cc0000/ffffff'
+  game_name: game 5
+  time: '9:18'
+  qtr: 4
+- id: 1845633b-49b0-4471-b6fa-1a195947c2eb
+  play_type: pass
+  yards_gained: 14
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/292x488.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '4:13'
+  qtr: 3
+- id: 81336f88-42d5-40bd-b735-92d170ddf0fd
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/276x326.png/ff4444/ffffff'
+  game_name: game 4
+  time: '4:32'
+  qtr: 4
+- id: d2b6c675-4bb1-4a19-867d-f2120e76cbe8
+  play_type: pass
+  yards_gained: 14
+  down: 3
+  distance: 10
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/308x193.png/ff4444/ffffff'
+  game_name: game 4
+  time: '1:09'
+  qtr: 2
+- id: 10293d39-e005-4def-8974-d0a77755b337
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: I-Right Twins
+  play_name: I-Right Twins hitch
+  video_url: 'http://dummyimage.com/186x385.png/dddddd/000000'
+  game_name: game 2
+  time: '3:10'
+  qtr: 1
+- id: 13024f10-d90e-485e-9181-c63e842b1907
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Trips Left Close
+  play_name: Trips Left Close rb screen
+  video_url: 'http://dummyimage.com/181x316.png/cc0000/ffffff'
+  game_name: game 1
+  time: '10:15'
+  qtr: 3
+- id: 60ab6ec2-bf7a-4e40-8dcd-f56303075ba4
+  play_type: pass
+  yards_gained: 14
+  down: 3
+  distance: 8
+  play_concept: mesh
+  play_formation: I-Right Twins
+  play_name: I-Right Twins mesh
+  video_url: 'http://dummyimage.com/147x336.png/dddddd/000000'
+  game_name: ''
+  time: '3:19'
+  qtr: 1
+- id: 7a57a549-e7fc-46b3-8f69-c6b9808c352d
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/296x291.png/cc0000/ffffff'
+  game_name: game 1
+  time: '1:26'
+  qtr: 1
+- id: da7df9a4-2ead-4ff9-a8a1-d77124c87955
+  play_type: pass
+  yards_gained: -5
+  down: 1
+  distance: '10'
+  play_concept: stick
+  play_formation: Pro Right
+  play_name: Pro Right stick
+  video_url: 'http://dummyimage.com/206x465.png/dddddd/000000'
+  game_name: game 1
+  time: '4:13'
+  qtr: 2
+- id: 2528f535-4616-45eb-8598-12c54f030999
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 9
+  play_concept: hitch
+  play_formation: Trips Left Close
+  play_name: Trips Left Close hitch
+  video_url: 'http://dummyimage.com/254x424.png/ff4444/ffffff'
+  game_name: game 5
+  time: '8:37'
+  qtr: 2
+- id: c25aebe5-8c9c-4713-813c-476705a48665
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 10
+  play_concept: 4verts
+  play_formation: Trips Left Close
+  play_name: Trips Left Close 4verts
+  video_url: 'http://dummyimage.com/240x403.png/ff4444/ffffff'
+  game_name: game 4
+  time: '8:37'
+  qtr: 4
+- id: 3de321fa-13c7-4e87-810d-40010630c226
+  play_type: pass
+  yards_gained: 6
+  down: 3
+  distance: 7
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/324x264.png/dddddd/000000'
+  game_name: game 4
+  time: '6:43'
+  qtr: 3
+- id: eccb9b16-827a-46dd-99ef-1f05b1c77390
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Trips Left Close
+  play_name: Trips Left Close slant/arow
+  video_url: 'http://dummyimage.com/113x491.png/cc0000/ffffff'
+  game_name: game 5
+  time: '2:30'
+  qtr: 3
+- id: a84d0716-6f4a-47fc-bc9e-ad3e030defe4
+  play_type: pass
+  yards_gained: 1
+  down: 3
+  distance: 8
+  play_concept: scissors
+  play_formation: I-Left
+  play_name: I-Left scissors
+  video_url: 'http://dummyimage.com/146x107.png/dddddd/000000'
+  game_name: game 1
+  time: '1:32'
+  qtr: 1
+- id: c6266347-6283-43cd-b88e-cd0e133d9a62
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Left
+  play_name: I-Left rb screen
+  video_url: 'http://dummyimage.com/190x432.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '4:46'
+  qtr: 4
+- id: a0631de5-c5b5-4f61-9560-f3d6f4ef98f6
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/149x455.png/dddddd/000000'
+  game_name: game 3
+  time: '1:55'
+  qtr: 1
+- id: 02d86aa7-6b38-4fb6-99f3-5fe5b304677b
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: post-wheel
+  play_formation: Trips Left Close
+  play_name: Trips Left Close post-wheel
+  video_url: 'http://dummyimage.com/187x484.png/5fa2dd/ffffff'
+  game_name: ''
+  time: '1:22'
+  qtr: 1
+- id: c992760e-26cc-4ac3-bfee-79f90a861db7
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 6
+  play_concept: slant/arow
+  play_formation: I-Left
+  play_name: I-Left slant/arow
+  video_url: 'http://dummyimage.com/351x353.png/ff4444/ffffff'
+  game_name: game 5
+  time: '4:35'
+  qtr: 2
+- id: 2adaa2d6-7be8-407c-a00c-568d88d93462
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/205x353.png/ff4444/ffffff'
+  game_name: game 4
+  time: '9:31'
+  qtr: 1
+- id: 2d072848-6d15-4274-92de-df1d95ba3ca7
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: mesh
+  play_formation: I-Left
+  play_name: I-Left mesh
+  video_url: 'http://dummyimage.com/189x480.png/dddddd/000000'
+  game_name: game 2
+  time: '9:37'
+  qtr: 2
+- id: 0d952610-3818-40ce-9be5-0fd1f7fcdfc1
+  play_type: pass
+  yards_gained: 0
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins bubble screen
+  video_url: 'http://dummyimage.com/182x474.png/dddddd/000000'
+  game_name: ''
+  time: '2:46'
+  qtr: 4
+- id: c9a6fc3a-0549-4f9b-8977-8d49e66277ac
+  play_type: pass
+  yards_gained: 0
+  down: 2
+  distance: 1
+  play_concept: post--corner
+  play_formation: I-Left
+  play_name: I-Left post--corner
+  video_url: 'http://dummyimage.com/298x117.png/cc0000/ffffff'
+  game_name: game 4
+  time: '3:10'
+  qtr: 1
+- id: 8afc8854-2795-429c-b96f-ad81a73b5399
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 10
+  play_concept: slant/arow
+  play_formation: Pro Right
+  play_name: Pro Right slant/arow
+  video_url: 'http://dummyimage.com/242x377.png/ff4444/ffffff'
+  game_name: game 5
+  time: '2:26'
+  qtr: 1
+- id: f3100932-49db-466c-9538-0350aace6816
+  play_type: pass
+  yards_gained: 10
+  down: 2
+  distance: 10
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/245x169.png/ff4444/ffffff'
+  game_name: game 2
+  time: '7:32'
+  qtr: 1
+- id: b0f61e58-37de-4220-a1ac-cb7da71b9ee3
+  play_type: pass
+  yards_gained: 3
+  down: 3
+  distance: 4
+  play_concept: omaha
+  play_formation: Trips Left Close
+  play_name: Trips Left Close omaha
+  video_url: 'http://dummyimage.com/354x248.png/ff4444/ffffff'
+  game_name: game 2
+  time: '5:00'
+  qtr: 1
+- id: 8ba51aa9-9efb-4328-8131-173fd59ce5fb
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/107x319.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '8:15'
+  qtr: 2
+- id: 759793bb-8e66-44e5-82c3-e5b2836f656c
+  play_type: pass
+  yards_gained: 7
+  down: 2
+  distance: 9
+  play_concept: china
+  play_formation: I-Right Twins
+  play_name: I-Right Twins china
+  video_url: 'http://dummyimage.com/266x469.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '5:07'
+  qtr: 1
+- id: 93435352-1e06-4917-ac33-dab55d7675fd
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: hitch
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong hitch
+  video_url: 'http://dummyimage.com/335x470.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '6:18'
+  qtr: 3
+- id: bc6274e5-73d7-4856-9bbf-cb6116a3521e
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: slant/arow
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong slant/arow
+  video_url: 'http://dummyimage.com/231x148.png/ff4444/ffffff'
+  game_name: game 4
+  time: '4:33'
+  qtr: 2
+- id: 754ba091-1bd2-425b-ad8b-c0cc7cecba61
+  play_type: pass
+  yards_gained: 6
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/224x244.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '8:09'
+  qtr: 3
+- id: 41335f3a-d30d-451c-99e3-5d9d56504d4c
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Left
+  play_name: Pro Left scissors
+  video_url: 'http://dummyimage.com/126x364.png/ff4444/ffffff'
+  game_name: game 4
+  time: '7:30'
+  qtr: 4
+- id: 76e4eb7b-387d-4c6f-b0f0-5bd22ac9cf50
+  play_type: pass
+  yards_gained: 12
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Right Twins
+  play_name: I-Right Twins omaha
+  video_url: 'http://dummyimage.com/151x288.png/cc0000/ffffff'
+  game_name: game 4
+  time: '8:41'
+  qtr: 2
+- id: 5ccda37e-0b69-4e1d-b39d-efc24e68a8da
+  play_type: pass
+  yards_gained: 12
+  down: 2
+  distance: 10
+  play_concept: scissors
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong scissors
+  video_url: 'http://dummyimage.com/106x351.png/ff4444/ffffff'
+  game_name: ''
+  time: '10:23'
+  qtr: 3
+- id: d38154f5-de8b-4734-8017-cd0bd3645e6a
+  play_type: pass
+  yards_gained: -5
+  down: 2
+  distance: 8
+  play_concept: china
+  play_formation: Pro Right
+  play_name: Pro Right china
+  video_url: 'http://dummyimage.com/106x222.png/ff4444/ffffff'
+  game_name: game 3
+  time: '9:58'
+  qtr: 3
+- id: 46963760-5bdd-4338-84c8-07d661cfcc26
+  play_type: pass
+  yards_gained: 13
+  down: 2
+  distance: 3
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/319x123.png/ff4444/ffffff'
+  game_name: game 4
+  time: '4:32'
+  qtr: 1
+- id: e95323f6-018c-43b8-bc1d-7c62b98cb1df
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Trips Left Close
+  play_name: Trips Left Close scissors
+  video_url: 'http://dummyimage.com/153x118.png/5fa2dd/ffffff'
+  game_name: game 5
+  time: '3:57'
+  qtr: 1
+- id: d399d45d-f41f-40db-900a-cbb8f20c8eef
+  play_type: pass
+  yards_gained: 5
+  down: 1
+  distance: '10'
+  play_concept: scissors
+  play_formation: Pro Right
+  play_name: Pro Right scissors
+  video_url: 'http://dummyimage.com/113x292.png/cc0000/ffffff'
+  game_name: game 4
+  time: '10:33'
+  qtr: 1
+- id: 99413648-e755-451f-b6f3-5ae3cffca5d2
+  play_type: pass
+  yards_gained: 10
+  down: 3
+  distance: 6
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/179x278.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:03'
+  qtr: 2
+- id: 953064db-b1db-4ada-b0a6-328ddb88e41e
+  play_type: pass
+  yards_gained: 9
+  down: 2
+  distance: 7
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/171x297.png/cc0000/ffffff'
+  game_name: game 3
+  time: '1:46'
+  qtr: 4
+- id: 43089ed7-62bb-4aac-8cba-f2004c745e67
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: china
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong china
+  video_url: 'http://dummyimage.com/213x236.png/5fa2dd/ffffff'
+  game_name: game 1
+  time: '7:43'
+  qtr: 2
+- id: c282b9b5-4ccd-4b85-8fe4-a9552f446c62
+  play_type: pass
+  yards_gained: -3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/338x129.png/dddddd/000000'
+  game_name: game 2
+  time: '3:08'
+  qtr: 1
+- id: 79b9082b-e3e5-4335-a4f3-3c40d33964c9
+  play_type: pass
+  yards_gained: 6
+  down: 1
+  distance: '10'
+  play_concept: 4verts
+  play_formation: I-Left
+  play_name: I-Left 4verts
+  video_url: 'http://dummyimage.com/140x208.png/ff4444/ffffff'
+  game_name: game 2
+  time: '3:11'
+  qtr: 1
+- id: 3915fb54-a21b-4e5d-b386-34b8703aaa59
+  play_type: pass
+  yards_gained: 11
+  down: 1
+  distance: '10'
+  play_concept: omaha
+  play_formation: I-Left
+  play_name: I-Left omaha
+  video_url: 'http://dummyimage.com/198x277.png/cc0000/ffffff'
+  game_name: game 3
+  time: '3:33'
+  qtr: 2
+- id: baba3b57-5c06-49ca-9450-1215bbde5f4a
+  play_type: pass
+  yards_gained: 3
+  down: 2
+  distance: 1
+  play_concept: post--corner
+  play_formation: Pro Right
+  play_name: Pro Right post--corner
+  video_url: 'http://dummyimage.com/255x259.png/cc0000/ffffff'
+  game_name: ''
+  time: '2:46'
+  qtr: 3
+- id: ae82fab8-ca22-441a-92c3-bcf0b0445336
+  play_type: pass
+  yards_gained: 3
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: I-Right Twins
+  play_name: I-Right Twins rb screen
+  video_url: 'http://dummyimage.com/207x262.png/cc0000/ffffff'
+  game_name: game 2
+  time: '1:00'
+  qtr: 4
+- id: 959b2896-e0a2-469d-8bcc-6ec58eaf84af
+  play_type: pass
+  yards_gained: 16
+  down: 1
+  distance: '10'
+  play_concept: bubble screen
+  play_formation: Pro Right
+  play_name: Pro Right bubble screen
+  video_url: 'http://dummyimage.com/248x392.png/dddddd/000000'
+  game_name: game 5
+  time: '8:35'
+  qtr: 1
+- id: d008527d-9acc-456c-bc67-d424688bcb65
+  play_type: pass
+  yards_gained: 7
+  down: 3
+  distance: 10
+  play_concept: china
+  play_formation: Trips Left Close
+  play_name: Trips Left Close china
+  video_url: 'http://dummyimage.com/245x362.png/cc0000/ffffff'
+  game_name: ''
+  time: '1:58'
+  qtr: 4
+- id: dc972e2e-ff5f-42d0-b1e5-5792855091b5
+  play_type: pass
+  yards_gained: 10
+  down: 1
+  distance: '10'
+  play_concept: double slants
+  play_formation: I-Right Twins
+  play_name: I-Right Twins double slants
+  video_url: 'http://dummyimage.com/219x137.png/ff4444/ffffff'
+  game_name: game 4
+  time: '8:56'
+  qtr: 1
+- id: 790aa24a-7728-417d-8907-2c98c4dff39e
+  play_type: pass
+  yards_gained: 10
+  down: 2
+  distance: 1
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/353x381.png/5fa2dd/ffffff'
+  game_name: game 4
+  time: '1:02'
+  qtr: 2
+- id: 4fe5473d-88b3-4e1f-a3bf-65bcec921efe
+  play_type: pass
+  yards_gained: 2
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Pro Left
+  play_name: Pro Left rb screen
+  video_url: 'http://dummyimage.com/139x444.png/cc0000/ffffff'
+  game_name: game 2
+  time: '4:10'
+  qtr: 4
+- id: edbaf569-5073-405e-a9b5-7328ea4ec1e2
+  play_type: pass
+  yards_gained: 9
+  down: 1
+  distance: '10'
+  play_concept: rb screen
+  play_formation: Doubles Stack Strong
+  play_name: Doubles Stack Strong rb screen
+  video_url: 'http://dummyimage.com/101x408.png/5fa2dd/ffffff'
+  game_name: game 3
+  time: '6:53'
+  qtr: 4
