@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import * as d3 from 'd3';
 import * as yaml from 'js-yaml';
 
@@ -36,20 +37,19 @@ interface OffenseData {
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [RouterOutlet, RouterLink],
   template: `
-    <h1>Offensive Breakdown Analysis</h1>
-    <div class="pie-chart-container">
-      <h2>Run vs Pass Distribution</h2>
-      <div class="filter-container">
-        <span class="filter-label">Filter by Down:</span>
-        <button class="filter-button" [class.active]="selectedDown === 0" (click)="filterByDown(0)">All</button>
-        <button class="filter-button" [class.active]="selectedDown === 1" (click)="filterByDown(1)">1st</button>
-        <button class="filter-button" [class.active]="selectedDown === 2" (click)="filterByDown(2)">2nd</button>
-        <button class="filter-button" [class.active]="selectedDown === 3" (click)="filterByDown(3)">3rd</button>
-        <button class="filter-button" [class.active]="selectedDown === 4" (click)="filterByDown(4)">4th</button>
-      </div>
-      <div #pieChart></div>
-      <div #conceptTable class="concept-table-container"></div>
+    <div class="app-container">
+      <header class="app-header">
+        <h1>Football Analytics Dashboard</h1>
+        <nav class="app-nav">
+          <a routerLink="/home" class="nav-link">Home</a>
+          <a routerLink="/yaml-data" class="nav-link">YAML Data Table</a>
+        </nav>
+      </header>
+      <main class="app-content">
+        <router-outlet></router-outlet>
+      </main>
     </div>
   `,
   styles: [`
@@ -153,6 +153,8 @@ export class AppComponent implements OnInit {
   private filteredConceptCounts: Map<string, Map<string, number>> = new Map();
   private allPlays: Map<string, OffensePlay[]> = new Map();
   selectedDown: number = 0; // 0 means all downs
+
+  constructor() {}
 
   ngOnInit() {
     this.loadYamlData();
