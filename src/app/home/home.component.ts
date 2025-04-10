@@ -19,10 +19,7 @@ interface OffensePlay {
   standalone: true,
   imports: [],
   template: `
-
-
     <h1>Offensive Breakdown Analysis</h1>
-    <button class="yaml-button" (click)="navigateToYamlTable()">GO to YAML TABLE</button>
     <div class="pie-chart-container">
       <h2>Run vs Pass Distribution</h2>
       <div class="filter-container">
@@ -35,10 +32,6 @@ interface OffensePlay {
       </div>
       <div #pieChart></div>
       <div #conceptTable class="concept-table-container"></div>
-      
-      <div class="config-button-container">
-        <button class="config-button" (click)="navigateToYamlTable()">View YAML Data Table</button>
-      </div>
     </div>
   `,
   styles: [`

@@ -41,11 +41,13 @@ interface OffenseData {
   template: `
     <div class="app-container">
       <header class="app-header">
-        <h1>Football Analytics Dashboard</h1>
-        <nav class="app-nav">
-          <a routerLink="/home" class="nav-link">Home</a>
-          <a routerLink="/yaml-data" class="nav-link">YAML Data Table</a>
-        </nav>
+        <div class="container">
+          <h1>Football Analytics Dashboard</h1>
+          <nav class="app-nav">
+            <a routerLink="/home" class="nav-link">Home</a>
+            <a routerLink="/yaml-data" class="nav-link">YAML Data Table</a>
+          </nav>
+        </div>
       </header>
       <main class="app-content">
         <router-outlet></router-outlet>
@@ -56,14 +58,70 @@ interface OffenseData {
     :host {
       font-family: 'Arial', sans-serif;
       color: #333;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+    }
+    .app-header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .app-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0.8rem 1.5rem;
     }
-    h1 {
-      color: #2c3e50;
-      text-align: center;
-      margin-bottom: 30px;
+    
+    .app-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+    }
+    
+    .app-nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: #3498db;
+      transform: translateY(-2px);
+    }
+    
+    .app-content {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      width: 100%;
     }
     .pie-chart-container {
       width: 100%;
