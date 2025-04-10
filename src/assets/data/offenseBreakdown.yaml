@@ -5,6 +5,49 @@
 offenseBreakdown:
   - category: "Run"
     formations:
+      - name: "Pro Left Twins Wide"
+        concepts:
+          - name: "Power"
+          - name: "Inside Zone"
+          - name: "Outside Zone"
+          - name: "QB Iso"
+        plays:
+          - playID: 1
+            playname: "Pro Left Twins Wide Power"
+            yardsGained: 10
+            Down: 1
+            Distance: 10
+            Result: "First Down"
+            Efficient: True
+            VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
+            GameID: "5e692f5c-38b5-44f0-bc30-d7c4552422524"
+          - playID: 2
+            playname: "Pro Left Twins Wide Inside Zone"
+            yardsGained: 2
+            Down: 3
+            Distance: 5
+            Result: "4th Down"
+            Efficient: False
+            VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
+            GameID: "5e692f5c-38b5-44f0-bc30-d7c455asdf2sd"
+          - playID: 3
+            playname: "Pro Left Twins Wide Outside Zone"
+            yardsGained: 10
+            Down: 2
+            Distance: 10
+            Result: "First Down"
+            Efficient: True
+            VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
+            GameID: "5e692f5c-38b5-44f0-bc30-d7c4552422524"
+          - playID: 4
+            playname: "Pro Left Twins Wide QB Iso"
+            yardsGained: 2
+            Down: 2
+            Distance: 10
+            Result: "3rd Down"
+            Efficient: False
+            VideoID: "5e692f5c-38b5-44f0-bc30-17c419af3d7c"
+            GameID: "5e692f5c-38b5-44f0-bc30-d7c4552422524"
       - name: "I-Right"
         concepts:
           - name: "Power"

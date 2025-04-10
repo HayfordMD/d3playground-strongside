@@ -40,6 +40,14 @@ interface OffenseData {
     <h1>Offensive Breakdown Analysis</h1>
     <div class="pie-chart-container">
       <h2>Run vs Pass Distribution</h2>
+      <div class="filter-container">
+        <span class="filter-label">Filter by Down:</span>
+        <button class="filter-button" [class.active]="selectedDown === 0" (click)="filterByDown(0)">All</button>
+        <button class="filter-button" [class.active]="selectedDown === 1" (click)="filterByDown(1)">1st</button>
+        <button class="filter-button" [class.active]="selectedDown === 2" (click)="filterByDown(2)">2nd</button>
+        <button class="filter-button" [class.active]="selectedDown === 3" (click)="filterByDown(3)">3rd</button>
+        <button class="filter-button" [class.active]="selectedDown === 4" (click)="filterByDown(4)">4th</button>
+      </div>
       <div #pieChart></div>
       <div #conceptTable class="concept-table-container"></div>
     </div>
@@ -70,6 +78,36 @@ interface OffenseData {
     h2 {
       color: #2c3e50;
       margin-bottom: 20px;
+    }
+    .filter-container {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .filter-label {
+      margin-right: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .filter-button {
+      background-color: #f1f1f1;
+      border: 1px solid #ddd;
+      color: #333;
+      padding: 5px 10px;
+      margin: 0 3px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-button:hover {
+      background-color: #e1e1e1;
+    }
+    .filter-button.active {
+      background-color: #2c3e50;
+      color: white;
+      border-color: #2c3e50;
     }
     .concept-table-container {
       margin-top: 20px;
@@ -112,6 +150,9 @@ export class AppComponent implements OnInit {
   
   private offenseData: OffenseData | null = null;
   private conceptCounts: Map<string, Map<string, number>> = new Map();
+  private filteredConceptCounts: Map<string, Map<string, number>> = new Map();
+  private allPlays: Map<string, OffensePlay[]> = new Map();
+  selectedDown: number = 0; // 0 means all downs
 
   ngOnInit() {
     this.loadYamlData();
@@ -190,6 +231,39 @@ export class AppComponent implements OnInit {
     passConcepts.set('Screens', 1);
     this.conceptCounts.set('Pass', passConcepts);
     
+    // Create mock play data for filtering by down
+    const runPlays: OffensePlay[] = [
+      { playID: 1, playname: 'Power', yardsGained: 5, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 2, playname: 'Inside Zone', yardsGained: 4, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 3, playname: 'Inside Zone', yardsGained: 2, Down: 2, Distance: 6, Result: 'Failure', Efficient: false },
+      { playID: 4, playname: 'Power', yardsGained: 7, Down: 2, Distance: 8, Result: 'Success', Efficient: true },
+      { playID: 5, playname: 'Outside Zone', yardsGained: 1, Down: 3, Distance: 2, Result: 'Failure', Efficient: false },
+      { playID: 6, playname: 'Counter', yardsGained: 3, Down: 3, Distance: 1, Result: 'Success', Efficient: true },
+      { playID: 7, playname: 'Inside Zone', yardsGained: 6, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 8, playname: 'Trap', yardsGained: 2, Down: 4, Distance: 1, Result: 'Success', Efficient: true },
+      { playID: 9, playname: 'Power', yardsGained: 0, Down: 2, Distance: 3, Result: 'Failure', Efficient: false },
+      { playID: 10, playname: 'Outside Zone', yardsGained: 8, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 11, playname: 'Inside Zone', yardsGained: 3, Down: 3, Distance: 5, Result: 'Failure', Efficient: false }
+    ];
+    
+    const passPlays: OffensePlay[] = [
+      { playID: 12, playname: 'Smash', yardsGained: 12, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 13, playname: 'Mesh', yardsGained: 6, Down: 2, Distance: 7, Result: 'Success', Efficient: true },
+      { playID: 14, playname: 'Four Verticals', yardsGained: 22, Down: 3, Distance: 8, Result: 'Success', Efficient: true },
+      { playID: 15, playname: 'Four Verticals', yardsGained: 0, Down: 3, Distance: 10, Result: 'Failure', Efficient: false },
+      { playID: 16, playname: 'Flood', yardsGained: 8, Down: 2, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 17, playname: 'Screens', yardsGained: 4, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 18, playname: 'Smash', yardsGained: 15, Down: 2, Distance: 15, Result: 'Success', Efficient: true },
+      { playID: 19, playname: 'Mesh', yardsGained: 2, Down: 3, Distance: 4, Result: 'Failure', Efficient: false },
+      { playID: 20, playname: 'Four Verticals', yardsGained: 35, Down: 1, Distance: 10, Result: 'Success', Efficient: true }
+    ];
+    
+    this.allPlays.set('Run', runPlays);
+    this.allPlays.set('Pass', passPlays);
+    
+    // Initialize filtered concept counts with all plays
+    this.filteredConceptCounts = new Map(this.conceptCounts);
+    
     console.log('Mock concept data created:', 
                Array.from(this.conceptCounts.entries()).map(([k, v]) => 
                  [k, Array.from(v.entries())]));
@@ -197,7 +271,18 @@ export class AppComponent implements OnInit {
   
   // Mock data for average yards gained
   private getAverageYardsGained(category: string): number {
-    // In a real implementation, this would calculate from actual play data
+    // If we have filtered by down, calculate the average yards for that down only
+    if (this.selectedDown > 0) {
+      const plays = this.allPlays.get(category) || [];
+      const downPlays = plays.filter(play => play.Down === this.selectedDown);
+      
+      if (downPlays.length > 0) {
+        const totalYards = downPlays.reduce((sum, play) => sum + play.yardsGained, 0);
+        return totalYards / downPlays.length;
+      }
+    }
+    
+    // Fall back to hardcoded values if no filtered data
     if (category === 'Run') {
       return 4.2; // Average yards per run play
     } else if (category === 'Pass') {
@@ -208,7 +293,20 @@ export class AppComponent implements OnInit {
   
   // Mock data for average yards gained per concept
   private getConceptAverageYards(category: string, concept: string): number {
-    // In a real implementation, this would calculate from actual play data
+    // If we have filtered by down, calculate the average yards for that down only
+    if (this.selectedDown > 0) {
+      const plays = this.allPlays.get(category) || [];
+      const conceptPlays = plays.filter(play => 
+        play.playname === concept && play.Down === this.selectedDown
+      );
+      
+      if (conceptPlays.length > 0) {
+        const totalYards = conceptPlays.reduce((sum, play) => sum + play.yardsGained, 0);
+        return totalYards / conceptPlays.length;
+      }
+    }
+    
+    // Fall back to hardcoded values if no filtered data or no plays found
     const conceptYards: {[key: string]: number} = {
       // Run concepts
       'Power': 5.3,
@@ -237,10 +335,29 @@ export class AppComponent implements OnInit {
   }
 
   private createRunPassPieChartWithMockData(): void {
-    // Mock data for when YAML loading fails
+    // Get filtered counts based on selected down
+    this.updateFilteredData();
+    
+    // Calculate total counts for Run and Pass based on filtered data
+    let runCount = 0;
+    let passCount = 0;
+    
+    if (this.selectedDown === 0) {
+      // If all downs selected, use the original counts
+      runCount = 11;
+      passCount = 9;
+    } else {
+      // Count plays for the selected down
+      const runPlays = this.allPlays.get('Run') || [];
+      const passPlays = this.allPlays.get('Pass') || [];
+      
+      runCount = runPlays.filter(play => play.Down === this.selectedDown).length;
+      passCount = passPlays.filter(play => play.Down === this.selectedDown).length;
+    }
+    
     const runPassData = [
-      { category: 'Run', count: 11 },
-      { category: 'Pass', count: 9 }
+      { category: 'Run', count: runCount },
+      { category: 'Pass', count: passCount }
     ];
     
     this.renderPieChart(runPassData);
@@ -271,8 +388,8 @@ export class AppComponent implements OnInit {
     // Clear any existing table
     tableContainer.innerHTML = '';
     
-    // Get concept counts for this category
-    const conceptMap = this.conceptCounts.get(category);
+    // Get concept counts for this category from filtered data
+    const conceptMap = this.filteredConceptCounts.get(category);
     
     if (!conceptMap || conceptMap.size === 0) {
       tableContainer.innerHTML = `<div class="table-title">No concepts found for ${category}</div>`;
@@ -354,6 +471,58 @@ export class AppComponent implements OnInit {
     if (this.conceptTableContainer) {
       this.conceptTableContainer.nativeElement.innerHTML = '';
     }
+  }
+  
+  // Filter data by down
+  filterByDown(down: number): void {
+    if (this.selectedDown === down) return; // No change needed
+    
+    this.selectedDown = down;
+    this.updateFilteredData();
+    this.createRunPassPieChartWithMockData();
+    
+    // Clear the concept table when changing filters
+    this.hideConceptTable();
+  }
+  
+  // Update filtered data based on selected down
+  private updateFilteredData(): void {
+    if (this.selectedDown === 0) {
+      // If all downs selected, use the original counts
+      this.filteredConceptCounts = new Map(this.conceptCounts);
+      return;
+    }
+    
+    // Filter concept counts by down
+    this.filteredConceptCounts = new Map();
+    
+    // Process Run concepts
+    const runPlays = this.allPlays.get('Run') || [];
+    const filteredRunPlays = runPlays.filter(play => play.Down === this.selectedDown);
+    const runConcepts = new Map<string, number>();
+    
+    // Count occurrences of each concept in filtered plays
+    filteredRunPlays.forEach(play => {
+      const conceptName = play.playname;
+      const currentCount = runConcepts.get(conceptName) || 0;
+      runConcepts.set(conceptName, currentCount + 1);
+    });
+    
+    this.filteredConceptCounts.set('Run', runConcepts);
+    
+    // Process Pass concepts
+    const passPlays = this.allPlays.get('Pass') || [];
+    const filteredPassPlays = passPlays.filter(play => play.Down === this.selectedDown);
+    const passConcepts = new Map<string, number>();
+    
+    // Count occurrences of each concept in filtered plays
+    filteredPassPlays.forEach(play => {
+      const conceptName = play.playname;
+      const currentCount = passConcepts.get(conceptName) || 0;
+      passConcepts.set(conceptName, currentCount + 1);
+    });
+    
+    this.filteredConceptCounts.set('Pass', passConcepts);
   }
   
   private renderPieChart(data: {category: string, count: number}[]): void {
