@@ -1,0 +1,681 @@
+# Comprehensive Football Play Data
+
+seasons:
+  - year: 2024
+    games:
+      - game_id: 2024_G001
+        week: 1
+        home_team: "Eagles"
+        away_team: "Cowboys"
+        date: "2024-09-08"
+        location: "Lincoln Financial Field"
+        weather: "Clear, 72°F"
+        home_score: 27
+        away_score: 24
+        plays:
+          - play_id: 2024_G001_P001
+            quarter: 1
+            time: "15:00"
+            down: 1
+            distance: 10
+            yard_line: 25
+            play_type: "run"
+            formation: "I-Formation"
+            personnel: "21"
+            concept: "Power"
+            play_name: "I-Formation Power"
+            ball_carrier: "RB1"
+            yards_gained: 7
+            result: "positive"
+            scoring_play: false
+            notes: "Strong run off right tackle"
+            
+          - play_id: 2024_G001_P002
+            quarter: 1
+            time: "14:25"
+            down: 2
+            distance: 3
+            yard_line: 32
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Slant"
+            play_name: "Shotgun Slant"
+            passer: "QB1"
+            target: "WR1"
+            completion: true
+            yards_gained: 12
+            result: "positive"
+            scoring_play: false
+            notes: "Quick slant over the middle"
+            
+          - play_id: 2024_G001_P003
+            quarter: 1
+            time: "13:50"
+            down: 1
+            distance: 10
+            yard_line: 44
+            play_type: "run"
+            formation: "Singleback"
+            personnel: "12"
+            concept: "Inside Zone"
+            play_name: "Singleback Inside Zone"
+            ball_carrier: "RB1"
+            yards_gained: -2
+            result: "negative"
+            scoring_play: false
+            notes: "Tackled in backfield by DT"
+            
+          - play_id: 2024_G001_P004
+            quarter: 1
+            time: "13:15"
+            down: 2
+            distance: 12
+            yard_line: 42
+            play_type: "pass"
+            formation: "Shotgun Trips"
+            personnel: "11"
+            concept: "Curl"
+            play_name: "Shotgun Trips Curl"
+            passer: "QB1"
+            target: "WR2"
+            completion: false
+            yards_gained: 0
+            result: "neutral"
+            scoring_play: false
+            notes: "Incomplete pass, overthrown"
+            
+          - play_id: 2024_G001_P005
+            quarter: 1
+            time: "13:10"
+            down: 3
+            distance: 12
+            yard_line: 42
+            play_type: "pass"
+            formation: "Shotgun Empty"
+            personnel: "10"
+            concept: "Vertical"
+            play_name: "Shotgun Empty Vertical"
+            passer: "QB1"
+            target: "WR1"
+            completion: true
+            yards_gained: 28
+            result: "positive"
+            scoring_play: false
+            notes: "Deep completion down sideline"
+            
+          - play_id: 2024_G001_P006
+            quarter: 1
+            time: "12:35"
+            down: 1
+            distance: 10
+            yard_line: 30
+            play_type: "run"
+            formation: "Pistol"
+            personnel: "21"
+            concept: "Outside Zone"
+            play_name: "Pistol Outside Zone"
+            ball_carrier: "RB1"
+            yards_gained: 30
+            result: "positive"
+            scoring_play: true
+            notes: "Touchdown run, broke two tackles"
+            
+      - game_id: 2024_G002
+        week: 1
+        home_team: "Chiefs"
+        away_team: "Ravens"
+        date: "2024-09-08"
+        location: "Arrowhead Stadium"
+        weather: "Partly Cloudy, 68°F"
+        home_score: 31
+        away_score: 28
+        plays:
+          - play_id: 2024_G002_P001
+            quarter: 1
+            time: "15:00"
+            down: 1
+            distance: 10
+            yard_line: 25
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "RPO Slant"
+            play_name: "Shotgun RPO Slant"
+            passer: "QB1"
+            target: "TE1"
+            completion: true
+            yards_gained: 15
+            result: "positive"
+            scoring_play: false
+            notes: "RPO read, quick pass to tight end"
+            
+          - play_id: 2024_G002_P002
+            quarter: 1
+            time: "14:30"
+            down: 1
+            distance: 10
+            yard_line: 40
+            play_type: "run"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Draw"
+            play_name: "Shotgun Draw"
+            ball_carrier: "RB1"
+            yards_gained: 8
+            result: "positive"
+            scoring_play: false
+            notes: "Delayed handoff up the middle"
+            
+          - play_id: 2024_G002_P003
+            quarter: 1
+            time: "13:55"
+            down: 2
+            distance: 2
+            yard_line: 48
+            play_type: "pass"
+            formation: "Shotgun Trips"
+            personnel: "11"
+            concept: "Bubble Screen"
+            play_name: "Shotgun Trips Bubble Screen"
+            passer: "QB1"
+            target: "WR3"
+            completion: true
+            yards_gained: 6
+            result: "positive"
+            scoring_play: false
+            notes: "Quick screen to slot receiver"
+            
+          - play_id: 2024_G002_P004
+            quarter: 1
+            time: "13:20"
+            down: 1
+            distance: 10
+            yard_line: 46
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "12"
+            concept: "Play Action Post"
+            play_name: "Shotgun Play Action Post"
+            passer: "QB1"
+            target: "WR1"
+            completion: true
+            yards_gained: 46
+            result: "positive"
+            scoring_play: true
+            notes: "Deep post route for touchdown"
+            
+  - year: 2024
+    games:
+      - game_id: 2024_G003
+        week: 2
+        home_team: "49ers"
+        away_team: "Seahawks"
+        date: "2024-09-15"
+        location: "Levi's Stadium"
+        weather: "Sunny, 75°F"
+        home_score: 24
+        away_score: 17
+        plays:
+          - play_id: 2024_G003_P001
+            quarter: 1
+            time: "15:00"
+            down: 1
+            distance: 10
+            yard_line: 25
+            play_type: "run"
+            formation: "I-Formation"
+            personnel: "21"
+            concept: "Power"
+            ball_carrier: "RB1"
+            yards_gained: 4
+            result: "positive"
+            scoring_play: false
+            notes: "Run up the middle"
+            
+          - play_id: 2024_G003_P002
+            quarter: 1
+            time: "14:25"
+            down: 2
+            distance: 6
+            yard_line: 29
+            play_type: "run"
+            formation: "Singleback"
+            personnel: "12"
+            concept: "Outside Zone"
+            ball_carrier: "RB1"
+            yards_gained: 22
+            result: "positive"
+            scoring_play: false
+            notes: "Excellent blocking on the edge"
+            
+          - play_id: 2024_G003_P003
+            quarter: 1
+            time: "13:45"
+            down: 1
+            distance: 10
+            yard_line: 49
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Mesh"
+            passer: "QB1"
+            target: "WR2"
+            completion: true
+            yards_gained: 14
+            result: "positive"
+            scoring_play: false
+            notes: "Crossing route underneath"
+            
+          - play_id: 2024_G003_P004
+            quarter: 1
+            time: "13:10"
+            down: 1
+            distance: 10
+            yard_line: 37
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Screen"
+            passer: "QB1"
+            target: "RB1"
+            completion: true
+            yards_gained: -3
+            result: "negative"
+            scoring_play: false
+            notes: "Screen blown up by linebacker"
+            
+      - game_id: 2024_G004
+        week: 2
+        home_team: "Bills"
+        away_team: "Dolphins"
+        date: "2024-09-15"
+        location: "Highmark Stadium"
+        weather: "Rain, 62°F"
+        home_score: 21
+        away_score: 24
+        plays:
+          - play_id: 2024_G004_P001
+            quarter: 1
+            time: "15:00"
+            down: 1
+            distance: 10
+            yard_line: 25
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Quick Out"
+            passer: "QB1"
+            target: "WR1"
+            completion: true
+            yards_gained: 8
+            result: "positive"
+            scoring_play: false
+            notes: "Quick pass to the flat"
+            
+          - play_id: 2024_G004_P002
+            quarter: 1
+            time: "14:35"
+            down: 2
+            distance: 2
+            yard_line: 33
+            play_type: "run"
+            formation: "Pistol"
+            personnel: "21"
+            concept: "Inside Zone"
+            ball_carrier: "RB1"
+            yards_gained: 5
+            result: "positive"
+            scoring_play: false
+            notes: "Good push by offensive line"
+            
+          - play_id: 2024_G004_P003
+            quarter: 1
+            time: "14:00"
+            down: 1
+            distance: 10
+            yard_line: 38
+            play_type: "pass"
+            formation: "Shotgun Empty"
+            personnel: "10"
+            concept: "Slant"
+            passer: "QB1"
+            target: "WR2"
+            completion: false
+            yards_gained: 0
+            result: "neutral"
+            scoring_play: false
+            notes: "Pass broken up by cornerback"
+            
+  - year: 2023
+    games:
+      - game_id: 2023_G001
+        week: 1
+        home_team: "Packers"
+        away_team: "Bears"
+        date: "2023-09-10"
+        location: "Lambeau Field"
+        weather: "Clear, 65°F"
+        home_score: 31
+        away_score: 17
+        plays:
+          - play_id: 2023_G001_P001
+            quarter: 1
+            time: "15:00"
+            down: 1
+            distance: 10
+            yard_line: 25
+            play_type: "run"
+            formation: "Singleback"
+            personnel: "12"
+            concept: "Inside Zone"
+            ball_carrier: "RB1"
+            yards_gained: 6
+            result: "positive"
+            scoring_play: false
+            notes: "Solid run to start the game"
+            
+          - play_id: 2023_G001_P002
+            quarter: 1
+            time: "14:25"
+            down: 2
+            distance: 4
+            yard_line: 31
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Curl"
+            passer: "QB1"
+            target: "WR1"
+            completion: true
+            yards_gained: 9
+            result: "positive"
+            scoring_play: false
+            notes: "Good timing on curl route"
+            
+          - play_id: 2023_G001_P003
+            quarter: 1
+            time: "13:50"
+            down: 1
+            distance: 10
+            yard_line: 40
+            play_type: "pass"
+            formation: "Shotgun"
+            personnel: "11"
+            concept: "Go"
+            passer: "QB1"
+            target: "WR2"
+            completion: true
+            yards_gained: 60
+            result: "positive"
+            scoring_play: true
+            notes: "Deep ball for touchdown"
+
+# Aggregated Concept Data
+concepts:
+  run:
+    - name: "Power"
+      count: 45
+      avg_yards: 5.7
+      success_rate: 0.68
+      td_rate: 0.11
+    - name: "Inside Zone"
+      count: 62
+      avg_yards: 4.3
+      success_rate: 0.61
+      td_rate: 0.08
+    - name: "Outside Zone"
+      count: 38
+      avg_yards: 6.1
+      success_rate: 0.58
+      td_rate: 0.13
+    - name: "Counter"
+      count: 22
+      avg_yards: 5.2
+      success_rate: 0.55
+      td_rate: 0.09
+    - name: "Draw"
+      count: 18
+      avg_yards: 4.8
+      success_rate: 0.50
+      td_rate: 0.06
+    - name: "Trap"
+      count: 12
+      avg_yards: 3.9
+      success_rate: 0.42
+      td_rate: 0.00
+    - name: "Sweep"
+      count: 15
+      avg_yards: 7.2
+      success_rate: 0.53
+      td_rate: 0.13
+  pass:
+    - name: "Slant"
+      count: 58
+      avg_yards: 8.3
+      success_rate: 0.72
+      td_rate: 0.10
+    - name: "Curl"
+      count: 42
+      avg_yards: 7.1
+      success_rate: 0.67
+      td_rate: 0.05
+    - name: "Vertical"
+      count: 25
+      avg_yards: 18.4
+      success_rate: 0.48
+      td_rate: 0.24
+    - name: "Screen"
+      count: 35
+      avg_yards: 5.6
+      success_rate: 0.51
+      td_rate: 0.06
+    - name: "Out"
+      count: 30
+      avg_yards: 6.8
+      success_rate: 0.63
+      td_rate: 0.03
+    - name: "Post"
+      count: 22
+      avg_yards: 15.7
+      success_rate: 0.55
+      td_rate: 0.18
+    - name: "Corner"
+      count: 18
+      avg_yards: 14.2
+      success_rate: 0.50
+      td_rate: 0.17
+    - name: "Crossing"
+      count: 28
+      avg_yards: 9.6
+      success_rate: 0.64
+      td_rate: 0.07
+    - name: "Mesh"
+      count: 20
+      avg_yards: 7.8
+      success_rate: 0.70
+      td_rate: 0.05
+    - name: "RPO Slant"
+      count: 15
+      avg_yards: 9.2
+      success_rate: 0.73
+      td_rate: 0.13
+    - name: "Bubble Screen"
+      count: 12
+      avg_yards: 4.5
+      success_rate: 0.50
+      td_rate: 0.00
+    - name: "Play Action Post"
+      count: 10
+      avg_yards: 22.3
+      success_rate: 0.60
+      td_rate: 0.30
+
+# Formation Data
+formations:
+  - name: "I-Formation"
+    run_percentage: 0.78
+    pass_percentage: 0.22
+    avg_yards_per_play: 5.3
+    success_rate: 0.62
+  - name: "Singleback"
+    run_percentage: 0.65
+    pass_percentage: 0.35
+    avg_yards_per_play: 5.7
+    success_rate: 0.59
+  - name: "Shotgun"
+    run_percentage: 0.32
+    pass_percentage: 0.68
+    avg_yards_per_play: 6.8
+    success_rate: 0.58
+  - name: "Pistol"
+    run_percentage: 0.55
+    pass_percentage: 0.45
+    avg_yards_per_play: 5.9
+    success_rate: 0.56
+  - name: "Shotgun Trips"
+    run_percentage: 0.25
+    pass_percentage: 0.75
+    avg_yards_per_play: 7.2
+    success_rate: 0.61
+  - name: "Shotgun Empty"
+    run_percentage: 0.05
+    pass_percentage: 0.95
+    avg_yards_per_play: 7.5
+    success_rate: 0.52
+
+# Down and Distance Tendencies
+down_distance:
+  - down: 1
+    avg_distance: 10.0
+    run_percentage: 0.58
+    pass_percentage: 0.42
+    avg_yards_gained: 5.8
+    success_rate: 0.56
+  - down: 2
+    avg_distance: 6.2
+    run_percentage: 0.51
+    pass_percentage: 0.49
+    avg_yards_gained: 5.5
+    success_rate: 0.54
+  - down: 3
+    avg_distance: 6.8
+    run_percentage: 0.22
+    pass_percentage: 0.78
+    avg_yards_gained: 6.7
+    success_rate: 0.48
+  - down: 4
+    avg_distance: 2.1
+    run_percentage: 0.65
+    pass_percentage: 0.35
+    avg_yards_gained: 3.2
+    success_rate: 0.62
+
+# Situational Statistics
+situational:
+  red_zone:
+    run_percentage: 0.62
+    pass_percentage: 0.38
+    success_rate: 0.58
+    td_percentage: 0.43
+  third_down:
+    short:
+      run_percentage: 0.68
+      pass_percentage: 0.32
+      conversion_rate: 0.72
+    medium:
+      run_percentage: 0.35
+      pass_percentage: 0.65
+      conversion_rate: 0.51
+    long:
+      run_percentage: 0.12
+      pass_percentage: 0.88
+      conversion_rate: 0.28
+  goal_line:
+    run_percentage: 0.75
+    pass_percentage: 0.25
+    success_rate: 0.65
+  two_minute:
+    run_percentage: 0.18
+    pass_percentage: 0.82
+    success_rate: 0.48
+
+# Personnel Groupings
+personnel:
+  - code: "10"
+    description: "1 RB, 0 TE, 4 WR"
+    run_percentage: 0.15
+    pass_percentage: 0.85
+    avg_yards_per_play: 7.2
+  - code: "11"
+    description: "1 RB, 1 TE, 3 WR"
+    run_percentage: 0.42
+    pass_percentage: 0.58
+    avg_yards_per_play: 6.5
+  - code: "12"
+    description: "1 RB, 2 TE, 2 WR"
+    run_percentage: 0.58
+    pass_percentage: 0.42
+    avg_yards_per_play: 5.8
+  - code: "21"
+    description: "2 RB, 1 TE, 2 WR"
+    run_percentage: 0.72
+    pass_percentage: 0.28
+    avg_yards_per_play: 5.3
+  - code: "22"
+    description: "2 RB, 2 TE, 1 WR"
+    run_percentage: 0.85
+    pass_percentage: 0.15
+    avg_yards_per_play: 4.7
+
+# Team Performance
+team_performance:
+  - team: "Eagles"
+    offensive_rank: 5
+    defensive_rank: 8
+    run_offense_rank: 3
+    pass_offense_rank: 7
+    run_defense_rank: 10
+    pass_defense_rank: 6
+  - team: "Cowboys"
+    offensive_rank: 3
+    defensive_rank: 12
+    run_offense_rank: 8
+    pass_offense_rank: 2
+    run_defense_rank: 15
+    pass_defense_rank: 9
+  - team: "Chiefs"
+    offensive_rank: 1
+    defensive_rank: 7
+    run_offense_rank: 12
+    pass_offense_rank: 1
+    run_defense_rank: 5
+    pass_defense_rank: 8
+  - team: "Ravens"
+    offensive_rank: 2
+    defensive_rank: 3
+    run_offense_rank: 1
+    pass_offense_rank: 8
+    run_defense_rank: 2
+    pass_defense_rank: 5
+  - team: "49ers"
+    offensive_rank: 4
+    defensive_rank: 2
+    run_offense_rank: 2
+    pass_offense_rank: 6
+    run_defense_rank: 1
+    pass_defense_rank: 4
+  - team: "Bills"
+    offensive_rank: 6
+    defensive_rank: 4
+    run_offense_rank: 7
+    pass_offense_rank: 5
+    run_defense_rank: 6
+    pass_defense_rank: 3
+  - team: "Packers"
+    offensive_rank: 8
+    defensive_rank: 9
+    run_offense_rank: 5
+    pass_offense_rank: 10
+    run_defense_rank: 9
+    pass_defense_rank: 10
