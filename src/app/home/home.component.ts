@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 import { Router } from '@angular/router';
+import { YamlDataService } from '../services/yaml-data.service';
 
 interface OffensePlay {
   playID: number;
@@ -138,31 +139,155 @@ export class HomeComponent implements OnInit {
   private filteredConceptCounts: Map<string, Map<string, number>> = new Map();
   private allPlays: Map<string, OffensePlay[]> = new Map();
   selectedDown: number = 0; // 0 means all downs
+  loading: boolean = true;
+  error: string | null = null;
+  yamlFilePath: string = 'assets/data/mockaroogernearte.yaml';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private yamlDataService: YamlDataService) {}
 
   ngOnInit() {
-    this.createRunPassPieChartWithMockData();
-    this.createMockConceptData();
+    this.loadYamlData();
   }
 
   filterByDown(down: number) {
     this.selectedDown = down;
-    this.createRunPassPieChartWithMockData();
+    this.createRunPassPieChart();
   }
 
   navigateToYamlTable(): void {
     this.router.navigate(['/yaml-data']);
   }
 
-  private createRunPassPieChartWithMockData() {
+  private loadYamlData() {
+    this.loading = true;
+    this.error = null;
+    
+    this.yamlDataService.loadYamlDataWithPath<any[]>(this.yamlFilePath.split('/').pop() || 'mockaroogernearte.yaml')
+      .subscribe({
+        next: (result) => {
+          if (result.data) {
+            this.yamlFilePath = result.filePath;
+            this.processYamlData(result.data);
+            this.createRunPassPieChart();
+            this.loading = false;
+          } else {
+            this.error = 'Failed to parse YAML data. Using mock data instead.';
+            this.loading = false;
+            this.createMockConceptData();
+            this.createRunPassPieChart();
+          }
+        },
+        error: (err) => {
+          console.error('Error loading YAML file:', err);
+          this.error = 'Failed to load YAML file. Using mock data instead.';
+          this.loading = false;
+          this.createMockConceptData();
+          this.createRunPassPieChart();
+        }
+      });
+  }
+
+  private processYamlData(data: any[]) {
+    // Clear existing data
+    this.conceptCounts.clear();
+    this.allPlays.clear();
+    
+    // Initialize concept maps
+    const runConcepts = new Map<string, number>();
+    const passConcepts = new Map<string, number>();
+    
+    // Initialize play arrays
+    const runPlays: OffensePlay[] = [];
+    const passPlays: OffensePlay[] = [];
+    
+    // Process each entry in the YAML data
+    data.forEach(entry => {
+      if (entry.plays && entry.plays.play_type) {
+        const playType = entry.plays.play_type.toLowerCase();
+        const concept = entry.plays.concept || 'Unknown';
+        const yardsGained = entry.plays.yards_gained || 0;
+        
+        // Create play object
+        const play: OffensePlay = {
+          playID: parseInt(entry.plays.play_id?.split('_').pop() || '0'),
+          playname: concept,
+          yardsGained: yardsGained,
+          Down: entry.plays.down || 1,
+          Distance: entry.plays.distance || 10,
+          Result: entry.plays.result || 'Unknown',
+          Efficient: yardsGained > 0,
+          VideoID: entry.plays.play_id,
+          GameID: entry.games?.game_id
+        };
+        
+        // Update concept counts and play arrays based on play type
+        if (playType === 'run') {
+          // Update run concept count
+          const currentCount = runConcepts.get(concept) || 0;
+          runConcepts.set(concept, currentCount + 1);
+          
+          // Add to run plays
+          runPlays.push(play);
+        } else if (playType === 'pass') {
+          // Update pass concept count
+          const currentCount = passConcepts.get(concept) || 0;
+          passConcepts.set(concept, currentCount + 1);
+          
+          // Add to pass plays
+          passPlays.push(play);
+        }
+      }
+    });
+    
+    // Store in the conceptCounts map
+    this.conceptCounts.set('Run', runConcepts);
+    this.conceptCounts.set('Pass', passConcepts);
+    
+    // Store in the allPlays map
+    this.allPlays.set('Run', runPlays);
+    this.allPlays.set('Pass', passPlays);
+    
+    // Initialize filteredConceptCounts with all concepts
+    this.filteredConceptCounts = new Map(this.conceptCounts);
+    
+    console.log('Processed YAML data:', {
+      runConcepts: Array.from(runConcepts.entries()),
+      passConcepts: Array.from(passConcepts.entries()),
+      runPlays: runPlays.length,
+      passPlays: passPlays.length
+    });
+  }
+
+  private createRunPassPieChart() {
     // Clear any existing chart
     d3.select(this.pieChartContainer.nativeElement).selectAll('*').remove();
     
-    // Mock data for Run vs Pass distribution
+    // Get run and pass counts from the processed data
+    const runPlays = this.allPlays.get('Run') || [];
+    const passPlays = this.allPlays.get('Pass') || [];
+    
+    // Filter by down if needed
+    const filteredRunPlays = this.selectedDown === 0 ? 
+      runPlays : 
+      runPlays.filter(play => play.Down === this.selectedDown);
+    
+    const filteredPassPlays = this.selectedDown === 0 ? 
+      passPlays : 
+      passPlays.filter(play => play.Down === this.selectedDown);
+    
+    // Calculate average yards
+    const runAvgYards = filteredRunPlays.length > 0 ? 
+      filteredRunPlays.reduce((sum, play) => sum + play.yardsGained, 0) / filteredRunPlays.length : 
+      0;
+    
+    const passAvgYards = filteredPassPlays.length > 0 ? 
+      filteredPassPlays.reduce((sum, play) => sum + play.yardsGained, 0) / filteredPassPlays.length : 
+      0;
+    
+    // Create data for the pie chart
     const data = [
-      { category: 'Run', count: 35, avgYards: 4.2 },
-      { category: 'Pass', count: 45, avgYards: 6.8 }
+      { category: 'Run', count: filteredRunPlays.length, avgYards: parseFloat(runAvgYards.toFixed(1)) },
+      { category: 'Pass', count: filteredPassPlays.length, avgYards: parseFloat(passAvgYards.toFixed(1)) }
     ];
 
     // Set up dimensions

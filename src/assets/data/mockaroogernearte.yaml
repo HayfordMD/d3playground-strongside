@@ -20,8 +20,8 @@
     play_type: pass
     formation: Shotgun
     personnel: 21
-    concept: Power
-    play_name: I-Formation Power
+    concept: Trap
+    play_name: Shotgun Trap
     ball_carrier: QB1
     yards_gained: 49
     result: positive
@@ -51,8 +51,8 @@
     play_type: run
     formation: Shotgun
     personnel: 21
-    concept: Power
-    play_name: I-Formation Power
+    concept: Counter
+    play_name: Shotgun Counter
     ball_carrier: QB1
     yards_gained: 22
     result: positive
@@ -87,8 +87,8 @@
     play_type: run
     formation: Shotgun
     personnel: 11
-    concept: Power
-    play_name: Shotgun Slant
+    concept: Sweep
+    play_name: Shotgun Sweep
     ball_carrier: QB1
     yards_gained: 47
     result: positive
@@ -19048,11 +19048,11 @@
     down: 3
     distance: 5
     yard_line: 4
-    play_type: run
+    play_type: pass
     formation: I-Formation
     personnel: 11
-    concept: Power
-    play_name: Shotgun Slant
+    concept: Hitch
+    play_name: I-Formation Hitch
     ball_carrier: RB1
     yards_gained: 20
     result: positive
@@ -19087,7 +19087,7 @@
     formation: Shotgun
     personnel: 21
     concept: Slant
-    play_name: Shotgun Slant
+    play_name: Shotgun Mesh
     ball_carrier: QB1
     yards_gained: 1
     result: positive
