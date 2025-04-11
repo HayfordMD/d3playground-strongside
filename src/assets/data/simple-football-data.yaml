@@ -1,0 +1,59 @@
+- seasons:
+    year: 2024
+  games:
+    game_id: 2024_G001
+    week: 1
+    home_team: Eagles
+    away_team: Cowboys
+    date: "2024-09-08"
+    location: Lincoln Financial Field
+    weather: Clear
+    home_score: 24
+    away_score: 17
+  plays:
+    play_id: 2024_G001_P001
+    quarter: 1
+    time: "12:45"
+    down: 1
+    distance: 10
+    yard_line: 25
+    play_type: run
+    formation: I-Formation
+    personnel: 21
+    concept: Power
+    play_name: I-Formation Power
+    ball_carrier: RB1
+    yards_gained: 5
+    result: positive
+    scoring_play: false
+    notes: Strong run up the middle
+
+- seasons:
+    year: 2024
+  games:
+    game_id: 2024_G001
+    week: 1
+    home_team: Eagles
+    away_team: Cowboys
+    date: "2024-09-08"
+    location: Lincoln Financial Field
+    weather: Clear
+    home_score: 24
+    away_score: 17
+  plays:
+    play_id: 2024_G001_P002
+    quarter: 1
+    time: "12:10"
+    down: 2
+    distance: 5
+    yard_line: 30
+    play_type: pass
+    formation: Shotgun
+    personnel: 11
+    concept: Slant
+    play_name: Shotgun Trips Right Slant
+    ball_carrier: WR1
+    yards_gained: 15
+    result: positive
+    scoring_play: false
+    notes: Quick slant to the right side

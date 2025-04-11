@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { YamlDataService } from '../services/yaml-data.service';
+import { YamlDataService, YamlDataResult } from '../services/yaml-data.service';
 
 interface PlayData {
   play_id: string;
@@ -51,6 +51,9 @@ interface MacarooEntry {
   template: `
     <div class="macaroo-table-container">
       <h2>Macaroo Football Data</h2>
+      <div class="file-path-info">
+        <span>Data Source: <code>assets/data/simple-football-data.yaml</code></span>
+      </div>
       
       <div class="filter-container">
         <span class="filter-label">Filter by Play Type:</span>
@@ -131,8 +134,22 @@ interface MacarooEntry {
 
     h2 {
       color: #2c3e50;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-align: center;
+    }
+
+    .file-path-info {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+
+    .file-path-info code {
+      background-color: #f0f0f0;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
     }
 
     .filter-container {
@@ -241,6 +258,7 @@ export class YamlDataTableComponent implements OnInit {
   currentFilter: string = 'all';
   loading: boolean = true;
   error: string | null = null;
+  filePath: string = '';
 
   constructor(private yamlDataService: YamlDataService) {}
 
@@ -252,11 +270,14 @@ export class YamlDataTableComponent implements OnInit {
     this.loading = true;
     this.error = null;
     
-    this.yamlDataService.loadYamlData<MacarooEntry[]>('mockaroogernearte.yaml')
+    this.yamlDataService.loadYamlDataWithPath<MacarooEntry[]>('simple-football-data.yaml')
       .subscribe({
-        next: (data) => {
-          if (data) {
-            this.allData = data;
+        next: (result: YamlDataResult<MacarooEntry[]>) => {
+          console.log('YAML data result:', result);
+          if (result.data) {
+            this.allData = result.data;
+            this.filePath = result.filePath;
+            console.log('File path set to:', this.filePath);
             this.filterData(this.currentFilter);
             this.loading = false;
           } else {
@@ -282,5 +303,10 @@ export class YamlDataTableComponent implements OnInit {
         entry.plays.play_type.toLowerCase() === filter.toLowerCase()
       );
     }
+  }
+  
+  getDisplayPath(): string {
+    console.log('getDisplayPath called, current path:', this.filePath);
+    return this.filePath || 'No file path available';
   }
 }
