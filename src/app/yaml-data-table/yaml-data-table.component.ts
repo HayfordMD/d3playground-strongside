@@ -52,7 +52,7 @@ interface MacarooEntry {
     <div class="macaroo-table-container">
       <h2>Macaroo Football Data</h2>
       <div class="file-path-info">
-        <span>Data Source: <code>assets/data/simple-football-data.yaml</code></span>
+        <span>Data Source: <code>assets/data/mockaroogernearte.yaml</code></span>
       </div>
       
       <div class="filter-container">
@@ -270,7 +270,7 @@ export class YamlDataTableComponent implements OnInit {
     this.loading = true;
     this.error = null;
     
-    this.yamlDataService.loadYamlDataWithPath<MacarooEntry[]>('simple-football-data.yaml')
+    this.yamlDataService.loadYamlDataWithPath<MacarooEntry[]>('mockaroogernearte.yaml')
       .subscribe({
         next: (result: YamlDataResult<MacarooEntry[]>) => {
           console.log('YAML data result:', result);

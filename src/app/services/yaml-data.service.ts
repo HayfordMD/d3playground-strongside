@@ -40,7 +40,8 @@ export class YamlDataService {
             // Set options to suppress errors and continue parsing
             const options = {
               schema: yaml.DEFAULT_SCHEMA,
-              onWarning: (e: any) => console.warn('YAML warning:', e)
+              onWarning: (e: any) => console.warn('YAML warning:', e),
+              json: true // Force JSON compatible output
             };
             return yaml.load(text, options) as T;
           } catch (e) {
@@ -71,7 +72,8 @@ export class YamlDataService {
             // Set options to suppress errors and continue parsing
             const options = {
               schema: yaml.DEFAULT_SCHEMA,
-              onWarning: (e: any) => console.warn('YAML warning:', e)
+              onWarning: (e: any) => console.warn('YAML warning:', e),
+              json: true // Force JSON compatible output
             };
             const result = {
               data: yaml.load(text, options) as T,
