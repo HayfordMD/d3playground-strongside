@@ -45,7 +45,7 @@ interface OffenseData {
           <h1>Football Analytics Dashboard</h1>
           <nav class="app-nav">
             <a routerLink="/home" class="nav-link">Home</a>
-            <a routerLink="/yaml-data" class="nav-link">YAML Data Table</a>
+            <a routerLink="/yaml-data" class="nav-link">Macaroo Table</a>
           </nav>
         </div>
       </header>
