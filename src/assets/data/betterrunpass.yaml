@@ -7,7 +7,7 @@
     down: 2
     distance: 3
     play_concept: Mid-line read
-    play_formation: Trio Right
+    play_formation: Trio Right Tight
     play_name: Trio Right Mid-line read
     video_url: http://dummyimage.com/164x156.png/ff4444/ffffff
     time: 9:55
@@ -276,9 +276,9 @@
     yards_gained: 6
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter FB Dive
+    play_name: Right Strong Tight Undercenter Power
     video_url: http://dummyimage.com/295x316.png/dddddd/000000
     time: 5:52
     qtr: 4
@@ -726,9 +726,9 @@
     yards_gained: 8
     down: 2
     distance: 1
-    play_concept: Draw
+    play_concept: Iso
     play_formation: 
-    play_name:  Draw
+    play_name:  Iso
     video_url: http://dummyimage.com/198x424.png/dddddd/000000
     time: 1:16
     qtr: 1
@@ -1194,9 +1194,9 @@
     yards_gained: 2
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Left
-    play_name: I-Left FB Dive
+    play_name: I-Left Power
     video_url: http://dummyimage.com/202x392.png/cc0000/ffffff
     time: 1:49
     qtr: 3
@@ -1284,9 +1284,9 @@
     yards_gained: 10
     down: 3
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Left
-    play_name: I-Left FB Dive
+    play_name: I-Left Power
     video_url: http://dummyimage.com/240x280.png/ff4444/ffffff
     time: 1:40
     qtr: 2
@@ -1374,9 +1374,9 @@
     yards_gained: -4
     down: 2
     distance: 1
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Pro Right Flex Stack Undercenter
-    play_name: Pro Right Flex Stack Undercenter Draw
+    play_name: Pro Right Flex Stack Undercenter Iso
     video_url: http://dummyimage.com/328x418.png/cc0000/ffffff
     time: 9:09
     qtr: 4
@@ -1392,9 +1392,9 @@
     yards_gained: 13
     down: 2
     distance: 4
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trio Left
-    play_name: Trio Left FB Dive
+    play_name: Trio Left Power
     video_url: http://dummyimage.com/145x179.png/dddddd/000000
     time: 7:57
     qtr: 1
@@ -1536,9 +1536,9 @@
     yards_gained: 7
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol FB Dive
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Power
     video_url: http://dummyimage.com/333x294.png/cc0000/ffffff
     time: 9:39
     qtr: 2
@@ -1806,9 +1806,9 @@
     yards_gained: -14
     down: 3
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Draw
+    play_name: I-Left Flex Close Iso
     video_url: http://dummyimage.com/250x281.png/cc0000/ffffff
     time: 6:16
     qtr: 4
@@ -2022,9 +2022,9 @@
     yards_gained: 17
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trips Left Close
-    play_name: Trips Left Close FB Dive
+    play_name: Trips Left Close Power
     video_url: http://dummyimage.com/279x372.png/ff4444/ffffff
     time: 7:32
     qtr: 4
@@ -2058,9 +2058,9 @@
     yards_gained: 14
     down: 2
     distance: 1
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: 
-    play_name:  FB Dive
+    play_name:  Power
     video_url: http://dummyimage.com/266x312.png/cc0000/ffffff
     time: 10:16
     qtr: 3
@@ -2094,9 +2094,9 @@
     yards_gained: 3
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch Draw
+    play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/131x245.png/ff4444/ffffff
     time: 2:09
     qtr: 1
@@ -2346,9 +2346,9 @@
     yards_gained: 3
     down: 3
     distance: 4
-    play_concept: Draw
+    play_concept: Iso
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Draw
+    play_name: I-Left Flex Close Iso
     video_url: http://dummyimage.com/144x433.png/5fa2dd/ffffff
     time: 8:35
     qtr: 2
@@ -2544,9 +2544,9 @@
     yards_gained: 9
     down: 4
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trips Left Close
-    play_name: Trips Left Close Draw
+    play_name: Trips Left Close Iso
     video_url: http://dummyimage.com/193x493.png/dddddd/000000
     time: 1:27
     qtr: 3
@@ -2760,9 +2760,9 @@
     yards_gained: 11
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trio Right
-    play_name: Trio Right Draw
+    play_name: Trio Right Iso
     video_url: http://dummyimage.com/333x308.png/5fa2dd/ffffff
     time: 2:08
     qtr: 1
@@ -2796,9 +2796,9 @@
     yards_gained: 8
     down: 2
     distance: 1
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Draw
+    play_name: Ace Left Slot Iso
     video_url: http://dummyimage.com/295x265.png/cc0000/ffffff
     time: 10:15
     qtr: 2
@@ -2832,9 +2832,9 @@
     yards_gained: 10
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trips Left Close
-    play_name: Trips Left Close FB Dive
+    play_name: Trips Left Close Power
     video_url: http://dummyimage.com/291x142.png/dddddd/000000
     time: 8:24
     qtr: 1
@@ -3030,9 +3030,9 @@
     yards_gained: 4
     down: 1
     distance: 10
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: I-Right Twins
-    play_name: I-Right Twins Mid-line read
+    play_name: I-Right Twins Outside Zone
     video_url: http://dummyimage.com/146x126.png/ff4444/ffffff
     time: 3:50
     qtr: 1
@@ -3228,9 +3228,9 @@
     yards_gained: 7
     down: 2
     distance: 8
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong FB Dive
+    play_name: Doubles Stack Strong Power
     video_url: http://dummyimage.com/109x415.png/cc0000/ffffff
     time: 2:59
     qtr: 1
@@ -3336,9 +3336,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trips Left Close
-    play_name: Trips Left Close FB Dive
+    play_name: Trips Left Close Power
     video_url: http://dummyimage.com/218x187.png/5fa2dd/ffffff
     time: 7:55
     qtr: 3
@@ -3372,9 +3372,9 @@
     yards_gained: -1
     down: 1
     distance: 10
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Mid-line read
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Outside Zone
     video_url: http://dummyimage.com/278x203.png/cc0000/ffffff
     time: 2:38
     qtr: 2
@@ -3408,9 +3408,9 @@
     yards_gained: 0
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Pro Right Flex Stack Undercenter
-    play_name: Pro Right Flex Stack Undercenter Draw
+    play_name: Pro Right Flex Stack Undercenter Iso
     video_url: http://dummyimage.com/337x371.png/dddddd/000000
     time: 3:25
     qtr: 4
@@ -3516,9 +3516,9 @@
     yards_gained: 7
     down: 3
     distance: 7
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol FB Dive
+    play_name: Left Flex Pistol Power
     video_url: http://dummyimage.com/318x150.png/cc0000/ffffff
     time: 6:13
     qtr: 2
@@ -3786,9 +3786,9 @@
     yards_gained: 8
     down: 2
     distance: 4
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch Draw
+    play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/102x479.png/dddddd/000000
     time: 1:26
     qtr: 1
@@ -3804,9 +3804,9 @@
     yards_gained: 5
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Left
-    play_name: I-Left FB Dive
+    play_name: I-Left Power
     video_url: http://dummyimage.com/158x130.png/5fa2dd/ffffff
     time: 3:49
     qtr: 1
@@ -3858,9 +3858,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: Pro Right Flex Stack Undercenter
-    play_name: Pro Right Flex Stack Undercenter Mid-line read
+    play_name: Pro Right Flex Stack Undercenter Outside Zone
     video_url: http://dummyimage.com/234x278.png/dddddd/000000
     time: 7:20
     qtr: 3
@@ -3948,9 +3948,9 @@
     yards_gained: 1
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trips Left Close
-    play_name: Trips Left Close FB Dive
+    play_name: Trips Left Close Power
     video_url: http://dummyimage.com/207x486.png/dddddd/000000
     time: 2:19
     qtr: 3
@@ -4056,9 +4056,9 @@
     yards_gained: 5
     down: 3
     distance: 7
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Mid-line read
+    play_name: Left Flex Pistol Outside Zone
     video_url: http://dummyimage.com/104x358.png/cc0000/ffffff
     time: 3:22
     qtr: 4
@@ -4074,9 +4074,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Draw
+    play_name: Left Flex Pistol Iso
     video_url: http://dummyimage.com/168x265.png/dddddd/000000
     time: 1:30
     qtr: 4
@@ -4200,9 +4200,9 @@
     yards_gained: 3
     down: 3
     distance: 10
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: Pro Left Flex Queen Wing
-    play_name: Pro Left Flex Queen Wing Mid-line read
+    play_name: Pro Left Flex Queen Wing Outside Zone
     video_url: http://dummyimage.com/125x280.png/5fa2dd/ffffff
     time: 6:57
     qtr: 2
@@ -4218,9 +4218,9 @@
     yards_gained: 2
     down: 2
     distance: 4
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Mid-line read
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Outside Zone
     video_url: http://dummyimage.com/119x181.png/cc0000/ffffff
     time: 1:43
     qtr: 3
@@ -4254,9 +4254,9 @@
     yards_gained: 15
     down: 3
     distance: 7
-    play_concept: Draw
+    play_concept: Iso
     play_formation: 
-    play_name:  Draw
+    play_name:  Iso
     video_url: http://dummyimage.com/355x156.png/ff4444/ffffff
     time: 2:49
     qtr: 3
@@ -4398,9 +4398,9 @@
     yards_gained: 7
     down: 1
     distance: 10
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Mid-line read
+    play_name: I-Left Flex Close Outside Zone
     video_url: http://dummyimage.com/150x326.png/cc0000/ffffff
     time: 1:33
     qtr: 4
@@ -4452,9 +4452,9 @@
     yards_gained: 7
     down: 2
     distance: 4
-    play_concept: Mid-line read
+    play_concept: Outside Zone
     play_formation: I-Left
-    play_name: I-Left Mid-line read
+    play_name: I-Left Outside Zone
     video_url: http://dummyimage.com/208x399.png/dddddd/000000
     time: 2:38
     qtr: 3
@@ -4542,9 +4542,9 @@
     yards_gained: 20
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Doubles Left Flex Close
-    play_name: Doubles Left Flex Close Draw
+    play_name: Doubles Left Flex Close Iso
     video_url: http://dummyimage.com/245x475.png/dddddd/000000
     time: 9:41
     qtr: 4
@@ -4632,9 +4632,9 @@
     yards_gained: 17
     down: 2
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trio Right
-    play_name: Trio Right Draw
+    play_name: Trio Right Iso
     video_url: http://dummyimage.com/266x356.png/dddddd/000000
     time: 6:07
     qtr: 4
@@ -4704,9 +4704,9 @@
     yards_gained: 7
     down: 3
     distance: 5
-    play_concept: Draw
+    play_concept: Iso
     play_formation: I-Right Twins
-    play_name: I-Right Twins Draw
+    play_name: I-Right Twins Iso
     video_url: http://dummyimage.com/247x186.png/ff4444/ffffff
     time: 6:55
     qtr: 2
@@ -4740,9 +4740,9 @@
     yards_gained: 12
     down: 2
     distance: 6
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trio Left
-    play_name: Trio Left FB Dive
+    play_name: Trio Left Power
     video_url: http://dummyimage.com/272x133.png/dddddd/000000
     time: 8:52
     qtr: 4
@@ -4776,9 +4776,9 @@
     yards_gained: 4
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Trips Left Close
-    play_name: Trips Left Close FB Dive
+    play_name: Trips Left Close Power
     video_url: http://dummyimage.com/328x420.png/cc0000/ffffff
     time: 10:56
     qtr: 3
@@ -4794,9 +4794,9 @@
     yards_gained: 0
     down: 3
     distance: 1
-    play_concept: Draw
+    play_concept: Iso
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Draw
+    play_name: I-Left Flex Close Iso
     video_url: http://dummyimage.com/321x136.png/5fa2dd/ffffff
     time: 2:04
     qtr: 4
@@ -4812,9 +4812,9 @@
     yards_gained: -7
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Left
-    play_name: I-Left FB Dive
+    play_name: I-Left Power
     video_url: http://dummyimage.com/105x227.png/ff4444/ffffff
     time: 1:08
     qtr: 2
@@ -4830,9 +4830,9 @@
     yards_gained: 2
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Right Twins
-    play_name: I-Right Twins FB Dive
+    play_name: I-Right Twins Power
     video_url: http://dummyimage.com/317x183.png/cc0000/ffffff
     time: 10:09
     qtr: 1
@@ -5010,9 +5010,9 @@
     yards_gained: 15
     down: 3
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch Draw
+    play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/325x430.png/ff4444/ffffff
     time: 2:04
     qtr: 4
@@ -5120,7 +5120,7 @@
     distance: 4
     play_concept: Toss
     play_formation: Trio Left
-    play_name: Trio Left Toss
+    play_name: Trio Left Trap
     video_url: http://dummyimage.com/325x400.png/cc0000/ffffff
     time: 8:35
     qtr: 4
@@ -5136,9 +5136,9 @@
     yards_gained: 5
     down: 3
     distance: 1
-    play_concept: Draw
+    play_concept: Iso
     play_formation: 
-    play_name:  Draw
+    play_name:  Iso
     video_url: http://dummyimage.com/166x418.png/ff4444/ffffff
     time: 7:57
     qtr: 4
@@ -5298,9 +5298,9 @@
     yards_gained: -1
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch FB Dive
+    play_name: Empty Left Bunch Power
     video_url: http://dummyimage.com/304x259.png/5fa2dd/ffffff
     time: 9:32
     qtr: 1
@@ -5370,9 +5370,9 @@
     yards_gained: 14
     down: 2
     distance: 4
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trips Left Close
-    play_name: Trips Left Close Draw
+    play_name: Trips Left Close Iso
     video_url: http://dummyimage.com/224x187.png/ff4444/ffffff
     time: 1:43
     qtr: 1
@@ -5406,9 +5406,9 @@
     yards_gained: -3
     down: 3
     distance: 8
-    play_concept: Toss
+    play_concept: Trap
     play_formation: 
-    play_name:  Toss
+    play_name:  Trap
     video_url: http://dummyimage.com/331x119.png/ff4444/ffffff
     time: 6:44
     qtr: 2
@@ -5460,9 +5460,9 @@
     yards_gained: 9
     down: 2
     distance: 7
-    play_concept: Toss
+    play_concept: Trap
     play_formation: 
-    play_name:  Toss
+    play_name:  Trap
     video_url: http://dummyimage.com/316x374.png/ff4444/ffffff
     time: 1:29
     qtr: 2
@@ -5532,9 +5532,9 @@
     yards_gained: -2
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trio Right
-    play_name: Trio Right Draw
+    play_name: Trio Right Iso
     video_url: http://dummyimage.com/199x442.png/ff4444/ffffff
     time: 2:54
     qtr: 3
@@ -5712,9 +5712,9 @@
     yards_gained: 7
     down: 2
     distance: 4
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Toss
+    play_name: Left Flex Pistol Trap
     video_url: http://dummyimage.com/273x190.png/ff4444/ffffff
     time: 10:21
     qtr: 3
@@ -5910,9 +5910,9 @@
     yards_gained: 9
     down: 3
     distance: 6
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trio Left
-    play_name: Trio Left Draw
+    play_name: Trio Left Iso
     video_url: http://dummyimage.com/229x388.png/5fa2dd/ffffff
     time: 7:22
     qtr: 1
@@ -5928,9 +5928,9 @@
     yards_gained: 12
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong Draw
+    play_name: Doubles Stack Strong Iso
     video_url: http://dummyimage.com/304x432.png/dddddd/000000
     time: 4:44
     qtr: 1
@@ -6018,9 +6018,9 @@
     yards_gained: 2
     down: 2
     distance: 9
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Toss
+    play_name: Left Flex Pistol Trap
     video_url: http://dummyimage.com/302x223.png/5fa2dd/ffffff
     time: 3:11
     qtr: 4
@@ -6090,9 +6090,9 @@
     yards_gained: 6
     down: 1
     distance: 10
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Pro Left
-    play_name: Pro Left Toss
+    play_name: Pro Left Trap
     video_url: http://dummyimage.com/215x105.png/5fa2dd/ffffff
     time: 3:32
     qtr: 1
@@ -6360,9 +6360,9 @@
     yards_gained: 14
     down: 3
     distance: 4
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Trio Left
-    play_name: Trio Left Draw
+    play_name: Trio Left Iso
     video_url: http://dummyimage.com/158x122.png/dddddd/000000
     time: 1:16
     qtr: 2
@@ -6396,9 +6396,9 @@
     yards_gained: 13
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Draw
+    play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/251x483.png/ff4444/ffffff
     time: 2:32
     qtr: 2
@@ -6504,9 +6504,9 @@
     yards_gained: 10
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch FB Dive
+    play_name: Empty Left Bunch Power
     video_url: http://dummyimage.com/112x291.png/5fa2dd/ffffff
     time: 10:28
     qtr: 4
@@ -6612,9 +6612,9 @@
     yards_gained: 1
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol FB Dive
+    play_name: Left Flex Pistol Power
     video_url: http://dummyimage.com/348x450.png/5fa2dd/ffffff
     time: 2:06
     qtr: 3
@@ -6648,9 +6648,9 @@
     yards_gained: -1
     down: 4
     distance: 6
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: I-Left
-    play_name: I-Left FB Dive
+    play_name: I-Left Power
     video_url: http://dummyimage.com/318x451.png/cc0000/ffffff
     time: 7:49
     qtr: 2
@@ -6738,9 +6738,9 @@
     yards_gained: 9
     down: 2
     distance: 8
-    play_concept: Toss
+    play_concept: Trap
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Toss
+    play_name: I-Left Flex Close Trap
     video_url: http://dummyimage.com/232x337.png/5fa2dd/ffffff
     time: 2:07
     qtr: 2
@@ -6828,9 +6828,9 @@
     yards_gained: 9
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Draw
+    play_name: Left Stack Wide Iso
     video_url: http://dummyimage.com/196x391.png/dddddd/000000
     time: 4:27
     qtr: 2
@@ -6900,9 +6900,9 @@
     yards_gained: 10
     down: 3
     distance: 9
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide FB Dive
+    play_name: Left Stack Wide Power
     video_url: http://dummyimage.com/343x321.png/dddddd/000000
     time: 9:35
     qtr: 1
@@ -6972,9 +6972,9 @@
     yards_gained: -8
     down: 2
     distance: 3
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Trio Left
-    play_name: Trio Left Toss
+    play_name: Trio Left Trap
     video_url: http://dummyimage.com/352x420.png/cc0000/ffffff
     time: 4:18
     qtr: 3
@@ -7224,9 +7224,9 @@
     yards_gained: 4
     down: 3
     distance: 5
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Draw
+    play_name: Ace Left Slot Iso
     video_url: http://dummyimage.com/238x295.png/ff4444/ffffff
     time: 5:51
     qtr: 4
@@ -7242,9 +7242,9 @@
     yards_gained: 3
     down: 3
     distance: 3
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot FB Dive
+    play_name: Ace Left Slot Power
     video_url: http://dummyimage.com/333x154.png/dddddd/000000
     time: 1:02
     qtr: 2
@@ -7314,9 +7314,9 @@
     yards_gained: 10
     down: 2
     distance: 2
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Toss
+    play_name: Ace Left Slot Trap
     video_url: http://dummyimage.com/133x383.png/dddddd/000000
     time: 3:01
     qtr: 4
@@ -7350,9 +7350,9 @@
     yards_gained: 7
     down: 3
     distance: 2
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Trio Left
-    play_name: Trio Left Toss
+    play_name: Trio Left Trap
     video_url: http://dummyimage.com/348x448.png/dddddd/000000
     time: 9:29
     qtr: 2
@@ -7368,9 +7368,9 @@
     yards_gained: 17
     down: 2
     distance: 2
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide FB Dive
+    play_name: Left Stack Wide Power
     video_url: http://dummyimage.com/135x181.png/dddddd/000000
     time: 4:34
     qtr: 3
@@ -7476,9 +7476,9 @@
     yards_gained: 5
     down: 3
     distance: 2
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Toss
+    play_name: Left Stack Wide Trap
     video_url: http://dummyimage.com/253x497.png/ff4444/ffffff
     time: 1:11
     qtr: 3
@@ -7512,9 +7512,9 @@
     yards_gained: 14
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong FB Dive
+    play_name: Doubles Stack Strong Power
     video_url: http://dummyimage.com/350x325.png/cc0000/ffffff
     time: 1:01
     qtr: 2
@@ -7530,9 +7530,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch FB Dive
+    play_name: Empty Left Bunch Power
     video_url: http://dummyimage.com/192x257.png/cc0000/ffffff
     time: 8:08
     qtr: 2
@@ -7548,9 +7548,9 @@
     yards_gained: 10
     down: 1
     distance: 10
-    play_concept: Toss
+    play_concept: Trap
     play_formation: Trio Right
-    play_name: Trio Right Toss
+    play_name: Trio Right Trap
     video_url: http://dummyimage.com/334x171.png/ff4444/ffffff
     time: 2:15
     qtr: 1
@@ -7656,9 +7656,9 @@
     yards_gained: 9
     down: 3
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Pro Left
-    play_name: Pro Left FB Dive
+    play_name: Pro Left Power
     video_url: http://dummyimage.com/308x163.png/ff4444/ffffff
     time: 4:55
     qtr: 3
@@ -7836,9 +7836,9 @@
     yards_gained: -5
     down: 1
     distance: 10
-    play_concept: Draw
+    play_concept: Iso
     play_formation: I-Right Twins
-    play_name: I-Right Twins Draw
+    play_name: I-Right Twins Iso
     video_url: http://dummyimage.com/312x180.png/cc0000/ffffff
     time: 7:47
     qtr: 2
@@ -7982,7 +7982,7 @@
     distance: 7
     play_concept: Toss
     play_formation: I-Left
-    play_name: I-Left Toss
+    play_name: I-Left Strong Twins Stack Toss
     video_url: http://dummyimage.com/297x277.png/dddddd/000000
     time: 9:02
     qtr: 4
@@ -8142,9 +8142,9 @@
     yards_gained: 5
     down: 2
     distance: 2
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Draw
+    play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/115x388.png/ff4444/ffffff
     time: 7:05
     qtr: 4
@@ -8250,9 +8250,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: Draw
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Draw
+    play_concept: Iso
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Iso
     video_url: http://dummyimage.com/257x125.png/cc0000/ffffff
     time: 6:19
     qtr: 3
@@ -8305,8 +8305,8 @@
     down: 1
     distance: 10
     play_concept: Mid-line read
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Mid-line read
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Mid-line read
     video_url: http://dummyimage.com/317x140.png/cc0000/ffffff
     time: 2:06
     qtr: 1
@@ -8395,8 +8395,8 @@
     down: 1
     distance: 10
     play_concept: Toss
-    play_formation: I-Left
-    play_name: I-Left Toss
+    play_formation: I-Left Strong Twins Stack
+    play_name: I-Left Strong Twins Stack Toss
     video_url: http://dummyimage.com/248x463.png/5fa2dd/ffffff
     time: 9:58
     qtr: 2
@@ -8412,9 +8412,9 @@
     yards_gained: 1
     down: 3
     distance: 3
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Draw
+    play_name: Ace Left Slot Iso
     video_url: http://dummyimage.com/355x321.png/ff4444/ffffff
     time: 5:25
     qtr: 4
@@ -8430,9 +8430,9 @@
     yards_gained: 3
     down: 2
     distance: 4
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Draw
+    play_name: Ace Left Slot Iso
     video_url: http://dummyimage.com/280x243.png/dddddd/000000
     time: 2:04
     qtr: 4
@@ -8665,8 +8665,8 @@
     down: 2
     distance: 6
     play_concept: FB Dive
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close FB Dive
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close FB Dive
     video_url: http://dummyimage.com/247x381.png/cc0000/ffffff
     time: 5:20
     qtr: 4
@@ -8827,8 +8827,8 @@
     down: 3
     distance: 8
     play_concept: Wham
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Wham
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Wham
     video_url: http://dummyimage.com/144x348.png/ff4444/ffffff
     time: 7:20
     qtr: 1
@@ -8917,8 +8917,8 @@
     down: 2
     distance: 8
     play_concept: Power
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Power
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Power
     video_url: http://dummyimage.com/350x234.png/5fa2dd/ffffff
     time: 3:36
     qtr: 2
@@ -8934,9 +8934,9 @@
     yards_gained: 11
     down: 3
     distance: 8
-    play_concept: Draw
+    play_concept: Iso
     play_formation: Doubles Left Flex Close
-    play_name: Doubles Left Flex Close Draw
+    play_name: Doubles Left Flex Close Iso
     video_url: http://dummyimage.com/113x185.png/5fa2dd/ffffff
     time: 2:54
     qtr: 1
@@ -8952,9 +8952,9 @@
     yards_gained: -8
     down: 1
     distance: 10
-    play_concept: Draw
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Draw
+    play_concept: Iso
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Iso
     video_url: http://dummyimage.com/172x217.png/dddddd/000000
     time: 2:11
     qtr: 1
@@ -9259,8 +9259,8 @@
     down: 3
     distance: 10
     play_concept: Counter
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Counter
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Counter
     video_url: http://dummyimage.com/256x200.png/dddddd/000000
     time: 3:43
     qtr: 1
@@ -9672,9 +9672,9 @@
     yards_gained: 3
     down: 2
     distance: 3
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Pro Left Flex Queen Wing
-    play_name: Pro Left Flex Queen Wing FB Dive
+    play_name: Pro Left Flex Queen Wing Power
     video_url: http://dummyimage.com/198x294.png/cc0000/ffffff
     time: 9:40
     qtr: 2
@@ -9726,9 +9726,9 @@
     yards_gained: 4
     down: 1
     distance: 10
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Pro Left
-    play_name: Pro Left FB Dive
+    play_name: Pro Left Power
     video_url: http://dummyimage.com/352x405.png/dddddd/000000
     time: 10:39
     qtr: 2
@@ -9978,9 +9978,9 @@
     yards_gained: 11
     down: 3
     distance: 4
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol FB Dive
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Power
     video_url: http://dummyimage.com/151x120.png/ff4444/ffffff
     time: 3:34
     qtr: 4
@@ -10069,8 +10069,8 @@
     down: 2
     distance: 7
     play_concept: Toss
-    play_formation: I-Left
-    play_name: I-Left Toss
+    play_formation: I-Left Strong Twins Stack
+    play_name: I-Left Strong Twins Stack Toss
     video_url: http://dummyimage.com/176x461.png/ff4444/ffffff
     time: 5:01
     qtr: 1
@@ -10087,8 +10087,8 @@
     down: 1
     distance: 10
     play_concept: Power
-    play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Power
+    play_formation: I-Left Strong Twins Stack Flex Close
+    play_name: I-Left Strong Twins Stack Flex Close Power
     video_url: http://dummyimage.com/285x480.png/ff4444/ffffff
     time: 8:20
     qtr: 2
@@ -10608,9 +10608,9 @@
     yards_gained: 11
     down: 2
     distance: 4
-    play_concept: FB Dive
+    play_concept: Power
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter FB Dive
+    play_name: Right Strong Tight Undercenter Power
     video_url: http://dummyimage.com/359x425.png/ff4444/ffffff
     time: 3:27
     qtr: 2
@@ -10734,9 +10734,9 @@
     yards_gained: -1
     down: 2
     distance: 7
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: I-Left
-    play_name: I-Left Post-Corner
+    play_name: I-Left Mesh
     video_url: http://dummyimage.com/216x358.png/5fa2dd/ffffff
     time: 2:07
     qtr: 3
@@ -10932,9 +10932,9 @@
     yards_gained: 15
     down: 2
     distance: 5
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Trio Right
-    play_name: Trio Right Double Post
+    play_name: Trio Right Smash
     video_url: http://dummyimage.com/125x358.png/ff4444/ffffff
     time: 7:32
     qtr: 3
@@ -11058,9 +11058,9 @@
     yards_gained: 0
     down: 2
     distance: 8
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Post-Corner
+    play_name: Right Strong Tight Undercenter Mesh
     video_url: http://dummyimage.com/179x248.png/5fa2dd/ffffff
     time: 5:36
     qtr: 2
@@ -11112,9 +11112,9 @@
     yards_gained: 11
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch Dagger
+    play_name: Empty Left Bunch China
     video_url: http://dummyimage.com/264x298.png/cc0000/ffffff
     time: 8:05
     qtr: 1
@@ -11742,9 +11742,9 @@
     yards_gained: 3
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Dagger
+    play_name: Empty Left Bunch  Trio Left Wing Pistol China
     video_url: http://dummyimage.com/351x317.png/ff4444/ffffff
     time: 5:58
     qtr: 2
@@ -11850,9 +11850,9 @@
     yards_gained: 9
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong Post-Corner
+    play_name: Doubles Stack Strong Mesh
     video_url: http://dummyimage.com/256x387.png/cc0000/ffffff
     time: 5:36
     qtr: 3
@@ -11868,9 +11868,9 @@
     yards_gained: 2
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Dagger
+    play_name: Left Stack Wide China
     video_url: http://dummyimage.com/270x416.png/dddddd/000000
     time: 9:11
     qtr: 3
@@ -12102,9 +12102,9 @@
     yards_gained: 14
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: I-Right Twins
-    play_name: I-Right Twins Dagger
+    play_name: I-Right Twins China
     video_url: http://dummyimage.com/307x467.png/ff4444/ffffff
     time: 7:25
     qtr: 3
@@ -12300,9 +12300,9 @@
     yards_gained: 0
     down: 3
     distance: 1
-    play_concept: Dagger
+    play_concept: China
     play_formation: 
-    play_name:  Dagger
+    play_name:  China
     video_url: http://dummyimage.com/221x104.png/ff4444/ffffff
     time: 8:52
     qtr: 1
@@ -12390,9 +12390,9 @@
     yards_gained: -1
     down: 3
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Post-Corner
+    play_name: Ace Left Slot Mesh
     video_url: http://dummyimage.com/241x187.png/dddddd/000000
     time: 10:34
     qtr: 4
@@ -12498,9 +12498,9 @@
     yards_gained: 4
     down: 2
     distance: 5
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Trips Left Close
-    play_name: Trips Left Close Post-Corner
+    play_name: Trips Left Close Mesh
     video_url: http://dummyimage.com/250x347.png/dddddd/000000
     time: 6:14
     qtr: 2
@@ -12624,9 +12624,9 @@
     yards_gained: 2
     down: 2
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Empty Left Bunch
-    play_name: Empty Left Bunch Double Post
+    play_name: Empty Left Bunch Smash
     video_url: http://dummyimage.com/211x370.png/5fa2dd/ffffff
     time: 3:22
     qtr: 1
@@ -12840,9 +12840,9 @@
     yards_gained: -6
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Pro Right Flex Stack Undercenter
-    play_name: Pro Right Flex Stack Undercenter Post-Corner
+    play_name: Pro Right Flex Stack Undercenter Mesh
     video_url: http://dummyimage.com/239x278.png/cc0000/ffffff
     time: 10:12
     qtr: 4
@@ -13020,9 +13020,9 @@
     yards_gained: 3
     down: 1
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Double Post
+    play_name: Left Stack Wide Smash
     video_url: http://dummyimage.com/170x160.png/ff4444/ffffff
     time: 4:58
     qtr: 3
@@ -13182,9 +13182,9 @@
     yards_gained: 4
     down: 1
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Double Post
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Smash
     video_url: http://dummyimage.com/157x151.png/ff4444/ffffff
     time: 2:55
     qtr: 4
@@ -13200,9 +13200,9 @@
     yards_gained: 10
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Post-Corner
+    play_name: Empty Left Bunch  Trio Left Wing Pistol Mesh
     video_url: http://dummyimage.com/346x395.png/5fa2dd/ffffff
     time: 8:15
     qtr: 2
@@ -13290,9 +13290,9 @@
     yards_gained: 3
     down: 1
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Doubles Left Flex Close
-    play_name: Doubles Left Flex Close Double Post
+    play_name: Doubles Left Flex Close Smash
     video_url: http://dummyimage.com/346x465.png/cc0000/ffffff
     time: 5:42
     qtr: 3
@@ -13614,9 +13614,9 @@
     yards_gained: 9
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: I-Left
-    play_name: I-Left Post-Corner
+    play_name: I-Left Mesh
     video_url: http://dummyimage.com/107x278.png/dddddd/000000
     time: 6:26
     qtr: 1
@@ -13740,9 +13740,9 @@
     yards_gained: 10
     down: 2
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Mesh
     play_formation: I-Right Twins
-    play_name: I-Right Twins Post-Corner
+    play_name: I-Right Twins Mesh
     video_url: http://dummyimage.com/302x267.png/dddddd/000000
     time: 10:13
     qtr: 4
@@ -13758,9 +13758,9 @@
     yards_gained: 5
     down: 4
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Doubles Left Flex Close
-    play_name: Doubles Left Flex Close Post-Corner
+    play_name: Doubles Left Flex Close Levels
     video_url: http://dummyimage.com/132x407.png/dddddd/000000
     time: 8:46
     qtr: 4
@@ -13848,9 +13848,9 @@
     yards_gained: 6
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: 
-    play_name:  Post-Corner
+    play_name:  Levels
     video_url: http://dummyimage.com/123x133.png/cc0000/ffffff
     time: 7:48
     qtr: 3
@@ -13884,9 +13884,9 @@
     yards_gained: 11
     down: 4
     distance: 6
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Post-Corner
+    play_name: Left Stack Wide Levels
     video_url: http://dummyimage.com/272x135.png/ff4444/ffffff
     time: 4:56
     qtr: 2
@@ -13992,9 +13992,9 @@
     yards_gained: 5
     down: 2
     distance: 5
-    play_concept: Dagger
+    play_concept: China
     play_formation: Trio Left
-    play_name: Trio Left Dagger
+    play_name: Trio Left China
     video_url: http://dummyimage.com/303x212.png/ff4444/ffffff
     time: 1:45
     qtr: 1
@@ -14208,9 +14208,9 @@
     yards_gained: 22
     down: 2
     distance: 8
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Post-Corner
+    play_name: I-Left Flex Close Levels
     video_url: http://dummyimage.com/151x323.png/ff4444/ffffff
     time: 6:55
     qtr: 1
@@ -14316,9 +14316,9 @@
     yards_gained: 12
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong Dagger
+    play_name: Doubles Stack Strong China
     video_url: http://dummyimage.com/142x151.png/dddddd/000000
     time: 8:31
     qtr: 4
@@ -14478,9 +14478,9 @@
     yards_gained: 21
     down: 1
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: I-Left
-    play_name: I-Left Double Post
+    play_name: I-Left Smash
     video_url: http://dummyimage.com/198x184.png/dddddd/000000
     time: 2:36
     qtr: 2
@@ -14568,9 +14568,9 @@
     yards_gained: -4
     down: 3
     distance: 3
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Double Post
+    play_name: Left Flex Pistol Smash
     video_url: http://dummyimage.com/206x214.png/5fa2dd/ffffff
     time: 3:45
     qtr: 4
@@ -14622,9 +14622,9 @@
     yards_gained: 1
     down: 1
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: I-Right Twins
-    play_name: I-Right Twins Double Post
+    play_name: I-Right Twins Smash
     video_url: http://dummyimage.com/274x322.png/dddddd/000000
     time: 6:45
     qtr: 1
@@ -14676,9 +14676,9 @@
     yards_gained: 11
     down: 2
     distance: 9
-    play_concept: Dagger
+    play_concept: China
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Dagger
+    play_name: Ace Left Slot China
     video_url: http://dummyimage.com/337x412.png/cc0000/ffffff
     time: 6:00
     qtr: 4
@@ -14964,9 +14964,9 @@
     yards_gained: 14
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Pro Left Flex Queen Wing
-    play_name: Pro Left Flex Queen Wing Post-Corner
+    play_name: Pro Left Flex Queen Wing Levels
     video_url: http://dummyimage.com/104x212.png/dddddd/000000
     time: 7:16
     qtr: 4
@@ -15180,9 +15180,9 @@
     yards_gained: 6
     down: 2
     distance: 6
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Post-Corner
+    play_name: Left Stack Wide Levels
     video_url: http://dummyimage.com/137x271.png/ff4444/ffffff
     time: 5:51
     qtr: 3
@@ -15306,9 +15306,9 @@
     yards_gained: 2
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: I-Left
-    play_name: I-Left Dagger
+    play_name: I-Left China
     video_url: http://dummyimage.com/140x450.png/ff4444/ffffff
     time: 1:47
     qtr: 2
@@ -15378,9 +15378,9 @@
     yards_gained: 10
     down: 2
     distance: 9
-    play_concept: Dagger
+    play_concept: China
     play_formation: I-Left
-    play_name: I-Left Dagger
+    play_name: I-Left China
     video_url: http://dummyimage.com/168x287.png/5fa2dd/ffffff
     time: 6:23
     qtr: 4
@@ -15612,9 +15612,9 @@
     yards_gained: -4
     down: 2
     distance: 7
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Post-Corner
+    play_name: Left Stack Wide Levels
     video_url: http://dummyimage.com/352x346.png/dddddd/000000
     time: 6:24
     qtr: 1
@@ -15720,9 +15720,9 @@
     yards_gained: 1
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Doubles Stack Strong
-    play_name: Doubles Stack Strong Post-Corner
+    play_name: Doubles Stack Strong Levels
     video_url: http://dummyimage.com/259x456.png/ff4444/ffffff
     time: 7:08
     qtr: 3
@@ -15974,7 +15974,7 @@
     distance: 9
     play_concept: Double Slants
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Double Slants
+    play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/321x366.png/5fa2dd/ffffff
     time: 10:50
     qtr: 3
@@ -16116,9 +16116,9 @@
     yards_gained: 9
     down: 1
     distance: 10
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Doubles Left Flex Close
-    play_name: Doubles Left Flex Close Double Slants
+    play_name: Doubles Left Flex Close Mills
     video_url: http://dummyimage.com/267x194.png/5fa2dd/ffffff
     time: 3:28
     qtr: 1
@@ -16224,9 +16224,9 @@
     yards_gained: 9
     down: 2
     distance: 6
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: I-Right Twins
-    play_name: I-Right Twins Post-Corner
+    play_name: I-Right Twins Levels
     video_url: http://dummyimage.com/284x268.png/cc0000/ffffff
     time: 3:59
     qtr: 3
@@ -16296,9 +16296,9 @@
     yards_gained: 3
     down: 3
     distance: 1
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Ace Left Slot
-    play_name: Ace Left Slot Double Slants
+    play_name: Ace Left Slot Mills
     video_url: http://dummyimage.com/215x108.png/dddddd/000000
     time: 1:34
     qtr: 2
@@ -16332,9 +16332,9 @@
     yards_gained: 1
     down: 2
     distance: 3
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Double Slants
+    play_name: Left Flex Pistol Mills
     video_url: http://dummyimage.com/214x230.png/dddddd/000000
     time: 3:31
     qtr: 1
@@ -16854,9 +16854,9 @@
     yards_gained: 18
     down: 1
     distance: 10
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: I-Left
-    play_name: I-Left Double Slants
+    play_name: I-Left Mills
     video_url: http://dummyimage.com/351x273.png/5fa2dd/ffffff
     time: 5:13
     qtr: 1
@@ -16926,9 +16926,9 @@
     yards_gained: 2
     down: 2
     distance: 10
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Double Slants
+    play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/226x338.png/cc0000/ffffff
     time: 1:08
     qtr: 4
@@ -17070,9 +17070,9 @@
     yards_gained: 3
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Post-Corner
+    play_name: Left Stack Wide Levels
     video_url: http://dummyimage.com/143x221.png/ff4444/ffffff
     time: 2:15
     qtr: 2
@@ -17160,9 +17160,9 @@
     yards_gained: 1
     down: 1
     distance: 10
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Double Slants
+    play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/277x439.png/cc0000/ffffff
     time: 7:15
     qtr: 3
@@ -17232,9 +17232,9 @@
     yards_gained: 8
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Trio Right
-    play_name: Trio Right Post-Corner
+    play_name: Trio Right Levels
     video_url: http://dummyimage.com/350x486.png/ff4444/ffffff
     time: 3:20
     qtr: 3
@@ -17250,9 +17250,9 @@
     yards_gained: -2
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Flex Pistol
-    play_name: Left Flex Pistol Post-Corner
+    play_name: Left Flex Pistol Levels
     video_url: http://dummyimage.com/331x244.png/5fa2dd/ffffff
     time: 6:17
     qtr: 1
@@ -18438,9 +18438,9 @@
     yards_gained: 5
     down: 2
     distance: 7
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: 
-    play_name:  Post-Corner
+    play_name:  Levels
     video_url: http://dummyimage.com/324x429.png/5fa2dd/ffffff
     time: 8:19
     qtr: 3
@@ -18528,9 +18528,9 @@
     yards_gained: 0
     down: 2
     distance: 2
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: I-Left
-    play_name: I-Left Double Slants
+    play_name: I-Left Mills
     video_url: http://dummyimage.com/219x150.png/dddddd/000000
     time: 7:30
     qtr: 3
@@ -18780,9 +18780,9 @@
     yards_gained: 9
     down: 1
     distance: 10
-    play_concept: Double Slants
+    play_concept: Mills
     play_formation: Trips Left Close
-    play_name: Trips Left Close Double Slants
+    play_name: Trips Left Close Mills
     video_url: http://dummyimage.com/298x401.png/dddddd/000000
     time: 5:58
     qtr: 4
@@ -19158,9 +19158,9 @@
     yards_gained: 6
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: Left Stack Wide
-    play_name: Left Stack Wide Post-Corner
+    play_name: Left Stack Wide Levels
     video_url: http://dummyimage.com/322x141.png/dddddd/000000
     time: 8:22
     qtr: 4
@@ -19212,9 +19212,9 @@
     yards_gained: 23
     down: 1
     distance: 10
-    play_concept: Post-Corner
+    play_concept: Levels
     play_formation: 
-    play_name:  Post-Corner
+    play_name:  Levels
     video_url: http://dummyimage.com/294x343.png/5fa2dd/ffffff
     time: 5:23
     qtr: 1
@@ -19914,9 +19914,9 @@
     yards_gained: 2
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Pro Right
-    play_name: Pro Right Dagger
+    play_name: Pro Right China
     video_url: http://dummyimage.com/242x226.png/dddddd/000000
     time: 8:09
     qtr: 3
@@ -20076,9 +20076,9 @@
     yards_gained: 3
     down: 4
     distance: 10
-    play_concept: Double Post
+    play_concept: Smash
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Double Post
+    play_name: I-Left Flex Close Smash
     video_url: http://dummyimage.com/349x238.png/dddddd/000000
     time: 6:21
     qtr: 4
@@ -20670,9 +20670,9 @@
     yards_gained: 2
     down: 2
     distance: 3
-    play_concept: Dagger
+    play_concept: China
     play_formation: Trips Left Close
-    play_name: Trips Left Close Dagger
+    play_name: Trips Left Close China
     video_url: http://dummyimage.com/338x106.png/5fa2dd/ffffff
     time: 7:39
     qtr: 2
@@ -20688,9 +20688,9 @@
     yards_gained: 10
     down: 2
     distance: 1
-    play_concept: Dagger
+    play_concept: China
     play_formation: Trio Left
-    play_name: Trio Left Dagger
+    play_name: Trio Left China
     video_url: http://dummyimage.com/327x183.png/5fa2dd/ffffff
     time: 2:19
     qtr: 4
@@ -20994,9 +20994,9 @@
     yards_gained: 7
     down: 2
     distance: 9
-    play_concept: Dagger
+    play_concept: China
     play_formation: Pro Right
-    play_name: Pro Right Dagger
+    play_name: Pro Right China
     video_url: http://dummyimage.com/234x150.png/dddddd/000000
     time: 7:14
     qtr: 4
@@ -21138,9 +21138,9 @@
     yards_gained: 0
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: Right Strong Tight Undercenter
-    play_name: Right Strong Tight Undercenter Dagger
+    play_name: Right Strong Tight Undercenter China
     video_url: http://dummyimage.com/250x454.png/ff4444/ffffff
     time: 10:50
     qtr: 1
@@ -21570,9 +21570,9 @@
     yards_gained: 15
     down: 1
     distance: 10
-    play_concept: Dagger
+    play_concept: China
     play_formation: I-Left Flex Close
-    play_name: I-Left Flex Close Dagger
+    play_name: I-Left Flex Close China
     video_url: http://dummyimage.com/148x375.png/cc0000/ffffff
     time: 7:24
     qtr: 4

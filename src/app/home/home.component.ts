@@ -5,10 +5,12 @@ import { Subscription } from 'rxjs';
 import { YamlDataService } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
 import { CommonModule } from '@angular/common';
+import { PlayModalService } from '../services/play-modal.service';
+import { PlayModalComponent } from '../shared/play-modal/play-modal.component';
 
 interface OffensePlay {
   playID: number;
-  playname: string;
+  playname: string; // concept
   yardsGained: number;
   Down: number;
   Distance: number;
@@ -16,6 +18,9 @@ interface OffensePlay {
   Efficient: boolean;
   VideoID?: string;
   GameID?: string;
+  // Add actual play name and formation from YAML
+  actualPlayName: string;
+  actualFormation: string;
 }
 
 @Component({
@@ -72,6 +77,30 @@ interface OffensePlay {
       color: #7f8c8d;
       font-size: 16px;
       font-style: italic;
+    }
+    
+    .play-name {
+      color: #3498db;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    
+    .play-name:hover {
+      color: #2980b9;
+    }
+    
+    .positive-yards {
+      color: #27ae60;
+      font-weight: bold;
+    }
+    
+    .negative-yards {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    
+    .neutral-yards {
+      color: #7f8c8d;
     }
     :host {
       font-family: 'Arial', sans-serif;
@@ -249,7 +278,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   chartTitle: string = 'Run vs Pass Distribution'; // Dynamic chart title
   private dataFilteredSubscription: Subscription | null = null;
 
-  constructor(private router: Router, private yamlDataService: YamlDataService) {}
+  constructor(private router: Router, private yamlDataService: YamlDataService, private playModalService: PlayModalService) {}
 
   ngOnInit() {
     this.loadYamlData();
@@ -384,7 +413,10 @@ export class HomeComponent implements OnInit, OnDestroy {
         Result: yardsGained > 0 ? 'positive' : yardsGained < 0 ? 'negative' : 'neutral',
         Efficient: yardsGained > 0,
         VideoID: play.video_url,
-        GameID: play.id
+        GameID: play.id,
+        // Store the actual play name and formation from YAML
+        actualPlayName: play.play_name || '',
+        actualFormation: play.play_formation || ''
       };
       
       // Update concept counts and play arrays based on play type
@@ -855,6 +887,9 @@ export class HomeComponent implements OnInit, OnDestroy {
           .transition()
           .duration(200)
           .style('opacity', 1);
+          
+        // Show all instances of this concept in the table
+        this.showConceptPlaysTable(category, d.data.category);
       })
       .on('mouseout', (_event: MouseEvent, d: any) => {
         // Return slice to normal size
@@ -931,17 +966,17 @@ export class HomeComponent implements OnInit, OnDestroy {
     
     // Create mock play data for Run
     const runPlays: OffensePlay[] = [
-      { playID: 1, playname: 'Inside Zone', yardsGained: 5, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
-      { playID: 2, playname: 'Inside Zone', yardsGained: 3, Down: 2, Distance: 5, Result: 'Success', Efficient: true },
-      { playID: 3, playname: 'Power', yardsGained: 8, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 1, playname: 'Inside Zone', yardsGained: 5, Down: 1, Distance: 10, Result: 'Success', Efficient: true, actualPlayName: 'I-Formation Inside Zone', actualFormation: 'I-Formation' },
+      { playID: 2, playname: 'Inside Zone', yardsGained: 3, Down: 2, Distance: 5, Result: 'Success', Efficient: true, actualPlayName: 'Single Back Inside Zone', actualFormation: 'Single Back' },
+      { playID: 3, playname: 'Power', yardsGained: 8, Down: 1, Distance: 10, Result: 'Success', Efficient: true, actualPlayName: 'Pistol Power', actualFormation: 'Pistol' },
       // Add more mock plays as needed
     ];
     
     // Create mock play data for Pass
     const passPlays: OffensePlay[] = [
-      { playID: 4, playname: 'Slant', yardsGained: 12, Down: 2, Distance: 8, Result: 'Success', Efficient: true },
-      { playID: 5, playname: 'Curl', yardsGained: 0, Down: 3, Distance: 5, Result: 'Incomplete', Efficient: false },
-      { playID: 6, playname: 'Vertical', yardsGained: 25, Down: 1, Distance: 10, Result: 'Success', Efficient: true },
+      { playID: 4, playname: 'Slant', yardsGained: 12, Down: 2, Distance: 8, Result: 'Success', Efficient: true, actualPlayName: 'Shotgun Slant', actualFormation: 'Shotgun' },
+      { playID: 5, playname: 'Curl', yardsGained: 0, Down: 3, Distance: 5, Result: 'Incomplete', Efficient: false, actualPlayName: 'Spread Curl', actualFormation: 'Spread' },
+      { playID: 6, playname: 'Vertical', yardsGained: 25, Down: 1, Distance: 10, Result: 'Success', Efficient: true, actualPlayName: 'Empty Vertical', actualFormation: 'Empty' },
       // Add more mock plays as needed
     ];
     
@@ -953,6 +988,188 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.filteredConceptCounts = new Map(this.conceptCounts);
   }
 
+  /**
+   * Show a table of all plays for a specific concept
+   * @param category The main category ('Run' or 'Pass')
+   * @param concept The specific concept to show plays for (e.g., 'Inside Zone', 'Slant')
+   */
+  private showConceptPlaysTable(category: string, concept: string) {
+    // Clear any existing table
+    d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
+    
+    // Get plays for this category
+    const plays = this.allPlays.get(category);
+    if (!plays) return;
+    
+    // Filter plays by concept and down
+    const filteredPlays = plays.filter(play => {
+      const matchesConcept = play.playname === concept;
+      const matchesDown = this.selectedDown === 0 || play.Down === this.selectedDown;
+      return matchesConcept && matchesDown;
+    });
+    
+    if (filteredPlays.length === 0) {
+      // No plays found for this concept and down
+      d3.select(this.conceptTableContainer.nativeElement)
+        .append('div')
+        .attr('class', 'no-data-message')
+        .text(`No plays found for ${concept} on ${this.selectedDown === 0 ? 'all downs' : `${this.selectedDown}${this.getOrdinalSuffix(this.selectedDown)} down`}.`);
+      return;
+    }
+    
+    // Calculate total yards and average
+    const totalYards = filteredPlays.reduce((sum, play) => sum + play.yardsGained, 0);
+    const avgYards = parseFloat((totalYards / filteredPlays.length).toFixed(1));
+    
+    // Create table container
+    const tableContainer = d3.select(this.conceptTableContainer.nativeElement)
+      .append('div')
+      .attr('class', 'table-container');
+    
+    // Add title and stats
+    const headerContainer = tableContainer.append('div')
+      .style('margin-bottom', '15px');
+    
+    headerContainer.append('div')
+      .attr('class', 'table-title')
+      .text(`${concept} Plays (${category})`);
+    
+    const statsContainer = headerContainer.append('div')
+      .style('display', 'flex')
+      .style('gap', '15px')
+      .style('margin-top', '5px');
+    
+    statsContainer.append('div')
+      .text(`Total Plays: ${filteredPlays.length}`);
+    
+    statsContainer.append('div')
+      .attr('class', avgYards > 0 ? 'positive-yards' : avgYards < 0 ? 'negative-yards' : 'neutral-yards')
+      .text(`Avg. Yards: ${avgYards}`);
+    
+    // Create table
+    const table = tableContainer.append('table')
+      .attr('class', 'concept-table');
+    
+    // Add table header
+    const thead = table.append('thead');
+    thead.append('tr')
+      .selectAll('th')
+      .data(['Play Name', 'Formation', 'Down', 'Distance', 'Yards', 'Result'])
+      .enter()
+      .append('th')
+      .text(d => d);
+    
+    // Add table body
+    const tbody = table.append('tbody');
+    const rows = tbody.selectAll('tr')
+      .data(filteredPlays)
+      .enter()
+      .append('tr')
+      .style('cursor', 'pointer');
+    
+    // Generate a unique play name based on the concept and an identifier
+    const getPlayName = (concept: string, id: number) => {
+      // Create more descriptive play names based on the concept
+      const playVariants = {
+        'Inside Zone': ['Inside Zone Left', 'Inside Zone Right', 'Inside Zone Split', 'Inside Zone Read'],
+        'Outside Zone': ['Outside Zone Left', 'Outside Zone Right', 'Outside Zone Stretch', 'Outside Zone Sweep'],
+        'Power': ['Power Right', 'Power Left', 'Counter Power', 'Power G'],
+        'Counter': ['Counter Left', 'Counter Right', 'Counter Trey', 'H-Counter'],
+        'Draw': ['Draw Middle', 'Delay Draw', 'QB Draw', 'Draw Screen'],
+        'Slant': ['Quick Slant', 'Slant & Go', 'Double Slant', 'Slant Flat'],
+        'Curl': ['Curl Flat', 'Smash Curl', 'Curl & Go', 'Sit Curl'],
+        'Vertical': ['Four Verticals', 'Seam Vertical', 'Switch Vertical', 'Dagger'],
+        'Screen': ['RB Screen', 'Bubble Screen', 'Tunnel Screen', 'Jailbreak Screen'],
+        'Out': ['Quick Out', 'Out & Up', 'Corner Out', 'Flat Out'],
+        'Cross': ['Shallow Cross', 'Deep Cross', 'Mesh Cross', 'Drive Cross']
+      };
+      
+    };
+    
+    // Generate a formation name based on the concept and play type
+    const getFormation = (concept: string, playType: string, id: number) => {
+      // Create formation names appropriate for the play type
+      const runFormations = ['I-Formation', 'Single Back', 'Pistol', 'Shotgun', 'Wildcat', 'Wing-T'];
+      const passFormations = ['Shotgun', 'Spread', 'Trips', 'Empty', 'Bunch', 'Ace'];
+      
+      // Use the appropriate formation list based on play type
+      const formations = playType.toLowerCase() === 'run' ? runFormations : passFormations;
+      
+      // Use modulo to cycle through the formations
+      return formations[id % formations.length];
+    };
+    
+    // Add play name (clickable)
+    // Add play name with pointer cursor to indicate it's clickable
+    rows.append('td')
+      .attr('class', 'play-name')
+      .text(d => d.actualPlayName || getPlayName(concept, d.playID) || '') // Use actual play name from YAML if available, ensure string return
+      .attr('style', 'cursor: pointer;')
+      .on('click', (_event, d) => {
+        // Get the play name and formation from actual data if available, otherwise use helper functions
+        const playName = d.actualPlayName || getPlayName(concept, d.playID) || '';
+        const formation = d.actualFormation || getFormation(concept, category, d.playID) || '';
+        
+        // Convert OffensePlay to FootballPlay format for the modal
+        const footballPlay: FootballPlay = {
+          id: d.GameID || '',
+          play_id: d.playID.toString(),
+          play_type: category.toLowerCase(),
+          yards_gained: typeof d.yardsGained === 'number' ? d.yardsGained : 0,
+          down: d.Down,
+          distance: d.Distance,
+          play_concept: concept,
+          play_formation: formation,
+          play_name: playName,
+          video_url: d.VideoID || 'https://www.youtube.com/embed/b-L2ckBDgcE',
+          qtr: 1, // Default values for mock data
+          home_team: 'Home',
+          away_team: 'Away',
+          notes: `${concept} play on ${d.Down}${this.getOrdinalSuffix(d.Down)} down`
+        };
+        
+        // Open the play modal
+        this.playModalService.openModal(footballPlay);
+      });
+    
+    // Add formation - use actual formation from YAML data if available
+    rows.append('td')
+      .text(d => d.actualFormation || getFormation(concept, category, d.playID));
+    
+    // Add down
+    rows.append('td')
+      .text(d => d.Down);
+    
+    // Add distance
+    rows.append('td')
+      .text(d => d.Distance);
+    
+    // Add yards gained (with color coding)
+    rows.append('td')
+      .attr('class', d => {
+        if (d.yardsGained > 0) return 'positive-yards';
+        if (d.yardsGained < 0) return 'negative-yards';
+        return 'neutral-yards';
+      })
+      .text(d => d.yardsGained);
+    
+    // Add result
+    rows.append('td')
+      .text(d => d.Result);
+  }
+  
+  /**
+   * Get ordinal suffix for a number (1st, 2nd, 3rd, etc.)
+   */
+  private getOrdinalSuffix(num: number): string {
+    const j = num % 10;
+    const k = num % 100;
+    if (j === 1 && k !== 11) return 'st';
+    if (j === 2 && k !== 12) return 'nd';
+    if (j === 3 && k !== 13) return 'rd';
+    return 'th';
+  }
+  
   private showConceptTable(category: string) {
     // Clear any existing table
     d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
