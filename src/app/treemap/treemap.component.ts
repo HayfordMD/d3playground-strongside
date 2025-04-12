@@ -6,6 +6,7 @@ import { FootballPlay } from '../models/football-play.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PlayModalService } from '../services/play-modal.service';
+import { PlayModalComponent } from '../shared/play-modal/play-modal.component';
 
 interface TreemapData {
   name: string;
@@ -36,7 +37,7 @@ interface TreemapNode extends d3.HierarchyNode<any> {
 @Component({
   selector: 'app-treemap',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, PlayModalComponent],
   template: `
     <div class="treemap-container">
       <h1>Play Concept Treemap</h1>
@@ -438,6 +439,15 @@ export class TreemapComponent implements OnInit, OnDestroy {
   clearSelectedConcept() {
     this.selectedConcept = null;
     this.selectedConceptPlays = [];
+  }
+  
+  /**
+   * Open the play modal when a play name is clicked
+   * @param play The football play to display in the modal
+   */
+  openPlayModal(play: FootballPlay) {
+    // Use the PlayModalService to open the modal with the selected play
+    this.playModalService.openModal(play);
   }
   
   /**

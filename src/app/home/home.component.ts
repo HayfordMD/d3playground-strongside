@@ -26,7 +26,7 @@ interface OffensePlay {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PlayModalComponent],
   template: `
     <h1>Offensive Breakdown Analysis</h1>
     <div class="pie-chart-container">
