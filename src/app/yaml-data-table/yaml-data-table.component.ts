@@ -2,47 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { YamlDataService, YamlDataResult } from '../services/yaml-data.service';
+import { FootballPlay } from '../models/football-play.model';
 
-interface PlayData {
-  play_id: string;
-  quarter: number;
-  time: string;
-  down: number;
-  distance: number;
-  yard_line: number;
-  play_type: string;
-  formation: string;
-  personnel: number;
-  concept: string;
-  play_name: string;
-  ball_carrier: string;
-  yards_gained: number;
-  result: string;
-  scoring_play: boolean;
-  notes: string;
-}
-
-interface GameData {
-  game_id: string;
-  week: number;
-  home_team: string;
-  away_team: string;
-  date: string;
-  location: string;
-  weather: string;
-  home_score: number;
-  away_score: number;
-}
-
-interface SeasonData {
-  year: number;
-}
-
-interface MacarooEntry {
-  seasons: SeasonData;
-  games: GameData;
-  plays: PlayData;
-}
+// Using FootballPlay interface from models/football-play.model.ts
 
 @Component({
   selector: 'app-yaml-data-table',
@@ -50,9 +12,9 @@ interface MacarooEntry {
   imports: [CommonModule, FormsModule],
   template: `
     <div class="macaroo-table-container">
-      <h2>Macaroo Football Data</h2>
+      <h2>Football Play Analysis</h2>
       <div class="file-path-info">
-        <span>Data Source: <code>assets/data/mockaroogernearte.yaml</code></span>
+        <span>Data Source: <code>assets/data/betterrunpass.yaml</code></span>
       </div>
       
       <div class="filter-container">
@@ -90,27 +52,27 @@ interface MacarooEntry {
               <th>Distance</th>
               <th>Yards Gained</th>
               <th>Play Type</th>
-              <th>Result</th>
-              <th>Team</th>
-              <th>Opponent</th>
+              <th>Quarter</th>
+              <th>Home Team</th>
+              <th>Away Team</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let entry of filteredData">
-              <td>{{ entry.plays.play_name }}</td>
-              <td>{{ entry.plays.formation }}</td>
-              <td>{{ entry.plays.concept }}</td>
-              <td>{{ entry.plays.down }}</td>
-              <td>{{ entry.plays.distance }}</td>
+            <tr *ngFor="let play of filteredData">
+              <td>{{ play.play_name }}</td>
+              <td>{{ play.play_formation }}</td>
+              <td>{{ play.play_concept }}</td>
+              <td>{{ play.down }}</td>
+              <td>{{ play.distance }}</td>
               <td [ngClass]="{
-                'positive-yards': entry.plays.yards_gained > 0,
-                'negative-yards': entry.plays.yards_gained < 0,
-                'neutral-yards': entry.plays.yards_gained === 0
-              }">{{ entry.plays.yards_gained }}</td>
-              <td>{{ entry.plays.play_type }}</td>
-              <td>{{ entry.plays.result }}</td>
-              <td>{{ entry.games.home_team }}</td>
-              <td>{{ entry.games.away_team }}</td>
+                'positive-yards': play.yards_gained > 0,
+                'negative-yards': play.yards_gained < 0,
+                'neutral-yards': play.yards_gained === 0
+              }">{{ play.yards_gained }}</td>
+              <td>{{ play.play_type }}</td>
+              <td>{{ play.qtr }}</td>
+              <td>{{ play.home_team }}</td>
+              <td>{{ play.away_team }}</td>
             </tr>
           </tbody>
         </table>
@@ -253,8 +215,8 @@ interface MacarooEntry {
   `
 })
 export class YamlDataTableComponent implements OnInit {
-  allData: MacarooEntry[] = [];
-  filteredData: MacarooEntry[] = [];
+  allData: FootballPlay[] = [];
+  filteredData: FootballPlay[] = [];
   currentFilter: string = 'all';
   loading: boolean = true;
   error: string | null = null;
@@ -270,9 +232,9 @@ export class YamlDataTableComponent implements OnInit {
     this.loading = true;
     this.error = null;
     
-    this.yamlDataService.loadYamlDataWithPath<MacarooEntry[]>('mockaroogernearte.yaml')
+    this.yamlDataService.loadFootballPlays()
       .subscribe({
-        next: (result: YamlDataResult<MacarooEntry[]>) => {
+        next: (result: YamlDataResult<FootballPlay[]>) => {
           console.log('YAML data result:', result);
           if (result.data) {
             this.allData = result.data;
@@ -299,8 +261,8 @@ export class YamlDataTableComponent implements OnInit {
     if (filter === 'all') {
       this.filteredData = [...this.allData];
     } else {
-      this.filteredData = this.allData.filter(entry => 
-        entry.plays.play_type.toLowerCase() === filter.toLowerCase()
+      this.filteredData = this.allData.filter(play => 
+        play.play_type.toLowerCase() === filter.toLowerCase()
       );
     }
   }

@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 import { Router } from '@angular/router';
 import { YamlDataService } from '../services/yaml-data.service';
+import { FootballPlay } from '../models/football-play.model';
 
 interface OffensePlay {
   playID: number;
@@ -141,7 +142,7 @@ export class HomeComponent implements OnInit {
   selectedDown: number = 0; // 0 means all downs
   loading: boolean = true;
   error: string | null = null;
-  yamlFilePath: string = 'assets/data/mockaroogernearte.yaml';
+  yamlFilePath: string = 'assets/data/betterrunpass.yaml';
   private activeCategory: string | null = null; // Track the currently active category
 
   constructor(private router: Router, private yamlDataService: YamlDataService) {}
@@ -164,7 +165,7 @@ export class HomeComponent implements OnInit {
     this.loading = true;
     this.error = null;
     
-    this.yamlDataService.loadYamlDataWithPath<any[]>(this.yamlFilePath.split('/').pop() || 'mockaroogernearte.yaml')
+    this.yamlDataService.loadFootballPlays()
       .subscribe({
         next: (result) => {
           if (result.data) {
@@ -189,7 +190,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  private processYamlData(data: any[]) {
+  private processYamlData(data: FootballPlay[]) {
     // Clear existing data
     this.conceptCounts.clear();
     this.allPlays.clear();
@@ -203,41 +204,39 @@ export class HomeComponent implements OnInit {
     const passPlays: OffensePlay[] = [];
     
     // Process each entry in the YAML data
-    data.forEach(entry => {
-      if (entry.plays && entry.plays.play_type) {
-        const playType = entry.plays.play_type.toLowerCase();
-        const concept = entry.plays.concept || 'Unknown';
-        const yardsGained = entry.plays.yards_gained || 0;
+    data.forEach(play => {
+      const playType = play.play_type.toLowerCase();
+      const concept = play.play_concept || 'Unknown';
+      const yardsGained = play.yards_gained || 0;
+      
+      // Create play object for our visualization
+      const offensePlay: OffensePlay = {
+        playID: parseInt(play.play_id.split('-')[0] || '0'),
+        playname: concept,
+        yardsGained: yardsGained,
+        Down: play.down || 1,
+        Distance: play.distance || 10,
+        Result: yardsGained > 0 ? 'positive' : yardsGained < 0 ? 'negative' : 'neutral',
+        Efficient: yardsGained > 0,
+        VideoID: play.video_url,
+        GameID: play.id
+      };
+      
+      // Update concept counts and play arrays based on play type
+      if (playType === 'run') {
+        // Update run concept count
+        const currentCount = runConcepts.get(concept) || 0;
+        runConcepts.set(concept, currentCount + 1);
         
-        // Create play object
-        const play: OffensePlay = {
-          playID: parseInt(entry.plays.play_id?.split('_').pop() || '0'),
-          playname: concept,
-          yardsGained: yardsGained,
-          Down: entry.plays.down || 1,
-          Distance: entry.plays.distance || 10,
-          Result: entry.plays.result || 'Unknown',
-          Efficient: yardsGained > 0,
-          VideoID: entry.plays.play_id,
-          GameID: entry.games?.game_id
-        };
+        // Add to run plays
+        runPlays.push(offensePlay);
+      } else if (playType === 'pass') {
+        // Update pass concept count
+        const currentCount = passConcepts.get(concept) || 0;
+        passConcepts.set(concept, currentCount + 1);
         
-        // Update concept counts and play arrays based on play type
-        if (playType === 'run') {
-          // Update run concept count
-          const currentCount = runConcepts.get(concept) || 0;
-          runConcepts.set(concept, currentCount + 1);
-          
-          // Add to run plays
-          runPlays.push(play);
-        } else if (playType === 'pass') {
-          // Update pass concept count
-          const currentCount = passConcepts.get(concept) || 0;
-          passConcepts.set(concept, currentCount + 1);
-          
-          // Add to pass plays
-          passPlays.push(play);
-        }
+        // Add to pass plays
+        passPlays.push(offensePlay);
       }
     });
     

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, of } from 'rxjs';
 import * as yaml from 'js-yaml';
+import { FootballPlay } from '../models/football-play.model';
 
 export interface YamlDataResult<T> {
   data: T | null;
@@ -101,5 +102,13 @@ export class YamlDataService {
           return of(catchResult);
         })
       );
+  }
+  
+  /**
+   * Load football plays data from the betterrunpass.yaml file
+   * @returns Observable with both the parsed football plays data and the file path
+   */
+  loadFootballPlays(): Observable<YamlDataResult<FootballPlay[]>> {
+    return this.loadYamlDataWithPath<FootballPlay[]>('betterrunpass.yaml');
   }
 }
