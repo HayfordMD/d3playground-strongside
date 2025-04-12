@@ -46,6 +46,7 @@ interface OffenseData {
           <nav class="app-nav">
             <a routerLink="/home" routerLinkActive="active" class="nav-link">Run Pass Distro</a>
             <a routerLink="/yaml-data" routerLinkActive="active" class="nav-link">Macaroo Table</a>
+            <a routerLink="/treemap" routerLinkActive="active" class="nav-link">Concept Treemap</a>
           </nav>
         </div>
       </header>
