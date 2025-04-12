@@ -115,6 +115,71 @@ interface OffensePlay {
       margin-top: 20px;
       width: 100%;
     }
+    
+    .table-container {
+      margin-top: 15px;
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    .table-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    
+    .concept-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .concept-table th, .concept-table td {
+      padding: 10px 15px;
+      text-align: left;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    
+    .concept-table th {
+      background-color: #2c3e50;
+      color: white;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .concept-table th:hover {
+      background-color: #34495e;
+    }
+    
+    .concept-table th.sortable {
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    .concept-table th.sort-asc::after {
+      content: ' ▲';
+      font-size: 0.8em;
+      opacity: 0.8;
+    }
+    
+    .concept-table th.sort-desc::after {
+      content: ' ▼';
+      font-size: 0.8em;
+      opacity: 0.8;
+    }
+    
+    .concept-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .concept-table tr:hover {
+      background-color: #f1f1f1;
+    }
     .config-button-container {
       margin-top: 30px;
     }
@@ -605,6 +670,22 @@ export class HomeComponent implements OnInit, OnDestroy {
       conceptAvgYards.set(concept, parseFloat((totalYards / count).toFixed(1)));
     });
     
+    // Prepare data for sorting
+    const tableData = Array.from(concepts.entries()).map(([concept, count]) => {
+      return {
+        concept: concept,
+        count: count,
+        avgYards: conceptAvgYards.get(concept) || 0
+      };
+    });
+    
+    // Default sort by average yards (descending)
+    let currentSortField = 'avgYards';
+    let sortAscending = false;
+    
+    // Sort the data
+    this.sortTableData(tableData, currentSortField, sortAscending);
+    
     // Create table container
     const tableContainer = d3.select(this.conceptTableContainer.nativeElement)
       .append('div')
@@ -619,41 +700,107 @@ export class HomeComponent implements OnInit, OnDestroy {
     const table = tableContainer.append('table')
       .attr('class', 'concept-table');
     
-    // Add header
+    // Add header with sort functionality
     const thead = table.append('thead');
-    thead.append('tr')
-      .selectAll('th')
-      .data(['Concept', 'Count', 'Avg. Yards'])
-      .enter()
-      .append('th')
-      .text(d => d);
+    const headerRow = thead.append('tr');
+    
+    // Create sortable headers
+    const headers = [
+      { field: 'concept', label: 'Concept' },
+      { field: 'count', label: 'Count' },
+      { field: 'avgYards', label: 'Avg. Yards' }
+    ];
+    
+    headers.forEach(header => {
+      headerRow.append('th')
+        .attr('class', () => {
+          let classes = 'sortable';
+          if (currentSortField === header.field) {
+            classes += sortAscending ? ' sort-asc' : ' sort-desc';
+          }
+          return classes;
+        })
+        .text(header.label)
+        .append('span')
+        .attr('class', 'sort-icon')
+        .text(() => {
+          if (currentSortField === header.field) {
+            return sortAscending ? ' ▲' : ' ▼';
+          }
+          return '';
+        })
+        .style('font-size', '0.8em')
+        .style('margin-left', '5px')
+        .style('opacity', () => currentSortField === header.field ? 1 : 0.3);
+    });
+    
+    // Add click handlers for sorting
+    headerRow.selectAll('th').on('click', function(this: any, event: MouseEvent, d: any) {
+      const headerIndex = Array.from(headerRow.selectAll('th').nodes()).indexOf(this);
+      const field = headers[headerIndex].field;
+      
+      // Toggle sort direction if clicking the same header again
+      if (currentSortField === field) {
+        sortAscending = !sortAscending;
+      } else {
+        currentSortField = field;
+        // Default to ascending for concept, descending for numeric fields
+        sortAscending = field === 'concept';
+      }
+      
+      // Sort the data
+      that.sortTableData(tableData, currentSortField, sortAscending);
+      
+      // Redraw the table with the sorted data
+      that.showConceptTable(category);
+    });
+    
+    // Store reference to this for use in event handlers
+    const that = this;
     
     // Add rows
     const tbody = table.append('tbody');
     const rows = tbody.selectAll('tr')
-      .data(Array.from(concepts.entries()))
+      .data(tableData)
       .enter()
       .append('tr');
     
     // Add concept name
     rows.append('td')
-      .text(d => d[0]);
+      .text(d => d.concept);
     
     // Add count
     rows.append('td')
-      .text(d => d[1]);
+      .text(d => d.count);
     
     // Add average yards with color coding
     rows.append('td')
-      .text(d => {
-        const avgYards = conceptAvgYards.get(d[0]) || 0;
-        return avgYards.toFixed(1);
-      })
-      .style('color', d => {
-        const avgYards = conceptAvgYards.get(d[0]) || 0;
-        return avgYards >= 4 ? 'green' : 'red';
-      })
+      .text(d => d.avgYards.toFixed(1))
+      .style('color', d => d.avgYards >= 4 ? 'green' : 'red')
       .style('font-weight', 'bold');
+  }
+  
+  /**
+   * Sort table data by the specified field
+   * @param data The data to sort
+   * @param field The field to sort by
+   * @param ascending Whether to sort in ascending order
+   */
+  private sortTableData(data: any[], field: string, ascending: boolean): void {
+    data.sort((a, b) => {
+      let comparison = 0;
+      
+      if (field === 'concept') {
+        // String comparison for concept names
+        comparison = a.concept.localeCompare(b.concept);
+      } else {
+        // Numeric comparison for count and avgYards
+        comparison = a[field] - b[field];
+      }
+      
+      // Reverse if descending order
+      return ascending ? comparison : -comparison;
+    });
   }
 
   private hideConceptTable() {
