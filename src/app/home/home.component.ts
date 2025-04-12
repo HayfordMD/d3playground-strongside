@@ -679,12 +679,16 @@ export class HomeComponent implements OnInit, OnDestroy {
       };
     });
     
+    console.log('Table data before sorting:', JSON.stringify(tableData));
+    
     // Default sort by average yards (descending)
     let currentSortField = 'avgYards';
     let sortAscending = false;
     
-    // Sort the data
+    // Apply initial sort
     this.sortTableData(tableData, currentSortField, sortAscending);
+    
+    console.log('Table data after initial sort:', JSON.stringify(tableData));
     
     // Create table container
     const tableContainer = d3.select(this.conceptTableContainer.nativeElement)
@@ -734,10 +738,16 @@ export class HomeComponent implements OnInit, OnDestroy {
         .style('opacity', () => currentSortField === header.field ? 1 : 0.3);
     });
     
+    // Store reference to this for use in event handlers
+    const that = this;
+    
     // Add click handlers for sorting
     headerRow.selectAll('th').on('click', function(this: any, event: MouseEvent, d: any) {
+      // Get the index of the clicked header
       const headerIndex = Array.from(headerRow.selectAll('th').nodes()).indexOf(this);
       const field = headers[headerIndex].field;
+      
+      console.log('Sorting by field:', field);
       
       // Toggle sort direction if clicking the same header again
       if (currentSortField === field) {
@@ -748,15 +758,18 @@ export class HomeComponent implements OnInit, OnDestroy {
         sortAscending = field === 'concept';
       }
       
+      console.log('Sort direction:', sortAscending ? 'ascending' : 'descending');
+      
       // Sort the data
       that.sortTableData(tableData, currentSortField, sortAscending);
       
-      // Redraw the table with the sorted data
-      that.showConceptTable(category);
+      // Log the sorted data for debugging
+      console.log('Sorted data:', tableData);
+      
+      // Create a new table with the sorted data instead of recursively calling showConceptTable
+      // which would cause an infinite loop
+      that.renderSortedTable(tableData, category, currentSortField, sortAscending);
     });
-    
-    // Store reference to this for use in event handlers
-    const that = this;
     
     // Add rows
     const tbody = table.append('tbody');
@@ -787,22 +800,142 @@ export class HomeComponent implements OnInit, OnDestroy {
    * @param ascending Whether to sort in ascending order
    */
   private sortTableData(data: any[], field: string, ascending: boolean): void {
-    data.sort((a, b) => {
+    // Make a copy of the data to avoid reference issues
+    const dataCopy = [...data];
+    
+    // Clear the original array
+    data.length = 0;
+    
+    // Sort the copy
+    dataCopy.sort((a, b) => {
       let comparison = 0;
       
       if (field === 'concept') {
         // String comparison for concept names
-        comparison = a.concept.localeCompare(b.concept);
+        comparison = String(a.concept).localeCompare(String(b.concept));
       } else {
         // Numeric comparison for count and avgYards
-        comparison = a[field] - b[field];
+        comparison = Number(a[field]) - Number(b[field]);
       }
       
       // Reverse if descending order
       return ascending ? comparison : -comparison;
     });
+    
+    // Push the sorted items back into the original array
+    dataCopy.forEach(item => data.push(item));
+    
+    console.log('Sorted data by', field, ascending ? 'ascending' : 'descending');
   }
 
+  /**
+   * Render a sorted table without recursively calling showConceptTable
+   */
+  private renderSortedTable(data: any[], category: string, sortField: string, sortAscending: boolean) {
+    // Clear any existing table
+    d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
+    
+    // Create table container
+    const tableContainer = d3.select(this.conceptTableContainer.nativeElement)
+      .append('div')
+      .attr('class', 'table-container');
+    
+    // Add title
+    tableContainer.append('div')
+      .attr('class', 'table-title')
+      .text(`${category} Concepts`);
+    
+    // Create table
+    const table = tableContainer.append('table')
+      .attr('class', 'concept-table');
+    
+    // Add header with sort functionality
+    const thead = table.append('thead');
+    const headerRow = thead.append('tr');
+    
+    // Create sortable headers
+    const headers = [
+      { field: 'concept', label: 'Concept' },
+      { field: 'count', label: 'Count' },
+      { field: 'avgYards', label: 'Avg. Yards' }
+    ];
+    
+    const that = this;
+    
+    headers.forEach(header => {
+      headerRow.append('th')
+        .attr('class', () => {
+          let classes = 'sortable';
+          if (sortField === header.field) {
+            classes += sortAscending ? ' sort-asc' : ' sort-desc';
+          }
+          return classes;
+        })
+        .text(header.label)
+        .append('span')
+        .attr('class', 'sort-icon')
+        .text(() => {
+          if (sortField === header.field) {
+            return sortAscending ? ' ▲' : ' ▼';
+          }
+          return '';
+        })
+        .style('font-size', '0.8em')
+        .style('margin-left', '5px')
+        .style('opacity', () => sortField === header.field ? 1 : 0.3);
+    });
+    
+    // Add click handlers for sorting
+    headerRow.selectAll('th').on('click', function(this: any, event: MouseEvent, d: any) {
+      // Get the index of the clicked header
+      const headerIndex = Array.from(headerRow.selectAll('th').nodes()).indexOf(this);
+      const field = headers[headerIndex].field;
+      
+      console.log('Sorting by field:', field);
+      
+      // Toggle sort direction if clicking the same header again
+      if (sortField === field) {
+        sortAscending = !sortAscending;
+      } else {
+        sortField = field;
+        // Default to ascending for concept, descending for numeric fields
+        sortAscending = field === 'concept';
+      }
+      
+      console.log('Sort direction:', sortAscending ? 'ascending' : 'descending');
+      
+      // Sort the data
+      that.sortTableData(data, field, sortAscending);
+      
+      // Log the sorted data for debugging
+      console.log('Sorted data:', data);
+      
+      // Render the table again with the sorted data
+      that.renderSortedTable(data, category, field, sortAscending);
+    });
+    
+    // Add rows
+    const tbody = table.append('tbody');
+    const rows = tbody.selectAll('tr')
+      .data(data)
+      .enter()
+      .append('tr');
+    
+    // Add concept name
+    rows.append('td')
+      .text(d => d.concept);
+    
+    // Add count
+    rows.append('td')
+      .text(d => d.count);
+    
+    // Add average yards with color coding
+    rows.append('td')
+      .text(d => d.avgYards.toFixed(1))
+      .style('color', d => d.avgYards >= 4 ? 'green' : 'red')
+      .style('font-weight', 'bold');
+  }
+  
   private hideConceptTable() {
     // Clear the concept table
     d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
