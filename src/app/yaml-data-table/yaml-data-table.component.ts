@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { YamlDataService, YamlDataResult } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
+import { PlayModalService } from '../services/play-modal.service';
 
 // Using FootballPlay interface from models/football-play.model.ts
 
@@ -59,7 +60,7 @@ import { FootballPlay } from '../models/football-play.model';
           </thead>
           <tbody>
             <tr *ngFor="let play of filteredData">
-              <td>{{ play.play_name }}</td>
+              <td class="play-name" (click)="openPlayModal(play)">{{ play.play_name }}</td>
               <td>{{ play.play_formation }}</td>
               <td>{{ play.play_concept }}</td>
               <td>{{ play.down }}</td>
@@ -84,6 +85,16 @@ import { FootballPlay } from '../models/football-play.model';
     </div>
   `,
   styles: `
+    .play-name {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #3498db;
+    }
+    
+    .play-name:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
     .macaroo-table-container {
       width: 100%;
       max-width: 1200px;
@@ -222,7 +233,7 @@ export class YamlDataTableComponent implements OnInit {
   error: string | null = null;
   filePath: string = '';
 
-  constructor(private yamlDataService: YamlDataService) {}
+  constructor(private yamlDataService: YamlDataService, private playModalService: PlayModalService) {}
 
   ngOnInit(): void {
     this.loadYamlData();
@@ -273,5 +284,13 @@ export class YamlDataTableComponent implements OnInit {
   getDisplayPath(): string {
     console.log('getDisplayPath called, current path:', this.filePath);
     return this.filePath || 'No file path available';
+  }
+
+  /**
+   * Opens the play modal with the selected play
+   * @param play The football play to display in the modal
+   */
+  openPlayModal(play: FootballPlay): void {
+    this.playModalService.openModal(play);
   }
 }

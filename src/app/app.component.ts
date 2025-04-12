@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { PlayModalComponent } from './shared/play-modal/play-modal.component';
+import { PlayModalService } from './services/play-modal.service';
 import * as d3 from 'd3';
 import * as yaml from 'js-yaml';
 
@@ -37,7 +39,7 @@ interface OffenseData {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, PlayModalComponent],
   template: `
     <div class="app-container">
       <header class="app-header">
@@ -53,6 +55,13 @@ interface OffenseData {
       <main class="app-content">
         <router-outlet></router-outlet>
       </main>
+      
+      <!-- Play Video Modal Component -->
+      <app-play-modal 
+        [isOpen]="modalService.isOpen" 
+        [play]="modalService.currentPlay"
+        (closeEvent)="modalService.closeModal()">
+      </app-play-modal>
     </div>
   `,
   styles: [`
@@ -213,7 +222,7 @@ export class AppComponent implements OnInit {
   private allPlays: Map<string, OffensePlay[]> = new Map();
   selectedDown: number = 0; // 0 means all downs
 
-  constructor() {}
+  constructor(public modalService: PlayModalService) {}
 
   ngOnInit() {
     this.loadYamlData();
