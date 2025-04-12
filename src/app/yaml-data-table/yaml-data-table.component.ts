@@ -265,6 +265,9 @@ export class YamlDataTableComponent implements OnInit {
         play.play_type.toLowerCase() === filter.toLowerCase()
       );
     }
+    
+    // Notify the service that data has been filtered
+    this.yamlDataService.notifyDataFiltered(filter, this.filteredData);
   }
   
   getDisplayPath(): string {

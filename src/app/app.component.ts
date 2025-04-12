@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import * as d3 from 'd3';
 import * as yaml from 'js-yaml';
 
@@ -37,15 +37,15 @@ interface OffenseData {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   template: `
     <div class="app-container">
       <header class="app-header">
         <div class="container">
           <h1>Football Analytics Dashboard</h1>
           <nav class="app-nav">
-            <a routerLink="/home" class="nav-link">Home</a>
-            <a routerLink="/yaml-data" class="nav-link">Macaroo Table</a>
+            <a routerLink="/home" routerLinkActive="active" class="nav-link">Run Pass Distro</a>
+            <a routerLink="/yaml-data" routerLinkActive="active" class="nav-link">Macaroo Table</a>
           </nav>
         </div>
       </header>

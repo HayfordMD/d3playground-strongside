@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, of } from 'rxjs';
 import * as yaml from 'js-yaml';
@@ -13,6 +13,9 @@ export interface YamlDataResult<T> {
   providedIn: 'root'
 })
 export class YamlDataService {
+  // Event emitter to notify when data is filtered
+  dataFiltered = new EventEmitter<{filterType: string, data: FootballPlay[]}>();
+  
   constructor(private http: HttpClient) {}
 
   /**
@@ -110,5 +113,14 @@ export class YamlDataService {
    */
   loadFootballPlays(): Observable<YamlDataResult<FootballPlay[]>> {
     return this.loadYamlDataWithPath<FootballPlay[]>('betterrunpass.yaml');
+  }
+  
+  /**
+   * Emit an event when data is filtered
+   * @param filterType The type of filter applied (e.g., 'run', 'pass', 'all')
+   * @param data The filtered data
+   */
+  notifyDataFiltered(filterType: string, data: FootballPlay[]): void {
+    this.dataFiltered.emit({ filterType, data });
   }
 }

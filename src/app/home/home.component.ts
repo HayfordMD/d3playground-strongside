@@ -1,6 +1,7 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { YamlDataService } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
 
@@ -132,7 +133,7 @@ interface OffensePlay {
     }
   `]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('pieChart', { static: true }) private pieChartContainer!: ElementRef;
   @ViewChild('conceptTable', { static: true }) private conceptTableContainer!: ElementRef;
   
@@ -144,17 +145,37 @@ export class HomeComponent implements OnInit {
   error: string | null = null;
   yamlFilePath: string = 'assets/data/betterrunpass.yaml';
   private activeCategory: string | null = null; // Track the currently active category
+  private dataFilteredSubscription: Subscription | null = null;
 
   constructor(private router: Router, private yamlDataService: YamlDataService) {}
 
   ngOnInit() {
     this.loadYamlData();
+    
+    // Subscribe to data filtered events
+    this.dataFilteredSubscription = this.yamlDataService.dataFiltered.subscribe(event => {
+      console.log('Data filtered event received:', event);
+      // Update the pie chart when data is filtered in the table component
+      this.processFilteredData(event.filterType, event.data);
+    });
+  }
+  
+  ngOnDestroy() {
+    // Clean up subscription when component is destroyed
+    if (this.dataFilteredSubscription) {
+      this.dataFilteredSubscription.unsubscribe();
+    }
   }
 
   filterByDown(down: number) {
     this.selectedDown = down;
-    this.hideConceptTable(); // Clear the concept table when changing filters
+    // Update the pie chart without clearing the concept table
     this.createRunPassPieChart();
+    
+    // If a category was previously selected, update the concept table for that category
+    if (this.activeCategory) {
+      this.showConceptTable(this.activeCategory);
+    }
   }
 
   navigateToYamlTable(): void {
@@ -190,10 +211,35 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  private processYamlData(data: FootballPlay[]) {
-    // Clear existing data
-    this.conceptCounts.clear();
-    this.allPlays.clear();
+  /**
+   * Process filtered data from the table component
+   * @param filterType The type of filter applied
+   * @param data The filtered data
+   */
+  private processFilteredData(filterType: string, data: FootballPlay[]) {
+    // Process the filtered data without clearing existing data
+    if (data && data.length > 0) {
+      // Update the pie chart with the filtered data
+      this.processYamlData(data, false);
+      this.createRunPassPieChart();
+    }
+  }
+
+  /**
+   * Process YAML data and organize it for visualization
+   * @param data The football play data to process
+   * @param clearExisting Whether to clear existing data (default: true)
+   */
+  private processYamlData(data: FootballPlay[], clearExisting: boolean = true) {
+    // Clear existing data if specified
+    if (clearExisting) {
+      this.conceptCounts.clear();
+      this.allPlays.clear();
+    } else {
+      // If not clearing, we'll rebuild the data from scratch based on the filtered data
+      this.conceptCounts.clear();
+      this.allPlays.clear();
+    }
     
     // Initialize concept maps
     const runConcepts = new Map<string, number>();
@@ -404,9 +450,10 @@ export class HomeComponent implements OnInit {
     slices
       .on('mouseover', (_event: MouseEvent, d: any) => {
         // If we're hovering over a different category than the active one,
-        // hide the previous concept table
-        if (this.activeCategory && this.activeCategory !== d.data.category) {
-          // No need to call hideConceptTable() as we'll replace it with the new one
+        // we'll update to the new category
+        if (this.activeCategory !== d.data.category) {
+          // Update the active category before showing the table
+          this.activeCategory = d.data.category;
         }
         
         // Enlarge the slice
@@ -433,9 +480,6 @@ export class HomeComponent implements OnInit {
         
         // Show concept table for this category
         this.showConceptTable(d.data.category);
-        
-        // Update the active category
-        this.activeCategory = d.data.category;
       })
       .on('mouseout', (_event: MouseEvent, d: any) => {
         // Return slice to normal size
@@ -460,9 +504,18 @@ export class HomeComponent implements OnInit {
           .duration(200)
           .style('opacity', 0);
         
-        // We no longer hide the concept table on mouseout
-        // The table will remain visible until another segment is hovered
+        // We keep the concept table visible on mouseout
+        // The table will remain visible until another category is selected
       });
+      
+    // Add click handler to make selection more explicit
+    slices.on('click', (_event: MouseEvent, d: any) => {
+      // Set this as the active category
+      this.activeCategory = d.data.category;
+      
+      // Show the concept table for this category
+      this.showConceptTable(d.data.category);
+    });
   }
 
   private createMockConceptData() {
@@ -514,6 +567,9 @@ export class HomeComponent implements OnInit {
   private showConceptTable(category: string) {
     // Clear any existing table
     d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
+    
+    // Update the active category
+    this.activeCategory = category;
     
     // Get concepts for this category
     const concepts = this.filteredConceptCounts.get(category);
