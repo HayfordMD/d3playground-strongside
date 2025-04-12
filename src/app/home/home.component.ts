@@ -142,6 +142,7 @@ export class HomeComponent implements OnInit {
   loading: boolean = true;
   error: string | null = null;
   yamlFilePath: string = 'assets/data/mockaroogernearte.yaml';
+  private activeCategory: string | null = null; // Track the currently active category
 
   constructor(private router: Router, private yamlDataService: YamlDataService) {}
 
@@ -151,6 +152,7 @@ export class HomeComponent implements OnInit {
 
   filterByDown(down: number) {
     this.selectedDown = down;
+    this.hideConceptTable(); // Clear the concept table when changing filters
     this.createRunPassPieChart();
   }
 
@@ -402,6 +404,12 @@ export class HomeComponent implements OnInit {
     // Add hover effects
     slices
       .on('mouseover', (_event: MouseEvent, d: any) => {
+        // If we're hovering over a different category than the active one,
+        // hide the previous concept table
+        if (this.activeCategory && this.activeCategory !== d.data.category) {
+          // No need to call hideConceptTable() as we'll replace it with the new one
+        }
+        
         // Enlarge the slice
         d3.select(_event.currentTarget as Element)
           .transition()
@@ -426,6 +434,9 @@ export class HomeComponent implements OnInit {
         
         // Show concept table for this category
         this.showConceptTable(d.data.category);
+        
+        // Update the active category
+        this.activeCategory = d.data.category;
       })
       .on('mouseout', (_event: MouseEvent, d: any) => {
         // Return slice to normal size
@@ -450,8 +461,8 @@ export class HomeComponent implements OnInit {
           .duration(200)
           .style('opacity', 0);
         
-        // Hide concept table
-        this.hideConceptTable();
+        // We no longer hide the concept table on mouseout
+        // The table will remain visible until another segment is hovered
       });
   }
 
@@ -593,5 +604,6 @@ export class HomeComponent implements OnInit {
   private hideConceptTable() {
     // Clear the concept table
     d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
+    this.activeCategory = null; // Reset active category
   }
 }

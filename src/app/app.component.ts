@@ -723,7 +723,7 @@ export class AppComponent implements OnInit {
           .style('transform', 'scale(1)')
           .style('opacity', 0.8);
           
-        // Note: We no longer hide the concept table on mouseout
+        // We no longer hide the concept table on mouseout
         // The table will remain visible until another segment is hovered
       });
 
