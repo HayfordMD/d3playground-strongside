@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { YamlDataService } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
+import { CommonModule } from '@angular/common';
 
 interface OffensePlay {
   playID: number;
@@ -20,11 +21,14 @@ interface OffensePlay {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   template: `
     <h1>Offensive Breakdown Analysis</h1>
     <div class="pie-chart-container">
-      <h2>Run vs Pass Distribution</h2>
+      <div class="chart-header">
+        <h2>{{ chartTitle }}</h2>
+        <button *ngIf="chartMode !== 'main'" class="back-button" (click)="returnToMainView()">← Back to Run/Pass</button>
+      </div>
       <div class="filter-container">
         <span class="filter-label">Filter by Down:</span>
         <button class="filter-button" [class.active]="selectedDown === 0" (click)="filterByDown(0)">All</button>
@@ -38,6 +42,37 @@ interface OffensePlay {
     </div>
   `,
   styles: [`
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .back-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s;
+    }
+    
+    .back-button:hover {
+      background-color: #2980b9;
+    }
+    
+    .no-data-message {
+      text-align: center;
+      padding: 40px;
+      color: #7f8c8d;
+      font-size: 16px;
+      font-style: italic;
+    }
     :host {
       font-family: 'Arial', sans-serif;
       color: #333;
@@ -210,6 +245,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   error: string | null = null;
   yamlFilePath: string = 'assets/data/betterrunpass.yaml';
   private activeCategory: string | null = null; // Track the currently active category
+  chartMode: 'main' | 'run' | 'pass' = 'main'; // Track the current chart mode
+  chartTitle: string = 'Run vs Pass Distribution'; // Dynamic chart title
   private dataFilteredSubscription: Subscription | null = null;
 
   constructor(private router: Router, private yamlDataService: YamlDataService) {}
@@ -234,13 +271,30 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   filterByDown(down: number) {
     this.selectedDown = down;
-    // Update the pie chart without clearing the concept table
-    this.createRunPassPieChart();
+    
+    // Update the appropriate chart based on current mode
+    if (this.chartMode === 'main') {
+      this.createRunPassPieChart();
+    } else if (this.chartMode === 'run') {
+      this.createConceptPieChart('Run');
+    } else if (this.chartMode === 'pass') {
+      this.createConceptPieChart('Pass');
+    }
     
     // If a category was previously selected, update the concept table for that category
     if (this.activeCategory) {
       this.showConceptTable(this.activeCategory);
     }
+  }
+  
+  // Return to the main Run/Pass view
+  returnToMainView() {
+    this.chartMode = 'main';
+    this.chartTitle = 'Run vs Pass Distribution';
+    this.activeCategory = null;
+    this.createRunPassPieChart();
+    // Clear the concept table
+    d3.select(this.conceptTableContainer.nativeElement).selectAll('*').remove();
   }
 
   navigateToYamlTable(): void {
@@ -401,6 +455,9 @@ export class HomeComponent implements OnInit, OnDestroy {
       { category: 'Run', count: filteredRunPlays.length, avgYards: parseFloat(runAvgYards.toFixed(1)) },
       { category: 'Pass', count: filteredPassPlays.length, avgYards: parseFloat(passAvgYards.toFixed(1)) }
     ];
+    
+    // Set chart mode
+    this.chartMode = 'main';
 
     // Set up dimensions
     const width = 300;
@@ -573,16 +630,283 @@ export class HomeComponent implements OnInit, OnDestroy {
         // The table will remain visible until another category is selected
       });
       
-    // Add click handler to make selection more explicit
+    // Add click handler to drill down into concepts
     slices.on('click', (_event: MouseEvent, d: any) => {
       // Set this as the active category
       this.activeCategory = d.data.category;
+      
+      // Drill down into concepts for this category
+      if (d.data.category === 'Run') {
+        this.chartMode = 'run';
+        this.chartTitle = 'Run Concepts Distribution';
+        this.createConceptPieChart('Run');
+      } else if (d.data.category === 'Pass') {
+        this.chartMode = 'pass';
+        this.chartTitle = 'Pass Concepts Distribution';
+        this.createConceptPieChart('Pass');
+      }
       
       // Show the concept table for this category
       this.showConceptTable(d.data.category);
     });
   }
 
+  /**
+   * Create a pie chart showing the distribution of concepts for a specific category (Run or Pass)
+   * @param category The category to show concepts for ('Run' or 'Pass')
+   */
+  private createConceptPieChart(category: string) {
+    // Clear any existing chart
+    d3.select(this.pieChartContainer.nativeElement).selectAll('*').remove();
+    
+    // Get concepts for this category
+    const concepts = this.filteredConceptCounts.get(category);
+    if (!concepts) return;
+    
+    // Get plays for this category
+    const plays = this.allPlays.get(category) || [];
+    
+    // Filter by down if needed
+    const filteredPlays = this.selectedDown === 0 ? 
+      plays : 
+      plays.filter(play => play.Down === this.selectedDown);
+    
+    // Calculate concept counts and average yards for the filtered plays
+    const conceptData = new Map<string, { count: number, totalYards: number }>();
+    
+    filteredPlays.forEach(play => {
+      const concept = play.playname;
+      const yards = play.yardsGained;
+      
+      if (!conceptData.has(concept)) {
+        conceptData.set(concept, { count: 0, totalYards: 0 });
+      }
+      
+      const data = conceptData.get(concept)!;
+      data.count++;
+      data.totalYards += yards;
+    });
+    
+    // Create data for the pie chart
+    const data = Array.from(conceptData.entries()).map(([concept, data]) => {
+      return {
+        category: concept,
+        count: data.count,
+        avgYards: parseFloat((data.totalYards / data.count).toFixed(1))
+      };
+    });
+    
+    // Sort by count (descending)
+    data.sort((a, b) => b.count - a.count);
+    
+    // Set chart mode
+    this.chartMode = category.toLowerCase() as 'run' | 'pass';
+    
+    // If no data, show a message
+    if (data.length === 0) {
+      d3.select(this.pieChartContainer.nativeElement)
+        .append('div')
+        .attr('class', 'no-data-message')
+        .text(`No ${category.toLowerCase()} concepts found for the selected down.`);
+      return;
+    }
+    
+    // Set up dimensions
+    const width = 300;
+    const height = 300;
+    const radius = Math.min(width, height) / 2;
+    const innerRadius = 0; // For a pie chart, inner radius is 0
+    
+    // Create SVG
+    const svg = d3.select(this.pieChartContainer.nativeElement)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .append('g')
+      .attr('transform', `translate(${width / 2}, ${height / 2})`);
+    
+    // Define colors - use a different color scheme for concepts
+    const color = d3.scaleOrdinal<string>()
+      .domain(data.map(d => d.category))
+      .range(d3.schemeCategory10);
+    
+    // Create pie generator
+    const pie = d3.pie<any>()
+      .value(d => d.count)
+      .sort(null);
+    
+    // Create arc generator
+    const arc = d3.arc<any>()
+      .innerRadius(innerRadius)
+      .outerRadius(radius - 10);
+    
+    // Create hover arc generator (slightly larger)
+    const hoverArc = d3.arc<any>()
+      .innerRadius(innerRadius)
+      .outerRadius(radius);
+    
+    // Add drop shadow filter for 3D effect
+    const defs = svg.append('defs');
+    const filter = defs.append('filter')
+      .attr('id', 'drop-shadow-concept')
+      .attr('height', '130%');
+    
+    filter.append('feGaussianBlur')
+      .attr('in', 'SourceAlpha')
+      .attr('stdDeviation', 3)
+      .attr('result', 'blur');
+    
+    filter.append('feOffset')
+      .attr('in', 'blur')
+      .attr('dx', 3)
+      .attr('dy', 3)
+      .attr('result', 'offsetBlur');
+    
+    const feMerge = filter.append('feMerge');
+    feMerge.append('feMergeNode')
+      .attr('in', 'offsetBlur');
+    feMerge.append('feMergeNode')
+      .attr('in', 'SourceGraphic');
+    
+    // Create pie slices
+    const slices = svg.selectAll('path')
+      .data(pie(data))
+      .enter()
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', d => color(d.data.category))
+      .attr('stroke', 'white')
+      .attr('stroke-width', 2)
+      .style('filter', 'url(#drop-shadow-concept)')
+      .style('cursor', 'pointer');
+    
+    // Add labels
+    const labels = svg.selectAll('text')
+      .data(pie(data))
+      .enter()
+      .append('text')
+      .attr('transform', d => {
+        // Position labels based on arc size
+        const centroid = arc.centroid(d);
+        // For small arcs, position labels outside the pie
+        if (d.endAngle - d.startAngle < 0.3) {
+          const midAngle = (d.startAngle + d.endAngle) / 2;
+          const x = Math.sin(midAngle) * (radius + 10);
+          const y = -Math.cos(midAngle) * (radius + 10);
+          return `translate(${x},${y})`;
+        }
+        return `translate(${centroid})`;
+      })
+      .attr('text-anchor', 'middle')
+      .style('font-size', '12px')
+      .style('font-weight', 'bold')
+      .style('fill', d => (d.endAngle - d.startAngle < 0.3) ? '#333' : 'white')
+      .text(d => d.data.category);
+    
+    // Add percentage labels (initially hidden)
+    const percentages = svg.selectAll('.percentage')
+      .data(pie(data))
+      .enter()
+      .append('text')
+      .attr('class', 'percentage')
+      .attr('transform', d => `translate(${arc.centroid(d)})`)
+      .attr('text-anchor', 'middle')
+      .style('font-size', '12px')
+      .style('font-weight', 'bold')
+      .style('fill', 'white')
+      .style('opacity', 0)
+      .text(d => `${Math.round((d.data.count / d3.sum(data, d => d.count)) * 100)}%`);
+    
+    // Add average yards labels (initially hidden)
+    const avgYardsLabels = svg.selectAll('.avg-yards')
+      .data(pie(data))
+      .enter()
+      .append('text')
+      .attr('class', 'avg-yards')
+      .attr('transform', d => `translate(${arc.centroid(d)[0]}, ${arc.centroid(d)[1] + 15})`)
+      .attr('text-anchor', 'middle')
+      .style('font-size', '10px')
+      .style('font-weight', 'bold')
+      .style('fill', 'white')
+      .style('opacity', 0)
+      .text(d => `Avg: ${d.data.avgYards} yds`);
+    
+    // Add hover effects
+    slices
+      .on('mouseover', (_event: MouseEvent, d: any) => {
+        // Enlarge the slice
+        d3.select(_event.currentTarget as Element)
+          .transition()
+          .duration(200)
+          .attr('d', hoverArc);
+        
+        // Hide category label and show percentage
+        labels.filter(label => label.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 0);
+        
+        percentages.filter(p => p.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 1);
+        
+        avgYardsLabels.filter(a => a.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 1);
+      })
+      .on('mouseout', (_event: MouseEvent, d: any) => {
+        // Return slice to normal size
+        d3.select(_event.currentTarget as Element)
+          .transition()
+          .duration(200)
+          .attr('d', arc);
+        
+        // Show category label and hide percentage
+        labels.filter(label => label.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 1);
+        
+        percentages.filter(p => p.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 0);
+        
+        avgYardsLabels.filter(a => a.data.category === d.data.category)
+          .transition()
+          .duration(200)
+          .style('opacity', 0);
+      });
+    
+    // Add legend
+    const legendContainer = d3.select(this.pieChartContainer.nativeElement)
+      .append('div')
+      .attr('class', 'legend-container')
+      .style('margin-top', '20px')
+      .style('display', 'flex')
+      .style('flex-wrap', 'wrap')
+      .style('justify-content', 'center');
+    
+    // Create legend items
+    data.forEach((d, i) => {
+      const legendItem = legendContainer.append('div')
+        .style('display', 'flex')
+        .style('align-items', 'center')
+        .style('margin', '0 10px 5px 0');
+      
+      legendItem.append('div')
+        .style('width', '12px')
+        .style('height', '12px')
+        .style('background-color', color(d.category))
+        .style('margin-right', '5px');
+      
+      legendItem.append('span')
+        .text(`${d.category} (${d.count})`);
+    });
+  }
+  
   private createMockConceptData() {
     // Create mock data for Run concepts
     const runConcepts = new Map<string, number>();
