@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { YamlDataService } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 interface TreemapData {
   name: string;
@@ -65,20 +66,59 @@ interface TreemapNode extends d3.HierarchyNode<any> {
       
       <div #treemap class="treemap-chart"></div>
       
+      <!-- Plays table for selected concept -->
+      <div class="concept-plays-table" *ngIf="selectedConcept && selectedConceptPlays.length > 0">
+        <h3>Plays for Concept: {{ selectedConcept }}</h3>
+        <table class="plays-table">
+          <thead>
+            <tr>
+              <th>Play Name</th>
+              <th>Formation</th>
+              <th>Down</th>
+              <th>Distance</th>
+              <th>Yards Gained</th>
+              <th>Play Type</th>
+              <th>Quarter</th>
+              <th>Home Team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let play of selectedConceptPlays">
+              <td>{{ play.play_name }}</td>
+              <td>{{ play.play_formation }}</td>
+              <td>{{ play.down }}</td>
+              <td>{{ play.distance }}</td>
+              <td [ngClass]="{ 
+                'positive-yards': play.yards_gained > 0,
+                'negative-yards': play.yards_gained < 0,
+                'neutral-yards': play.yards_gained === 0
+              }">{{ play.yards_gained }}</td>
+              <td>{{ play.play_type }}</td>
+              <td>{{ play.qtr }}</td>
+              <td>{{ play.home_team }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
       <div class="legend">
-        <div class="legend-title">Average Yards Gained</div>
+        <div class="legend-title">Colors Explanation</div>
         <div class="legend-scale">
           <div class="legend-item">
             <div class="legend-color" style="background-color: #e74c3c;"></div>
-            <div class="legend-label">Negative/Low</div>
+            <div class="legend-label">Negative/Low Yards</div>
           </div>
           <div class="legend-item">
             <div class="legend-color" style="background-color: #f39c12;"></div>
-            <div class="legend-label">Medium</div>
+            <div class="legend-label">Medium Yards</div>
           </div>
           <div class="legend-item">
             <div class="legend-color" style="background-color: #2ecc71;"></div>
-            <div class="legend-label">High</div>
+            <div class="legend-label">High Yards</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #3498db;"></div>
+            <div class="legend-label">Most Called Concept</div>
           </div>
         </div>
       </div>
@@ -206,13 +246,67 @@ interface TreemapNode extends d3.HierarchyNode<any> {
     }
     
     .legend-color {
-      width: 20px;
       height: 20px;
       border-radius: 3px;
     }
     
     .legend-label {
       font-size: 0.9rem;
+    }
+    
+    /* Plays table styles */
+    .concept-plays-table {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .concept-plays-table h3 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .plays-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    
+    .plays-table th, .plays-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    
+    .plays-table th {
+      background-color: #2c3e50;
+      color: white;
+      font-weight: 600;
+    }
+    
+    .plays-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .plays-table tr:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .positive-yards {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    
+    .negative-yards {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    
+    .neutral-yards {
+      color: #7f8c8d;
     }
     
     /* Tooltip styles */
@@ -237,6 +331,7 @@ interface TreemapNode extends d3.HierarchyNode<any> {
     }
   `]
 })
+
 export class TreemapComponent implements OnInit, OnDestroy {
   @ViewChild('treemap', { static: true }) private treemapContainer!: ElementRef;
   
@@ -249,9 +344,14 @@ export class TreemapComponent implements OnInit, OnDestroy {
   error: string | null = null;
   dataSource: string | null = null;
   
+  // Selected concept for table display
+  selectedConcept: string | null = null;
+  selectedConceptPlays: FootballPlay[] = [];
+  
   constructor(private yamlDataService: YamlDataService) {}
   
-  ngOnInit() {
+  // Lifecycle hook: Initialize the component
+  ngOnInit(): void {
     this.loadYamlData();
     
     // Subscribe to data filtered events
@@ -261,12 +361,13 @@ export class TreemapComponent implements OnInit, OnDestroy {
     });
   }
   
-  ngOnDestroy() {
+  // Lifecycle hook: Clean up when component is destroyed
+  ngOnDestroy(): void {
     // Clean up subscription when component is destroyed
     if (this.dataFilteredSubscription) {
       this.dataFilteredSubscription.unsubscribe();
     }
-  }
+  } 
   
   /**
    * Load YAML data from the service
@@ -315,11 +416,35 @@ export class TreemapComponent implements OnInit, OnDestroy {
   filterData(filter: string) {
     this.selectedFilter = filter;
     this.processData();
+    
+    // Clear selected concept when filter changes
+    this.clearSelectedConcept();
+  }
+  
+  /**
+   * Clear the selected concept and plays
+   */
+  clearSelectedConcept() {
+    this.selectedConcept = null;
+    this.selectedConceptPlays = [];
   }
   
   /**
    * Process the data and create the treemap visualization
    */
+  private getPlaysForConcept(concept: string): FootballPlay[] {
+    // Start with all plays or filtered plays based on current filter
+    let plays = this.allPlays;
+    if (this.selectedFilter === 'run') {
+      plays = this.allPlays.filter(play => play.play_type.toLowerCase() === 'run');
+    } else if (this.selectedFilter === 'pass') {
+      plays = this.allPlays.filter(play => play.play_type.toLowerCase() === 'pass');
+    }
+    
+    // Filter by concept
+    return plays.filter(play => play.play_concept === concept);
+  }
+  
   private processData() {
     if (!this.allPlays || this.allPlays.length === 0) {
       this.error = 'No data available to visualize.';
@@ -429,13 +554,16 @@ export class TreemapComponent implements OnInit, OnDestroy {
     
     // Color scale for yards gained (red to green)
     // Find min and max average yards
-    const minAvgYards = d3.min(this.treemapData.children, d => d.avgYards) || -5;
-    const maxAvgYards = d3.max(this.treemapData.children, d => d.avgYards) || 15;
+    const minAvgYards = d3.min(this.treemapData.children || [], d => d.avgYards) || -5;
+    const maxAvgYards = d3.max(this.treemapData.children || [], d => d.avgYards) || 15;
     
-    // Create color scale
+    // Create color scale for yards gained
     const colorScale = d3.scaleLinear<string>()
-      .domain([minAvgYards, (minAvgYards + maxAvgYards) / 2, maxAvgYards])
+      .domain([Number(minAvgYards), Number((Number(minAvgYards) + Number(maxAvgYards)) / 2), Number(maxAvgYards)])
       .range(['#e74c3c', '#f39c12', '#2ecc71']);
+      
+    // Find the concept with the highest count
+    const maxCount = d3.max(this.treemapData.children || [], (d: TreemapItem) => d.value) || 0;
     
     // Create cells
     const cells = svg.selectAll('g')
@@ -448,7 +576,14 @@ export class TreemapComponent implements OnInit, OnDestroy {
     cells.append('rect')
       .attr('width', d => (d.x1 || 0) - (d.x0 || 0))
       .attr('height', d => (d.y1 || 0) - (d.y0 || 0))
-      .attr('fill', d => colorScale(d.data.avgYards || 0))
+      .attr('fill', d => {
+        // If this is the concept with the highest count, make it blue
+        if (d.data.value === maxCount) {
+          return '#3498db'; // Blue color for the highest count concept
+        }
+        // Otherwise, use the color scale based on yards gained
+        return colorScale(d.data.avgYards || 0);
+      })
       .attr('stroke', '#fff')
       .attr('stroke-width', 1)
       .style('cursor', 'pointer')
@@ -459,7 +594,7 @@ export class TreemapComponent implements OnInit, OnDestroy {
         
         tooltip.html(`
           <div class="tooltip-title">${d.data.name}</div>
-          <div class="tooltip-value">Times Called: ${d.data.value || 0}</div>
+          <div class="tooltip-value">Times Called: ${d.data.value || 0}${d.data.value === maxCount ? ' (Most Called)' : ''}</div>
           <div class="tooltip-value">Avg. Yards: ${d.data.avgYards || 0}</div>
           <div class="tooltip-value">Play Type: ${d.data.playType || 'Unknown'}</div>
         `)
@@ -470,6 +605,18 @@ export class TreemapComponent implements OnInit, OnDestroy {
         tooltip.transition()
           .duration(500)
           .style('opacity', 0);
+      })
+      .on('click', (event, d: any) => {
+        // Hide tooltip
+        tooltip.transition()
+          .duration(500)
+          .style('opacity', 0);
+          
+        // Set selected concept and find matching plays
+        if (d && d.data && d.data.name) {
+          this.selectedConcept = d.data.name;
+          this.selectedConceptPlays = this.getPlaysForConcept(d.data.name);
+        }
       });
     
     // Add text labels
@@ -493,3 +640,4 @@ export class TreemapComponent implements OnInit, OnDestroy {
       .style('pointer-events', 'none');
   }
 }
+

@@ -1,0 +1,10 @@
+Have the treemap label show percentage playcall by down and yards gained per down
+on the treemap tool tip on hover   1st: % Called AYG
+
+abbreviation for frequency is 
+For example
+Hover on tool tip includes 
+1st: 10% freq. 4.2 AYG
+2nd: 15% freq. 3.8 AYG
+3rd: 20% freq. 3.5 AYG
+4th: 10% freq. 3.2 AYG
