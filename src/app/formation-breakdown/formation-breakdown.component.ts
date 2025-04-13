@@ -1106,6 +1106,25 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('y', -radius - 10)
       .attr('font-weight', 'bold')
       .text(`${this.selectedFormation} - Average Yards by Concept${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
+      
+    // Add legend for highest yards concept
+    if (filteredConceptData.length > 0) {
+      const maxYardsConcept = filteredConceptData.reduce(
+        (max, current) => current.avgYards > max.avgYards ? current : max, 
+        filteredConceptData[0]
+      );
+      
+      const legendY = -radius - 30;
+      const legendGroup = svg.append('g')
+        .attr('transform', `translate(0, ${legendY})`);
+      
+      // Add legend text
+      legendGroup.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '0.35em')
+        .attr('font-size', '12px')
+        .text(`Best: ${maxYardsConcept.concept} (${maxYardsConcept.avgYards.toFixed(1)} yards)`);
+    }
     
     // Create color scale based on yards gained
     const colorScale = d3.scaleSequential(d3.interpolateRdYlGn)
@@ -1128,12 +1147,27 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .append('g')
       .attr('class', 'arc');
     
+    // Find the concept with highest average yards
+    const maxYardsConcept = filteredConceptData.reduce(
+      (max, current) => current.avgYards > max.avgYards ? current : max, 
+      filteredConceptData[0]
+    );
+    
     // Add slices
     arcs.append('path')
       .attr('d', arc)
-      .attr('fill', d => colorScale(d.data.avgYards))
-      .attr('stroke', 'white')
-      .style('stroke-width', '2px')
+      .attr('fill', d => {
+        // Use blue for the highest-performing concept, otherwise use the color scale
+        return d.data.concept === maxYardsConcept.concept ? '#3498db' : colorScale(d.data.avgYards);
+      })
+      .attr('stroke', d => {
+        // Use black stroke for the highest-performing concept, otherwise white
+        return d.data.concept === maxYardsConcept.concept ? 'black' : 'white';
+      })
+      .style('stroke-width', d => {
+        // Use thicker stroke for the highest-performing concept
+        return d.data.concept === maxYardsConcept.concept ? '3px' : '2px';
+      })
       .on('mouseover', function() {
         d3.select(this).attr('opacity', 0.8);
       })
