@@ -156,7 +156,7 @@ interface ConceptData {
         <!-- Detail View: Formation Concepts -->
         <div class="detail-view" *ngIf="selectedFormation">
           <div class="view-header">
-            <h3>{{ selectedFormation }} Breakdown</h3>
+            <h3>{{ selectedFormation }}{{ selectedPlayType ? ' - ' + (selectedPlayType | titlecase) + ' Plays' : '' }} Breakdown</h3>
             <button class="back-button" (click)="clearSelectedFormation()">← Back to All Formations</button>
           </div>
           
@@ -473,6 +473,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
   loading: boolean = true;
   error: string | null = null;
   selectedFormation: string | null = null;
+  selectedPlayType: string | null = null; // 'run', 'pass', or null (all)
   showTopConceptsOnly: boolean = true; // Default to showing only top 5 concepts
 
   // Hover table properties
@@ -751,7 +752,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('fill', d => color(d.type))
       .style('cursor', 'pointer')
       .on('click', (event, d) => {
-        this.selectFormation(d.formation);
+        this.selectFormation(d.formation, d.type);
       })
       .on('mouseover', function() {
         d3.select(this).attr('opacity', 0.8);
@@ -784,8 +785,9 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .text('Formation Play Type Distribution');
   }
 
-  selectFormation(formation: string): void {
+  selectFormation(formation: string, playType: string | null = null): void {
     this.selectedFormation = formation;
+    this.selectedPlayType = playType;
     setTimeout(() => {
       this.createConceptCharts();
     }, 0);
@@ -793,6 +795,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
 
   clearSelectedFormation(): void {
     this.selectedFormation = null;
+    this.selectedPlayType = null;
     this.updateCharts();
   }
 
@@ -815,9 +818,16 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
     if (!this.selectedFormation) return;
     
     // Filter plays for the selected formation
-    const formationPlays = this.filteredPlays.filter(
+    let formationPlays = this.filteredPlays.filter(
       play => play.play_formation === this.selectedFormation
     );
+    
+    // Apply play type filter if selected
+    if (this.selectedPlayType) {
+      formationPlays = formationPlays.filter(
+        play => play.play_type.toLowerCase() === this.selectedPlayType
+      );
+    }
     
     // Create run/pass pie chart first
     this.createRunPassPieChart(formationPlays);
@@ -886,7 +896,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('text-anchor', 'middle')
       .attr('y', -radius - 10)
       .attr('font-weight', 'bold')
-      .text(`${this.selectedFormation} - Run/Pass Breakdown`);
+      .text(`${this.selectedFormation}${this.selectedPlayType ? ` - ${this.selectedPlayType.charAt(0).toUpperCase() + this.selectedPlayType.slice(1)} Plays` : ' - All Plays'}`);
     
     // Create color scale
     const color = d3.scaleOrdinal<string>()
@@ -978,7 +988,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('text-anchor', 'middle')
       .attr('y', -radius - 10)
       .attr('font-weight', 'bold')
-      .text(`${this.selectedFormation} - Concepts by Count${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
+      .text(`${this.selectedFormation}${this.selectedPlayType ? ` - ${this.selectedPlayType.charAt(0).toUpperCase() + this.selectedPlayType.slice(1)} Concepts` : ' - All Concepts'} by Count${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
     
     // Create color scale
     const color = d3.scaleOrdinal<string>()
@@ -1105,7 +1115,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('text-anchor', 'middle')
       .attr('y', -radius - 10)
       .attr('font-weight', 'bold')
-      .text(`${this.selectedFormation} - Average Yards by Concept${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
+      .text(`${this.selectedFormation}${this.selectedPlayType ? ` - ${this.selectedPlayType.charAt(0).toUpperCase() + this.selectedPlayType.slice(1)} Concepts` : ' - All Concepts'} by Yards${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
       
     // Add legend for highest yards concept
     if (filteredConceptData.length > 0) {
