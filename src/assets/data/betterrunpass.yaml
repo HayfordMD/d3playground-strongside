@@ -277,6 +277,7 @@
     down: 1
     distance: 10
     play_concept: Power
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Power
     video_url: http://dummyimage.com/295x316.png/dddddd/000000
@@ -763,6 +764,7 @@
     down: 3
     distance: 2
     play_concept: Triple Option
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Triple Option
     video_url: http://dummyimage.com/121x302.png/dddddd/000000
@@ -1897,6 +1899,7 @@
     down: 2
     distance: 1
     play_concept: Wham
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Wham
     video_url: http://dummyimage.com/184x238.png/cc0000/ffffff
@@ -2041,6 +2044,7 @@
     down: 2
     distance: 10
     play_concept: Jet Sweep
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Jet Sweep
     video_url: http://dummyimage.com/349x461.png/dddddd/000000
@@ -2671,6 +2675,7 @@
     down: 2
     distance: 9
     play_concept: Iso
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/176x230.png/dddddd/000000
@@ -3265,6 +3270,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/109x344.png/cc0000/ffffff
@@ -3427,6 +3433,7 @@
     down: 1
     distance: 10
     play_concept: Dive
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Dive
     video_url: http://dummyimage.com/318x355.png/cc0000/ffffff
@@ -5101,6 +5108,7 @@
     down: 2
     distance: 5
     play_concept: Mid-line read
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mid-line read
     video_url: http://dummyimage.com/260x411.png/dddddd/000000
@@ -5443,6 +5451,7 @@
     down: 3
     distance: 2
     play_concept: Outside Zone
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Outside Zone
     video_url: http://dummyimage.com/206x246.png/cc0000/ffffff
@@ -5677,6 +5686,7 @@
     down: 2
     distance: 9
     play_concept: Outside Zone
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Outside Zone
     video_url: http://dummyimage.com/162x112.png/cc0000/ffffff
@@ -5893,6 +5903,7 @@
     down: 2
     distance: 6
     play_concept: Dive
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Dive
     video_url: http://dummyimage.com/167x358.png/5fa2dd/ffffff
@@ -6325,6 +6336,7 @@
     down: 1
     distance: 10
     play_concept: Dive
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Dive
     video_url: http://dummyimage.com/146x102.png/dddddd/000000
@@ -6397,6 +6409,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/251x483.png/ff4444/ffffff
@@ -6415,6 +6428,7 @@
     down: 1
     distance: 10
     play_concept: Lead
+    formation_set: Pro
     play_formation: Pro Left Flex Queen Wing
     play_name: Pro Left Flex Queen Wing Lead
     video_url: http://dummyimage.com/121x257.png/cc0000/ffffff
@@ -6433,8 +6447,9 @@
     down: 2
     distance: 9
     play_concept: Jet Sweep
-    play_formation: Trio Right
-    play_name: Trio Right Jet Sweep
+    formation_set: Trio
+    play_formation: Trio Right Wide Stack
+    play_name: Trio Right Wide Stack Jet Sweep
     video_url: http://dummyimage.com/252x125.png/dddddd/000000
     time: 1:12
     qtr: 2
@@ -6451,7 +6466,8 @@
     down: 1
     distance: 10
     play_concept: Triple Option
-    play_formation: 
+    formation_set: Pro
+    play_formation: Pro Left Flex Queen Wing
     play_name:  Triple Option
     video_url: http://dummyimage.com/116x291.png/dddddd/000000
     time: 2:14
@@ -6469,8 +6485,9 @@
     down: 1
     distance: 10
     play_concept: Dive
-    play_formation: Trio Left
-    play_name: Trio Left Dive
+    formation_set: Trio
+    play_formation: Trio Left Undercenter
+    play_name: Trio Left Undercenter Dive
     video_url: http://dummyimage.com/229x221.png/dddddd/000000
     time: 2:55
     qtr: 4
@@ -6487,6 +6504,7 @@
     down: 2
     distance: 3
     play_concept: Lead
+    formation_set: I-Formation
     play_formation: I-Left
     play_name: I-Left Lead
     video_url: http://dummyimage.com/259x205.png/cc0000/ffffff
@@ -6505,6 +6523,7 @@
     down: 1
     distance: 10
     play_concept: Power
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Power
     video_url: http://dummyimage.com/112x291.png/5fa2dd/ffffff
@@ -7027,6 +7046,7 @@
     down: 1
     distance: 10
     play_concept: Dive
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Dive
     video_url: http://dummyimage.com/258x162.png/5fa2dd/ffffff
@@ -7675,7 +7695,8 @@
     down: 2
     distance: 1
     play_concept: FB Dive
-    play_formation: Empty Left Bunch  Trio Left Wing Pistol
+    formation_set: Empty
+    play_formation: Empty Left Bunch
     play_name: Empty Left Bunch  Trio Left Wing Pistol FB Dive
     video_url: http://dummyimage.com/184x255.png/5fa2dd/ffffff
     time: 9:24
@@ -7693,8 +7714,9 @@
     down: 1
     distance: 10
     play_concept: Wham
-    play_formation: 
-    play_name:  Wham
+    formation_set: Trio
+    play_formation: Trio Left Wing Pistol
+    play_name: Trio Left Wing Pistol Wham
     video_url: http://dummyimage.com/330x393.png/5fa2dd/ffffff
     time: 7:12
     qtr: 1
@@ -7711,6 +7733,7 @@
     down: 1
     distance: 10
     play_concept: Outside Zone
+    formation_set: I-Formation
     play_formation: I-Left Flex Close
     play_name: I-Left Flex Close Outside Zone
     video_url: http://dummyimage.com/191x331.png/cc0000/ffffff
@@ -7729,6 +7752,7 @@
     down: 2
     distance: 8
     play_concept: Iso
+    formation_set: Pro
     play_formation: Pro Left
     play_name: Pro Left Iso
     video_url: http://dummyimage.com/324x495.png/ff4444/ffffff
@@ -7747,6 +7771,7 @@
     down: 3
     distance: 2
     play_concept: Mid-line read
+    formation_set: Trio
     play_formation: Trio Left
     play_name: Trio Left Mid-line read
     video_url: http://dummyimage.com/104x362.png/dddddd/000000
@@ -7765,6 +7790,7 @@
     down: 1
     distance: 10
     play_concept: Belly
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Belly
     video_url: http://dummyimage.com/221x368.png/5fa2dd/ffffff
@@ -7855,6 +7881,7 @@
     down: 3
     distance: 1
     play_concept: Zone Read
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Zone Read
     video_url: http://dummyimage.com/114x157.png/ff4444/ffffff
@@ -8035,6 +8062,7 @@
     down: 1
     distance: 10
     play_concept: Dive
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Dive
     video_url: http://dummyimage.com/331x247.png/ff4444/ffffff
@@ -8143,6 +8171,7 @@
     down: 2
     distance: 2
     play_concept: Iso
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Iso
     video_url: http://dummyimage.com/115x388.png/ff4444/ffffff
@@ -10249,6 +10278,7 @@
     down: 3
     distance: 4
     play_concept: Jet Sweep
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Jet Sweep
     video_url: http://dummyimage.com/119x229.png/cc0000/ffffff
@@ -10465,6 +10495,7 @@
     down: 3
     distance: 8
     play_concept: Jet Sweep
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Jet Sweep
     video_url: http://dummyimage.com/251x388.png/5fa2dd/ffffff
@@ -10609,6 +10640,7 @@
     down: 2
     distance: 4
     play_concept: Power
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Power
     video_url: http://dummyimage.com/359x425.png/ff4444/ffffff
@@ -10663,6 +10695,7 @@
     down: 3
     distance: 6
     play_concept: Bubble Screen
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Bubble Screen
     video_url: http://dummyimage.com/134x413.png/5fa2dd/ffffff
@@ -10681,6 +10714,7 @@
     down: 1
     distance: 10
     play_concept: Post-Wheel
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Post-Wheel
     video_url: http://dummyimage.com/312x286.png/5fa2dd/ffffff
@@ -10699,6 +10733,7 @@
     down: 2
     distance: 10
     play_concept: Slot Fade
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Slot Fade
     video_url: http://dummyimage.com/115x355.png/ff4444/ffffff
@@ -11059,6 +11094,7 @@
     down: 2
     distance: 8
     play_concept: Mesh
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mesh
     video_url: http://dummyimage.com/179x248.png/5fa2dd/ffffff
@@ -11653,6 +11689,7 @@
     down: 4
     distance: 1
     play_concept: Bubble Screen
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Bubble Screen
     video_url: http://dummyimage.com/187x104.png/cc0000/ffffff
@@ -12013,6 +12050,7 @@
     down: 1
     distance: 10
     play_concept: Y-Cross
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Y-Cross
     video_url: http://dummyimage.com/171x382.png/cc0000/ffffff
@@ -12247,6 +12285,7 @@
     down: 2
     distance: 8
     play_concept: Hitch
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Hitch
     video_url: http://dummyimage.com/243x423.png/5fa2dd/ffffff
@@ -13957,6 +13996,7 @@
     down: 2
     distance: 9
     play_concept: Hitch
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Hitch
     video_url: http://dummyimage.com/346x215.png/dddddd/000000
@@ -13975,6 +14015,7 @@
     down: 4
     distance: 9
     play_concept: Hoss
+    formation_set: Right
     play_formation: Ace Left Slot
     play_name: Ace Left Slot Hoss
     video_url: http://dummyimage.com/161x281.png/5fa2dd/ffffff
@@ -14731,6 +14772,7 @@
     down: 3
     distance: 3
     play_concept: Hoss
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Hoss
     video_url: http://dummyimage.com/110x366.png/cc0000/ffffff
@@ -15937,6 +15979,7 @@
     down: 2
     distance: 3
     play_concept: Post-Wheel
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Post-Wheel
     video_url: http://dummyimage.com/241x320.png/cc0000/ffffff
@@ -15973,6 +16016,7 @@
     down: 2
     distance: 9
     play_concept: Double Slants
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/321x366.png/5fa2dd/ffffff
@@ -16153,6 +16197,7 @@
     down: 2
     distance: 9
     play_concept: Slant/Arow
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Slant/Arow
     video_url: http://dummyimage.com/327x328.png/cc0000/ffffff
@@ -16459,6 +16504,7 @@
     down: 3
     distance: 10
     play_concept: Post-Wheel
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Post-Wheel
     video_url: http://dummyimage.com/164x237.png/5fa2dd/ffffff
@@ -16927,6 +16973,7 @@
     down: 2
     distance: 10
     play_concept: Mills
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/226x338.png/cc0000/ffffff
@@ -17161,6 +17208,7 @@
     down: 1
     distance: 10
     play_concept: Mills
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/277x439.png/cc0000/ffffff
@@ -17197,6 +17245,7 @@
     down: 4
     distance: 6
     play_concept: Mesh
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mesh
     video_url: http://dummyimage.com/248x191.png/ff4444/ffffff
@@ -17431,6 +17480,7 @@
     down: 2
     distance: 10
     play_concept: Arch
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Arch
     video_url: http://dummyimage.com/145x227.png/5fa2dd/ffffff
@@ -17593,6 +17643,7 @@
     down: 3
     distance: 8
     play_concept: Flood
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Flood
     video_url: http://dummyimage.com/147x289.png/cc0000/ffffff
@@ -17845,6 +17896,7 @@
     down: 2
     distance: 10
     play_concept: Post-Wheel
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Post-Wheel
     video_url: http://dummyimage.com/326x348.png/dddddd/000000
@@ -18349,6 +18401,7 @@
     down: 3
     distance: 2
     play_concept: Hoss Juke
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Hoss Juke
     video_url: http://dummyimage.com/174x153.png/5fa2dd/ffffff
@@ -18601,6 +18654,7 @@
     down: 2
     distance: 8
     play_concept: Flood
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Flood
     video_url: http://dummyimage.com/257x119.png/5fa2dd/ffffff
@@ -18925,6 +18979,7 @@
     down: 1
     distance: 10
     play_concept: Bubble Screen
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Bubble Screen
     video_url: http://dummyimage.com/348x399.png/dddddd/000000
@@ -19753,6 +19808,7 @@
     down: 2
     distance: 2
     play_concept: Omaha
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Omaha
     video_url: http://dummyimage.com/325x334.png/ff4444/ffffff
@@ -19879,6 +19935,7 @@
     down: 1
     distance: 10
     play_concept: RB Screen
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter RB Screen
     video_url: http://dummyimage.com/277x270.png/5fa2dd/ffffff
@@ -20221,6 +20278,7 @@
     down: 1
     distance: 10
     play_concept: Mills
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Mills
     video_url: http://dummyimage.com/152x358.png/ff4444/ffffff
@@ -20473,6 +20531,7 @@
     down: 1
     distance: 10
     play_concept: Post-Corner
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Post-Corner
     video_url: http://dummyimage.com/112x385.png/cc0000/ffffff
@@ -21139,6 +21198,7 @@
     down: 1
     distance: 10
     play_concept: China
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter China
     video_url: http://dummyimage.com/250x454.png/ff4444/ffffff
@@ -21175,6 +21235,7 @@
     down: 1
     distance: 10
     play_concept: Arch
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Arch
     video_url: http://dummyimage.com/181x305.png/dddddd/000000
@@ -21319,6 +21380,7 @@
     down: 3
     distance: 1
     play_concept: Spot
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter Spot
     video_url: http://dummyimage.com/247x425.png/5fa2dd/ffffff
@@ -21535,6 +21597,7 @@
     down: 2
     distance: 10
     play_concept: RB Screen
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter RB Screen
     video_url: http://dummyimage.com/158x353.png/cc0000/ffffff
@@ -21697,6 +21760,7 @@
     down: 1
     distance: 10
     play_concept: 4verts
+    formation_set: Right
     play_formation: Right Strong Tight Undercenter
     play_name: Right Strong Tight Undercenter 4verts
     video_url: http://dummyimage.com/126x141.png/5fa2dd/ffffff

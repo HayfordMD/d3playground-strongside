@@ -1,8 +1,8 @@
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { YamlDataService, YamlDataResult } from '../services/yaml-data.service';
-import { FootballPlay } from '../models/football-play.model';
+import { YamlDataService, YamlDataResult } from '../yaml-data.service';
+import { FootballPlay } from '../../models/football-play.model';
 import * as d3 from 'd3';
 
 @Component({
