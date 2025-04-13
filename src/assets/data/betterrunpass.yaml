@@ -7,6 +7,7 @@
     down: 2
     distance: 3
     play_concept: Mid-line read
+    formation_set: Trio
     play_formation: Trio Right Tight
     play_name: Trio Right Mid-line read
     video_url: http://dummyimage.com/164x156.png/ff4444/ffffff
@@ -25,6 +26,7 @@
     down: 2
     distance: 5
     play_concept: Zone Read
+    formation_set: Doubles
     play_formation: Doubles Left Flex Close
     play_name: Doubles Left Flex Close Zone Read
     video_url: http://dummyimage.com/158x260.png/5fa2dd/ffffff
@@ -43,8 +45,9 @@
     down: 1
     distance: 10
     play_concept: Outside Zone
-    play_formation: Pro Right
-    play_name: Pro Right Outside Zone
+    formation_set: Pro
+    play_formation: Pro Right Twins
+    play_name: Pro Right Twins Outside Zone
     video_url: http://dummyimage.com/232x281.png/ff4444/ffffff
     time: 10:57
     qtr: 2
@@ -61,6 +64,7 @@
     down: 2
     distance: 8
     play_concept: Triple Option
+    formation_set: Trips
     play_formation: Trips Left Close
     play_name: Trips Left Close Triple Option
     video_url: http://dummyimage.com/115x163.png/dddddd/000000
@@ -79,6 +83,7 @@
     down: 3
     distance: 5
     play_concept: Iso
+    formation_set: Left
     play_formation: Left Flex Pistol
     play_name: Left Flex Pistol Iso
     video_url: http://dummyimage.com/236x262.png/dddddd/000000
@@ -368,8 +373,9 @@
     down: 1
     distance: 10
     play_concept: Counter
-    play_formation: 
-    play_name:  Counter
+    formation_set: Empty
+    play_formation: Empty Right Unbalanced Weak
+    play_name: Empty Right Unbalanced Weak Counter
     video_url: http://dummyimage.com/124x228.png/dddddd/000000
     time: 2:14
     qtr: 3
@@ -386,6 +392,7 @@
     down: 1
     distance: 10
     play_concept: Belly
+    formation_set: Empty
     play_formation: Empty Left Bunch  Trio Left Wing Pistol
     play_name: Empty Left Bunch  Trio Left Wing Pistol Belly
     video_url: http://dummyimage.com/274x457.png/ff4444/ffffff
@@ -584,8 +591,9 @@
     down: 1
     distance: 10
     play_concept: Iso
-    play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Iso
+    formation_set: Empty
+    play_formation: Empty Left Bunch
+    play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/353x482.png/5fa2dd/ffffff
     time: 7:54
     qtr: 2
@@ -945,6 +953,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/308x499.png/dddddd/000000
@@ -1107,6 +1116,7 @@
     down: 2
     distance: 2
     play_concept: Mid-line read
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Mid-line read
     video_url: http://dummyimage.com/265x443.png/dddddd/000000
@@ -1125,6 +1135,7 @@
     down: 1
     distance: 10
     play_concept: Outside Zone
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Outside Zone
     video_url: http://dummyimage.com/166x115.png/cc0000/ffffff
@@ -1161,6 +1172,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/213x267.png/5fa2dd/ffffff
@@ -1431,8 +1443,9 @@
     down: 3
     distance: 2
     play_concept: Zone Read
-    play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Zone Read
+    formation_set: Trio
+    play_formation: Trio Left Wing Pistol
+    play_name: Trio Left Wing Pistol Zone Read
     video_url: http://dummyimage.com/339x157.png/dddddd/000000
     time: 9:27
     qtr: 2
@@ -1503,8 +1516,9 @@
     down: 1
     distance: 10
     play_concept: Mid-line read
-    play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Mid-line read
+    formation_set: Trio
+    play_formation: Trio Left Wing Pistol
+    play_name: Trio Left Wing Pistol Mid-line read
     video_url: http://dummyimage.com/195x480.png/5fa2dd/ffffff
     time: 3:18
     qtr: 3

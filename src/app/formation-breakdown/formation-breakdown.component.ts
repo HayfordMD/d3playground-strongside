@@ -127,6 +127,15 @@ interface ConceptData {
             <button class="back-button" (click)="clearSelectedFormation()">← Back to All Formations</button>
           </div>
           
+          <div class="filter-row">
+            <button 
+              class="concept-filter-button" 
+              [class.active]="showTopConceptsOnly" 
+              (click)="toggleTopConcepts()">
+              Show Top 5 Concepts
+            </button>
+          </div>
+          
           <div class="charts-container">
             <div class="pie-chart-container">
               <h4>Concepts by Count</h4>
@@ -265,7 +274,33 @@ interface ConceptData {
     }
 
     .back-button:hover {
+      background-color: #1a252f;
+    }
+    
+    .filter-row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    
+    .concept-filter-button {
+      background-color: #f1f1f1;
+      border: 1px solid #ddd;
+      color: #333;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .concept-filter-button:hover {
       background-color: #e1e1e1;
+    }
+    
+    .concept-filter-button.active {
+      background-color: #2c3e50;
+      color: white;
+      border-color: #2c3e50;
     }
 
     .charts-container {
@@ -331,6 +366,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
   loading: boolean = true;
   error: string | null = null;
   selectedFormation: string | null = null;
+  showTopConceptsOnly: boolean = true; // Default to showing only top 5 concepts
 
   constructor(private yamlDataService: YamlDataService) {}
 
@@ -544,8 +580,23 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .range([0, width - margin.left - margin.right]);
     
     // Create axes
-    svg.append('g')
+    const yAxis = svg.append('g')
       .call(d3.axisLeft(y));
+      
+    // Make formation labels clickable
+    yAxis.selectAll('.tick text')
+      .style('cursor', 'pointer')
+      .style('fill', (d: any) => this.selectedFormation === d ? '#3498db' : '#000')
+      .style('font-weight', (d: any) => this.selectedFormation === d ? 'bold' : 'normal')
+      .on('click', (event: any, d: any) => {
+        this.selectFormation(d);
+      })
+      .on('mouseover', function() {
+        d3.select(this).style('text-decoration', 'underline');
+      })
+      .on('mouseout', function(event, d) {
+        d3.select(this).style('text-decoration', 'none');
+      });
     
     svg.append('g')
       .attr('transform', `translate(0,${height - margin.top - margin.bottom})`)
@@ -623,6 +674,22 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
 
   clearSelectedFormation(): void {
     this.selectedFormation = null;
+    this.updateCharts();
+  }
+
+  toggleTopConcepts(): void {
+    this.showTopConceptsOnly = !this.showTopConceptsOnly;
+    if (this.selectedFormation) {
+      // Clear existing charts
+      if (this.conceptCountChartRef) {
+        d3.select(this.conceptCountChartRef.nativeElement).selectAll('*').remove();
+      }
+      if (this.conceptYardsChartRef) {
+        d3.select(this.conceptYardsChartRef.nativeElement).selectAll('*').remove();
+      }
+      // Recreate the concept charts with the new filter setting
+      this.createConceptCharts();
+    }
   }
 
   createConceptCharts(): void {
@@ -633,10 +700,13 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       play => play.play_formation === this.selectedFormation
     );
     
+    // Create run/pass pie chart first
+    this.createRunPassPieChart(formationPlays);
+    
     // Process concept data
     const conceptData = this.getConceptData(formationPlays);
     
-    // Create the charts
+    // Create the concept charts
     this.createConceptCountChart(conceptData);
     this.createConceptYardsChart(conceptData);
   }
@@ -664,15 +734,117 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       }))
       .sort((a, b) => b.count - a.count); // Sort by count descending
   }
-
+  createRunPassPieChart(plays: FootballPlay[]): void {
+    // Clear any existing pie chart
+    const container = d3.select('#runPassPieChart');
+    container.selectAll('*').remove();
+    
+    if (!plays.length) return;
+    
+    // Count runs and passes
+    const runCount = plays.filter(play => play.play_type.toLowerCase() === 'run').length;
+    const passCount = plays.filter(play => play.play_type.toLowerCase() === 'pass').length;
+    
+    const data = [
+      { type: 'Run', count: runCount },
+      { type: 'Pass', count: passCount }
+    ];
+    
+    // Create pie chart
+    const width = 300;
+    const height = 300;
+    const radius = Math.min(width, height) / 2;
+    
+    const svg = container
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .append('g')
+      .attr('transform', `translate(${width / 2}, ${height / 2})`);
+    
+    // Add title
+    svg.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('y', -radius - 10)
+      .attr('font-weight', 'bold')
+      .text(`${this.selectedFormation} - Run/Pass Breakdown`);
+    
+    // Create color scale
+    const color = d3.scaleOrdinal<string>()
+      .domain(['Run', 'Pass'])
+      .range(['#e74c3c', '#9b59b6']);
+    
+    // Create pie layout
+    const pie = d3.pie<any>()
+      .value(d => d.count)
+      .sort(null);
+    
+    // Create arc generator
+    const arc = d3.arc<any, d3.PieArcDatum<any>>()
+      .innerRadius(0)
+      .outerRadius(radius * 0.8);
+    
+    // Create outer arc for labels
+    const outerArc = d3.arc<any, d3.PieArcDatum<any>>()
+      .innerRadius(radius * 0.9)
+      .outerRadius(radius * 0.9);
+    
+    // Create pie slices
+    const arcs = svg.selectAll('.arc')
+      .data(pie(data))
+      .enter()
+      .append('g')
+      .attr('class', 'arc');
+    
+    // Add slices
+    arcs.append('path')
+      .attr('d', arc)
+      .attr('fill', d => color(d.data.type))
+      .attr('stroke', 'white')
+      .style('stroke-width', '2px')
+      .style('opacity', 0.8)
+      .on('mouseover', function() {
+        d3.select(this).style('opacity', 1);
+      })
+      .on('mouseout', function() {
+        d3.select(this).style('opacity', 0.8);
+      });
+    
+    // Add labels
+    arcs.append('text')
+      .attr('transform', (d: d3.PieArcDatum<any>) => `translate(${arc.centroid(d)})`)
+      .attr('text-anchor', 'middle')
+      .attr('dy', '0.35em')
+      .style('fill', 'white')
+      .style('font-size', '14px')
+      .style('font-weight', 'bold')
+      .text(d => `${d.data.type}: ${d.data.count}`);
+    
+    // Add percentage labels
+    arcs.append('text')
+      .attr('transform', (d: d3.PieArcDatum<any>) => `translate(${arc.centroid(d)})`)
+      .attr('text-anchor', 'middle')
+      .attr('dy', '1.5em')
+      .style('fill', 'white')
+      .style('font-size', '12px')
+      .text(d => `${Math.round((d.data.count / plays.length) * 100)}%`);
+  }
+  
   createConceptCountChart(conceptData: ConceptData[]): void {
     if (!this.conceptCountChartRef || !conceptData.length) return;
     
     const element = this.conceptCountChartRef.nativeElement;
-    const width = element.clientWidth;
-    const height = element.clientHeight;
-    const margin = 40;
-    const radius = Math.min(width, height) / 2 - margin;
+    const width = element.clientWidth || 300;
+    const height = element.clientHeight || 300;
+    const radius = Math.min(width, height) / 2;
+    
+    // Filter to top 5 concepts if the filter is enabled
+    let filteredConceptData = [...conceptData];
+    if (this.showTopConceptsOnly) {
+      filteredConceptData = conceptData
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 5);
+    }
     
     // Create SVG
     const svg = d3.select(element)
@@ -680,29 +852,38 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('width', width)
       .attr('height', height)
       .append('g')
-      .attr('transform', `translate(${width / 2},${height / 2})`);
+      .attr('transform', `translate(${width / 2}, ${height / 2})`);
+    
+    // Add title
+    svg.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('y', -radius - 10)
+      .attr('font-weight', 'bold')
+      .text(`${this.selectedFormation} - Concepts by Count${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
     
     // Create color scale
     const color = d3.scaleOrdinal<string>()
-      .domain(conceptData.map(d => d.concept))
+      .domain(filteredConceptData.map(d => d.concept))
       .range(d3.schemeCategory10);
     
-    // Create pie chart
+    // Create pie layout
     const pie = d3.pie<ConceptData>()
       .value(d => d.count)
-      .sort(null);
-    
-    const arc = d3.arc<any>()
+      .sort((a, b) => b.count - a.count); // Sort by count descending
+      
+    // Create arc generator
+    const arc = d3.arc<any, d3.PieArcDatum<ConceptData>>()
       .innerRadius(0)
-      .outerRadius(radius);
+      .outerRadius(radius * 0.8);
     
-    // Create arcs
+    // Create pie slices
     const arcs = svg.selectAll('.arc')
-      .data(pie(conceptData))
+      .data(pie(filteredConceptData))
       .enter()
       .append('g')
       .attr('class', 'arc');
     
+    // Add slices
     arcs.append('path')
       .attr('d', arc)
       .attr('fill', d => color(d.data.concept))
@@ -717,23 +898,40 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
     
     // Add labels
     arcs.append('text')
-      .attr('transform', d => `translate(${arc.centroid(d)})`)
+      .attr('transform', (d: d3.PieArcDatum<ConceptData>) => `translate(${arc.centroid(d)})`)
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
       .style('fill', 'white')
       .style('font-size', '12px')
       .style('pointer-events', 'none')
       .text(d => d.data.count > 3 ? d.data.concept : ''); // Only show label if count > 3
+      
+    // Add count labels
+    arcs.append('text')
+      .attr('transform', (d: d3.PieArcDatum<ConceptData>) => `translate(${arc.centroid(d)})`)
+      .attr('text-anchor', 'middle')
+      .attr('dy', '1.5em')
+      .style('fill', 'white')
+      .style('font-size', '10px')
+      .style('pointer-events', 'none')
+      .text(d => d.data.count > 1 ? `(${d.data.count})` : '');
   }
-
+  
   createConceptYardsChart(conceptData: ConceptData[]): void {
     if (!this.conceptYardsChartRef || !conceptData.length) return;
     
     const element = this.conceptYardsChartRef.nativeElement;
-    const width = element.clientWidth;
-    const height = element.clientHeight;
-    const margin = 40;
-    const radius = Math.min(width, height) / 2 - margin;
+    const width = element.clientWidth || 300;
+    const height = element.clientHeight || 300;
+    const radius = Math.min(width, height) / 2;
+    
+    // Filter to top 5 concepts if the filter is enabled
+    let filteredConceptData = [...conceptData];
+    if (this.showTopConceptsOnly) {
+      filteredConceptData = conceptData
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 5);
+    }
     
     // Create SVG
     const svg = d3.select(element)
@@ -741,30 +939,37 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .attr('width', width)
       .attr('height', height)
       .append('g')
-      .attr('transform', `translate(${width / 2},${height / 2})`);
+      .attr('transform', `translate(${width / 2}, ${height / 2})`);
+    
+    // Add title
+    svg.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('y', -radius - 10)
+      .attr('font-weight', 'bold')
+      .text(`${this.selectedFormation} - Average Yards by Concept${this.showTopConceptsOnly ? ' (Top 5)' : ''}`);
     
     // Create color scale based on yards gained
-    const colorScale = d3.scaleLinear<string>()
-      .domain([-5, 0, 5, 10])
-      .range(['#e74c3c', '#f39c12', '#2ecc71', '#27ae60'])
-      .clamp(true);
+    const colorScale = d3.scaleSequential(d3.interpolateRdYlGn)
+      .domain([-5, 10]); // Red for negative yards, green for positive
     
-    // Create pie chart
+    // Create pie layout
     const pie = d3.pie<ConceptData>()
-      .value(d => d.count) // Size segments by count
-      .sort(null);
-    
-    const arc = d3.arc<any>()
+      .value(d => d.count) // Size of slice based on count
+      .sort((a, b) => b.avgYards - a.avgYards); // Sort by avg yards descending
+      
+    // Create arc generator
+    const arc = d3.arc<any, d3.PieArcDatum<ConceptData>>()
       .innerRadius(0)
-      .outerRadius(radius);
+      .outerRadius(radius * 0.8);
     
-    // Create arcs
+    // Create pie slices
     const arcs = svg.selectAll('.arc')
-      .data(pie(conceptData))
+      .data(pie(filteredConceptData))
       .enter()
       .append('g')
       .attr('class', 'arc');
     
+    // Add slices
     arcs.append('path')
       .attr('d', arc)
       .attr('fill', d => colorScale(d.data.avgYards))
@@ -776,14 +981,24 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .on('mouseout', function() {
         d3.select(this).attr('opacity', 1);
       });
-    
+      
     // Add labels
     arcs.append('text')
-      .attr('transform', d => `translate(${arc.centroid(d)})`)
+      .attr('transform', (d: d3.PieArcDatum<ConceptData>) => `translate(${arc.centroid(d)})`)
       .attr('text-anchor', 'middle')
       .attr('dy', '0.35em')
       .style('fill', 'white')
       .style('font-size', '12px')
+      .style('pointer-events', 'none')
+      .text(d => d.data.count > 3 ? d.data.concept : ''); // Only show label if count > 3
+      
+    // Add yards labels
+    arcs.append('text')
+      .attr('transform', (d: d3.PieArcDatum<ConceptData>) => `translate(${arc.centroid(d)})`)
+      .attr('text-anchor', 'middle')
+      .attr('dy', '1.5em')
+      .style('fill', 'white')
+      .style('font-size', '10px')
       .style('pointer-events', 'none')
       .text(d => d.data.count > 3 ? `${d.data.avgYards.toFixed(1)}` : ''); // Only show label if count > 3
   }

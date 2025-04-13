@@ -1,0 +1,92 @@
+<div class="container">
+  <h1>Formation Breakdown Analysis</h1>
+  
+  <div *ngIf="loading" class="loading">
+    <p>Loading data...</p>
+  </div>
+  
+  <div *ngIf="error" class="error">
+    <p>{{ error }}</p>
+  </div>
+  
+  <div *ngIf="!loading && !error" class="content">
+    <div class="filters">
+      <div class="filter-group">
+        <label>Down:</label>
+        <select (change)="updateFilter('down', $event.target.value)">
+          <option value="all" [selected]="filters.down === 'all'">All</option>
+          <option value="1" [selected]="filters.down === '1'">1st</option>
+          <option value="2" [selected]="filters.down === '2'">2nd</option>
+          <option value="3" [selected]="filters.down === '3'">3rd</option>
+          <option value="4" [selected]="filters.down === '4'">4th</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label>Distance:</label>
+        <div class="distance-slider">
+          <span>Min: {{ filters.minDistance }}</span>
+          <input 
+            type="range" 
+            [min]="1" 
+            [max]="20" 
+            [value]="filters.minDistance" 
+            (input)="filters.minDistance = $event.target.value; updateDistanceFilter()">
+          
+          <span>Max: {{ filters.maxDistance }}</span>
+          <input 
+            type="range" 
+            [min]="1" 
+            [max]="20" 
+            [value]="filters.maxDistance" 
+            (input)="filters.maxDistance = $event.target.value; updateDistanceFilter()">
+        </div>
+      </div>
+      
+      <div class="filter-group">
+        <label>Quarter:</label>
+        <div class="qtr-buttons">
+          <button 
+            *ngFor="let qtr of [1, 2, 3, 4]" 
+            [class.active]="qtrFilters[qtr]" 
+            (click)="toggleQtrFilter(qtr)">
+            {{ qtr }}
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="charts-container">
+      <div class="formation-chart-container">
+        <h2>Formation Analysis</h2>
+        <p class="chart-description">
+          Horizontal bars show the breakdown of run vs pass plays for each formation.
+          <span *ngIf="!selectedFormation">Click on a formation name or bar to see detailed breakdown.</span>
+          <span *ngIf="selectedFormation">
+            <button (click)="clearSelectedFormation()">Back to All Formations</button>
+          </span>
+        </p>
+        <div #formationChart class="formation-chart"></div>
+      </div>
+      
+      <div *ngIf="selectedFormation" class="detail-charts">
+        <h2>{{ selectedFormation }} Breakdown</h2>
+        
+        <!-- Run/Pass Pie Chart -->
+        <div id="runPassPieChart" class="pie-chart"></div>
+        
+        <div class="concept-charts">
+          <div class="concept-chart-container">
+            <h3>Concepts by Count</h3>
+            <div #conceptCountChart class="concept-chart"></div>
+          </div>
+          
+          <div class="concept-chart-container">
+            <h3>Average Yards by Concept</h3>
+            <div #conceptYardsChart class="concept-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
