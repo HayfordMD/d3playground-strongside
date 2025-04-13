@@ -1553,8 +1553,9 @@
     down: 1
     distance: 10
     play_concept: Power
-    play_formation: Empty Left Bunch  Trio Left Wing Pistol
-    play_name: Empty Left Bunch  Trio Left Wing Pistol Power
+    formation_set: Empty
+    play_formation: Empty Left Tight
+    play_name: Empty Left Tight Power
     video_url: http://dummyimage.com/333x294.png/cc0000/ffffff
     time: 9:39
     qtr: 2
@@ -1571,6 +1572,7 @@
     down: 1
     distance: 10
     play_concept: Counter
+    formation_set: Doubles
     play_formation: Doubles Stack Strong
     play_name: Doubles Stack Strong Counter
     video_url: http://dummyimage.com/340x108.png/cc0000/ffffff
@@ -1589,6 +1591,7 @@
     down: 1
     distance: 10
     play_concept: Wham
+    formation_set: Doubles
     play_formation: Doubles Stack Strong
     play_name: Doubles Stack Strong Wham
     video_url: http://dummyimage.com/303x495.png/cc0000/ffffff
@@ -1607,6 +1610,7 @@
     down: 1
     distance: 10
     play_concept: Zone Read
+    formation_set: Trio
     play_formation: Trio Right
     play_name: Trio Right Zone Read
     video_url: http://dummyimage.com/341x125.png/5fa2dd/ffffff
@@ -1625,6 +1629,7 @@
     down: 1
     distance: 10
     play_concept: Counter
+    formation_set: Trips
     play_formation: Trips Left Close
     play_name: Trips Left Close Counter
     video_url: http://dummyimage.com/245x402.png/5fa2dd/ffffff
@@ -1643,6 +1648,7 @@
     down: 2
     distance: 1
     play_concept: Toss
+    formation_set: Pro
     play_formation: Pro Left Flex Queen Wing
     play_name: Pro Left Flex Queen Wing Toss
     video_url: http://dummyimage.com/159x314.png/cc0000/ffffff
@@ -1661,6 +1667,7 @@
     down: 2
     distance: 8
     play_concept: Belly
+    formation_set: Pro
     play_formation: Pro Left Flex Queen Wing
     play_name: Pro Left Flex Queen Wing Belly
     video_url: http://dummyimage.com/140x323.png/5fa2dd/ffffff
@@ -1679,6 +1686,7 @@
     down: 2
     distance: 6
     play_concept: Belly
+    formation_set: Trio
     play_formation: Trio Right
     play_name: Trio Right Belly
     video_url: http://dummyimage.com/128x197.png/5fa2dd/ffffff
@@ -1697,6 +1705,7 @@
     down: 1
     distance: 10
     play_concept: Triple Option
+    formation_set: Pro
     play_formation: Pro Left Flex Queen Wing
     play_name: Pro Left Flex Queen Wing Triple Option
     video_url: http://dummyimage.com/149x358.png/cc0000/ffffff
@@ -1715,6 +1724,7 @@
     down: 2
     distance: 10
     play_concept: Belly
+    formation_set: Left
     play_formation: Left Stack Wide
     play_name: Left Stack Wide Belly
     video_url: http://dummyimage.com/212x415.png/dddddd/000000
@@ -1733,6 +1743,7 @@
     down: 1
     distance: 10
     play_concept: Zone Read
+    formation_set: I-Formation
     play_formation: I-Left
     play_name: I-Left Zone Read
     video_url: http://dummyimage.com/265x454.png/ff4444/ffffff
@@ -1787,6 +1798,7 @@
     down: 1
     distance: 10
     play_concept: Zone Read
+    formation_set: Trio
     play_formation: Trio Left
     play_name: Trio Left Zone Read
     video_url: http://dummyimage.com/102x414.png/ff4444/ffffff
@@ -1841,6 +1853,7 @@
     down: 1
     distance: 10
     play_concept: Lead
+    formation_set: Trio
     play_formation: Trio Right
     play_name: Trio Right Lead
     video_url: http://dummyimage.com/174x318.png/5fa2dd/ffffff
@@ -1859,6 +1872,7 @@
     down: 2
     distance: 6
     play_concept: Outside Zone
+    formation_set: Trio
     play_formation: Trio Right
     play_name: Trio Right Outside Zone
     video_url: http://dummyimage.com/133x282.png/ff4444/ffffff
@@ -1877,6 +1891,7 @@
     down: 2
     distance: 10
     play_concept: Triple Option
+    formation_set: Trio
     play_formation: Trio Right
     play_name: Trio Right Triple Option
     video_url: http://dummyimage.com/345x477.png/5fa2dd/ffffff
@@ -1932,6 +1947,7 @@
     down: 2
     distance: 6
     play_concept: Zone Read
+    formation_set: Pro
     play_formation: Pro Right Flex Stack Undercenter
     play_name: Pro Right Flex Stack Undercenter Zone Read
     video_url: http://dummyimage.com/260x111.png/dddddd/000000
@@ -1950,6 +1966,7 @@
     down: 3
     distance: 10
     play_concept: Triple Option
+    formation_set: Pro
     play_formation: Pro Right
     play_name: Pro Right Triple Option
     video_url: http://dummyimage.com/289x230.png/dddddd/000000
@@ -1986,6 +2003,7 @@
     down: 2
     distance: 4
     play_concept: Zone Read
+    formation_set: Left
     play_formation: Left Stack Wide
     play_name: Left Stack Wide Zone Read
     video_url: http://dummyimage.com/231x276.png/dddddd/000000
@@ -2004,6 +2022,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Pro
     play_formation: Pro Left Flex Queen Wing
     play_name: Pro Left Flex Queen Wing Iso
     video_url: http://dummyimage.com/132x120.png/dddddd/000000
@@ -2022,6 +2041,7 @@
     down: 1
     distance: 10
     play_concept: Zone Read
+    formation_set: I-Formation
     play_formation: I-Left
     play_name: I-Left Zone Read
     video_url: http://dummyimage.com/103x227.png/cc0000/ffffff
@@ -2077,8 +2097,9 @@
     down: 2
     distance: 1
     play_concept: Power
-    play_formation: 
-    play_name:  Power
+    formation_set: Right
+    play_formation: Right Tight
+    play_name: Right Tight Power
     video_url: http://dummyimage.com/266x312.png/cc0000/ffffff
     time: 10:16
     qtr: 3
@@ -2095,8 +2116,9 @@
     down: 2
     distance: 8
     play_concept: Triple Option
-    play_formation: 
-    play_name:  Triple Option
+    formation_set: Trio
+    play_formation: Trio Right
+    play_name: Trio Right Triple Option
     video_url: http://dummyimage.com/148x475.png/5fa2dd/ffffff
     time: 7:23
     qtr: 2
@@ -2113,6 +2135,7 @@
     down: 1
     distance: 10
     play_concept: Iso
+    formation_set: Empty
     play_formation: Empty Left Bunch
     play_name: Empty Left Bunch Iso
     video_url: http://dummyimage.com/131x245.png/ff4444/ffffff
@@ -2131,6 +2154,7 @@
     down: 1
     distance: 10
     play_concept: Power
+    formation_set: Ace
     play_formation: Ace Left Slot
     play_name: Ace Left Slot Power
     video_url: http://dummyimage.com/230x252.png/dddddd/000000
@@ -2149,6 +2173,7 @@
     down: 3
     distance: 10
     play_concept: Lead
+    formation_set: I-Formation
     play_formation: I-Left Flex Close
     play_name: I-Left Flex Close Lead
     video_url: http://dummyimage.com/319x489.png/cc0000/ffffff

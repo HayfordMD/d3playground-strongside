@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { YamlDataService, YamlDataResult } from '../services/yaml-data.service';
 import { FootballPlay } from '../models/football-play.model';
+import { PlayModalService } from '../services/play-modal.service';
 import * as d3 from 'd3';
 
 interface FormationData {
@@ -24,6 +25,38 @@ interface ConceptData {
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
+    <!-- Hover table for formation plays -->
+    <div *ngIf="hoverTableVisible" class="hover-plays-table" 
+         [style.left.px]="hoverTablePosition.x" 
+         [style.top.px]="hoverTablePosition.y"
+         (mouseleave)="hideFormationPlaysTable()">
+      <div class="hover-table-header">
+        <h3>{{ hoverTableFormation }} Plays</h3>
+      </div>
+      <div class="hover-table-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Play Name</th>
+              <th>Type</th>
+              <th>Concept</th>
+              <th>Yards</th>
+              <th>Down</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let play of hoverTablePlays">
+              <td class="play-name" (click)="openPlayModal(play)">{{ play.play_name }}</td>
+              <td>{{ play.play_type }}</td>
+              <td>{{ play.play_concept }}</td>
+              <td [ngClass]="{'positive-yards': play.yards_gained > 0, 'negative-yards': play.yards_gained < 0}">{{ play.yards_gained }}</td>
+              <td>{{ play.down }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
     <div class="formation-breakdown-container">
       <h2>Formation Breakdown Analysis</h2>
       
@@ -320,6 +353,80 @@ interface ConceptData {
       height: 300px;
       width: 100%;
     }
+    
+    /* Hover table styles */
+    .hover-plays-table {
+      position: fixed;
+      z-index: 1000;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
+      max-height: 400px;
+      overflow: auto;
+      padding: 0;
+      border: 1px solid #ddd;
+    }
+    
+    .hover-table-header {
+      position: sticky;
+      top: 0;
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    
+    .hover-table-header h3 {
+      margin: 0;
+      font-size: 16px;
+      text-align: left;
+    }
+    
+    .hover-table-content {
+      padding: 10px;
+      max-height: 350px;
+      overflow-y: auto;
+    }
+    
+    .hover-table-content table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .hover-table-content th,
+    .hover-table-content td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    
+    .hover-table-content th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
+    
+    .hover-table-content .play-name {
+      color: #3498db;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .hover-table-content .play-name:hover {
+      text-decoration: underline;
+    }
+    
+    .positive-yards {
+      color: #27ae60;
+      font-weight: bold;
+    }
+    
+    .negative-yards {
+      color: #e74c3c;
+      font-weight: bold;
+    }
 
     .loading-message, .error-message {
       text-align: center;
@@ -368,7 +475,16 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
   selectedFormation: string | null = null;
   showTopConceptsOnly: boolean = true; // Default to showing only top 5 concepts
 
-  constructor(private yamlDataService: YamlDataService) {}
+  // Hover table properties
+  hoverTableVisible: boolean = false;
+  hoverTablePosition: { x: number, y: number } = { x: 0, y: 0 };
+  hoverTableFormation: string | null = null;
+  hoverTablePlays: FootballPlay[] = [];
+
+  constructor(
+    private yamlDataService: YamlDataService,
+    private playModalService: PlayModalService
+  ) {}
 
   ngOnInit(): void {
     this.loadData();
@@ -583,7 +699,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
     const yAxis = svg.append('g')
       .call(d3.axisLeft(y));
       
-    // Make formation labels clickable
+    // Make formation labels clickable and hoverable
     yAxis.selectAll('.tick text')
       .style('cursor', 'pointer')
       .style('fill', (d: any) => this.selectedFormation === d ? '#3498db' : '#000')
@@ -591,11 +707,14 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .on('click', (event: any, d: any) => {
         this.selectFormation(d);
       })
-      .on('mouseover', function() {
-        d3.select(this).style('text-decoration', 'underline');
+      .on('mouseover', (event: any, d: any) => {
+        d3.select(event.target).style('text-decoration', 'underline');
+        this.showFormationPlaysTable(event, d);
       })
-      .on('mouseout', function(event, d) {
-        d3.select(this).style('text-decoration', 'none');
+      .on('mouseout', (event: any, d: any) => {
+        d3.select(event.target).style('text-decoration', 'none');
+        // Don't hide immediately to allow clicking on play names
+        // We'll hide when mouse leaves the table instead
       });
     
     svg.append('g')
@@ -915,6 +1034,46 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
       .style('font-size', '10px')
       .style('pointer-events', 'none')
       .text(d => d.data.count > 1 ? `(${d.data.count})` : '');
+  }
+  
+  /**
+   * Shows a table of plays for the hovered formation
+   */
+  showFormationPlaysTable(event: MouseEvent, formation: string): void {
+    // Filter plays for this formation
+    const formationPlays = this.filteredPlays.filter(
+      play => play.play_formation === formation
+    );
+    
+    if (formationPlays.length === 0) return;
+    
+    // Set table data
+    this.hoverTableFormation = formation;
+    this.hoverTablePlays = formationPlays;
+    
+    // Position the table near the cursor
+    const padding = 10;
+    this.hoverTablePosition = {
+      x: event.clientX + padding,
+      y: event.clientY + padding
+    };
+    
+    // Show the table
+    this.hoverTableVisible = true;
+  }
+  
+  /**
+   * Hides the formation plays table
+   */
+  hideFormationPlaysTable(): void {
+    this.hoverTableVisible = false;
+  }
+  
+  /**
+   * Opens the play modal for the selected play
+   */
+  openPlayModal(play: FootballPlay): void {
+    this.playModalService.openModal(play);
   }
   
   createConceptYardsChart(conceptData: ConceptData[]): void {
