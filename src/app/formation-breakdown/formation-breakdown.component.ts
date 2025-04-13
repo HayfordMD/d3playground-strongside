@@ -180,6 +180,44 @@ interface ConceptData {
               <div #conceptYardsChart class="concept-chart"></div>
             </div>
           </div>
+          
+          <!-- Concepts and Plays Table -->
+          <div class="concepts-table-container">
+            <h4>Concepts and Plays Breakdown</h4>
+            <table class="concepts-table">
+              <thead>
+                <tr>
+                  <th>Concept</th>
+                  <th>Count</th>
+                  <th>% of Formation</th>
+                  <th>Avg. Yards</th>
+                  <th>Plays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <ng-container *ngFor="let concept of conceptsTableData">
+                  <tr class="concept-row">
+                    <td>{{ concept.name }}</td>
+                    <td>{{ concept.count }}</td>
+                    <td>{{ concept.percentage }}%</td>
+                    <td [ngClass]="{'positive-yards': concept.avgYards > 0, 'negative-yards': concept.avgYards < 0, 'best-yards': concept.isBest}">{{ concept.avgYards.toFixed(1) }}</td>
+                    <td></td>
+                  </tr>
+                  <ng-container *ngFor="let play of concept.plays">
+                    <tr class="play-row">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="play-name" (click)="openPlayModal(play)">
+                        {{ play.play_name }} ({{ play.yards_gained }} yds)
+                      </td>
+                    </tr>
+                  </ng-container>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -427,6 +465,60 @@ interface ConceptData {
       color: #e74c3c;
       font-weight: bold;
     }
+    
+    /* Concepts table styles */
+    .concepts-table-container {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .concepts-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    
+    .concepts-table th,
+    .concepts-table td {
+      padding: 10px 15px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .concepts-table th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+    }
+    
+    .concept-row {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
+    
+    .play-row {
+      background-color: white;
+      font-size: 14px;
+    }
+    
+    .play-row .play-name {
+      color: #3498db;
+      cursor: pointer;
+    }
+    
+    .play-row .play-name:hover {
+      text-decoration: underline;
+    }
+    
+    .best-yards {
+      color: #3498db;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    }
 
     .loading-message, .error-message {
       text-align: center;
@@ -475,6 +567,7 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
   selectedFormation: string | null = null;
   selectedPlayType: string | null = null; // 'run', 'pass', or null (all)
   showTopConceptsOnly: boolean = true; // Default to showing only top 5 concepts
+  conceptsTableData: any[] = []; // Data for the concepts table
 
   // Hover table properties
   hoverTableVisible: boolean = false;
@@ -838,6 +931,9 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
     // Create the concept charts
     this.createConceptCountChart(conceptData);
     this.createConceptYardsChart(conceptData);
+    
+    // Generate data for concepts table
+    this.generateConceptsTableData(formationPlays, conceptData);
   }
 
   getConceptData(plays: FootballPlay[]): ConceptData[] {
@@ -1084,6 +1180,48 @@ export class FormationBreakdownComponent implements OnInit, AfterViewInit {
    */
   openPlayModal(play: FootballPlay): void {
     this.playModalService.openModal(play);
+  }
+  
+  /**
+   * Generates data for the concepts table
+   */
+  generateConceptsTableData(plays: FootballPlay[], conceptData: ConceptData[]): void {
+    // Group plays by concept
+    const conceptPlaysMap = new Map<string, FootballPlay[]>();
+    
+    plays.forEach(play => {
+      const concept = play.play_concept;
+      if (!conceptPlaysMap.has(concept)) {
+        conceptPlaysMap.set(concept, []);
+      }
+      conceptPlaysMap.get(concept)!.push(play);
+    });
+    
+    // Find the concept with highest average yards
+    let bestConcept = '';
+    if (conceptData.length > 0) {
+      bestConcept = conceptData.reduce(
+        (max, current) => current.avgYards > max.avgYards ? current : max,
+        conceptData[0]
+      ).concept;
+    }
+    
+    // Create table data
+    this.conceptsTableData = conceptData
+      .sort((a, b) => b.count - a.count) // Sort by count descending
+      .map(concept => {
+        const conceptPlays = conceptPlaysMap.get(concept.concept) || [];
+        const percentage = plays.length > 0 ? Math.round((concept.count / plays.length) * 100) : 0;
+        
+        return {
+          name: concept.concept,
+          count: concept.count,
+          percentage: percentage,
+          avgYards: concept.avgYards,
+          isBest: concept.concept === bestConcept,
+          plays: conceptPlays.sort((a, b) => b.yards_gained - a.yards_gained) // Sort by yards gained descending
+        };
+      });
   }
   
   createConceptYardsChart(conceptData: ConceptData[]): void {
