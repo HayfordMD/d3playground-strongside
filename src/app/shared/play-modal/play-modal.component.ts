@@ -15,16 +15,28 @@ import { FootballPlay } from '../../models/football-play.model';
           <button class="close-button" (click)="close()">×</button>
         </div>
         <div class="modal-body">
-          <div class="video-container">
-            <iframe 
-              [src]="videoUrl" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="play-details">
-            <h3>Play Details</h3>
+          <div class="modal-content-layout">
+            <div class="video-container">
+              <!-- Use iframe for YouTube videos -->
+              <iframe 
+                *ngIf="isYoutubeVideo" 
+                [src]="videoUrl" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+              
+              <!-- Use video element for local MP4 files -->
+              <video 
+                *ngIf="!isYoutubeVideo" 
+                [src]="videoUrl" 
+                controls 
+                preload="metadata">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="play-details">
+              <h3>Play Details</h3>
             <table class="details-table">
               <tr>
                 <th>Formation:</th>
@@ -132,24 +144,38 @@ import { FootballPlay } from '../../models/football-play.model';
     .modal-body {
       padding: 20px;
     }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      margin-bottom: 20px;
+    
+    .modal-content-layout {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    
+    @media (max-width: 768px) {
+      .modal-content-layout {
+        flex-direction: column;
+      }
     }
 
-    .video-container iframe {
+    .video-container {
+      flex: 0 0 40%;
+      position: relative;
+      padding-bottom: 22.5%; /* Reduced height (40% of 16:9 aspect ratio) */
+      height: 0;
+    }
+
+    .video-container iframe, .video-container video {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      border-radius: 4px;
     }
 
     .play-details {
-      margin-top: 20px;
+      flex: 1;
     }
 
     .details-table {
@@ -187,13 +213,28 @@ export class PlayModalComponent {
   @Input() isOpen = false;
   @Input() play: FootballPlay | null = null;
   @Output() closeEvent = new EventEmitter<void>();
+  
+  // Flag to determine if we should use iframe (YouTube) or video element (local MP4)
+  isYoutubeVideo = false;
 
   constructor(private sanitizer: DomSanitizer) {}
 
   get videoUrl(): SafeResourceUrl {
-    // Use the play's video_url if available, otherwise use the placeholder
-    const url = this.play?.video_url || 'https://www.youtube.com/embed/b-L2ckBDgcE';
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    // Check if the play has a video_url that's a YouTube link
+    if (this.play?.video_url && this.play.video_url.includes('youtube.com')) {
+      this.isYoutubeVideo = true;
+      return this.sanitizer.bypassSecurityTrustResourceUrl(this.play.video_url);
+    }
+    
+    // For dummy image URLs in the data, use our local video file instead
+    if (this.play?.video_url && this.play.video_url.includes('dummyimage.com')) {
+      this.isYoutubeVideo = false;
+      return this.sanitizer.bypassSecurityTrustResourceUrl('assets/media/video/Wide - Clip 004.mp4');
+    }
+    
+    // Default fallback
+    this.isYoutubeVideo = false;
+    return this.sanitizer.bypassSecurityTrustResourceUrl('assets/media/video/Wide - Clip 004.mp4');
   }
 
   close(): void {

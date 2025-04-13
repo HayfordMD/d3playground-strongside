@@ -6,12 +6,12 @@ import { FootballPlay } from '../models/football-play.model';
 import * as d3 from 'd3';
 
 @Component({
-  selector: 'app-ai-created-example',
+  selector: 'app-play-analysis',
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
     <div class="play-analysis-container">
-      <h2>Play Analysis Dashboard</h2>
+      <h2>Analysis Dashboard</h2>
       <div class="filter-container">
         <div class="filter-group">
           <span class="filter-label">Play Type:</span>
@@ -253,7 +253,7 @@ import * as d3 from 'd3';
     }
   `
 })
-export class AiCreatedExampleComponent implements OnInit, AfterViewInit {
+export class PlayAnalysisComponent implements OnInit, AfterViewInit {
   @ViewChild('conceptSuccessChart') private conceptSuccessChartRef!: ElementRef;
   @ViewChild('yardsGainedChart') private yardsGainedChartRef!: ElementRef;
   @ViewChild('formationChart') private formationChartRef!: ElementRef;
