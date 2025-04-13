@@ -37,7 +37,7 @@ interface TreemapNode extends d3.HierarchyNode<any> {
 @Component({
   selector: 'app-treemap',
   standalone: true,
-  imports: [CommonModule, FormsModule, PlayModalComponent],
+  imports: [CommonModule, FormsModule],
   template: `
     <div class="treemap-container">
       <h1>Play Concept Treemap</h1>
@@ -52,10 +52,6 @@ interface TreemapNode extends d3.HierarchyNode<any> {
         <button class="filter-button" [class.active]="selectedFilter === 'all'" (click)="filterData('all')">All Plays</button>
         <button class="filter-button" [class.active]="selectedFilter === 'run'" (click)="filterData('run')">Run Plays</button>
         <button class="filter-button" [class.active]="selectedFilter === 'pass'" (click)="filterData('pass')">Pass Plays</button>
-      </div>
-      
-      <div class="data-info" *ngIf="dataSource">
-        <p>Data Source: {{dataSource}}</p>
       </div>
       
       <div class="loading-error" *ngIf="error">
