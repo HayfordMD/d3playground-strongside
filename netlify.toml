@@ -1,0 +1,11 @@
+[build]
+  publish = "dist/angular-app/browser"
+  command = "npm run build"
+
+[build.environment]
+  NODE_OPTIONS = "--openssl-legacy-provider --max-old-space-size=8192"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
