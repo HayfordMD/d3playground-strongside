@@ -96,9 +96,23 @@
   border-radius: 2px; /* Rounded edges for aesthetics */
 }
 
+.penalty {
+  position: absolute;
+  top: calc(40% + 25px); /* Positioned below the pass gain bar */
+  left: 330px; /* Starting at the end of pass gain (190px + 190px = 38 yards * 10px per yard) */
+  width: 50px; /* 5 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ffff00; /* Yellow for penalty */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.new-sequence {
+  top: calc(40% + 25px); /* Offset below the previous bar */
+}
+
 .yard-marker {
   position: absolute;
-  top: 30px; /* Moved lower on the field for a more realistic look */
   color: rgb(11, 0, 0);
   font-size: 1.5rem; /* Larger font for better visibility */
   font-weight: bold;
@@ -106,6 +120,16 @@
   width: 27px; /* Approx 8 feet wide at 3.33px/ft */
   height: 20px; /* Approx 6 feet tall at 3.33px/ft */
   margin-left: -13.5px; /* Center the wider text over the yard line */
+}
+
+/* Top side markers (near top sideline) */
+.top {
+  top: 30px; /* Near the top of the field for visibility */
+}
+
+/* Bottom side markers (near bottom sideline) */
+.bottom {
+  top: 480px; /* Near the bottom of the field, given 533px height */
 }
 
 .marker-10-left {
@@ -130,22 +154,18 @@
 
 .marker-40-right {
   left: 600px; /* 60 yards from left, represents 40 yards to right endzone */
-  top: 30px; /* Slightly lower to avoid overlap with left side marker */
 }
 
 .marker-30-right {
   left: 700px; /* 70 yards from left, represents 30 yards to right endzone */
-  top: 30px; /* Slightly lower to avoid overlap with left side marker */
 }
 
 .marker-20-right {
   left: 800px; /* 80 yards from left, represents 20 yards to right endzone */
-  top: 30px; /* Slightly lower to avoid overlap with left side marker */
 }
 
 .marker-10-right {
   left: 900px; /* 90 yards from left, represents 10 yards to right endzone */
-  top: 30px; /* Slightly lower to avoid overlap with left side marker */
 }
 
 .hash-marks {
