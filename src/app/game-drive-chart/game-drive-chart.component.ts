@@ -34,6 +34,7 @@ export class GameDriveChartComponent implements OnInit {
   highlightedPlayId: string | null = null;
   selectedPlay: any | null = null;
   optionsMenuOpenForPlayId: string | null = null;
+  toastMessage: string | null = null;
 
   constructor() { }
 
@@ -59,6 +60,10 @@ export class GameDriveChartComponent implements OnInit {
   playVideo(playId: string): void {
     // Placeholder for video playback logic
     console.log(`Play video for play ID: ${playId}`);
+    this.toastMessage = "Play video";
+    setTimeout(() => {
+      this.toastMessage = null;
+    }, 2000); // Show toast for 2 seconds
     // Future implementation could open a video player or modal with the associated video
   }
 }

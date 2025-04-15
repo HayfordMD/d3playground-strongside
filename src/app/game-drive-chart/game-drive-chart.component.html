@@ -53,47 +53,57 @@
 
   <!-- Drive summary table -->
   <div class="drive-table-container">
-    <table class="drive-table">
-      <thead>
-        <tr>
-          <th>Play Type</th>
-          <th>Yards</th>
-          <th>Down & Distance</th>
-          <th>Field Position</th>
-          <th>Result</th>
-          <th>Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngIf="selectedPlay" [class.highlighted]="selectedPlay?.id === highlightedPlayId">
-          <td>{{ selectedPlay.type }}</td>
-          <td [style.color]="selectedPlay.yards < 0 ? '#e74c3c' : selectedPlay.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ selectedPlay.yards > 0 ? '+' + selectedPlay.yards : selectedPlay.yards }}</td>
-          <td>{{ selectedPlay.down }}</td>
-          <td>{{ selectedPlay.position }}</td>
-          <td>{{ selectedPlay.result || '-' }}</td>
-          <td class="options-cell">
-            <span class="options-icon" (click)="toggleOptionsMenu(selectedPlay.id)">⋮</span>
-            <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === selectedPlay.id">
-              <span class="option-icon" title="Question">?</span>
-              <span class="option-icon" title="Tag">🏷️</span>
-            </div>
-          </td>
-        </tr>
-        <tr *ngFor="let play of driveData" [class.highlighted]="play.id === highlightedPlayId">
-          <td>{{ play.type }}</td>
-          <td [style.color]="play.yards < 0 ? '#e74c3c' : play.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ play.yards > 0 ? '+' + play.yards : play.yards }}</td>
-          <td>{{ play.down }}</td>
-          <td>{{ play.position }}</td>
-          <td>{{ play.result || '-' }}</td>
-          <td class="options-cell">
-            <span class="options-icon" (click)="toggleOptionsMenu(play.id)">⋮</span>
-            <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === play.id">
-              <span class="option-icon" title="Question">?</span>
-              <span class="option-icon" title="Tag">🏷️</span>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="drive-chart-container">
+      <div id="drive-chart"></div>
+      <div class="drive-summary">
+        <h3>Drive Summary</h3>
+        <div class="toast" *ngIf="toastMessage">{{ toastMessage }}</div>
+        <table class="drive-table">
+          <thead>
+            <tr>
+              <th>Play</th>
+              <th>Play Type</th>
+              <th>Yards</th>
+              <th>Down & Distance</th>
+              <th>Field Position</th>
+              <th>Result</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="selectedPlay" [class.highlighted]="selectedPlay?.id === highlightedPlayId">
+              <td class="play-cell"><span class="play-icon" (click)="playVideo(selectedPlay.id)">▶</span></td>
+              <td>{{ selectedPlay.type }}</td>
+              <td [style.color]="selectedPlay.yards < 0 ? '#e74c3c' : selectedPlay.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ selectedPlay.yards > 0 ? '+' + selectedPlay.yards : selectedPlay.yards }}</td>
+              <td>{{ selectedPlay.down }}</td>
+              <td>{{ selectedPlay.position }}</td>
+              <td>{{ selectedPlay.result || '-' }}</td>
+              <td class="options-cell">
+                <span class="options-icon" (click)="toggleOptionsMenu(selectedPlay.id)">⋮</span>
+                <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === selectedPlay.id">
+                  <span class="option-icon" title="Question">?</span>
+                  <span class="option-icon" title="Tag">🏷️</span>
+                </div>
+              </td>
+            </tr>
+            <tr *ngFor="let play of driveData" [class.highlighted]="play.id === highlightedPlayId">
+              <td class="play-cell"><span class="play-icon" (click)="playVideo(play.id)">▶</span></td>
+              <td>{{ play.type }}</td>
+              <td [style.color]="play.yards < 0 ? '#e74c3c' : play.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ play.yards > 0 ? '+' + play.yards : play.yards }}</td>
+              <td>{{ play.down }}</td>
+              <td>{{ play.position }}</td>
+              <td>{{ play.result || '-' }}</td>
+              <td class="options-cell">
+                <span class="options-icon" (click)="toggleOptionsMenu(play.id)">⋮</span>
+                <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === play.id">
+                  <span class="option-icon" title="Question">?</span>
+                  <span class="option-icon" title="Tag">🏷️</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

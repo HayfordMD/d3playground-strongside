@@ -444,6 +444,21 @@
   text-align: right;
 }
 
+.play-cell {
+  text-align: left;
+}
+
+.play-icon {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #555;
+  padding: 0 5px;
+}
+
+.play-icon:hover {
+  color: #000;
+}
+
 .options-icon {
   cursor: pointer;
   font-size: 1.2em;
@@ -480,44 +495,27 @@
   border-radius: 3px;
 }
 
-/* Tooltip styling for play bars */
-.play-tooltip {
+/* Styles for toast notification */
+.toast {
   position: absolute;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  font-size: 0.9em;
-  max-width: 250px;
-  z-index: 1000;
-  display: none; /* Hidden by default */
-  pointer-events: none; /* Prevent tooltip from blocking hover on other elements */
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  padding: 20px 40px; /* Doubled padding to make it larger */
+  border-radius: 8px; /* Slightly larger border radius for bigger size */
+  border: 3px solid navy; /* Navy blue outline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  animation: fadeInOut 2s ease-in-out;
+  font-size: 1.5em; /* Larger font size to match increased dimensions */
 }
 
-.play-tooltip h4 {
-  margin: 0 0 8px 0;
-  font-size: 1.1em;
-  color: #2c3e50;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
-}
-
-.play-tooltip p {
-  margin: 5px 0;
-  line-height: 1.4;
-}
-
-.play-tooltip a {
-  display: inline-block;
-  margin-top: 8px;
-  color: #3498db;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.play-tooltip a:hover {
-  text-decoration: underline;
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); }
 }
 
 /* Show tooltip on hover */
@@ -560,4 +558,43 @@
   top: -50px; /* Position above the bar */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for centering */
+}
+
+.play-tooltip {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+  max-width: 250px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  pointer-events: none; /* Prevent tooltip from blocking hover on other elements */
+}
+
+.play-tooltip h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.play-tooltip p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.play-tooltip a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.play-tooltip a:hover {
+  text-decoration: underline;
 }
