@@ -1,0 +1,10 @@
+Our goal is to create a chart that shows the drive of a football game on a visual filterData
+We will have the data in a game breakdown data file to use as demonstration Data
+The page will need a simple plot that looks like a football field We don't want to make it overwhelmingly complex so that it is easy to use an llm model to create the chart
+Each play will be a column on the chart
+The columns will be colored based on the play type
+The length of the column will be related to the yards gained or load
+We will use a stacked chart for continuing gains or continuing losses
+Each play will be able to be hovered and show a link to the video of the Play
+The chart will be interactive and responsive
+We will use a library d3js to create the chart
