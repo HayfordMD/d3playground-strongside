@@ -1,0 +1,65 @@
+/*
+  Styles for GameDriveChartComponent
+*/
+.game-drive-chart-container {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.football-field {
+  display: flex;
+  flex-direction: row;
+  height: 426px; /* 53.3 yards * 8px per yard */
+  width: 960px; /* 120 yards total * 8px per yard */
+  margin: 0 auto;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.field {
+  width: 800px; /* 100 yards * 8px per yard */
+  height: 100%;
+  background: #4ca64c; /* Green field color */
+  position: relative;
+  /* Yard lines using a repeating linear gradient */
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 71px, /* 9 yards * 8px */
+    white 72px, /* 10th yard line start */
+    white 80px, /* 10 yards * 8px */
+    transparent 80px
+  );
+}
+
+.endzone {
+  width: 80px; /* 10 yards * 8px per yard */
+  height: 100%;
+  background: #1e90ff; /* Blue for endzone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem; /* Smaller text */
+  writing-mode: vertical-rl; /* Vertical text */
+  text-orientation: mixed;
+}
+
+.endzone.left::after {
+  content: "ENDZONE";
+}
+
+.endzone.right::after {
+  content: "ENDZONE";
+}
+
+.note {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  text-align: center;
+}
