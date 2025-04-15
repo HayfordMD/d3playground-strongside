@@ -104,7 +104,7 @@
   left: 190px; /* 19 yards * 10px per yard */
   width: 180px; /* Adjusted: 19 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for pass gain */
+  background: #800080; /* Purple for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 2px 0 0 2px; /* Rounded left edge */
 }
@@ -118,7 +118,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  border-left: 10px solid #800080; /* Triangle pointing right, purple */
   opacity: 0.7;
 }
 
@@ -128,7 +128,7 @@
   left: 340px; /* Adjusted: Starting at 33 yards + 1 yard for triangle */
   width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ffff00; /* Yellow for penalty */
+  background: #ff0000; /* Red for penalty */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 0 2px 2px 0; /* Rounded right edge */
 }
@@ -142,7 +142,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #ffff00; /* Triangle pointing left */
+  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
   opacity: 0.7;
 }
 
@@ -176,7 +176,7 @@
   left: 360px; /* Starting at 36 yards (after run gain of 3 yards) * 10px per yard */
   width: 50px; /* Adjusted: 6 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for pass gain */
+  background: #800080; /* Purple for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 2px 0 0 2px; /* Rounded left edge */
 }
@@ -190,7 +190,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  border-left: 10px solid #800080; /* Triangle pointing right, purple */
   opacity: 0.7;
 }
 
@@ -224,7 +224,7 @@
   left: 500px; /* Adjusted: Starting at 49 yards + 1 yard for triangle */
   width: 20px; /* Adjusted: 3 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #808080; /* Grey for loss */
+  background: #ff0000; /* Red for loss */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border: 1px solid #000; /* Black border to distinguish as loss */
   border-radius: 0 2px 2px 0; /* Rounded right edge */
@@ -249,7 +249,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #808080; /* Triangle pointing left */
+  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
   opacity: 0.7;
 }
 
@@ -283,7 +283,7 @@
   left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
   width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ffff00; /* Yellow for penalty */
+  background: #ff0000; /* Red for penalty */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 0 2px 2px 0; /* Rounded right edge */
 }
@@ -297,7 +297,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #ffff00; /* Triangle pointing left */
+  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
   opacity: 0.7;
 }
 
@@ -307,7 +307,7 @@
   left: 480px; /* Starting at 48 yards (after penalty setback) * 10px per yard */
   width: 140px; /* Adjusted: 15 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for pass gain */
+  background: #800080; /* Purple for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 2px 0 0 2px; /* Rounded left edge */
 }
@@ -321,7 +321,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  border-left: 10px solid #800080; /* Triangle pointing right, purple */
   opacity: 0.7;
 }
 
@@ -331,7 +331,7 @@
   left: 620px; /* Adjusted: Starting at 63 yards + 1 yard for triangle */
   width: 10px; /* Adjusted: 2 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #808080; /* Grey for loss */
+  background: #ff0000; /* Red for loss */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border: 1px solid #000; /* Black border to distinguish as loss */
   border-radius: 0 2px 2px 0; /* Rounded right edge */
@@ -356,7 +356,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #808080; /* Triangle pointing left */
+  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
   opacity: 0.7;
 }
 
@@ -390,7 +390,7 @@
   left: 670px; 
   width: 220px; /* Adjusted: 23 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for pass gain */
+  background: #800080; /* Purple for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 2px 0 0 2px; /* Rounded left edge */
 }
@@ -404,7 +404,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  border-left: 10px solid #800080; /* Triangle pointing right, purple */
   opacity: 0.7;
 }
 
@@ -598,7 +598,7 @@
 }
 
 .drive-table td:nth-child(2)[data-value^="-"] {
-  color: #e74c3c; /* Red for negative yards */
+  color: #ff0000; /* Red for negative yards */
 }
 
 .drive-table td:nth-child(2):not([data-value^="-"]) {
