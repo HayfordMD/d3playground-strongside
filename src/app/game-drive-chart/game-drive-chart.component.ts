@@ -32,6 +32,7 @@ export class GameDriveChartComponent implements OnInit {
     { id: 'run-gain-6', type: 'Run', yards: 10, down: '1st & 10', position: 'Opp 10', result: 'Touchdown' }
   ];
   highlightedPlayId: string | null = null;
+  selectedPlay: any | null = null;
 
   constructor() { }
 
@@ -40,10 +41,9 @@ export class GameDriveChartComponent implements OnInit {
   }
 
   moveToTop(playId: string): void {
-    const index = this.driveData.findIndex(play => play.id === playId);
-    if (index !== -1) {
-      const play = this.driveData.splice(index, 1)[0];
-      this.driveData.unshift(play);
+    const play = this.driveData.find(play => play.id === playId);
+    if (play) {
+      this.selectedPlay = { ...play }; // Create a copy to display at the top
       this.highlightedPlayId = playId;
       setTimeout(() => {
         this.highlightedPlayId = null;

@@ -64,6 +64,13 @@
         </tr>
       </thead>
       <tbody>
+        <tr *ngIf="selectedPlay" [class.highlighted]="selectedPlay?.id === highlightedPlayId">
+          <td>{{ selectedPlay.type }}</td>
+          <td [style.color]="selectedPlay.yards < 0 ? '#e74c3c' : selectedPlay.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ selectedPlay.yards > 0 ? '+' + selectedPlay.yards : selectedPlay.yards }}</td>
+          <td>{{ selectedPlay.down }}</td>
+          <td>{{ selectedPlay.position }}</td>
+          <td>{{ selectedPlay.result || '-' }}</td>
+        </tr>
         <tr *ngFor="let play of driveData" [class.highlighted]="play.id === highlightedPlayId">
           <td>{{ play.type }}</td>
           <td [style.color]="play.yards < 0 ? '#e74c3c' : play.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ play.yards > 0 ? '+' + play.yards : play.yards }}</td>
