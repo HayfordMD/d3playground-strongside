@@ -188,7 +188,7 @@
   position: absolute;
   top: calc(20% + 225px); /* Positioned below the penalty, moved up */
   left: 480px; /* Starting at 48 yards (after penalty setback) * 10px per yard */
-  width: 70px; /* 7 yards * 10px per yard */
+  width: 150px; /* 15 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
   background: #ff0000; /* Red for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
@@ -198,7 +198,7 @@
 .loss-play-2 {
   position: absolute;
   top: calc(20% + 250px); /* Positioned below the pass gain, moved up */
-  left: 530px; /* Starting at 53 yards (after 2-yard loss from 55 yards) * 10px per yard */
+  left: 610px; /* Starting at 63 yards (after 2-yard loss from 55 yards) * 10px per yard */
   width: 20px; /* 2 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
   background: #808080; /* Grey for loss */
@@ -220,8 +220,31 @@
 .run-gain-5 {
   position: absolute;
   top: calc(20% + 275px); /* Positioned below the second loss, moved up */
-  left: 530px; /* Starting at 53 yards (after second loss) * 10px per yard */
+  left: 610px; /* Starting at 63 yards (after second loss) * 10px per yard */
   width: 60px; /* 6 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.pass-gain-4 {
+  position: absolute;
+  top: calc(20% + 275px); /* Positioned below the run gain, moved up */
+  left: 670px; 
+  width: 230px; /* 15 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ff0000; /* Red for pass gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+// add a run gain that goes to the endzone 
+.run-gain-6 {
+  position: absolute;
+  top: calc(20% + 275px); /* Positioned below the pass gain, moved up */
+  left: 900px; /* Starting at 90 yards (after 15 yards of pass gain) * 10px per yard */
+  width: 100px; /* 10 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
