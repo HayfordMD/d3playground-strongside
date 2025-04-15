@@ -12,31 +12,152 @@
 .football-field {
   display: flex;
   flex-direction: row;
-  height: 426px; /* 53.3 yards * 8px per yard */
-  width: 960px; /* 120 yards total * 8px per yard */
+  height: 533px; /* 53.3 yards * 10px per yard */
+  width: 1200px; /* 120 yards total (100 playable + 20 endzones) * 10px per yard */
   margin: 0 auto;
-  border: 2px solid #333;
+  border: 1px solid #333;
   position: relative;
 }
 
 .field {
-  width: 800px; /* 100 yards * 8px per yard */
+  width: 1000px; /* 100 yards * 10px per yard */
   height: 100%;
-  background: #4ca64c; /* Green field color */
+  background: #93ed93; /* Green field color */
   position: relative;
   /* Yard lines using a repeating linear gradient */
-  background-image: repeating-linear-gradient(
-    to right,
-    transparent,
-    transparent 71px, /* 9 yards * 8px */
-    white 72px, /* 10th yard line start */
-    white 80px, /* 10 yards * 8px */
-    transparent 80px
-  );
+  background-image: 
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 97px, /* 9 yards * 10px + 7px to adjust for thinner line */
+      white 98px, /* 10th yard line start, thinner */
+      white 100px, /* 10 yards * 10px, 2px line */
+      transparent 100px
+    ),
+    /* Hash marks at every 1 yard as dashed lines, first line at one-third height */
+    repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 2px, /* Approx 2 feet wide at 3.33px/ft */
+      transparent 2px,
+      transparent 10px /* Repeat every 1 yard */
+    ),
+    /* Hash marks at every 1 yard as dashed lines, second line at middle height */
+    repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 2px,
+      transparent 2px,
+      transparent 10px
+    ),
+    /* Hash marks at every 1 yard as dashed lines, third line at two-thirds height */
+    repeating-linear-gradient(
+      to right,
+      white 0px,
+      white 2px,
+      transparent 2px,
+      transparent 10px
+    );
+  background-size: 
+    100px 100%, /* Yard lines repeat every 10 yards */
+    10px 3px, /* First hash marks line, 3px tall */
+    10px 3px, /* Second hash marks line, 3px tall */
+    10px 3px; /* Third hash marks line, 3px tall */
+  background-repeat: 
+    repeat-x, /* Yard lines */
+    repeat-x, /* First hash marks */
+    repeat-x, /* Second hash marks */
+    repeat-x; /* Third hash marks */
+  background-position: 
+    0 0, /* Yard lines */
+    0 178px, /* First set of hash marks at one-third height */
+    0 352px; /* Second set of hash marks at two-thirds height */
+}
+
+.run-gain {
+  position: absolute;
+  top: 40%; /* Center vertically within the field height */
+  left: 120px; /* 12 yards * 10px per yard */
+  width: 70px; /* 7 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.pass-gain {
+  position: absolute;
+  top: 40%; /* Center vertically within the field height */
+  left: 190px; /* 19 yards * 10px per yard */
+  width: 190px; /* 19 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ff0000; /* Red for pass gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.yard-marker {
+  position: absolute;
+  top: 30px; /* Moved lower on the field for a more realistic look */
+  color: rgb(11, 0, 0);
+  font-size: 1.5rem; /* Larger font for better visibility */
+  font-weight: bold;
+  text-align: center;
+  width: 27px; /* Approx 8 feet wide at 3.33px/ft */
+  height: 20px; /* Approx 6 feet tall at 3.33px/ft */
+  margin-left: -13.5px; /* Center the wider text over the yard line */
+}
+
+.marker-10-left {
+  left: 100px; /* 10 yards * 10px per yard */
+}
+
+.marker-20-left {
+  left: 200px; /* 20 yards * 10px per yard */
+}
+
+.marker-30-left {
+  left: 300px; /* 30 yards * 10px per yard */
+}
+
+.marker-40-left {
+  left: 400px; /* 40 yards * 10px per yard */
+}
+
+.marker-50 {
+  left: 500px; /* 50 yards * 10px per yard */
+}
+
+.marker-40-right {
+  left: 600px; /* 60 yards from left, represents 40 yards to right endzone */
+  top: 30px; /* Slightly lower to avoid overlap with left side marker */
+}
+
+.marker-30-right {
+  left: 700px; /* 70 yards from left, represents 30 yards to right endzone */
+  top: 30px; /* Slightly lower to avoid overlap with left side marker */
+}
+
+.marker-20-right {
+  left: 800px; /* 80 yards from left, represents 20 yards to right endzone */
+  top: 30px; /* Slightly lower to avoid overlap with left side marker */
+}
+
+.marker-10-right {
+  left: 900px; /* 90 yards from left, represents 10 yards to right endzone */
+  top: 30px; /* Slightly lower to avoid overlap with left side marker */
+}
+
+.hash-marks {
+  display: none;
+}
+
+.hash-10, .hash-20, .hash-30, .hash-40, .hash-50, .hash-60, .hash-70, .hash-80, .hash-90 {
+  display: none;
 }
 
 .endzone {
-  width: 80px; /* 10 yards * 8px per yard */
+  width: 100px; /* 10 yards * 10px per yard */
   height: 100%;
   background: #1e90ff; /* Blue for endzone */
   display: flex;
@@ -44,7 +165,7 @@
   justify-content: center;
   color: white;
   font-weight: bold;
-  font-size: 0.9rem; /* Smaller text */
+  font-size: 1.2rem; /* Smaller text */
   writing-mode: vertical-rl; /* Vertical text */
   text-orientation: mixed;
 }
@@ -58,7 +179,7 @@
 }
 
 #drive-chart {
-  min-height: 300px;
+  min-height: 100px;
   width: 100%;
 }
 
