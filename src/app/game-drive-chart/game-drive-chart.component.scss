@@ -78,78 +78,156 @@
   position: absolute;
   top: 20%; /* Center vertically within the field height, moved up for more space */
   left: 120px; /* 12 yards * 10px per yard */
-  width: 70px; /* 7 yards * 10px per yard */
+  width: 60px; /* Adjusted: 7 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .pass-gain {
   position: absolute;
   top: calc(20% + 25px); /* Slightly below the run gain, moved up */
   left: 190px; /* 19 yards * 10px per yard */
-  width: 190px; /* 19 yards * 10px per yard */
+  width: 180px; /* Adjusted: 19 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ff0000; /* Red for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.pass-gain::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .penalty {
   position: absolute;
   top: calc(20% + 50px); /* Positioned below the pass gain, moved up */
-  left: 330px; /* Starting at 33 yards (moving back 5 yards from 38 yards) * 10px per yard */
-  width: 50px; /* 5 yards * 10px per yard */
+  left: 340px; /* Adjusted: Starting at 33 yards + 1 yard for triangle */
+  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ffff00; /* Yellow for penalty */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
+}
+
+.penalty::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffff00; /* Triangle pointing left */
+  opacity: 0.7;
 }
 
 .run-gain-2 {
   position: absolute;
   top: calc(20% + 75px); /* Positioned below the penalty bar, moved up */
   left: 330px; /* Starting at 33 yards (after penalty) * 10px per yard */
-  width: 30px; /* 3 yards * 10px per yard */
+  width: 20px; /* Adjusted: 3 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .pass-gain-2 {
   position: absolute;
   top: calc(20% + 100px); /* Positioned below the run gain, moved up */
   left: 360px; /* Starting at 36 yards (after run gain of 3 yards) * 10px per yard */
-  width: 60px; /* 6 yards * 10px per yard */
+  width: 50px; /* Adjusted: 6 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ff0000; /* Red for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.pass-gain-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .run-gain-3 {
   position: absolute;
   top: calc(20% + 125px); /* Positioned below the pass gain, moved up */
   left: 420px; /* Starting at 42 yards (after second pass gain of 6 yards) * 10px per yard */
-  width: 100px; /* 10 yards * 10px per yard */
+  width: 90px; /* Adjusted: 10 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain-3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .loss-play {
   position: absolute;
   top: calc(20% + 150px); /* Positioned below the recent gain bars, moved up */
-  left: 490px; /* Starting at 49 yards (after 3-yard loss from 52 yards) * 10px per yard */
-  width: 30px; /* 3 yards * 10px per yard */
+  left: 500px; /* Adjusted: Starting at 49 yards + 1 yard for triangle */
+  width: 20px; /* Adjusted: 3 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #808080; /* Grey for loss */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border: 1px solid #000; /* Black border to distinguish as loss */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,49 +240,101 @@
   content: "L"; /* Label for loss */
 }
 
+.loss-play::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #808080; /* Triangle pointing left */
+  opacity: 0.7;
+}
+
 .run-gain-4 {
   position: absolute;
   top: calc(20% + 175px); /* Positioned below the loss bar, moved up */
   left: 490px; /* Starting at 49 yards (after first loss) * 10px per yard */
-  width: 40px; /* 4 yards * 10px per yard */
+  width: 30px; /* Adjusted: 4 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain-4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .penalty-2 {
   position: absolute;
   top: calc(20% + 200px); /* Positioned below the run gain, moved up */
-  left: 480px; /* Starting at 48 yards (moving back 5 yards from 53 yards) * 10px per yard */
-  width: 50px; /* 5 yards * 10px per yard */
+  left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
+  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ffff00; /* Yellow for penalty */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
+}
+
+.penalty-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffff00; /* Triangle pointing left */
+  opacity: 0.7;
 }
 
 .pass-gain-3 {
   position: absolute;
   top: calc(20% + 225px); /* Positioned below the penalty, moved up */
   left: 480px; /* Starting at 48 yards (after penalty setback) * 10px per yard */
-  width: 150px; /* 15 yards * 10px per yard */
+  width: 140px; /* Adjusted: 15 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ff0000; /* Red for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.pass-gain-3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .loss-play-2 {
   position: absolute;
   top: calc(20% + 250px); /* Positioned below the pass gain, moved up */
-  left: 610px; /* Starting at 63 yards (after 2-yard loss from 65 yards) * 10px per yard */
-  width: 20px; /* 2 yards * 10px per yard */
+  left: 620px; /* Adjusted: Starting at 63 yards + 1 yard for triangle */
+  width: 10px; /* Adjusted: 2 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #808080; /* Grey for loss */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border: 1px solid #000; /* Black border to distinguish as loss */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,26 +347,65 @@
   content: "L"; /* Label for loss */
 }
 
+.loss-play-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #808080; /* Triangle pointing left */
+  opacity: 0.7;
+}
+
 .run-gain-5 {
   position: absolute;
   top: calc(20% + 275px); /* Positioned below the second loss, moved up */
   left: 610px; /* Starting at 63 yards (after second loss) * 10px per yard */
-  width: 60px; /* 6 yards * 10px per yard */
+  width: 50px; /* Adjusted: 6 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain-5::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .pass-gain-4 {
   position: absolute;
   top: calc(20% + 275px); /* Positioned below the run gain, moved up */
   left: 670px; 
-  width: 230px; /* 23 yards * 10px per yard */
+  width: 220px; /* Adjusted: 23 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #ff0000; /* Red for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.pass-gain-4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ff0000; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 // add a run gain that goes to the endzone 
@@ -244,11 +413,24 @@
   position: absolute;
   top: calc(20% + 275px); /* Positioned below the pass gain, moved up */
   left: 900px; /* Starting at 90 yards (after 15 yards of pass gain) * 10px per yard */
-  width: 100px; /* 10 yards * 10px per yard */
+  width: 90px; /* Adjusted: 10 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 2px; /* Rounded edges for aesthetics */
+  border-radius: 2px 0 0 2px; /* Rounded left edge */
+}
+
+.run-gain-6::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Positioned at the end of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0000ff; /* Triangle pointing right */
+  opacity: 0.7;
 }
 
 .new-sequence {
