@@ -61,6 +61,7 @@
           <th>Down & Distance</th>
           <th>Field Position</th>
           <th>Result</th>
+          <th>Options</th>
         </tr>
       </thead>
       <tbody>
@@ -70,6 +71,13 @@
           <td>{{ selectedPlay.down }}</td>
           <td>{{ selectedPlay.position }}</td>
           <td>{{ selectedPlay.result || '-' }}</td>
+          <td class="options-cell">
+            <span class="options-icon" (click)="toggleOptionsMenu(selectedPlay.id)">⋮</span>
+            <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === selectedPlay.id">
+              <span class="option-icon" title="Question">?</span>
+              <span class="option-icon" title="Tag">🏷️</span>
+            </div>
+          </td>
         </tr>
         <tr *ngFor="let play of driveData" [class.highlighted]="play.id === highlightedPlayId">
           <td>{{ play.type }}</td>
@@ -77,6 +85,13 @@
           <td>{{ play.down }}</td>
           <td>{{ play.position }}</td>
           <td>{{ play.result || '-' }}</td>
+          <td class="options-cell">
+            <span class="options-icon" (click)="toggleOptionsMenu(play.id)">⋮</span>
+            <div class="options-menu" *ngIf="optionsMenuOpenForPlayId === play.id">
+              <span class="option-icon" title="Question">?</span>
+              <span class="option-icon" title="Tag">🏷️</span>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
