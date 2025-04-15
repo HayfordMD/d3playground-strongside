@@ -76,7 +76,7 @@
 
 .run-gain {
   position: absolute;
-  top: 40%; /* Center vertically within the field height */
+  top: 20%; /* Center vertically within the field height, moved up for more space */
   left: 120px; /* 12 yards * 10px per yard */
   width: 70px; /* 7 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
@@ -87,7 +87,7 @@
 
 .pass-gain {
   position: absolute;
-  top: 40%; /* Center vertically within the field height */
+  top: calc(20% + 25px); /* Slightly below the run gain, moved up */
   left: 190px; /* 19 yards * 10px per yard */
   width: 190px; /* 19 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
@@ -98,8 +98,8 @@
 
 .penalty {
   position: absolute;
-  top: calc(40% + 25px); /* Positioned below the pass gain bar */
-  left: 330px; /* Starting at the end of pass gain (190px + 190px = 38 yards * 10px per yard) */
+  top: calc(20% + 50px); /* Positioned below the pass gain, moved up */
+  left: 330px; /* Starting at 33 yards (moving back 5 yards from 38 yards) * 10px per yard */
   width: 50px; /* 5 yards * 10px per yard */
   height: 20px; /* Fixed height for visibility */
   background: #ffff00; /* Yellow for penalty */
@@ -107,8 +107,129 @@
   border-radius: 2px; /* Rounded edges for aesthetics */
 }
 
+.run-gain-2 {
+  position: absolute;
+  top: calc(20% + 75px); /* Positioned below the penalty bar, moved up */
+  left: 330px; /* Starting at 33 yards (after penalty) * 10px per yard */
+  width: 30px; /* 3 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.pass-gain-2 {
+  position: absolute;
+  top: calc(20% + 100px); /* Positioned below the run gain, moved up */
+  left: 360px; /* Starting at 36 yards (after run gain of 3 yards) * 10px per yard */
+  width: 60px; /* 6 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ff0000; /* Red for pass gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.run-gain-3 {
+  position: absolute;
+  top: calc(20% + 125px); /* Positioned below the pass gain, moved up */
+  left: 420px; /* Starting at 42 yards (after second pass gain of 6 yards) * 10px per yard */
+  width: 100px; /* 10 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.loss-play {
+  position: absolute;
+  top: calc(20% + 150px); /* Positioned below the recent gain bars, moved up */
+  left: 490px; /* Starting at 49 yards (after 3-yard loss from 52 yards) * 10px per yard */
+  width: 30px; /* 3 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #808080; /* Grey for loss */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border: 1px solid #000; /* Black border to distinguish as loss */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0000ff; /* Blue for run loss label */
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.loss-play::after {
+  content: "L"; /* Label for loss */
+}
+
+.run-gain-4 {
+  position: absolute;
+  top: calc(20% + 175px); /* Positioned below the loss bar, moved up */
+  left: 490px; /* Starting at 49 yards (after first loss) * 10px per yard */
+  width: 40px; /* 4 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.penalty-2 {
+  position: absolute;
+  top: calc(20% + 200px); /* Positioned below the run gain, moved up */
+  left: 480px; /* Starting at 48 yards (moving back 5 yards from 53 yards) * 10px per yard */
+  width: 50px; /* 5 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ffff00; /* Yellow for penalty */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.pass-gain-3 {
+  position: absolute;
+  top: calc(20% + 225px); /* Positioned below the penalty, moved up */
+  left: 480px; /* Starting at 48 yards (after penalty setback) * 10px per yard */
+  width: 70px; /* 7 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #ff0000; /* Red for pass gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
+.loss-play-2 {
+  position: absolute;
+  top: calc(20% + 250px); /* Positioned below the pass gain, moved up */
+  left: 530px; /* Starting at 53 yards (after 2-yard loss from 55 yards) * 10px per yard */
+  width: 20px; /* 2 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #808080; /* Grey for loss */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border: 1px solid #000; /* Black border to distinguish as loss */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0000ff; /* Blue for run loss label */
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.loss-play-2::after {
+  content: "L"; /* Label for loss */
+}
+
+.run-gain-5 {
+  position: absolute;
+  top: calc(20% + 275px); /* Positioned below the second loss, moved up */
+  left: 530px; /* Starting at 53 yards (after second loss) * 10px per yard */
+  width: 60px; /* 6 yards * 10px per yard */
+  height: 20px; /* Fixed height for visibility */
+  background: #0000ff; /* Blue for run gain */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 2px; /* Rounded edges for aesthetics */
+}
+
 .new-sequence {
-  top: calc(40% + 25px); /* Offset below the previous bar */
+  top: calc(20% + 25px); /* Offset below the previous bar */
 }
 
 .yard-marker {
