@@ -64,7 +64,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let play of driveData">
+        <tr *ngFor="let play of driveData" [class.highlighted]="play.id === highlightedPlayId">
           <td>{{ play.type }}</td>
           <td [style.color]="play.yards < 0 ? '#e74c3c' : play.yards > 0 ? '#27ae60' : '#7f8c8d'">{{ play.yards > 0 ? '+' + play.yards : play.yards }}</td>
           <td>{{ play.down }}</td>

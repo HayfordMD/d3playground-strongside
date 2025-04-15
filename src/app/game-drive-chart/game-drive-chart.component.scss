@@ -432,6 +432,12 @@
   color: #2980b9; /* Blue for significant results */
 }
 
+/* Highlight effect for the selected play in the table */
+.drive-table tr.highlighted {
+  background-color: rgba(255, 255, 0, 0.5); /* Yellow highlight */
+  transition: background-color 0.5s ease; /* Smooth transition for the highlight */
+}
+
 /* Tooltip styling for play bars */
 .play-tooltip {
   position: absolute;

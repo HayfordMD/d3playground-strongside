@@ -31,6 +31,7 @@ export class GameDriveChartComponent implements OnInit {
     { id: 'pass-gain-4', type: 'Pass', yards: 23, down: '4th & 3', position: 'Opp 27', result: '1st Down' },
     { id: 'run-gain-6', type: 'Run', yards: 10, down: '1st & 10', position: 'Opp 10', result: 'Touchdown' }
   ];
+  highlightedPlayId: string | null = null;
 
   constructor() { }
 
@@ -43,6 +44,10 @@ export class GameDriveChartComponent implements OnInit {
     if (index !== -1) {
       const play = this.driveData.splice(index, 1)[0];
       this.driveData.unshift(play);
+      this.highlightedPlayId = playId;
+      setTimeout(() => {
+        this.highlightedPlayId = null;
+      }, 2000); // Highlight for 2 seconds
     }
   }
 }
