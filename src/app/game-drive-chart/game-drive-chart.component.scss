@@ -525,7 +525,7 @@
 }
 
 #drive-chart {
-  min-height: 100px;
+  min-height: 2px;
   width: 100%;
 }
 
@@ -602,7 +602,7 @@
   color: #000000; /* Black for negative yards */
 }
 
-.drive-table[_ngcontent-ng-c115120690] tr[_ngcontent-ng-c115120690] > td[_ngcontent-ng-c115120690]:nth-child(2):not([data-value^="-"]) {
+.drive-table tr[_ngcontent-ng-c115120690] > td[_ngcontent-ng-c115120690]:nth-child(2):not([data-value^="-"]) {
   color: #000000; /* Black for positive yards */
 }
 
@@ -799,4 +799,8 @@
 
 .play-tooltip a:hover {
   text-decoration: underline;
+}
+
+.drive-summary h4 {
+  text-align: center;
 }
