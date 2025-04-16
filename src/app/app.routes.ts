@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { TreemapComponent } from './treemap/treemap.component';
 import { AiCreatedExampleComponent } from './ai-created-example/ai-created-example.component';
 import { FormationBreakdownComponent } from './formation-breakdown/formation-breakdown.component';
+import { GameDriveChartComponent } from './game-drive-chart/game-drive-chart.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'yaml-data', component: YamlDataTableComponent },
   { path: 'treemap', component: TreemapComponent },
   { path: 'ai-created-example', component: AiCreatedExampleComponent },
-  { path: 'formation-breakdown', component: FormationBreakdownComponent }
+  { path: 'formation-breakdown', component: FormationBreakdownComponent },
+  { path: 'game-drive-chart', component: GameDriveChartComponent }
 ];

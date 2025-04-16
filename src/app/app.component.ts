@@ -47,9 +47,9 @@ interface OffenseData {
           <h1>Football Analytics Dashboard</h1>
           <nav class="app-nav">
             <a routerLink="/home" routerLinkActive="active" class="nav-link">Run Pass Distro</a>
-            <a routerLink="/yaml-data" routerLinkActive="active" class="nav-link">Macaroo Table</a>
+            <!-- game-drive-chart -->
+            <a routerLink="/game-drive-chart" routerLinkActive="active" class="nav-link">Game Drive Chart</a>
             <a routerLink="/treemap" routerLinkActive="active" class="nav-link">Concept Treemap</a>
-            <a routerLink="/ai-created-example" routerLinkActive="active" class="nav-link">AI Created Example</a>
             <a routerLink="/formation-breakdown" routerLinkActive="active" class="nav-link">Formation Breakdown</a>
           </nav>
         </div>
