@@ -1,0 +1,23 @@
+game:
+  id: 1
+  opponent: 'Opponent Team'
+  season: 2023
+  drives:
+    - drive_id: 1
+      sequence:
+        -play_id: 123e4567-e89b-12d3-a456-426655440000
+          - play_in_series: 1
+          - type: 'run'
+            yards: 10
+        -play_id: 123e4567-e89b-12d3-a456-426asdf0000
+          - play_in_series: 2
+          - type: 'pass'
+            yards: 15
+        -play_id: 123e4567-e89b-12d3-a456-4sadfasdf54
+          - play_in_series: 3
+          - type: 'penalty'
+            yards: -5
+        -play_id: 123e47-e89b-12dsfd3-a456-4266554400
+          - play_in_series: 4
+          - type: 'run'
+            yards: 6
