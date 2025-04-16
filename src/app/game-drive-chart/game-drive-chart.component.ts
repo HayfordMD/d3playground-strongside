@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 /**
  * GameDriveChartComponent
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-game-drive-chart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './game-drive-chart.component.html',
   styleUrls: ['./game-drive-chart.component.scss']
 })
@@ -45,9 +46,11 @@ export class GameDriveChartComponent implements AfterViewInit {
   private yardlineLabels: string[] = ['','10','20','30','40','50','40','30','20','10',''];
   private yardlineValues: number[] = [0,10,20,30,40,50,60,70,80,90,100];
   public opponents: string[] = ['Opponent 1', 'Opponent 2', 'Opponent 3', 'Opponent 4', 'Opponent 5', 'Opponent 6', 'Opponent 7', 'Opponent 8', 'Opponent 9', 'Opponent 10'];
-  public games: string[] = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10'];
+  public seasons: string[] = ['2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+  public odkOptions: string[] = ['O&D', 'O', 'D'];
   public selectedOpponent: string = 'Opponent 1';
-  public selectedGame: string = 'Week 1';
+  public selectedSeason: string = '2025';
+  public selectedOdk: string = 'O&D';
 
   constructor() { }
 
@@ -85,8 +88,13 @@ export class GameDriveChartComponent implements AfterViewInit {
     // TODO: Implement logic to update chart based on selected opponent
   }
 
-  onGameChange(event: Event): void {
-    console.log('Selected game:', this.selectedGame);
-    // TODO: Implement logic to update chart based on selected game
+  onSeasonChange(event: Event): void {
+    console.log('Selected season:', this.selectedSeason);
+    // TODO: Implement logic to update chart based on selected season
+  }
+
+  onOdkChange(event: Event): void {
+    console.log('Selected ODK:', this.selectedOdk);
+    // TODO: Implement logic to update chart based on selected ODK
   }
 }

@@ -8,8 +8,11 @@
     <select [(ngModel)]="selectedOpponent" (change)="onOpponentChange($event)">
       <option *ngFor="let opponent of opponents" [value]="opponent">vs {{ opponent }}</option>
     </select>
-    <select [(ngModel)]="selectedGame" (change)="onGameChange($event)">
-      <option *ngFor="let game of games" [value]="game">{{ game }}</option>
+    <select [(ngModel)]="selectedSeason" (change)="onSeasonChange($event)">
+      <option *ngFor="let season of seasons" [value]="season">{{ season }}</option>
+    </select>
+    <select [(ngModel)]="selectedOdk" (change)="onOdkChange($event)">
+      <option *ngFor="let odk of odkOptions" [value]="odk">{{ odk }}</option>
     </select>
   </h2>
   <!-- Chart will be rendered here -->
