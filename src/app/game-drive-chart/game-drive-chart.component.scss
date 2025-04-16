@@ -804,3 +804,29 @@
 .drive-summary h4 {
   text-align: center;
 }
+
+/* Dropdown Styling */
+.dropdown-container {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.dropdown-label {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

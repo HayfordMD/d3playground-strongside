@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './game-drive-chart.component.html',
   styleUrls: ['./game-drive-chart.component.scss']
 })
-export class GameDriveChartComponent implements OnInit {
+export class GameDriveChartComponent implements AfterViewInit {
   // Placeholder for future chart data
   driveData: any[] = [
     { id: 'run-gain', type: 'Run', yards: 7, down: '1st & 10', position: 'Own 12' },
@@ -36,9 +36,22 @@ export class GameDriveChartComponent implements OnInit {
   optionsMenuOpenForPlayId: string | null = null;
   toastMessage: string | null = null;
 
+  private width: number = 900;
+  private height: number = 600;
+  private margin = { top: 60, right: 30, bottom: 60, left: 240 };
+  private possessionWidth: number = 40;
+  private fieldHeight: number = 400;
+  private fieldWidth: number = 800;
+  private yardlineLabels: string[] = ['','10','20','30','40','50','40','30','20','10',''];
+  private yardlineValues: number[] = [0,10,20,30,40,50,60,70,80,90,100];
+  public opponents: string[] = ['Opponent 1', 'Opponent 2', 'Opponent 3', 'Opponent 4', 'Opponent 5', 'Opponent 6', 'Opponent 7', 'Opponent 8', 'Opponent 9', 'Opponent 10'];
+  public games: string[] = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10'];
+  public selectedOpponent: string = 'Opponent 1';
+  public selectedGame: string = 'Week 1';
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     // Initialization logic for D3.js chart will go here
   }
 
@@ -65,5 +78,15 @@ export class GameDriveChartComponent implements OnInit {
       this.toastMessage = null;
     }, 2000); // Show toast for 2 seconds
     // Future implementation could open a video player or modal with the associated video
+  }
+
+  onOpponentChange(event: Event): void {
+    console.log('Selected opponent:', this.selectedOpponent);
+    // TODO: Implement logic to update chart based on selected opponent
+  }
+
+  onGameChange(event: Event): void {
+    console.log('Selected game:', this.selectedGame);
+    // TODO: Implement logic to update chart based on selected game
   }
 }

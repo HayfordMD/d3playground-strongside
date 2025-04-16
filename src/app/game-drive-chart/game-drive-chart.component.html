@@ -4,7 +4,14 @@
   TODO: Implement chart rendering logic and bind to drive data.
 -->
 <div class="game-drive-chart-container">
-  <h2>Game Drive Chart</h2>
+  <h2>Game Drive Chart
+    <select [(ngModel)]="selectedOpponent" (change)="onOpponentChange($event)">
+      <option *ngFor="let opponent of opponents" [value]="opponent">vs {{ opponent }}</option>
+    </select>
+    <select [(ngModel)]="selectedGame" (change)="onGameChange($event)">
+      <option *ngFor="let game of games" [value]="game">{{ game }}</option>
+    </select>
+  </h2>
   <!-- Chart will be rendered here -->
   <div id="drive-chart"></div>
   <!-- Football field visualization -->
