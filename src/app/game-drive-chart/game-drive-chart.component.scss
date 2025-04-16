@@ -76,7 +76,7 @@
 
 .run-gain {
   position: absolute;
-  top: 20%; /* Center vertically within the field height, moved up for more space */
+  top: 20%; /* Base level for first gain */
   left: 120px; /* 12 yards * 10px per yard */
   width: 60px; /* Adjusted: 7 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -100,8 +100,8 @@
 
 .pass-gain {
   position: absolute;
-  top: calc(20% + 25px); /* Slightly below the run gain, moved up */
-  left: 190px; /* 19 yards * 10px per yard */
+  top: 20%; /* Same as run-gain to stack continuously */
+  left: 190px; /* Starting at 19 yards (after run gain of 7 yards) * 10px per yard */
   width: 180px; /* Adjusted: 19 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #800080; /* Purple for pass gain */
@@ -124,7 +124,7 @@
 
 .penalty {
   position: absolute;
-  top: calc(20% + 50px); /* Positioned below the pass gain, moved up */
+  top: calc(20% + 25px); /* Separate line below initial gains */
   left: 340px; /* Adjusted: Starting at 33 yards + 1 yard for triangle */
   width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -146,33 +146,9 @@
   opacity: 0.7;
 }
 
-.penalty-2 {
-  position: absolute;
-  top: calc(20% + 200px); /* Positioned below the run gain, moved up */
-  left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
-  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
-  height: 20px; /* Fixed height for visibility */
-  background: #ffff00; /* Yellow for penalty */
-  opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 0 2px 2px 0; /* Rounded right edge */
-}
-
-.penalty-2::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -10px; /* Positioned at the start of the bar */
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #ffff00; /* Triangle pointing left, yellow */
-  opacity: 0.7;
-}
-
 .run-gain-2 {
   position: absolute;
-  top: calc(20% + 75px); /* Positioned below the penalty bar, moved up */
+  top: calc(20% + 50px); /* New line for next sequence of gains */
   left: 330px; /* Starting at 33 yards (after penalty) * 10px per yard */
   width: 20px; /* Adjusted: 3 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -196,7 +172,7 @@
 
 .pass-gain-2 {
   position: absolute;
-  top: calc(20% + 100px); /* Positioned below the run gain, moved up */
+  top: calc(20% + 50px); /* Same as run-gain-2 to stack continuously */
   left: 360px; /* Starting at 36 yards (after run gain of 3 yards) * 10px per yard */
   width: 50px; /* Adjusted: 6 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -220,7 +196,7 @@
 
 .run-gain-3 {
   position: absolute;
-  top: calc(20% + 125px); /* Positioned below the pass gain, moved up */
+  top: calc(20% + 50px); /* Same as pass-gain-2 to stack continuously */
   left: 420px; /* Starting at 42 yards (after second pass gain of 6 yards) * 10px per yard */
   width: 90px; /* Adjusted: 10 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -244,7 +220,7 @@
 
 .loss-play {
   position: absolute;
-  top: calc(20% + 150px); /* Positioned below the recent gain bars, moved up */
+  top: calc(20% + 75px); /* Separate line for loss */
   left: 500px; /* Adjusted: Starting at 49 yards + 1 yard for triangle */
   width: 20px; /* Adjusted: 3 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -279,7 +255,7 @@
 
 .run-gain-4 {
   position: absolute;
-  top: calc(20% + 175px); /* Positioned below the loss bar, moved up */
+  top: calc(20% + 100px); /* Separate line for run gain */
   left: 490px; /* Starting at 49 yards (after first loss) * 10px per yard */
   width: 30px; /* Adjusted: 4 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -301,9 +277,33 @@
   opacity: 0.7;
 }
 
+.penalty-2 {
+  position: absolute;
+  top: calc(20% + 125px); /* Separate line for penalty */
+  left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
+  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
+  height: 20px; /* Fixed height for visibility */
+  background: #ffff00; /* Yellow for penalty */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
+}
+
+.penalty-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffff00; /* Triangle pointing left, yellow */
+  opacity: 0.7;
+}
+
 .pass-gain-3 {
   position: absolute;
-  top: calc(20% + 225px); /* Positioned below the penalty, moved up */
+  top: calc(20% + 150px); /* Separate line for pass gain */
   left: 480px; /* Starting at 48 yards (after penalty setback) * 10px per yard */
   width: 140px; /* Adjusted: 15 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -327,7 +327,7 @@
 
 .loss-play-2 {
   position: absolute;
-  top: calc(20% + 250px); /* Positioned below the pass gain, moved up */
+  top: calc(20% + 175px); /* Positioned below the pass gain, moved up */
   left: 620px; /* Adjusted: Starting at 63 yards + 1 yard for triangle */
   width: 10px; /* Adjusted: 2 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -362,7 +362,7 @@
 
 .run-gain-5 {
   position: absolute;
-  top: calc(20% + 275px); /* Positioned below the second loss, moved up */
+  top: calc(20% + 200px); /* Positioned below the second loss, moved up */
   left: 610px; /* Starting at 63 yards (after second loss) * 10px per yard */
   width: 50px; /* Adjusted: 6 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
@@ -386,9 +386,9 @@
 
 .pass-gain-4 {
   position: absolute;
-  top: calc(20% + 275px); /* Positioned below the run gain, moved up */
-  left: 670px; 
-  width: 220px; /* Adjusted: 23 yards * 10px per yard minus 10px for triangle */
+  top: calc(20% + 200px); /* Adjusted to be on the same line as the sequence */
+  left: 670px; /* Starting at 67 yards (after 6 yards of run gain) * 10px per yard */
+  width: 220px; /* 23 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #800080; /* Purple for pass gain */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
@@ -408,11 +408,10 @@
   opacity: 0.7;
 }
 
-// add a run gain that goes to the endzone 
 .run-gain-6 {
   position: absolute;
-  top: calc(20% + 275px); /* Positioned below the pass gain, moved up */
-  left: 900px; /* Starting at 90 yards (after 15 yards of pass gain) * 10px per yard */
+  top: calc(20% + 200px); /* Adjusted to be on the same line as previous plays */
+  left: 900px; /* Moved one yard to the right */
   width: 90px; /* Adjusted: 10 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
   background: #0000ff; /* Blue for run gain */
@@ -431,10 +430,6 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid #0000ff; /* Triangle pointing right */
   opacity: 0.7;
-}
-
-.new-sequence {
-  top: calc(20% + 25px); /* Offset below the previous bar */
 }
 
 .yard-marker {
