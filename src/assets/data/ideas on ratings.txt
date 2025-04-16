@@ -1,0 +1,27 @@
+A play result rating should be 1 with it a touchdown
+Gaining a first down on first down should be a result rating of .8
+Gaining a first down on second down should be a result rating of .7
+Gaining a first down on third down should be a result rating of .6
+Gaining a first down on fourth down should be a result rating of .6
+An explosive play that results in a first down should be:
+on 1st down: .85
+on 2nd down: .8
+on 3rd down: .75
+on 4th down: .75
+
+Gaining 1 yard on first down is a rating of 0.1
+Gaining 2 yards on first down is a rating of 0.2
+Gaining 3 yards on first down is a rating of 0.3
+Gaining 4 yards on first down is a rating of 0.4
+Gaining 5 yards or above is a rating of 0.55
+
+on second down any forward result is a rating of 0.2
+On second down any result that nakes 3rd down 3 or less dsitance is a rating of 0.5
+
+
+A play that losses yards should be a result rating of the number of yards lost times -0.02
+a play that losses 5 yards should be a result rating of -0.10
+a play that losses 10 yards should be a result rating of -0.20
+a play that losses 15 yards should be a result rating of -0.30
+Any play that losses 20 yards or more should be a result rating of -0.7
+Any play resulting in any turnover should be a result rating of -1

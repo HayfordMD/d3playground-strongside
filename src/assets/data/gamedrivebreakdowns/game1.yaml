@@ -1,23 +1,75 @@
 game:
-  id: 1
+  id: 9a7b3c2d-1e5f-4a8b-9c7d-6e5f4a3b2c1d
   opponent: 'Opponent Team'
   season: 2023
   drives:
     - drive_id: 1
       sequence:
-        -play_id: 123e4567-e89b-12d3-a456-426655440000
-          - play_in_series: 1
-          - type: 'run'
-            yards: 10
-        -play_id: 123e4567-e89b-12d3-a456-426asdf0000
-          - play_in_series: 2
-          - type: 'pass'
-            yards: 15
-        -play_id: 123e4567-e89b-12d3-a456-4sadfasdf54
-          - play_in_series: 3
-          - type: 'penalty'
-            yards: -5
-        -play_id: 123e47-e89b-12dsfd3-a456-4266554400
-          - play_in_series: 4
-          - type: 'run'
-            yards: 6
+        - play_id: 123e4567-e89b-12d3-a456-426655440000
+          play_number: 1
+          play_in_series: 1
+          ODK: Offense
+          type: 'run'
+          yards: 10
+          down: 1
+          distance: 10
+          position: -12
+          result: '1st Down'
+          formation_set: 'I-formation'
+          formation: 'I Right'
+          formation_id: 16354fd7-7904-4277-a770-dff6518c810f
+          play_concept: 'Toss'
+          play_call: 'I-Right Toss Left'
+          ending_yard_line: 22
+          qtr: 1
+          time: '11:15'
+          videoID: 35d29c47-3fcb-45f3-b2e3-c4054d495b28
+          hash: 'left'
+          score_dif: 0
+          breakdownData_id: d837b3d6-1fc7-4d9a-8659-cd906bb1a424
+          defensive_front: '3-4'
+          defensive_stunt: 'Pinch'
+          blitz: 'Will Weakside'
+          coverage: 'Cover 3 Strong Cloud'
+          offensive Strenght: 'Right"
+          motion: true
+          motionn_name: orbit
+          Efficient: Yes
+          Result_Rating: .8
+          Win_Probability: +.01
+          Current_Win_Probability: .501
+        - play_id: 2af3c7b4-8da8-4089-9bcf-856f0a99e571
+          play_number: 2
+          play_in_series: 2
+          ODK: Offense
+          type: 'pass'
+          yards: 10
+          down: 1
+          distance: 10
+          position: -22
+          result: '1st Down'
+          formation_set: 'I-Left'
+          formation: 'I Left Twins'
+          formation_id: 16354fd7-7904-4277-a770-dff6518c810f
+          play_concept: 'Power'
+          play_call: 'I-Left Twins Power Right'
+          ending_yard_line: 22
+          qtr: 1
+          time: '10:59'
+          videoID: 318b36ee-30e7-421d-881a-57903f9f633b
+          hash: 'left'
+          score_dif: 0
+          breakdownData_id: 142a670e-fff2-4a8f-a9de-616957cc41b5
+          defensive_front: '3-4'
+          defensive_stunt: 'Pinch'
+          blitz: 'Will Weakside'
+          coverage: 'Cover 3 Strong Cloud'
+          offensive Strenght: 'Right"
+          motion: true
+          motionn_name: orbit
+          Efficient: Yes
+          Effe
+          Win_Probability: +.01
+          Current_Win_Probability: .501
+
+
