@@ -24,14 +24,29 @@ This project aims to create interactive visualizations of football metrics and s
 
 ## Tech Stack
 
-- Vue.js as the frontend framework
+- Angular
 - D3.js for data visualization
 - YAML for data storage and configuration
 - JavaScript/HTML/CSS
 
-## Setup
+## Brand Guidelines
+Dark Metal Color
+Hex #122C34 RGB (18,44,52) C13% M3% Y0% K80%
 
-More details on setup and installation will be added as the project develops.
+Light Grey
+Hex #BBB5BD RGB (187,181,189) C1% M3% Y0% K26%
+
+Turquoise
+Hex #44CFCB RGB (68,207,203) C55% M0% Y2% K19%
+
+Blue Green
+Hex #A6ECE0 RGB (166,236,224) C27% M0% Y5% K7%
+
+Mint
+Hex #B6F9C9 RGB (182,249,201) C26% M0% Y19% K2%
+
+White
+Hex #EFECE4 RGB (255,255,255) C0% M0% Y0% K0%
 
 ## Data Structure
 
