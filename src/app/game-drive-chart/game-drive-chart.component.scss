@@ -128,7 +128,7 @@
   left: 340px; /* Adjusted: Starting at 33 yards + 1 yard for triangle */
   width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
   height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for penalty */
+  background: #ffff00; /* Yellow for penalty */
   opacity: 0.7; /* Slightly transparent for visibility of field lines */
   border-radius: 0 2px 2px 0; /* Rounded right edge */
 }
@@ -142,7 +142,31 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
+  border-right: 10px solid #ffff00; /* Triangle pointing left, yellow */
+  opacity: 0.7;
+}
+
+.penalty-2 {
+  position: absolute;
+  top: calc(20% + 200px); /* Positioned below the run gain, moved up */
+  left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
+  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
+  height: 20px; /* Fixed height for visibility */
+  background: #ffff00; /* Yellow for penalty */
+  opacity: 0.7; /* Slightly transparent for visibility of field lines */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
+}
+
+.penalty-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Positioned at the start of the bar */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffff00; /* Triangle pointing left, yellow */
   opacity: 0.7;
 }
 
@@ -274,30 +298,6 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #0000ff; /* Triangle pointing right */
-  opacity: 0.7;
-}
-
-.penalty-2 {
-  position: absolute;
-  top: calc(20% + 200px); /* Positioned below the run gain, moved up */
-  left: 490px; /* Adjusted: Starting at 48 yards + 1 yard for triangle */
-  width: 40px; /* Adjusted: 5 yards * 10px per yard minus 10px for triangle */
-  height: 20px; /* Fixed height for visibility */
-  background: #ff0000; /* Red for penalty */
-  opacity: 0.7; /* Slightly transparent for visibility of field lines */
-  border-radius: 0 2px 2px 0; /* Rounded right edge */
-}
-
-.penalty-2::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -10px; /* Positioned at the start of the bar */
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #ff0000; /* Triangle pointing left, red */
   opacity: 0.7;
 }
 
@@ -589,20 +589,21 @@
 /* Specific styling for data cells based on content */
 .drive-table td:nth-child(1) {
   font-weight: 500;
-  color: #2c3e50;
+  color: #000000; /* Black color for play type column */
 }
 
 /* Color coding for yards gained */
-.drive-table td:nth-child(2) {
+.drive-table tr > td:nth-child(2) {
   font-weight: 600;
+  color: #000000; /* Black color for the second column */
 }
 
-.drive-table td:nth-child(2)[data-value^="-"] {
-  color: #ff0000; /* Red for negative yards */
+.drive-table tr > td:nth-child(2)[data-value^="-"] {
+  color: #000000; /* Black for negative yards */
 }
 
-.drive-table td:nth-child(2):not([data-value^="-"]) {
-  color: #27ae60; /* Green for positive yards */
+.drive-table[_ngcontent-ng-c115120690] tr[_ngcontent-ng-c115120690] > td[_ngcontent-ng-c115120690]:nth-child(2):not([data-value^="-"]) {
+  color: #000000; /* Black for positive yards */
 }
 
 /* Highlight important results */
@@ -698,6 +699,25 @@
   10% { opacity: 1; transform: translateY(0); }
   90% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(20px); }
+}
+
+/* Styling for table rows based on play type */
+.drive-table tr[data-play-type="run"] {
+  color: #0000ff; /* Blue font for run plays */
+}
+
+.drive-table tr[data-play-type="pass"] {
+  color: #800080; /* Purple font for pass plays */
+  color: #800080;
+}
+
+.drive-table tr[data-play-type="penalty"] {
+  background-color: #000000; /* Black background for penalty plays */
+  color: #ffff00; /* Yellow font for penalty plays */
+}
+
+.drive-table tr[data-play-type="loss"] {
+  color: #ff0000; /* Red font for loss plays */
 }
 
 /* Show tooltip on hover */
